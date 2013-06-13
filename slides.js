@@ -7,7 +7,8 @@ window.mySlides = [
 	{
 	  	type : "drawCommand",
 	  	v1 : "HELLO You. How is it going?",
-	  	v2 : "On the next slide I'll show you some instruction. Please read them and click SPACE to go to the next page. "
+	  	v2 : "On the next slide I'll show you some instruction. Please read them and click SPACE to go to the next page. ",  	
+		sound : "s1.mp3",
 	},
 	{
 	  	type : "drawAsch",
@@ -26,31 +27,37 @@ window.mySlides = [
 	{
 		type : "drawWord",
 		user : 5,
-		v1 : "know"
+		v1 : "know",
+		sound : "know1.mp3",
 	},
 	{
 		type : "drawWord",
 		user : 1,
-		v1 : "show"
+		v1 : "show",
+		sound : "show1.mp3",
 	},
 	{
 		type : "drawWord",
 		user : 2,
-		v1 : "grow"
+		v1 : "grow",
+		sound : "grow1.mp3",
 	},
 	{
 		type : "drawWord",
 		user : 3,
-		v1 : "give"
+		v1 : "give",
+		sound : "give1.mp3",
 	},
 	{
 		type : "drawWord",
 		user : 4,
-		v1 : "cheat"
+		v1 : "cheat",
+		sound : "cheat1.mp3",
 	},
 	{
 		type : "drawWord",
 		user : 5,
-		v1 : "cheat"
+		v1 : "cheat",
+		sound : "cheat1.mp3",
 	}
 ];

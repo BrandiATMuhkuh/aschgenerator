@@ -26,28 +26,44 @@ function sketchProc(processing) {
 
   
   window.mySlidesPos = 0;
+  window.currentSlide = mySlides[mySlidesPos];
+  playSlideSound();
 
+  //Listens to a key press and will play the next sound
+  document.onkeyup = function(key){
+    console.log("key up",key.keyCode);
+    if(key.keyCode == 37 || key.keyCode == 39){
+      if(key.keyCode == 37)
+        window.mySlidesPos--;
+      else
+        window.mySlidesPos++;
+      
+      window.currentSlide = mySlides[mySlidesPos];
+      playSlideSound();
+    }
+  }
+
+  function playSlideSound(){
+    if(typeof window.currentSlide.sound != 'undefined')
+      soundManager.createSound({url: 'sounds/'+window.currentSlide.sound}).play();
+  }
   
 
 
   processing.draw = function() {
     processing.size(window.innerWidth-50, window.innerHeight-50);    
     
-    
-
-
-    tempSclide = mySlides[mySlidesPos];
-    switch(tempSclide.type){
+    switch(currentSlide.type){
       case "drawAsch":
-        drawAsch(tempSclide.v1, tempSclide.v2, tempSclide.v3, tempSclide.v1);
+        drawAsch(currentSlide.v1, currentSlide.v2, currentSlide.v3, currentSlide.v1);
       break;
 
       case "drawCommand":
-        drawCommand(tempSclide.v1, tempSclide.v2);
+        drawCommand(currentSlide.v1, currentSlide.v2);
       break;
 
       case "drawWord":
-        drawWord(tempSclide.v1);
+        drawWord(currentSlide.v1);
       break;
     }
     
@@ -55,10 +71,10 @@ function sketchProc(processing) {
     //Identify users
     processing.strokeWeight(5);
     
-    if(typeof tempSclide.user != 'undefined' && tempSclide.user != 0){
+    if(typeof currentSlide.user != 'undefined' && currentSlide.user != 0){
     
       processing.stroke(142, 68, 173);
-      if(tempSclide.user == 1){
+      if(currentSlide.user == 1){
         processing.fill(142, 68, 173);
       }else{
         processing.fill(255); 
@@ -67,7 +83,7 @@ function sketchProc(processing) {
 
       
       processing.stroke(41, 128, 185);
-      if(tempSclide.user == 2){
+      if(currentSlide.user == 2){
         processing.fill(41, 128, 185);
       }else{
         processing.fill(255); 
@@ -75,7 +91,7 @@ function sketchProc(processing) {
       processing.rect(190, 20, 100, 100);
       
       processing.stroke(39, 174, 96);
-      if(tempSclide.user == 3){
+      if(currentSlide.user == 3){
         processing.fill(39, 174, 96);
       }else{
         processing.fill(255); 
@@ -83,7 +99,7 @@ function sketchProc(processing) {
       processing.rect(360, 20, 100, 100);
       
       processing.stroke(211, 84, 0);
-      if(tempSclide.user == 4){
+      if(currentSlide.user == 4){
         processing.fill(211, 84, 0);
       }else{
         processing.fill(255); 
@@ -91,7 +107,7 @@ function sketchProc(processing) {
       processing.rect(530, 20, 100, 100);
       
       processing.stroke(243, 156, 18);
-      if(tempSclide.user == 5){
+      if(currentSlide.user == 5){
         processing.fill(243, 156, 18);
       }else{
         processing.fill(255); 
@@ -181,12 +197,7 @@ function sketchProc(processing) {
 
 
 
-var canvas = document.getElementById("myCanvas");
-// attaching the sketchProc function to the canvas
-var processingInstance = new Processing(canvas, sketchProc);
 
 
-document.onkeyup = function(key){
-  console.log("key up",key.keyCode);
-  window.mySlidesPos++;
-}
+
+

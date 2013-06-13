@@ -23,7 +23,11 @@
 
       soundManager.onready(function() {
         soundManager.isReady = true;
-        soundManager.createSound({url: 'sounds/s1.mp3'}).play();
+        soundManager.debugMode = false;
+
+        var canvas = document.getElementById("myCanvas");
+        // attaching the sketchProc function to the canvas
+        var processingInstance = new Processing(canvas, sketchProc);
       });
 
     </script>
