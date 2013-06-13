@@ -23,17 +23,41 @@ function sketchProc(processing) {
   var font = processing.loadFont("FFScala.ttf"); 
   processing.textFont(font,50); 
 
+  window.mySlides = [
+    {
+      type : "drawAsch",
+      v1 : 0.95,
+      v2 : 0.1,
+      v3 : 0.5
+    }
+  ];
+
+  window.mySlidesPos = 0;
+
   processing.draw = function() {
     
-    processing.size(window.innerWidth-50, window.innerHeight-50);
-    
+    tempSclide = mySlides[mySlidesPos];
+    switch(tempSclide.type){
+      case "drawAsch":
+        drawAsch(tempSclide.v1, tempSclide.v2, tempSclide.v3, tempSclide.v1);
+      break;
+    }
+
+  };
+
+  /**
+   * Draws a simple ash line. a,b,cSize, anwer are in percent (0-1)
+   * @param  {float} aSize  first value between 0-1
+   * @param  {float} bSize  second value between 0-1
+   * @param  {float} cSize  third value between 0-1
+   * @param  {float} answer anser must be a,b or c
+   */
+  function drawAsch(aSize, bSize, cSize, answer){
+    processing.size(window.innerWidth-50, window.innerHeight-50);    
     
     var barHeight = processing.height*0.9;
     var barWidth = processing.width*0.9;
    
-    // determine center and max clock arm length
-    //var centerX = processing.width / 2, centerY = processing.height / 2;
-    //var maxArmLength = Math.min(centerX, centerY);
 
     processing.strokeWeight(1);
     processing.fill(0);
@@ -43,29 +67,29 @@ function sketchProc(processing) {
     var betweenOffset = barWidth*0.16;
 
     // First Line
-    processing.rect(betweenOffset, barHeight, 10, -(barHeight * lineOnePercentage));    
+    processing.rect(betweenOffset, barHeight, 10, -(barHeight * aSize));    
     processing.text("A", betweenOffset-10, barHeight+50); 
     
     
     // Second Line
-    processing.rect(betweenOffset*2, barHeight, 10, -(barHeight * lineTwoPercentage));
+    processing.rect(betweenOffset*2, barHeight, 10, -(barHeight * bSize));
     processing.text("B", betweenOffset*2-10, barHeight+50); 
     
 
     // Third Line
-    processing.rect(betweenOffset*3, barHeight, 10, -(barHeight * lineThrePercentage));
+    processing.rect(betweenOffset*3, barHeight, 10, -(barHeight * cSize));
     processing.text("C", betweenOffset*3-10, barHeight+50); 
   
     
 
     // Comparision      
-    processing.rect(betweenOffset*5.5, barHeight, 10, -(barHeight * compPercent));
+    processing.rect(betweenOffset*5.5, barHeight, 10, -(barHeight * answer));
     processing.text("?", betweenOffset*5.5-10, barHeight+50); 
-  
-    
-
-  };
 }
+
+}
+
+
 
 
 
