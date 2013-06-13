@@ -45,6 +45,59 @@ function sketchProc(processing) {
       case "drawCommand":
         drawCommand(tempSclide.v1, tempSclide.v2);
       break;
+
+      case "drawWord":
+        drawWord(tempSclide.v1);
+      break;
+    }
+    
+    
+    //Identify users
+    processing.strokeWeight(5);
+    
+    if(typeof tempSclide.user != 'undefined' && tempSclide.user != 0){
+    
+      processing.stroke(142, 68, 173);
+      if(tempSclide.user == 1){
+        processing.fill(142, 68, 173);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(30, 20, 100, 100);
+
+      
+      processing.stroke(41, 128, 185);
+      if(tempSclide.user == 2){
+        processing.fill(41, 128, 185);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(190, 20, 100, 100);
+      
+      processing.stroke(39, 174, 96);
+      if(tempSclide.user == 3){
+        processing.fill(39, 174, 96);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(360, 20, 100, 100);
+      
+      processing.stroke(211, 84, 0);
+      if(tempSclide.user == 4){
+        processing.fill(211, 84, 0);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(530, 20, 100, 100);
+      
+      processing.stroke(243, 156, 18);
+      if(tempSclide.user == 5){
+        processing.fill(243, 156, 18);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(700, 20, 100, 100);
+
     }
 
   };
@@ -89,6 +142,9 @@ function sketchProc(processing) {
     // Comparision      
     processing.rect(betweenOffset*5.5, barHeight, 10, -(barHeight * answer));
     processing.text("?", betweenOffset*5.5-10, barHeight+50); 
+
+
+    
   }
 
 
@@ -105,6 +161,17 @@ function sketchProc(processing) {
     processing.textFont(font,40); 
     processing.text(description, 50, 200, processing.width, processing.height); 
 
+  }
+
+  function drawWord (word) {
+    processing.strokeWeight(1);
+    processing.fill(0);
+    processing.textAlign(processing.CENTER);
+
+    processing.textFont(font,100); 
+    processing.text(word, processing.width/2, processing.height/2); 
+    
+    
   }
 
 }

@@ -9,9 +9,22 @@
     </style>
   </head>
   <body>
+    <script src="soundmanager2-jsmin.js"></script>
     <script src="processing-1.4.1.min.js"></script>
     <canvas id="myCanvas" width="1000" height="1000"></canvas>
     <script type="text/javascript" src="slides.js"></script>
     <script type="text/javascript" src="lines.js"></script>
+
+    <audio src="http://www.mediacollege.com/downloads/sound-effects/explosion/explosion-02.wav" id="userImpactSound" preload />
   
+    <script>
+      // where to find flash SWFs, if needed...
+      soundManager.preferFlash = false;
+
+      soundManager.onready(function() {
+        soundManager.isReady = true;
+        soundManager.createSound({url: 'sounds/s1.mp3'}).play();
+      });
+
+    </script>
 </body></html>
