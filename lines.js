@@ -37,7 +37,7 @@ function sketchProc(processing) {
         window.mySlidesPos--;
       else
         window.mySlidesPos++;
-      
+
       window.currentSlide = mySlides[mySlidesPos];
       playSlideSound();
     }
@@ -55,7 +55,7 @@ function sketchProc(processing) {
     
     switch(currentSlide.type){
       case "drawAsch":
-        drawAsch(currentSlide.v1, currentSlide.v2, currentSlide.v3, currentSlide.v1);
+        drawAsch(currentSlide.v1, currentSlide.v2, currentSlide.v3, currentSlide.answer);
       break;
 
       case "drawCommand":
@@ -71,10 +71,10 @@ function sketchProc(processing) {
     //Identify users
     processing.strokeWeight(5);
     
-    if(typeof currentSlide.user != 'undefined' && currentSlide.user != 0){
+    if(typeof currentSlide.user != 'undefined'){
     
       processing.stroke(142, 68, 173);
-      if(currentSlide.user == 1){
+      if(currentSlide.user == 0){
         processing.fill(142, 68, 173);
       }else{
         processing.fill(255); 
@@ -83,7 +83,7 @@ function sketchProc(processing) {
 
       
       processing.stroke(41, 128, 185);
-      if(currentSlide.user == 2){
+      if(currentSlide.user == 1){
         processing.fill(41, 128, 185);
       }else{
         processing.fill(255); 
@@ -91,7 +91,7 @@ function sketchProc(processing) {
       processing.rect(190, 20, 100, 100);
       
       processing.stroke(39, 174, 96);
-      if(currentSlide.user == 3){
+      if(currentSlide.user == 2){
         processing.fill(39, 174, 96);
       }else{
         processing.fill(255); 
@@ -99,7 +99,7 @@ function sketchProc(processing) {
       processing.rect(360, 20, 100, 100);
       
       processing.stroke(211, 84, 0);
-      if(currentSlide.user == 4){
+      if(currentSlide.user == 3){
         processing.fill(211, 84, 0);
       }else{
         processing.fill(255); 
@@ -107,7 +107,7 @@ function sketchProc(processing) {
       processing.rect(530, 20, 100, 100);
       
       processing.stroke(243, 156, 18);
-      if(currentSlide.user == 5){
+      if(currentSlide.user == 4){
         processing.fill(243, 156, 18);
       }else{
         processing.fill(255); 

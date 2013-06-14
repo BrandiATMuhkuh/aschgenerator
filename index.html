@@ -25,6 +25,7 @@
         soundManager.isReady = true;
         soundManager.debugMode = false;
 
+        slideGenerator();
         var canvas = document.getElementById("myCanvas");
         // attaching the sketchProc function to the canvas
         var processingInstance = new Processing(canvas, sketchProc);
