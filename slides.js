@@ -7,6 +7,23 @@ function slideGenerator () {
 		
 
 		switch(window.configSlides[i].type){
+
+
+			case "randWords":					
+				var sArray = shuffle(window.configSlides[i].words);
+
+				for (var t = 0; t < 5; t++){
+					window.mySlides.push({
+						type : "drawWord",
+					  	user : t,
+						v1 : sArray[t].word,
+						sound : sArray[t].sound,
+					});
+				}
+				
+			break;
+
+
 			case "randAsch":
 				for (var k = 0; k < window.configSlides[i].count; k++){
 					var rightAnwer = Math.floor((Math.random()*3));
@@ -27,18 +44,37 @@ function slideGenerator () {
 				}
 			break;
 
-			case "randWords":					
-				var sArray = shuffle(window.configSlides[i].words);
+
+			case "deltaAsch":
+				var rightAnwer = Math.floor((Math.random()*3));
+				var aschValues = [];
+				aschValues.push(Math.random());
+
+
+				//Value two
+				var v2 = Math.random();
+				while(Math.abs(v2-aschValues[0]) > window.configSlides[i].delta){
+					v2 = Math.random();
+				}
+				aschValues.push(v2);
+
+				//Value three
+				var v3 = Math.random();
+				while(Math.abs(v3-aschValues[0]) > window.configSlides[i].delta){
+					v3 = Math.random();
+				}
+				aschValues.push(v3);
 
 				for (var t = 0; t < 5; t++){
 					window.mySlides.push({
-						type : "drawWord",
+						type : "drawAsch",
 					  	user : t,
-						v1 : sArray[t].word,
-						sound : sArray[t].sound,
+					  	v1 : aschValues[0],
+					  	v2 : aschValues[1],
+					  	v3 : aschValues[2],
+					  	answer : aschValues[rightAnwer]
 					});
 				}
-				
 
 
 			break;
@@ -64,13 +100,13 @@ function slideGenerator () {
 
 }
 
-window.configSlides = [
+window.configSlides = [/*
 	{
 	  	type : "drawCommand",
 	  	v1 : "HELLO You. How is it going?",
 	  	v2 : "On the next slide I'll show you some instruction. Please read them and click SPACE to go to the next page. ",  	
 		sound : "s1.mp3",
-	},/*
+	},*//*
 	{
 	  	type : "drawAsch",
 	  	user : 0,
@@ -87,10 +123,15 @@ window.configSlides = [
 	  	v3 : 0.8,
 	  	answer : 0.3
 	},*/
+
+	{
+		type : "deltaAsch",
+		delta : 0.9
+	},/*
 	{
 		type : "randAsch",
 		count : 5
-	},
+	},*/
 	{
 		type : "randWords",
 		words: [
