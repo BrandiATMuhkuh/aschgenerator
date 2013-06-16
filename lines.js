@@ -70,8 +70,15 @@ function sketchProc(processing) {
     
     //Identify users
     processing.strokeWeight(5);
+
+
     
     if(typeof currentSlide.user != 'undefined'){
+
+
+      //calc user squeres
+      var leftOffset = (processing.width - (4 * 100))/4;
+
     
       processing.stroke(142, 68, 173);
       if(currentSlide.user == 0){
@@ -79,7 +86,8 @@ function sketchProc(processing) {
       }else{
         processing.fill(255); 
       }
-      processing.rect(30, 20, 100, 100);
+      processing.rect(100, 20, 100, 100);
+
 
       
       processing.stroke(41, 128, 185);
@@ -88,7 +96,7 @@ function sketchProc(processing) {
       }else{
         processing.fill(255); 
       }
-      processing.rect(190, 20, 100, 100);
+      processing.rect(100+leftOffset, 20, 100, 100);
       
       processing.stroke(39, 174, 96);
       if(currentSlide.user == 2){
@@ -96,7 +104,7 @@ function sketchProc(processing) {
       }else{
         processing.fill(255); 
       }
-      processing.rect(360, 20, 100, 100);
+      processing.rect(100+leftOffset*2, 20, 100, 100);
       
       processing.stroke(211, 84, 0);
       if(currentSlide.user == 3){
@@ -104,7 +112,7 @@ function sketchProc(processing) {
       }else{
         processing.fill(255); 
       }
-      processing.rect(530, 20, 100, 100);
+      processing.rect(100+leftOffset*3, 20, 100, 100);
       
       processing.stroke(243, 156, 18);
       if(currentSlide.user == 4){
@@ -112,7 +120,7 @@ function sketchProc(processing) {
       }else{
         processing.fill(255); 
       }
-      processing.rect(700, 20, 100, 100);
+      processing.rect(100+leftOffset*4, 20, 100, 100);
 
     }
 
@@ -129,8 +137,9 @@ function sketchProc(processing) {
    */
   function drawAsch(aSize, bSize, cSize, answer){
     processing.textFont(font,50); 
-    var barHeight = processing.height*0.9;
-    var barWidth = processing.width*0.9;
+    var barHeight = processing.height*0.75;
+    var barWidth = processing.width*0.8;
+
 
     processing.strokeWeight(1);
     processing.fill(0);
@@ -138,26 +147,27 @@ function sketchProc(processing) {
     var percent = 0.95;
     var topOffset = 50;
     var betweenOffset = barWidth*0.16;
+    var bottomOffset = 130;
 
     // First Line
-    processing.rect(betweenOffset, barHeight, 10, -(barHeight * aSize));    
-    processing.text("A", betweenOffset-10, barHeight+50); 
+    processing.rect(betweenOffset, barHeight+bottomOffset, 10, -(barHeight * aSize));    
+    processing.text("A", betweenOffset-10, barHeight+bottomOffset+50); 
     
     
     // Second Line
-    processing.rect(betweenOffset*2, barHeight, 10, -(barHeight * bSize));
-    processing.text("B", betweenOffset*2-10, barHeight+50); 
+    processing.rect(betweenOffset*2, barHeight+bottomOffset, 10, -(barHeight * bSize));
+    processing.text("B", betweenOffset*2-10, barHeight+bottomOffset+50); 
     
 
     // Third Line
-    processing.rect(betweenOffset*3, barHeight, 10, -(barHeight * cSize));
-    processing.text("C", betweenOffset*3-10, barHeight+50); 
+    processing.rect(betweenOffset*3, barHeight+bottomOffset, 10, -(barHeight * cSize));
+    processing.text("C", betweenOffset*3-10, barHeight+bottomOffset+50); 
   
     
 
     // Comparision      
-    processing.rect(betweenOffset*5.5, barHeight, 10, -(barHeight * answer));
-    processing.text("?", betweenOffset*5.5-10, barHeight+50); 
+    processing.rect(betweenOffset*5.5, barHeight+bottomOffset, 10, -(barHeight * answer));
+    processing.text("?", betweenOffset*5.5-10, barHeight+bottomOffset+50); 
 
 
     
