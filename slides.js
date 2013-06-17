@@ -12,7 +12,7 @@ function slideGenerator () {
 			case "randWords":					
 				var sArray = shuffle(window.configSlides[i].words);
 
-				for (var t = 0; t < 5; t++){
+				for (var t = 0; t < 4; t++){
 					window.mySlides.push({
 						type : "drawWord",
 					  	user : t,
@@ -20,6 +20,14 @@ function slideGenerator () {
 						sound : sArray[t].sound,
 					});
 				}
+
+				window.mySlides.push({
+						type : "drawWord",
+					  	user : t,
+						v1 : window.configSlides[i].human.word,
+						sound : window.configSlides[i].human.sound,
+					});
+
 				
 			break;
 
@@ -100,13 +108,19 @@ function slideGenerator () {
 
 }
 
-window.configSlides = [/*
+window.configSlides = [
 	{
 	  	type : "drawCommand",
 	  	v1 : "HELLO You. How is it going?",
 	  	v2 : "On the next slide I'll show you some instruction. Please read them and click SPACE to go to the next page. ",  	
 		sound : "s1.mp3",
-	},*//*
+	},
+	{
+	  	type : "drawCommand",
+	  	v1 : "Lines instruction with 5 test rounds.",
+	  	v2 : "You will see 3 lines on the left side labeled with A,B,C. Your task is it to tell what label the line on the right side has. Please anwer only when your color is shown. We run now 3 test rounds.",  	
+		
+	},/*
 	{
 	  	type : "drawAsch",
 	  	user : 0,
@@ -127,7 +141,47 @@ window.configSlides = [/*
 	{
 		type : "deltaAsch",
 		delta : 0.9
-	},/*
+	},
+	{
+		type : "deltaAsch",
+		delta : 0.1
+	},
+	{
+		type : "deltaAsch",
+		delta : 0.5
+	},
+	{
+	  	type : "drawCommand",
+	  	v1 : "LINE TEST",
+	  	v2 : "Now we will have 30 test rounds with the same settings.",  	
+		
+	},
+	{
+		type : "deltaAsch",
+		delta : 0.9
+	},
+	{
+		type : "deltaAsch",
+		delta : 0.1
+	},
+	{
+		type : "deltaAsch",
+		delta : 0.5
+	},
+	{
+	  	type : "drawCommand",
+	  	v1 : "FIRST LINE TEST is now OVER",
+	  	v2 : "Thank you. Instructions for the next round follow.",  	
+		
+	},
+	{
+	  	type : "drawCommand",
+	  	v1 : "Past tense instruction with 5 test rounds",
+	  	v2 : "You will see now exact one word on the screen and you must create the past tense form. Everyone gets an other word.  Please anwer only when your color is shown. We run now 3 test rounds.",  	
+		
+	},
+
+	/*
 	{
 		type : "randAsch",
 		count : 5
@@ -144,10 +198,6 @@ window.configSlides = [/*
 				word : "show"
 			},
 			{
-				sound : "grow1.mp3",
-				word : "grow"
-			},
-			{
 				sound : "give1.mp3",
 				word : "give"
 			},
@@ -155,7 +205,13 @@ window.configSlides = [/*
 				sound : "cheat1.mp3",
 				word : "cheat"
 			}
-		]
+		],
+		human: 
+			{
+				sound : "grow1.mp3",
+				word : "grow"
+			},
+
 	},
 	/*
 	{

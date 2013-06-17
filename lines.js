@@ -149,25 +149,26 @@ function sketchProc(processing) {
     var betweenOffset = barWidth*0.16;
     var bottomOffset = 130;
 
+    processing.textAlign(processing.CENTER);
     // First Line
     processing.rect(betweenOffset, barHeight+bottomOffset, 10, -(barHeight * aSize));    
-    processing.text("A", betweenOffset-10, barHeight+bottomOffset+50); 
+    processing.text("A", betweenOffset+6, barHeight+bottomOffset+50); 
     
     
     // Second Line
     processing.rect(betweenOffset*2, barHeight+bottomOffset, 10, -(barHeight * bSize));
-    processing.text("B", betweenOffset*2-10, barHeight+bottomOffset+50); 
+    processing.text("B", betweenOffset*2+6, barHeight+bottomOffset+50); 
     
 
     // Third Line
     processing.rect(betweenOffset*3, barHeight+bottomOffset, 10, -(barHeight * cSize));
-    processing.text("C", betweenOffset*3-10, barHeight+bottomOffset+50); 
+    processing.text("C", betweenOffset*3+6, barHeight+bottomOffset+50); 
   
     
 
     // Comparision      
-    processing.rect(betweenOffset*5.5, barHeight+bottomOffset, 10, -(barHeight * answer));
-    processing.text("?", betweenOffset*5.5-10, barHeight+bottomOffset+50); 
+    processing.rect(barWidth+betweenOffset, barHeight+bottomOffset, 10, -(barHeight * answer));
+    processing.text("?", barWidth+betweenOffset+6, barHeight+bottomOffset+50); 
 
 
     
@@ -185,7 +186,7 @@ function sketchProc(processing) {
 
     //Description
     processing.textFont(font,40); 
-    processing.text(description, 50, 200, processing.width, processing.height); 
+    processing.text(description, 0, 200, processing.width, processing.height); 
 
   }
 
