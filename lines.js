@@ -51,7 +51,7 @@ function sketchProc(processing) {
 
 
   processing.draw = function() {
-    processing.size(window.innerWidth-50, window.innerHeight-50);    
+    processing.size(window.innerWidth, window.innerHeight-5);    
     
     switch(currentSlide.type){
       case "drawAsch":
@@ -137,7 +137,7 @@ function sketchProc(processing) {
    */
   function drawAsch(aSize, bSize, cSize, answer){
     processing.textFont(font,50); 
-    var barHeight = processing.height*0.75;
+    var barHeight = processing.height-190;
     var barWidth = processing.width*0.8;
 
 
