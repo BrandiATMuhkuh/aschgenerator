@@ -190,28 +190,192 @@ window.configSlides = [
 		type : "randWords",
 		words: [
 			{
-				sound : "know1.mp3",
-				word : "know"
+				sound : "cling.mp3",
+				word : "cling"
 			},
 			{
-				sound : "show1.mp3",
-				word : "show"
+				sound : "sink.mp3",
+				word : "sink"
 			},
 			{
-				sound : "give1.mp3",
-				word : "give"
+				sound : "stink.mp3",
+				word : "stink"
 			},
 			{
-				sound : "cheat1.mp3",
-				word : "cheat"
+				sound : "break.mp3",
+				word : "break"
 			}
 		],
 		human: 
 			{
-				sound : "grow1.mp3",
-				word : "grow"
+				sound : "hurl.mp3",
+				word : "hurl"
 			},
 
+	},
+	{
+		type : "randWords",
+		words: [
+			{
+				sound : "tell.mp3",
+				word : "tell"
+			},
+			{
+				sound : "drink.mp3",
+				word : "drink"
+			},
+			{
+				sound : "ring.mp3",
+				word : "ring"
+			},
+			{
+				sound : "keep.mp3",
+				word : "keep"
+			}
+		],
+		human: 
+			{
+				sound : "burn.mp3",
+				word : "burn"
+			},
+
+	},
+	{
+	  	type : "drawCommand",
+	  	v1 : "Past tense TEST is now OVER",
+	  	v2 : "Thank you. Instructions for the next round follow.",  	
+		
+	},
+	{
+	  	type : "drawCommand",
+	  	v1 : "Past participle instruction with 5 test rounds",
+	  	v2 : "You will see now exact one word on the screen and you must create the past participle form. Everyone gets an other word.  Please anwer only when your color is shown. We run now 3 test rounds.",  	
+		
+	},
+	{
+		type : "randWords",
+		words: [
+			{
+				sound : "know.mp3",
+				word : "know"
+			},
+			{
+				sound : "show.mp3",
+				word : "show"
+			},
+			{
+				sound : "grow.mp3",
+				word : "grow"
+			},
+			{
+				sound : "give.mp3",
+				word : "give"
+			}
+		],
+		human: 
+			{
+				sound : "cheat.mp3",
+				word : "cheat"
+			},
+
+	},
+	{
+		type : "randWords",
+		words: [
+			{
+				sound : "strike.mp3",
+				word : "strike"
+			},
+			{
+				sound : "mow.mp3",
+				word : "mow"
+			},
+			{
+				sound : "fly.mp3",
+				word : "fly"
+			},
+			{
+				sound : "speak.mp3",
+				word : "speak"
+			}
+		],
+		human: 
+			{
+				sound : "tell.mp3",
+				word : "tell"
+			},
+
+	},
+	{
+	  	type : "drawCommand",
+	  	v1 : "Past participle TEST is now OVER",
+	  	v2 : "Thank you. Instructions for the next round follow.",  	
+		
+	},
+	{
+	  	type : "drawCommand",
+	  	v1 : "Noun test instruction with 5 test rounds",
+	  	v2 : "You will see now exact one word on the screen and you must create the plural form. Everyone gets an other word. Please anwer only when your color is shown. We run now 3 test rounds.",  	
+		
+	},
+	{
+		type : "randWords",
+		words: [
+			{
+				sound : "hoof.mp3",
+				word : "hoof"
+			},
+			{
+				sound : "thief.mp3",
+				word : "thief"
+			},
+			{
+				sound : "wolf.mp3",
+				word : "wolf"
+			},
+			{
+				sound : "goose.mp3",
+				word : "goose"
+			}
+		],
+		human: 
+			{
+				sound : "ox.mp3",
+				word : "ox"
+			},
+
+	},{
+		type : "randWords",
+		words: [
+			{
+				sound : "half.mp3",
+				word : "half"
+			},
+			{
+				sound : "scarf.mp3",
+				word : "scarf"
+			},
+			{
+				sound : "mouse.mp3",
+				word : "mouse"
+			},
+			{
+				sound : "groove.mp3",
+				word : "groove"
+			}
+		],
+		human: 
+			{
+				sound : "chief.mp3",
+				word : "chief"
+			},
+
+	},
+	{
+	  	type : "drawCommand",
+	  	v1 : "Thank you for everything.",
+	  	v2 : "That was amazing.",  	
+		
 	},
 	/*
 	{
