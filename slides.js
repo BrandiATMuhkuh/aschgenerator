@@ -9,27 +9,7 @@ function slideGenerator () {
 		switch(window.configSlides[i].type){
 
 
-			case "randWords":					
-				var sArray = shuffle(window.configSlides[i].words);
-
-				for (var t = 0; t < 4; t++){
-					window.mySlides.push({
-						type : "drawWord",
-					  	user : t,
-						v1 : sArray[t].word,
-						sound : sArray[t].sound,
-					});
-				}
-
-				window.mySlides.push({
-						type : "drawWord",
-					  	user : t,
-						v1 : window.configSlides[i].human.word,
-						sound : window.configSlides[i].human.sound,
-					});
-
-				
-			break;
+			
 
 
 			case "randAsch":
@@ -101,6 +81,81 @@ function slideGenerator () {
 
 			break;
 
+			case "randWords":					
+				var sArray = shuffle(window.configSlides[i].words);
+
+				for (var t = 0; t < 4; t++){
+					window.mySlides.push({
+						type : "drawWord",
+					  	user : t,
+						v1 : sArray[t].word,
+						sound : sArray[t].sound,
+					});
+				}
+
+				window.mySlides.push({
+					type : "drawWord",
+				  	user : t,
+					v1 : window.configSlides[i].human.word,
+					sound : window.configSlides[i].human.sound,
+				});
+
+				
+			break;
+
+			case "megaWords":
+				var sarr = window.configSlides[i].wordGroup;
+				sarr = shuffle(sarr);
+
+
+				var trueFalse = shuffle(createValueArray(0, sarr.length/2).concat(createValueArray(1, sarr.length/2)));
+				//console.log(tFA);
+
+				//Shuffle
+				for (var i = 0; i < sarr.length; i++) {
+					sarr[i].words = shuffle(sarr[i].words);
+				};
+
+				for (var i = 0; i < sarr.length; i++) {
+
+					var mr = sarr[i];
+					var mw = mr.words;
+					for (var k = 0; k < mw.length; k++) {
+						window.mySlides.push({
+							type : "drawWord",
+						  	user : k,
+							v1 : mw[k].word,
+							sound : mw[k].sound,
+						});
+					};
+
+					//True or false
+					
+
+					if(trueFalse[i]){
+						window.mySlides.push({
+							type : "drawWord",
+						  	user : 4,
+							v1 : mr.humanTrue.word,
+							sound : mr.humanTrue.sound,
+						});
+					}
+					else {
+						window.mySlides.push({
+							type : "drawWord",
+						  	user : 4,
+							v1 : mr.humanFalse.word,
+							sound : mr.humanFalse.sound,
+						});
+					}
+				}
+
+
+
+
+
+			break;
+
 			default:
 				window.mySlides.push(window.configSlides[i]);
 		}
@@ -109,6 +164,131 @@ function slideGenerator () {
 }
 
 window.configSlides = [
+	{
+		type : "megaWords",
+		wordGroup : [
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "a1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "a2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "a3"
+					},
+					{
+						sound : "break.mp3",
+						word : "a4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "a5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "a6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "3"
+					},
+					{
+						sound : "break.mp3",
+						word : "4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "3"
+					},
+					{
+						sound : "break.mp3",
+						word : "4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "3"
+					},
+					{
+						sound : "break.mp3",
+						word : "4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "6"
+					},
+			}
+		]
+	},
 	{
 	  	type : "drawCommand",
 	  	v1 : "HELLO You. How is it going?",
@@ -433,4 +613,13 @@ function shuffle(array) {
     }
 
     return array;
+}
+
+function createValueArray(value,length){
+	var cool = new Array(length);
+	for (var i = 0; i < length; i++) {
+		cool[i] = value;
+	};
+
+	return cool;
 }
