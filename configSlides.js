@@ -787,6 +787,395 @@ window.configSlides =
 			}
 		]
 	},
+
+/**
+ * ******** B I G L O O P ************
+  *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ * 
+ */
+	{
+		type : "megaWords",
+		timeType : "plural", // can be past, plural, plural
+		baseGroup : [
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural Baseline a1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural Baseline a2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural Baseline a3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural Baseline a4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural Baseline a5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural Baseline a6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural Baseline 1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural Baseline 2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural Baseline 3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural Baseline 4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural Baseline 5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural Baseline 6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural Baseline 1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural Baseline 2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural Baseline 3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural Baseline 4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural Baseline 5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural Baseline 6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural Baseline 1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural Baseline 2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural Baseline 3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural Baseline 4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural Baseline 5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural Baseline 6"
+					},
+			}
+		],
+		version1Group : [
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural version1 a1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural version1 a2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural version1 a3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural version1 a4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version1 a5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version1 a6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural version1 1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural version1 2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural version1 3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural version1 4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version1 5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version1 6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural version1 1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural version1 2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural version1 3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural version1 4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version1 5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version1 6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural version1 1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural version1 2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural version1 3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural version1 4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version1 5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version1 6"
+					},
+			}
+		],
+		version2Group : [
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural version2 a1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural version2 a2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural version2 a3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural version2 a4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version2 a5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version2 a6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural version2 1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural version2 2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural version2 3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural version2 4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version2 5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version2 6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural version2 1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural version2 2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural version2 3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural version2 4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version2 5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version2 6"
+					},
+			},
+			{
+				words: [
+					{
+						sound : "cling.mp3",
+						word : "plural version2 1"
+					},
+					{
+						sound : "sink.mp3",
+						word : "plural version2 2"
+					},
+					{
+						sound : "stink.mp3",
+						word : "plural version2 3"
+					},
+					{
+						sound : "break.mp3",
+						word : "plural version2 4"
+					}
+				],
+				humanTrue: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version2 5"
+					},
+				humanFalse: 
+					{
+						sound : "hurl.mp3",
+						word : "plural version2 6"
+					},
+			}
+		]
+	},
 	{
 	  	type : "drawCommand",
 	  	v1 : "HELLO You. How is it going?",
