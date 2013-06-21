@@ -72,8 +72,7 @@ function sketchProc(processing) {
     processing.strokeWeight(5);
 
 
-    
-    if(typeof currentSlide.user != 'undefined'){
+    if((typeof currentSlide.user != 'undefined') && configUser.showColor){
 
 
       //calc user squeres
