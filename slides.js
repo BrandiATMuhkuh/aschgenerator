@@ -276,6 +276,23 @@ function slideGenerator () {
 
 			break;
 
+			case "training":
+				window.mySlides.push({
+					type : "trainingWord",
+				  	user : 0,
+					v1 : window.configSlides[i].word1.word,
+					sound : window.configSlides[i].word1.sound
+				});
+
+				window.mySlides.push({
+					type : "trainingWord",
+				  	user : 0,
+					v1 : window.configSlides[i].word1.word + " ... "+window.configSlides[i].answer1.word,
+					sound : window.configSlides[i].answer1.sound
+				});
+
+			break;
+
 			default:
 				window.mySlides.push(window.configSlides[i]);
 		}

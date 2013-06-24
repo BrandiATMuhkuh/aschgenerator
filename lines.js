@@ -46,6 +46,22 @@ function sketchProc(processing) {
   function playSlideSound(){
     if(typeof window.currentSlide.sound != 'undefined')
       soundManager.createSound({url: 'sounds/'+window.currentSlide.sound}).play();
+
+    /*
+    switch(currentSlide.type){
+      case "trainingWord":
+        //soundManager.createSound({url: 'sounds/'+currentSlide.v1.sound}).play();
+        //soundManager.createSound({url: 'sounds/'+currentSlide.v2.sound}).play();
+
+        soundManager.createSound({
+          url: 'sounds/'+currentSlide.v1.sound,
+          onready : function(){
+            console.log("ready");
+            soundManager.createSound({url: 'sounds/'+currentSlide.v2.sound}).play();
+          }
+        }).play();
+      break;
+    }*/
   }
   
 
@@ -64,6 +80,10 @@ function sketchProc(processing) {
 
       case "drawWord":
         drawWord(currentSlide.v1);
+      break;
+
+      case "trainingWord":
+        trainingWord(currentSlide.v1,currentSlide.sound);
       break;
     }
     
@@ -198,6 +218,18 @@ function sketchProc(processing) {
     processing.text(word, processing.width/2, processing.height/2); 
     
     
+  }
+
+  function trainingWord (word, answer){
+    processing.strokeWeight(1);
+    processing.fill(0);
+    processing.textAlign(processing.CENTER);
+
+    processing.textFont(font,100); 
+    processing.text(word, processing.width/2, processing.height/2); 
+    
+
+
   }
 
 }

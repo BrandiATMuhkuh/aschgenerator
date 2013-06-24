@@ -8,29 +8,35 @@ window.configUser = {
 
 window.configSlides = 
 [
-/*
+
 	{
 		type : "training",
-		training1: {
-			word1: {
-						sound : "cling.mp3",
-						word : "go"
-					},
-			anwer1: {
-						sound : "cling.mp3",
-						word : "went"
-					},
-			word1: {
-						sound : "cling.mp3",
-						word : "drink"
-					},
-			anwer1: {
-						sound : "cling.mp3",
-						word : "drank"
-					},
-		}
+		
+		word1: {
+					sound : "stink.mp3",
+					word : "go"
+				},
+		answer1: {
+					sound : "cling.mp3",
+					word : "went"
+				}
+		
 	},
-*/
+
+	{
+		type : "training",
+		
+		word1: {
+				sound : "cling.mp3",
+				word : "drink"
+			},
+		answer1: {
+				sound : "stink.mp3",
+				word : "drank"
+			}
+		
+	},
+
 
 	{
 			type : "megaWords2",
