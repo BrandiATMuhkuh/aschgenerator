@@ -57,6 +57,9 @@ function slideGenerator () {
 					  	v3 : aschValues[2],
 					  	answer : aschValues[rightAnwer]
 					});
+
+					if(!configUser.solo)
+						t=5;
 				}
 
 
@@ -72,6 +75,9 @@ function slideGenerator () {
 					  	v3 : 0.4,
 					  	answer : 0.95
 					});
+
+					if(!configUser.solo)
+						k=5;
 				}
 
 			break;
@@ -261,7 +267,6 @@ function slideGenerator () {
 				//console.log(pattern);
 				
 				for (a in pattern) {
-					console.log(a);
 						var userC = 0;
 						for(p in pattern[a]){
 							window.mySlides.push({
