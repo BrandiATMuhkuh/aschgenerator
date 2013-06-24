@@ -2,14 +2,192 @@ window.configUser = {
 	past : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
 	participle : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
 	plural : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
-	showColor : false, //show target colors/Yes no
+	showColor : true, //show target colors/Yes no
 };
 
 
 window.configSlides = 
 [
+/*
+	{
+		type : "training",
+		training1: {
+			word1: {
+						sound : "cling.mp3",
+						word : "go"
+					},
+			anwer1: {
+						sound : "cling.mp3",
+						word : "went"
+					},
+			word1: {
+						sound : "cling.mp3",
+						word : "drink"
+					},
+			anwer1: {
+						sound : "cling.mp3",
+						word : "drank"
+					},
+		}
+	},
+*/
 
+	{
+			type : "megaWords2",
+			timeType : "past", // can be past, participle, plural
+			baseGroup : {
+				rt1:{
+						sound : "cling.mp3",
+						word : "ring"
+					},
+				rt2:{
+						sound : "cling.mp3",
+						word : "sing"
+					},
+				rt3:{
+						sound : "cling.mp3",
+						word : "sink"
+					},
+				t1: {
+						sound : "cling.mp3",
+						word : "shrink"
+					},
+				t2: {
+						sound : "cling.mp3",
+						word : "spring"
+					},
+				t3: {
+						sound : "cling.mp3",
+						word : "stink"
+					},
+				rf1:{
+						sound : "cling.mp3",
+						word : "give"
+					},
+				rf2:{
+						sound : "cling.mp3",
+						word : "cheat"
+					},
+				rf3:{
+						sound : "cling.mp3",
+						word : "strike"
+					},
+				f1:	{
+						sound : "cling.mp3",
+						word : "speak"
+					},
+				f2:	{
+						sound : "cling.mp3",
+						word : "hide"
+					},
+				f3: {
+						sound : "cling.mp3",
+						word : "tell"
+					}
+			},
 
+			version1Group : {
+				rt1:{
+						sound : "cling.mp3",
+						word : "ring"
+					},
+				rt2:{
+						sound : "cling.mp3",
+						word : "sing"
+					},
+				rt3:{
+						sound : "cling.mp3",
+						word : "sink"
+					},
+				t1: {
+						sound : "cling.mp3",
+						word : "shrink"
+					},
+				t2: {
+						sound : "cling.mp3",
+						word : "spring"
+					},
+				t3: {
+						sound : "cling.mp3",
+						word : "stink"
+					},
+				rf1:{
+						sound : "cling.mp3",
+						word : "give"
+					},
+				rf2:{
+						sound : "cling.mp3",
+						word : "cheat"
+					},
+				rf3:{
+						sound : "cling.mp3",
+						word : "strike"
+					},
+				f1:	{
+						sound : "cling.mp3",
+						word : "speak"
+					},
+				f2:	{
+						sound : "cling.mp3",
+						word : "hide"
+					},
+				f3: {
+						sound : "cling.mp3",
+						word : "tell"
+					}
+			},
+
+			version2Group : {
+				rt1:{
+						sound : "cling.mp3",
+						word : "ring"
+					},
+				rt2:{
+						sound : "cling.mp3",
+						word : "sing"
+					},
+				rt3:{
+						sound : "cling.mp3",
+						word : "sink"
+					},
+				t1: {
+						sound : "cling.mp3",
+						word : "shrink"
+					},
+				t2: {
+						sound : "cling.mp3",
+						word : "spring"
+					},
+				t3: {
+						sound : "cling.mp3",
+						word : "stink"
+					},
+				rf1:{
+						sound : "cling.mp3",
+						word : "give"
+					},
+				rf2:{
+						sound : "cling.mp3",
+						word : "cheat"
+					},
+				rf3:{
+						sound : "cling.mp3",
+						word : "strike"
+					},
+				f1:	{
+						sound : "cling.mp3",
+						word : "speak"
+					},
+				f2:	{
+						sound : "cling.mp3",
+						word : "hide"
+					},
+				f3: {
+						sound : "cling.mp3",
+						word : "tell"
+					}
+			}
+	},
 
 /**
  * ******** B I G L O O P ************
@@ -37,15 +215,15 @@ window.configSlides =
 				words: [
 					{
 						sound : "cling.mp3",
-						word : "Baseline a1"
+						word : "ring"
 					},
 					{
 						sound : "sink.mp3",
-						word : "Baseline a2"
+						word : "sing"
 					},
 					{
 						sound : "stink.mp3",
-						word : "Baseline a3"
+						word : "sink"
 					},
 					{
 						sound : "break.mp3",

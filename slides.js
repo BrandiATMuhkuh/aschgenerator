@@ -179,6 +179,103 @@ function slideGenerator () {
 
 			break;
 
+			case "megaWords2":
+
+				var sarr;
+				//check the time and user config
+				if(window.configSlides[i].timeType == "past"){
+					if(window.configUser.past == 0){
+						sarr = window.configSlides[i].baseGroup;
+					}else if(window.configUser.past == 1){
+						sarr = window.configSlides[i].version1Group;
+					}else {
+						sarr = window.configSlides[i].version2Group;
+					}
+				}else if(window.configSlides[i].timeType == "participle"){
+
+					if(window.configUser.past == 0){
+						sarr = window.configSlides[i].baseGroup;
+					}else if(window.configUser.past == 1){
+						sarr = window.configSlides[i].version1Group;
+					}else {
+						sarr = window.configSlides[i].version2Group;
+					}
+				}else {
+					if(window.configUser.past == 0){
+						sarr = window.configSlides[i].baseGroup;
+					}else if(window.configUser.past == 1){
+						sarr = window.configSlides[i].version1Group;
+					}else {
+						sarr = window.configSlides[i].version2Group;
+					}
+				}
+
+				tempSlide = sarr;
+				//var tempSlide = window.configSlides[i].baseGroup;
+				var pattern = [
+					[
+						tempSlide.rt1,
+						tempSlide.rt2,
+						tempSlide.rf1,
+						tempSlide.rf2,
+						tempSlide.t1,
+					],
+					[
+						tempSlide.rt2,
+						tempSlide.rt3,
+						tempSlide.rf2,
+						tempSlide.rf3,
+						tempSlide.t2
+					],
+					[
+						tempSlide.rt3,
+						tempSlide.rt2,
+						tempSlide.rf3,
+						tempSlide.rf1,
+						tempSlide.t3
+					],
+					[
+						tempSlide.rt1,
+						tempSlide.rt2,
+						tempSlide.rf1,
+						tempSlide.rf2,
+						tempSlide.f1
+					],
+					[
+						tempSlide.rt2,
+						tempSlide.rt3,
+						tempSlide.rf2,
+						tempSlide.rf3,
+						tempSlide.f2
+					],
+					[
+						tempSlide.rt3,
+						tempSlide.rt1,
+						tempSlide.rf3,
+						tempSlide.rf1,
+						tempSlide.t3
+					]
+				];
+
+				pattern = shuffle(pattern);
+				//console.log(pattern);
+				
+				for (a in pattern) {
+					console.log(a);
+						var userC = 0;
+						for(p in pattern[a]){
+							window.mySlides.push({
+								type : "drawWord",
+							  	user : userC,
+								v1 : pattern[a][p].word,
+								sound : pattern[a][p].sound,
+							});
+							userC++;
+						}
+					};
+
+			break;
+
 			default:
 				window.mySlides.push(window.configSlides[i]);
 		}

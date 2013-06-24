@@ -31,7 +31,7 @@ function sketchProc(processing) {
 
   //Listens to a key press and will play the next sound
   document.onkeyup = function(key){
-    console.log("key up",key.keyCode);
+    //console.log("key up",key.keyCode);
     if(key.keyCode == 37 || key.keyCode == 39){
       if(key.keyCode == 37)
         window.mySlidesPos--;
