@@ -11,15 +11,15 @@ window.configSlides =
 /*
 	{
 	  	type : "drawCommand",
-	  	v1 : "HELLO You. How is it going?",
-	  	v2 : "On the next slide I'll show you some instruction. Please read them and click SPACE to go to the next page. ",  	
-		sound : "s1.mp3",
+	  	v1 : "This is doing to be a funny experiment!",
+	  	v2 : "This slide welcomes you to the experiment in a placent new zealand accented female voice.",  	
+		sound : "exp_welcome.mp3",
 	},
 	{
 	  	type : "drawCommand",
-	  	v1 : "Lines instruction with 5 test rounds.",
-	  	v2 : "You will see 3 lines on the left side labeled with A,B,C. Your task is it to tell what label the line on the right side has. Please anwer only when your color is shown. We run now 3 test rounds.",  	
-		
+	  	v1 : "Lines instruction.",
+	  	v2 : "Instructions for the line part",  	
+		sound : "lines_inst.mp3",
 	},
 
 	{
@@ -27,9 +27,14 @@ window.configSlides =
 		delta : 0.9
 	},
 	{
+		type : "deltaAsch",
+		delta : 0.3
+	},
+	{
 	  	type : "drawCommand",
 	  	v1 : "LINE TEST",
-	  	v2 : "Now we will have 30 test rounds with the same settings.",  	
+	  	v2 : "Announces the test round for the lines",  
+	  	sound : "lines_test.mp3",	
 		
 	},
 	{
@@ -47,9 +52,11 @@ window.configSlides =
 	{
 	  	type : "drawCommand",
 	  	v1 : "FIRST LINE TEST is now OVER",
-	  	v2 : "Thank you. Instructions for the next round follow.",  	
+	  	v2 : "Thanks the participant after the lines",  
+	  	sound : "lines_thanks.mp3",	
 		
 	},
+	*/
 	{
 	  	type : "drawCommand",
 	  	v1 : "Past tense instruction with 5 test rounds",
@@ -91,7 +98,7 @@ window.configSlides =
 	  	v2 : "Now we will have 30 test rounds with the same settings.",  	
 		
 	},
-*/
+
 	{
 			type : "megaWords2",
 			timeType : "past", // can be past, participle, plural
