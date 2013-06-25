@@ -56,41 +56,28 @@ window.configSlides =
 	  	sound : "lines_thanks.mp3",	
 		
 	},
-	*/
+	
 	{
 	  	type : "drawCommand",
-	  	v1 : "Past tense instruction with 5 test rounds",
-	  	v2 : "You will see now exact one word on the screen and you must create the past tense form. Everyone gets an other word.  Please anwer only when your color is shown. We run now 3 test rounds.",  	
-		
+	  	v1 : "Past tense instruction",
+	  	v2 : "instructions for the verbs",  	
+		sound : "past_inst.mp3",
+	},
+*/
+	{
+	  	type : "drawCommand",
+	  	v1 : "Examples",
+	  	v2 : "Some Examples",  	
+		sound : "past_inst.mp3",
 	},
 
 	{
 		type : "training",
-		
-		word1: {
-			sound : "stink.mp3",
-			word : "go"
-		},
-		answer1: {
-			sound : "cling.mp3",
-			word : "went"
-		}
-		
+		sound : "past_ex_cond1_2.mp3",
+		word1 : "drink",
+		word2 : "drank"		
 	},
 
-	{
-		type : "training",
-		
-		word1: {
-				sound : "cling.mp3",
-				word : "drink"
-			},
-		answer1: {
-				sound : "stink.mp3",
-				word : "drank"
-			}
-		
-	},
 
 	{
 	  	type : "drawCommand",
@@ -272,30 +259,9 @@ window.configSlides =
 
 	{
 		type : "training",
-		
-		word1: {
-			sound : "stink.mp3",
-			word : "see"
-		},
-		answer1: {
-			sound : "cling.mp3",
-			word : "saw"
-		}
-		
-	},
-
-	{
-		type : "training",
-		
-		word1: {
-				sound : "cling.mp3",
-				word : "know"
-			},
-		answer1: {
-				sound : "stink.mp3",
-				word : "knew"
-			}
-		
+		sound : "past_ex_cond1_2.mp3",
+		word1 : "drink",
+		word2 : "drank"		
 	},
 
 	{
@@ -478,30 +444,9 @@ window.configSlides =
 
 	{
 		type : "training",
-		
-		word1: {
-			sound : "stink.mp3",
-			word : "apple"
-		},
-		answer1: {
-			sound : "cling.mp3",
-			word : "apples"
-		}
-		
-	},
-
-	{
-		type : "training",
-		
-		word1: {
-				sound : "cling.mp3",
-				word : "roof"
-			},
-		answer1: {
-				sound : "stink.mp3",
-				word : "roofs"
-			}
-		
+		sound : "past_ex_cond1_2.mp3",
+		word1 : "drink",
+		word2 : "drank"		
 	},
 
 	{
