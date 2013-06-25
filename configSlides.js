@@ -8,7 +8,7 @@ window.configUser = {
 
 window.configSlides = 
 [
-/*
+
 	{
 	  	type : "drawCommand",
 	  	v1 : "This is doing to be a funny experiment!",
@@ -70,7 +70,7 @@ window.configSlides =
 	  	v2 : "Some Examples",  	
 		sound : "past_inst.mp3",
 	},
-*/
+
 	{
 		type : "trainingGen",
 		sound : "past_ex_cond1_2.mp3",
@@ -272,27 +272,59 @@ window.configSlides =
 	  	v2 : "thanks the participant after the verbs",  	
 		sound : "past_thanks.mp3",
 	},
+
+
+
+
+
+
+
+
 	{
 	  	type : "drawCommand",
-	  	v1 : "Past participle instruction with 5 test rounds",
-	  	v2 : "You will see now exact one word on the screen and you must create the past participle form. Everyone gets an other word.  Please anwer only when your color is shown. We run now 3 test rounds.",  	
-		
+	  	v1 : "Past tense instruction",
+	  	v2 : "instructions for the verbs",  	
+		sound : "pp_inst.mp3",
 	},
+
+
 
 	{
 		type : "trainingGen",
-		sound : "past_ex_cond1_2.mp3",
-		word1 : "drink",
-		word2 : "drank"		
+		sound : "pp_ex_cond1_2.mp3",
+		word1 : "know",
+		word2 : "known"		
 	},
 
 	{
-	  	type : "drawCommand",
-	  	v1 : "participle Test",
-	  	v2 : "Now we will have 30 test rounds with the same settings.",  	
+		type : "trainingRel",
+		timeType : "participle", // can be past, participle, plural
+		baseGroup : {
+			sound : "pp_ex_bas1.mp3",
+			word1 : "keep",
+			word2 : "kept"
+		},
 		
+		version1Group : {
+			sound : "pp_ex_cond1_2.mp3",
+			word1 : "drink",
+			word2 : "drank"
+		},
+
+		version2Group : {
+			sound : "pp_ex_cond1_2.mp3",
+			word1 : "drink",
+			word2 : "drank"
+		}		
 	},
 
+
+	{
+	  	type : "drawCommand",
+	  	v1 : "PP Test",
+	  	v2 : "announces the test round for the pp-s",  	
+		sound : "pp_test.mp3",
+	},
 
 	{
 			type : "megaWords2",
@@ -351,131 +383,162 @@ window.configSlides =
 			version1Group : {
 				rt1:{
 						sound : "cling.mp3",
-						word : "ring"
+						word : "show"
 					},
 				rt2:{
 						sound : "cling.mp3",
-						word : "sing"
+						word : "grow"
 					},
 				rt3:{
 						sound : "cling.mp3",
-						word : "sink"
+						word : "throw"
 					},
 				t1: {
 						sound : "cling.mp3",
-						word : "shrink"
+						word : "blow"
 					},
 				t2: {
 						sound : "cling.mp3",
-						word : "spring"
+						word : "fly"
 					},
 				t3: {
 						sound : "cling.mp3",
-						word : "stink"
+						word : "sow"
 					},
 				rf1:{
 						sound : "cling.mp3",
-						word : "give"
+						word : "break"
 					},
 				rf2:{
 						sound : "cling.mp3",
-						word : "cheat"
+						word : "hurl"
 					},
 				rf3:{
 						sound : "cling.mp3",
-						word : "strike"
+						word : "tell"
 					},
 				f1:	{
 						sound : "cling.mp3",
-						word : "speak"
+						word : "keep"
 					},
 				f2:	{
 						sound : "cling.mp3",
-						word : "hide"
+						word : "eat"
 					},
 				f3: {
 						sound : "cling.mp3",
-						word : "tell"
+						word : "burn"
 					}
 			},
 
 			version2Group : {
 				rt1:{
 						sound : "cling.mp3",
-						word : "ring"
+						word : "show"
 					},
 				rt2:{
 						sound : "cling.mp3",
-						word : "sing"
+						word : "grow"
 					},
 				rt3:{
 						sound : "cling.mp3",
-						word : "sink"
+						word : "throw"
 					},
 				t1: {
 						sound : "cling.mp3",
-						word : "shrink"
+						word : "blow"
 					},
 				t2: {
 						sound : "cling.mp3",
-						word : "spring"
+						word : "fly"
 					},
 				t3: {
 						sound : "cling.mp3",
-						word : "stink"
+						word : "sow"
 					},
 				rf1:{
 						sound : "cling.mp3",
-						word : "give"
+						word : "break"
 					},
 				rf2:{
 						sound : "cling.mp3",
-						word : "cheat"
+						word : "hurl"
 					},
 				rf3:{
 						sound : "cling.mp3",
-						word : "strike"
+						word : "tell"
 					},
 				f1:	{
 						sound : "cling.mp3",
-						word : "speak"
+						word : "keep"
 					},
 				f2:	{
 						sound : "cling.mp3",
-						word : "hide"
+						word : "eat"
 					},
 				f3: {
 						sound : "cling.mp3",
-						word : "tell"
+						word : "burn"
 					}
 			}
 	},
 
+
 	{
 	  	type : "drawCommand",
-	  	v1 : "Past participle TEST is now OVER",
-	  	v2 : "Thank you. Instructions for the next round follow.",  	
-		
+	  	v1 : "PP TEST is now OVER",
+	  	v2 : "thanks the participant after the verbs",  	
+		sound : "pp_thanks.mp3",
 	},
+
+
+
+
+
 	{
 	  	type : "drawCommand",
-	  	v1 : "Noun test instruction with 5 test rounds",
-	  	v2 : "You will see now exact one word on the screen and you must create the plural form. Everyone gets an other word. Please anwer only when your color is shown. We run now 3 test rounds.",  	
-		
+	  	v1 : "plural instruction",
+	  	v2 : "instructions ",  	
+		sound : "pl_inst.mp3",
 	},
+
+
 
 	{
 		type : "trainingGen",
-		sound : "past_ex_cond1_2.mp3",
-		word1 : "drink",
-		word2 : "drank"		
+		sound : "pl_ex_bas1.mp3",
+		word1 : "apple",
+		word2 : "apples"		
 	},
+
+	{
+		type : "trainingRel",
+		timeType : "plural", // can be past, participle, plural
+		baseGroup : {
+			sound : "past_bas.mp3",
+			word1 : "keep",
+			word2 : "kept"
+		},
+		
+		version1Group : {
+			sound : "pl_ex_cond1_2.mp3",
+			word1 : "roof",
+			word2 : "roofs"
+		},
+
+		version2Group : {
+			sound : "pl_ex_cond1_2.mp3",
+			word1 : "roof",
+			word2 : "roofs"
+		}		
+	},
+
 
 	{
 	  	type : "drawCommand",
 	  	v1 : "plural Test",
-	  	v2 : "Now we will have 30 test rounds with the same settings.",  	
-		
+	  	v2 : "announces the test round for the pp-s",  	
+		sound : "pl_test.mp3",
 	},
 
 	{
@@ -535,112 +598,115 @@ window.configSlides =
 			version1Group : {
 				rt1:{
 						sound : "cling.mp3",
-						word : "ring"
+						word : "shelf"
 					},
 				rt2:{
 						sound : "cling.mp3",
-						word : "sing"
+						word : "calf"
 					},
 				rt3:{
 						sound : "cling.mp3",
-						word : "sink"
+						word : "half"
 					},
 				t1: {
 						sound : "cling.mp3",
-						word : "shrink"
+						word : "scarf"
 					},
 				t2: {
 						sound : "cling.mp3",
-						word : "spring"
+						word : "wolf"
 					},
 				t3: {
 						sound : "cling.mp3",
-						word : "stink"
+						word : "self"
 					},
 				rf1:{
 						sound : "cling.mp3",
-						word : "give"
+						word : "goose"
 					},
 				rf2:{
 						sound : "cling.mp3",
-						word : "cheat"
+						word : "house"
 					},
 				rf3:{
 						sound : "cling.mp3",
-						word : "strike"
+						word : "ox"
 					},
 				f1:	{
 						sound : "cling.mp3",
-						word : "speak"
+						word : "mouse"
 					},
 				f2:	{
 						sound : "cling.mp3",
-						word : "hide"
+						word : "groove"
 					},
 				f3: {
 						sound : "cling.mp3",
-						word : "tell"
+						word : "chief"
 					}
 			},
 
 			version2Group : {
 				rt1:{
 						sound : "cling.mp3",
-						word : "ring"
+						word : "shelf"
 					},
 				rt2:{
 						sound : "cling.mp3",
-						word : "sing"
+						word : "calf"
 					},
 				rt3:{
 						sound : "cling.mp3",
-						word : "sink"
+						word : "half"
 					},
 				t1: {
 						sound : "cling.mp3",
-						word : "shrink"
+						word : "scarf"
 					},
 				t2: {
 						sound : "cling.mp3",
-						word : "spring"
+						word : "wolf"
 					},
 				t3: {
 						sound : "cling.mp3",
-						word : "stink"
+						word : "self"
 					},
 				rf1:{
 						sound : "cling.mp3",
-						word : "give"
+						word : "goose"
 					},
 				rf2:{
 						sound : "cling.mp3",
-						word : "cheat"
+						word : "house"
 					},
 				rf3:{
 						sound : "cling.mp3",
-						word : "strike"
+						word : "ox"
 					},
 				f1:	{
 						sound : "cling.mp3",
-						word : "speak"
+						word : "mouse"
 					},
 				f2:	{
 						sound : "cling.mp3",
-						word : "hide"
+						word : "groove"
 					},
 				f3: {
 						sound : "cling.mp3",
-						word : "tell"
+						word : "chief"
 					}
 			}
 	},
 
+
 	{
 	  	type : "drawCommand",
-	  	v1 : "Thank you for everything.",
-	  	v2 : "That was amazing.",  	
-		
+	  	v1 : "THANK YOU!!!",
+	  	v2 : "T H X",  	
+		sound : "exp_thanks.mp3",
 	},
+
+
 
 
 ];
