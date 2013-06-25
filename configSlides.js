@@ -8,7 +8,7 @@ window.configUser = {
 
 window.configSlides = 
 [
-
+/*
 	{
 	  	type : "drawCommand",
 	  	v1 : "HELLO You. How is it going?",
@@ -91,7 +91,7 @@ window.configSlides =
 	  	v2 : "Now we will have 30 test rounds with the same settings.",  	
 		
 	},
-
+*/
 	{
 			type : "megaWords2",
 			timeType : "past", // can be past, participle, plural

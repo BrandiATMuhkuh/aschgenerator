@@ -92,7 +92,7 @@ function sketchProc(processing) {
     processing.strokeWeight(5);
 
 
-    if((typeof currentSlide.user != 'undefined') && configUser.solo){
+    if((typeof currentSlide.user != 'undefined') && configUser.multi){
 
 
       //calc user squeres

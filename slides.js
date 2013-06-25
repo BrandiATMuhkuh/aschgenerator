@@ -224,44 +224,50 @@ function slideGenerator () {
 						tempSlide.rt2,
 						tempSlide.rf1,
 						tempSlide.rf2,
-						tempSlide.t1,
 					],
 					[
 						tempSlide.rt2,
 						tempSlide.rt3,
 						tempSlide.rf2,
 						tempSlide.rf3,
-						tempSlide.t2
 					],
 					[
 						tempSlide.rt3,
 						tempSlide.rt2,
 						tempSlide.rf3,
 						tempSlide.rf1,
-						tempSlide.t3
 					],
 					[
 						tempSlide.rt1,
 						tempSlide.rt2,
 						tempSlide.rf1,
 						tempSlide.rf2,
-						tempSlide.f1
 					],
 					[
 						tempSlide.rt2,
 						tempSlide.rt3,
 						tempSlide.rf2,
 						tempSlide.rf3,
-						tempSlide.f2
 					],
 					[
 						tempSlide.rt3,
 						tempSlide.rt1,
 						tempSlide.rf3,
 						tempSlide.rf1,
-						tempSlide.t3
 					]
 				];
+
+				for (var m = 0; m < pattern.length; m++) {
+					pattern[m] = shuffle(pattern[m]);
+				};
+
+				//add the last user word
+				pattern[0].push(tempSlide.t1);
+				pattern[1].push(tempSlide.t2);
+				pattern[2].push(tempSlide.t3);
+				pattern[3].push(tempSlide.f1);
+				pattern[4].push(tempSlide.f2);
+				pattern[5].push(tempSlide.t3);
 
 				pattern = shuffle(pattern);
 				//console.log(pattern);
