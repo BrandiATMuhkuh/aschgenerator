@@ -287,13 +287,54 @@ function slideGenerator () {
 
 			break;
 
-			case "training":
+			case "trainingGen":
 
 				window.mySlides.push({
 					type : "trainingWord",
 				  	user : 0,
 					v1 : window.configSlides[i].word1 + " ... "+window.configSlides[i].word2,
 					sound : window.configSlides[i].sound
+				});
+
+			break;
+
+			case "trainingRel":
+
+				var sarr;
+				//check the time and user config
+				if(window.configSlides[i].timeType == "past"){
+					if(window.configUser.past == 0){
+						sarr = window.configSlides[i].baseGroup;
+					}else if(window.configUser.past == 1){
+						sarr = window.configSlides[i].version1Group;
+					}else {
+						sarr = window.configSlides[i].version2Group;
+					}
+				}else if(window.configSlides[i].timeType == "participle"){
+
+					if(window.configUser.past == 0){
+						sarr = window.configSlides[i].baseGroup;
+					}else if(window.configUser.past == 1){
+						sarr = window.configSlides[i].version1Group;
+					}else {
+						sarr = window.configSlides[i].version2Group;
+					}
+				}else {
+					if(window.configUser.past == 0){
+						sarr = window.configSlides[i].baseGroup;
+					}else if(window.configUser.past == 1){
+						sarr = window.configSlides[i].version1Group;
+					}else {
+						sarr = window.configSlides[i].version2Group;
+					}
+				}
+				
+
+				window.mySlides.push({
+					type : "trainingWord",
+				  	user : 0,
+					v1 : sarr.word1 + " ... "+sarr.word2,
+					sound : sarr.sound
 				});
 
 			break;

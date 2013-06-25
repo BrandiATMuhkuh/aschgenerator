@@ -2,7 +2,7 @@ window.configUser = {
 	past : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
 	participle : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
 	plural : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
-	multi : true, //show target colors/Yes no
+	multi : false, //show target colors/Yes no
 };
 
 
@@ -63,27 +63,49 @@ window.configSlides =
 	  	v2 : "instructions for the verbs",  	
 		sound : "past_inst.mp3",
 	},
-*/
+
 	{
 	  	type : "drawCommand",
 	  	v1 : "Examples",
 	  	v2 : "Some Examples",  	
 		sound : "past_inst.mp3",
 	},
+*/
+	{
+		type : "trainingGen",
+		sound : "past_ex_cond1_2.mp3",
+		word1 : "go",
+		word2 : "went"		
+	},
 
 	{
-		type : "training",
-		sound : "past_ex_cond1_2.mp3",
-		word1 : "drink",
-		word2 : "drank"		
+		type : "trainingRel",
+		timeType : "past", // can be past, participle, plural
+		baseGroup : {
+			sound : "past_bas.mp3",
+			word1 : "keep",
+			word2 : "kept"
+		},
+		
+		version1Group : {
+			sound : "past_ex_cond1_2.mp3",
+			word1 : "drink",
+			word2 : "drank"
+		},
+
+		version2Group : {
+			sound : "past_cond2.mp3",
+			word1 : "drink",
+			word2 : "drank"
+		}		
 	},
 
 
 	{
 	  	type : "drawCommand",
 	  	v1 : "Past Test",
-	  	v2 : "Now we will have 30 test rounds with the same settings.",  	
-		
+	  	v2 : "Announces the test round for the verbs",  	
+		sound : "past_test.mp3",
 	},
 
 	{
@@ -247,8 +269,8 @@ window.configSlides =
 	{
 	  	type : "drawCommand",
 	  	v1 : "Past tense TEST is now OVER",
-	  	v2 : "Thank you. Instructions for the next round follow.",  	
-		
+	  	v2 : "thanks the participant after the verbs",  	
+		sound : "past_thanks.mp3",
 	},
 	{
 	  	type : "drawCommand",
@@ -258,7 +280,7 @@ window.configSlides =
 	},
 
 	{
-		type : "training",
+		type : "trainingGen",
 		sound : "past_ex_cond1_2.mp3",
 		word1 : "drink",
 		word2 : "drank"		
@@ -443,7 +465,7 @@ window.configSlides =
 	},
 
 	{
-		type : "training",
+		type : "trainingGen",
 		sound : "past_ex_cond1_2.mp3",
 		word1 : "drink",
 		word2 : "drank"		
