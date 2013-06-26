@@ -64,12 +64,6 @@ window.configSlides =
 		sound : "past_inst.mp3",
 	},
 
-	{
-	  	type : "drawCommand",
-	  	v1 : "Examples",
-	  	v2 : "Some Examples",  	
-		sound : "past_inst.mp3",
-	},
 
 	{
 		type : "trainingGen",

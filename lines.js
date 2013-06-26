@@ -26,6 +26,12 @@ function sketchProc(processing) {
 
   
   window.mySlidesPos = 0;
+
+  if(window.location.hash.substring(1) != ""){
+    window.mySlidesPos = window.location.hash.substring(1);
+  }
+
+
   window.currentSlide = mySlides[mySlidesPos];
   playSlideSound();
 
@@ -37,6 +43,9 @@ function sketchProc(processing) {
         window.mySlidesPos--;
       else
         window.mySlidesPos++;
+
+      //set has values
+      window.location.hash="#"+window.mySlidesPos;
 
       window.currentSlide = mySlides[mySlidesPos];
       playSlideSound();
