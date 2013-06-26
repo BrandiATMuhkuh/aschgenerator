@@ -69,7 +69,6 @@ window.configSlides =
 		type : "trainingGen",
 		sound : "past_ex_cond1_2.mp3",
 		word1 : "go",
-		word2 : "went"		
 	},
 
 	{

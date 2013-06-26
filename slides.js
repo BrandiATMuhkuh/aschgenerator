@@ -279,7 +279,7 @@ function slideGenerator () {
 								type : "drawWord",
 							  	user : userC,
 								v1 : pattern[a][p].word,
-								sound : pattern[a][p].sound,
+								//sound : pattern[a][p].sound,
 							});
 							userC++;
 						}
@@ -292,7 +292,7 @@ function slideGenerator () {
 				window.mySlides.push({
 					type : "trainingWord",
 				  	user : 0,
-					v1 : window.configSlides[i].word1 + " ... "+window.configSlides[i].word2,
+					v1 : window.configSlides[i].word1,
 					sound : window.configSlides[i].sound
 				});
 
@@ -333,7 +333,7 @@ function slideGenerator () {
 				window.mySlides.push({
 					type : "trainingWord",
 				  	user : 0,
-					v1 : sarr.word1 + " ... "+sarr.word2,
+					v1 : sarr.word1,
 					sound : sarr.sound
 				});
 
