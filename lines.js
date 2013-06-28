@@ -37,12 +37,12 @@ function sketchProc(processing) {
 
   //Listens to a key press and will play the next sound
   document.onkeyup = function(key){
-    //console.log("key up",key.keyCode);
-    if(key.keyCode == 37 || key.keyCode == 39){
-      if(key.keyCode == 37)
-        window.mySlidesPos--;
-      else
+    console.log("key up",key.keyCode);
+    if(key.keyCode == 37 || key.keyCode == 32 || key.keyCode == 39){
+      if(key.keyCode == 39 || key.keyCode == 32)
         window.mySlidesPos++;
+      else
+        window.mySlidesPos--;
 
       //set has values
       window.location.hash="#"+window.mySlidesPos;
