@@ -9,28 +9,53 @@
     </style>
   </head>
   <body>
-    <script src="soundmanager2-jsmin.js"></script>
-    <script src="processing-1.4.1.min.js"></script>
-    <canvas id="myCanvas" width="100%" height="100%"></canvas>
-    <script type="text/javascript" src="configSlides.js"></script>
-    <script type="text/javascript" src="slides.js"></script>
-    <script type="text/javascript" src="lines.js"></script>
 
-    <audio src="http://www.mediacollege.com/downloads/sound-effects/explosion/explosion-02.wav" id="userImpactSound" preload />
-  
-    <script>
-      // where to find flash SWFs, if needed...
-      soundManager.preferFlash = false;
 
-      soundManager.onready(function() {
-        soundManager.isReady = true;
-        soundManager.debugMode = false;
+  <script type="text/javascript">
+    function loadjscssfile(filename, filetype){
+      if (filetype=="js"){ //if filename is a external JavaScript file
+        var fileref=document.createElement('script')
+        fileref.setAttribute("type","text/javascript")
+        fileref.setAttribute("src", filename)
+      }
+      else if (filetype=="css"){ //if filename is an external CSS file
+        var fileref=document.createElement("link")
+        fileref.setAttribute("rel", "stylesheet")
+        fileref.setAttribute("type", "text/css")
+        fileref.setAttribute("href", filename)
+      }
+      if (typeof fileref!="undefined")
+        document.getElementsByTagName("head")[0].appendChild(fileref)
+    }
 
-        slideGenerator();
-        var canvas = document.getElementById("myCanvas");
-        // attaching the sketchProc function to the canvas
-        var processingInstance = new Processing(canvas, sketchProc);
-      });
+    if(window.location.search.split("=")[1])
+      loadjscssfile(window.location.search.split("=")[1]+".js", "js");
+    else
+      loadjscssfile("configSlides.js", "js");
 
-    </script>
+  </script>
+
+  <script src="soundmanager2-jsmin.js"></script>
+  <script src="processing-1.4.1.min.js"></script>
+  <canvas id="myCanvas" width="100%" height="100%"></canvas>
+  <script type="text/javascript" src="slides.js"></script>
+  <script type="text/javascript" src="lines.js"></script>
+
+  <audio src="http://www.mediacollege.com/downloads/sound-effects/explosion/explosion-02.wav" id="userImpactSound" preload />
+
+  <script>
+    // where to find flash SWFs, if needed...
+    soundManager.preferFlash = false;
+
+    soundManager.onready(function() {
+      soundManager.isReady = true;
+      soundManager.debugMode = false;
+
+      slideGenerator();
+      var canvas = document.getElementById("myCanvas");
+      // attaching the sketchProc function to the canvas
+      var processingInstance = new Processing(canvas, sketchProc);
+    });
+
+  </script>
 </body></html>
