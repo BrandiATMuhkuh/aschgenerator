@@ -2,13 +2,15 @@ window.configUser = {
 	past : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
 	participle : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
 	plural : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
-	multi : false, //show target colors/Yes no
+	multi : true, //show target colors/Yes no
 };
 
 
 window.configSlides = 
 [
 
+	
+	
 	{
 	  	type : "drawCommand",
 	  	v1 : "This is doing to be a funny experiment!",
@@ -38,16 +40,22 @@ window.configSlides =
 		
 	},
 	{
-		type : "deltaAsch",
-		delta : 0.9
-	},
-	{
-		type : "deltaAsch",
-		delta : 0.1
-	},
-	{
-		type : "deltaAsch",
-		delta : 0.5
+		type : "randAschList",
+		list: [
+			{
+	  			v1 : 0.1,
+	  			v2 : 0.5,
+	  			v3 : 1,
+	  			answer : 1
+	  		},
+	  		{
+	  			v1 : 0.8,
+	  			v2 : 0.1,
+	  			v3 : 0.5,
+	  			answer : 0.1
+	  		}
+	  	]
+	  	
 	},
 	{
 	  	type : "drawCommand",

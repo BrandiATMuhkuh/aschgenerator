@@ -7,6 +7,27 @@ function slideGenerator () {
 		
 		switch(window.configSlides[i].type){
 
+			case "randAschList":
+				var ashList = shuffle(window.configSlides[i].list);
+
+				for (var k = 0; k < ashList.length; k++){
+					
+
+
+					for (var t = 0; t < 5; t++){
+						window.mySlides.push({
+							type : "drawAsch",
+						  	user : t,
+						  	v1 : ashList[k].v1,
+						  	v2 : ashList[k].v2,
+						  	v3 : ashList[k].v3,
+						  	answer : ashList[k].answer
+						});
+					}
+				}
+
+			break;
+
 			case "randAsch":
 				for (var k = 0; k < window.configSlides[i].count; k++){
 					var rightAnwer = Math.floor((Math.random()*3));
