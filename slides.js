@@ -125,6 +125,28 @@ function slideGenerator () {
 				
 			break;
 
+
+			case "simpleWords":
+				var sArray = shuffle(window.configSlides[i].list);
+
+				for (var k = 0; k < sArray.length; k++) {
+					
+					var innerArray = shuffle(sArray[k].actors)
+					innerArray.push(sArray[k].participant);
+
+					for (var j = 0; j < innerArray.length; j++) {
+						window.mySlides.push({
+							type : "drawManyWord",
+						  	user : j,
+							v1 : innerArray
+						});
+					}
+					
+				};
+
+			break;
+
+
 			case "megaWords":
 
 				var sarr;

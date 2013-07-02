@@ -94,6 +94,10 @@ function sketchProc(processing) {
       case "trainingWord":
         trainingWord(currentSlide.v1,currentSlide.sound);
       break;
+
+      case "drawManyWord":
+        drawManyWord(currentSlide.v1[0],currentSlide.v1[1],currentSlide.v1[2],currentSlide.v1[3],currentSlide.v1[4]);
+      break;
     }
     
     
@@ -225,6 +229,21 @@ function sketchProc(processing) {
 
     processing.textFont(font,100); 
     processing.text(word, processing.width/2, processing.height/2); 
+    
+  }
+
+  function drawManyWord (w0,w1,w2,w3,w4) {
+    processing.strokeWeight(1);
+    processing.fill(0);
+    processing.textAlign(processing.CENTER);
+
+    processing.textFont(font,100); 
+    var offset = 130;
+    processing.text(w0, processing.width/2, processing.height/3); 
+    processing.text(w1, processing.width/2, processing.height/3+1*offset);
+    processing.text(w2, processing.width/2, processing.height/3+2*offset); 
+    processing.text(w3, processing.width/2, processing.height/3+3*offset); 
+    processing.text(w4, processing.width/2, processing.height/3+4*offset); 
     
     
   }

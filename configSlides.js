@@ -110,6 +110,21 @@ window.configSlides =
 	},
 
 	{
+			type : "simpleWords",
+			list : [
+				{
+					actors: ["sing", "ring", "bring", "cling"],
+					participant: "wring"
+				},
+				{
+					actors: ["_sing", "_ring", "_bring", "_cling"],
+					participant: "_wring"
+				}
+			]
+
+	},
+
+	{
 			type : "megaWords2",
 			timeType : "past", // can be past, participle, plural
 			baseGroup : {
