@@ -7,6 +7,18 @@
         padding: 0px;
       }
 
+
+      #innerdiv{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+      }
+
+      #myCanvas{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
     </style>
   </head>
   <body>
@@ -14,7 +26,7 @@
 
   <script type="text/javascript">
   //Define global paramenter
-  window.document.canvasWidth = 800;
+  window.document.canvasWidth = 1000;
   window.document.canvasHeight = 800;
 
 
@@ -44,7 +56,9 @@
 
   <script src="soundmanager2-jsmin.js"></script>
   <script src="processing-1.4.1.min.js"></script>
-  <canvas id="myCanvas" data-width="400" data-height="400"></canvas>
+  <div id="innerdiv">
+    <canvas id="myCanvas" data-width="400" data-height="400"></canvas>
+  </div>
   <script type="text/javascript" src="slides.js"></script>
   <script type="text/javascript" src="lines.js"></script>
 
