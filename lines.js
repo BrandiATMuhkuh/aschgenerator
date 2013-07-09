@@ -74,9 +74,9 @@ function sketchProc(processing) {
   }
   
 
-
   processing.draw = function() {
-    processing.size(window.innerWidth, window.innerHeight-5);    
+
+    processing.size(window.document.canvasWidth, window.document.canvasHeight);    
     
     switch(currentSlide.type){
       case "drawAsch":
