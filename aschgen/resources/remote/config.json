@@ -1,0 +1,13 @@
+{
+	"type": "Collection",
+	"properties": {
+		"pageNr": {
+			"name": "pageNr",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "pageNr",
+			"order": 0
+		}
+	}
+}

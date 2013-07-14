@@ -91,14 +91,103 @@ function slideGenerator () {
 					window.mySlides.push({
 						type : "drawAsch",
 					  	user : k,
-					  	v1 : 0.95,
-					  	v2 : 0.1,
-					  	v3 : 0.4,
+					  	v1 : 1,
+					  	v2 : 0.95,
+					  	v3 : 0.9,
 					  	answer : 0.95
 					});
 
 					if(!configUser.solo)
 						k=5;
+				}
+
+			break;
+
+			case "visualAsch":
+
+				var visualArray = new Array();
+				var min = 0.1;
+				var max = 1.05;
+				/*
+				for (var a = min; a < max; a=a+min) {
+					for (var b = min; b < max; b=b+min) {
+						for (var c = min; c < max; c=c+min) {
+
+							visualArray.push({
+								type : "drawAsch",
+							  	user : k,
+							  	v1 : a,
+							  	v2 : b,
+							  	v3 : c,
+							  	answer : 1
+							});
+						}
+					}
+				}*/
+
+				var a=0.15;
+				var b=0.10;
+				var n=0.05;
+
+				for (var abc = 0; abc < 80; abc+=1) {
+
+					console.log(a,b,n);
+					if(a != (b+0.5) && a != n && b != n){
+						visualArray.push({
+							type : "drawAsch",
+						  	user : k,
+						  	v1 : a,
+						  	v2 : b,
+						  	v3 : n,
+						  	answer : 1
+						});
+					}
+
+					if(a>=0.95 && b>=0.9 && n<0.95){
+						n+=0.05;
+						console.log(a,b,n);
+					}
+
+					if(a>=0.95 && b<0.9){
+						b+=0.05;
+					}
+
+					if(a<0.95){
+						a+=0.05;
+					}
+
+					
+				};
+
+				console.log(a,b,n);
+
+
+				
+				var abc = 0;
+				for (var d = 0; d < visualArray.length; d++) {
+					
+					if (abc===0) {
+						visualArray[d].answer=visualArray[d].v1;
+					}else if (abc===1) {
+						visualArray[d].answer=visualArray[d].v2;
+					}if (abc===2) {
+						visualArray[d].answer=visualArray[d].v3;
+					} 
+
+					abc+=1;
+					if (abc>2){
+						abc = 0;
+					}
+				};
+
+
+				
+				console.log(visualArray.length);
+				var visualArray = shuffle(visualArray);
+
+				for(var k = 0; k < visualArray.length; k++){
+					window.mySlides.push(visualArray[k]);
+
 				}
 
 			break;
@@ -417,3 +506,5 @@ function createValueArray(value,length){
 
 	return cool;
 }
+
+

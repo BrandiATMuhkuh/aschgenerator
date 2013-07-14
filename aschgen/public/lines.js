@@ -1,3 +1,4 @@
+
 function sketchProc(processing) {
   // Override draw function, by default it will be called 60 times per second
   
@@ -40,16 +41,46 @@ function sketchProc(processing) {
     console.log("key up",key.keyCode);
     if(key.keyCode == 37 || key.keyCode == 32 || key.keyCode == 39){
       if(key.keyCode == 39 || key.keyCode == 32)
-        window.mySlidesPos++;
+        nextPage(true);
       else
-        window.mySlidesPos--;
+        nextPage(false);
 
-      //set has values
-      window.location.hash="#"+window.mySlidesPos;
-
-      window.currentSlide = mySlides[mySlidesPos];
-      playSlideSound();
     }
+  }
+
+
+  /**
+   * Lets listen to changes :D
+   * 
+   */
+  dpd.remote.on('put', function(message) {
+    console.log(message);
+    nextPage(message.pageNr);
+  });
+
+  /**
+   * goes to next page or page number
+   * @param  {Function} next true = next page, false = pre page, number = goTo number
+   */
+  function nextPage(next){
+
+    if(next===true){
+      window.mySlidesPos++;
+    }else if(next===false){
+      window.mySlidesPos--;
+      if(window.mySlidesPos<0){
+        window.mySlidesPos=0;
+      }
+    }else if(typeof next === 'number'){
+      window.mySlidesPos = next;
+    }
+
+    //set has values
+    window.location.hash="#"+window.mySlidesPos;
+
+    window.currentSlide = mySlides[mySlidesPos];
+    playSlideSound();
+
   }
 
   function playSlideSound(){
