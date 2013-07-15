@@ -228,7 +228,7 @@ function sketchProc(processing) {
    */
   function drawAsch(aSize, bSize, cSize, answer){
     processing.textFont(font,50); 
-    var barHeight = processing.height-190;
+    var barHeight = processing.height-240;
     var barWidth = processing.width*0.8;
 
 
@@ -238,7 +238,7 @@ function sketchProc(processing) {
     var percent = 0.95;
     var topOffset = 50;
     var betweenOffset = barWidth*0.16;
-    var bottomOffset = 130;
+    var bottomOffset = 180;
 
     processing.textAlign(processing.CENTER);
     // First Line
