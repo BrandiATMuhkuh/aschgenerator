@@ -48,18 +48,23 @@ function sketchProc(processing) {
       if(key.keyCode == 49 || key.keyCode == 50 || key.keyCode == 51){
 
 
-        var rest = {"slidenr":123,"userid":123,"result":123};
 
-        if(key.keyCode == 49 ){
-          rest.slidenr = 1;
-        }else if(key.keyCode == 50 ){
-          rest.slidenr = 2;
-        }else if(key.keyCode == 51 ){
-          rest.slidenr = 3;
+        if(window.currentSlide.type === "drawAsch"){
+          var rest = {"slidenr":123,"userid":123,"correct":123, "correct":window.currentSlide.answernr+1};
+
+          if(key.keyCode == 49 ){
+            rest.result = 1;
+          }else if(key.keyCode == 50 ){
+            rest.result = 2;
+          }else if(key.keyCode == 51 ){
+            rest.result = 3;
+          }
+
+          rest.slidenr = window.mySlidesPos;
+          rest.userid = window.document.globalUserId;
+
+          dpd.results.post(rest,function(){});
         }
-        rest.userid = window.document.globalUserId;
-
-        dpd.results.post(rest,function(){});
 
         nextPage(true);
       }
@@ -238,17 +243,17 @@ function sketchProc(processing) {
     processing.textAlign(processing.CENTER);
     // First Line
     processing.rect(betweenOffset, barHeight+bottomOffset, 10, -(barHeight * aSize));    
-    processing.text("A", betweenOffset+6, barHeight+bottomOffset+50); 
+    processing.text("1", betweenOffset+6, barHeight+bottomOffset+50); 
     
     
     // Second Line
     processing.rect(betweenOffset*2, barHeight+bottomOffset, 10, -(barHeight * bSize));
-    processing.text("B", betweenOffset*2+6, barHeight+bottomOffset+50); 
+    processing.text("2", betweenOffset*2+6, barHeight+bottomOffset+50); 
     
 
     // Third Line
     processing.rect(betweenOffset*3, barHeight+bottomOffset, 10, -(barHeight * cSize));
-    processing.text("C", betweenOffset*3+6, barHeight+bottomOffset+50); 
+    processing.text("3", betweenOffset*3+6, barHeight+bottomOffset+50); 
   
     
 

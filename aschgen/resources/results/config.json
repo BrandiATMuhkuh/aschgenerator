@@ -11,8 +11,8 @@
 		},
 		"userid": {
 			"name": "userid",
-			"type": "number",
-			"typeLabel": "number",
+			"type": "string",
+			"typeLabel": "string",
 			"required": false,
 			"id": "userid",
 			"order": 1
@@ -24,6 +24,14 @@
 			"required": false,
 			"id": "result",
 			"order": 2
+		},
+		"correct": {
+			"name": "correct",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "correct",
+			"order": 3
 		}
 	}
 }

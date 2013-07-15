@@ -34,20 +34,27 @@
   window.document.scriptFileLoaded = false;
   window.document.idButtonClicked = false;
   window.document.globalUserId = 1;
-
+  window.currentSlide = null;
 
   function startMain(){
     console.log("start");
     if(window.document.soundManagerLoaded && window.document.scriptFileLoaded && window.document.idButtonClicked){
 
+      dpd.newtrack.post({"infos":""+document.getElementById('inputUserInfo').value}, function(result, err) {
+          if(err) return console.log(err);
+          console.log(result, result.id);
 
-      document.getElementById('startDiv').style.display = 'none';
-      document.getElementById('innerdiv').style.display = 'block';
+          window.document.globalUserId = result.id;
+          document.getElementById('startDiv').style.display = 'none';
+          document.getElementById('innerdiv').style.display = 'block';
 
-      slideGenerator();
-      var canvas = document.getElementById("myCanvas");
-      // attaching the sketchProc function to the canvas
-      var processingInstance = new Processing(canvas, sketchProc);
+          slideGenerator();
+          var canvas = document.getElementById("myCanvas");
+          // attaching the sketchProc function to the canvas
+          var processingInstance = new Processing(canvas, sketchProc);
+        });
+
+      
     }
   }
 
@@ -79,7 +86,7 @@
   <div id="startDiv">
     <h1> Please add user id</h1>
     <form>
-    userId: <input type="number" id="inputUserId" min="1">
+    some infos: <input type="text" id="inputUserInfo" />
     <button type="button" onclick="window.document.idButtonClicked=true; startMain()">start!</button>
     </form>
   </div>

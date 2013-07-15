@@ -86,22 +86,7 @@ function slideGenerator () {
 
 			break;
 
-			case "drawAsch":
-				for(var k = 0; k < 5; k++){
-					window.mySlides.push({
-						type : "drawAsch",
-					  	user : k,
-					  	v1 : 1,
-					  	v2 : 0.95,
-					  	v3 : 0.9,
-					  	answer : 0.95
-					});
 
-					if(!configUser.solo)
-						k=5;
-				}
-
-			break;
 
 			case "visualAsch":
 
@@ -138,7 +123,8 @@ function slideGenerator () {
 						  	v1 : a,
 						  	v2 : b,
 						  	v3 : n,
-						  	answer : 1
+						  	answer : 1,
+						  	answernr: 0
 						});
 					}
 
@@ -169,7 +155,9 @@ function slideGenerator () {
 						visualArray[d].answer=visualArray[d].v2;
 					}if (abc===2) {
 						visualArray[d].answer=visualArray[d].v3;
-					} 
+					}
+
+					visualArray[d].answernr = abc;
 
 					abc+=1;
 					if (abc>2){
