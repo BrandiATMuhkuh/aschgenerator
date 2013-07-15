@@ -100,12 +100,20 @@ function slideGenerator () {
 				for (var abc = 0; abc < 300; abc+=1) {
 
 					if(a != (b+2*stepSize) && a != n && b != n){
+
+
+						var slideshuff = new Array();
+						slideshuff.push(a);
+						slideshuff.push(b);
+						slideshuff.push(n);
+						slideshuff = shuffle(slideshuff);
+
 						visualArray.push({
 							type : "drawAsch",
 						  	user : k,
-						  	v1 : a,
-						  	v2 : b,
-						  	v3 : n,
+						  	v1 : slideshuff[0],
+						  	v2 : slideshuff[1],
+						  	v3 : slideshuff[2],
 						  	answer : 1,
 						  	answernr: 0
 						});
