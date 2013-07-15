@@ -30,29 +30,43 @@
   //Define global paramenter
   window.document.canvasWidth = 1000;
   window.document.canvasHeight = 750;
+  window.document.soundManagerLoaded = false;
+  window.document.scriptFileLoaded = false;
+  window.document.idButtonClicked = false;
+  window.document.globalUserId = 1;
 
 
+  function startMain(){
+    console.log("start");
+    if(window.document.soundManagerLoaded && window.document.scriptFileLoaded && window.document.idButtonClicked){
 
-    function loadjscssfile(filename, filetype){
-      if (filetype=="js"){ //if filename is a external JavaScript file
-        var fileref=document.createElement('script')
-        fileref.setAttribute("type","text/javascript")
-        fileref.setAttribute("src", filename)
-      }
-      else if (filetype=="css"){ //if filename is an external CSS file
-        var fileref=document.createElement("link")
-        fileref.setAttribute("rel", "stylesheet")
-        fileref.setAttribute("type", "text/css")
-        fileref.setAttribute("href", filename)
-      }
-      if (typeof fileref!="undefined")
-        document.getElementsByTagName("head")[0].appendChild(fileref)
+
+      document.getElementById('startDiv').style.display = 'none';
+      document.getElementById('innerdiv').style.display = 'block';
+
+      slideGenerator();
+      var canvas = document.getElementById("myCanvas");
+      // attaching the sketchProc function to the canvas
+      var processingInstance = new Processing(canvas, sketchProc);
     }
+  }
 
-    if(window.location.search.split("=")[1])
-      loadjscssfile(window.location.search.split("=")[1]+".js", "js");
-    else
-      loadjscssfile("configSlides.js", "js");
+  var filename = "configSlides.js";
+  if(window.location.search.split("=")[1]){
+    filename = window.location.search.split("=")[1]+".js";
+  }
+
+  var fileref=document.createElement('script');
+  fileref.setAttribute("type","text/javascript");
+  fileref.setAttribute("src", filename);
+
+  fileref.onload = function(){
+    window.document.scriptFileLoaded = true;
+    startMain();
+    console.log("loaded");
+  };
+
+  document.getElementsByTagName("head")[0].appendChild(fileref);
 
   </script>
   <script type="text/javascript" src="dpd.js"></script>
@@ -61,24 +75,38 @@
   <div id="innerdiv">
     <canvas id="myCanvas" data-width="400" data-height="400"></canvas>
   </div>
+  
+  <div id="startDiv">
+    <h1> Please add user id</h1>
+    <form>
+    userId: <input type="number" id="inputUserId" min="1">
+    <button type="button" onclick="window.document.idButtonClicked=true; startMain()">start!</button>
+    </form>
+  </div>
+
+
+
   <script type="text/javascript" src="slides.js"></script>
   <script type="text/javascript" src="lines.js"></script>
 
   <audio src="http://www.mediacollege.com/downloads/sound-effects/explosion/explosion-02.wav" id="userImpactSound" preload />
 
   <script>
+    document.getElementById('innerdiv').style.display = 'none';
+
     // where to find flash SWFs, if needed...
     soundManager.preferFlash = false;
 
     soundManager.onready(function() {
       soundManager.isReady = true;
       soundManager.debugMode = false;
-
-      slideGenerator();
-      var canvas = document.getElementById("myCanvas");
-      // attaching the sketchProc function to the canvas
-      var processingInstance = new Processing(canvas, sketchProc);
+      window.document.soundManagerLoaded = true;
+      startMain();
+      
     });
 
   </script>
+
+
+
 </body></html>

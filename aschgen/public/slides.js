@@ -131,7 +131,6 @@ function slideGenerator () {
 
 				for (var abc = 0; abc < 80; abc+=1) {
 
-					console.log(a,b,n);
 					if(a != (b+0.5) && a != n && b != n){
 						visualArray.push({
 							type : "drawAsch",
@@ -145,7 +144,6 @@ function slideGenerator () {
 
 					if(a>=0.95 && b>=0.9 && n<0.95){
 						n+=0.05;
-						console.log(a,b,n);
 					}
 
 					if(a>=0.95 && b<0.9){
@@ -159,7 +157,6 @@ function slideGenerator () {
 					
 				};
 
-				console.log(a,b,n);
 
 
 				
@@ -180,9 +177,6 @@ function slideGenerator () {
 					}
 				};
 
-
-				
-				console.log(visualArray.length);
 				var visualArray = shuffle(visualArray);
 
 				for(var k = 0; k < visualArray.length; k++){

@@ -39,12 +39,30 @@ function sketchProc(processing) {
   //Listens to a key press and will play the next sound
   document.onkeyup = function(key){
     console.log("key up",key.keyCode);
-    if(key.keyCode == 37 || key.keyCode == 32 || key.keyCode == 39){
+    if((key.keyCode == 37 || key.keyCode == 32 || key.keyCode == 39) && !configUser.abc){
       if(key.keyCode == 39 || key.keyCode == 32)
         nextPage(true);
       else
         nextPage(false);
+    }else{
+      if(key.keyCode == 49 || key.keyCode == 50 || key.keyCode == 51){
 
+
+        var rest = {"slidenr":123,"userid":123,"result":123};
+
+        if(key.keyCode == 49 ){
+          rest.slidenr = 1;
+        }else if(key.keyCode == 50 ){
+          rest.slidenr = 2;
+        }else if(key.keyCode == 51 ){
+          rest.slidenr = 3;
+        }
+        rest.userid = window.document.globalUserId;
+
+        dpd.results.post(rest,function(){});
+
+        nextPage(true);
+      }
     }
   }
 
@@ -66,6 +84,11 @@ function sketchProc(processing) {
 
     if(next===true){
       window.mySlidesPos++;
+
+      if(window.mySlidesPos>=window.mySlides.length){
+        window.mySlidesPos=window.mySlides.length-1;
+      }
+
     }else if(next===false){
       window.mySlidesPos--;
       if(window.mySlidesPos<0){

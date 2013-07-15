@@ -1,0 +1,29 @@
+{
+	"type": "Collection",
+	"properties": {
+		"slidenr": {
+			"name": "slidenr",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "slidenr",
+			"order": 0
+		},
+		"userid": {
+			"name": "userid",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "userid",
+			"order": 1
+		},
+		"result": {
+			"name": "result",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "result",
+			"order": 2
+		}
+	}
+}
