@@ -45,18 +45,18 @@ function sketchProc(processing) {
       else
         nextPage(false);
     }else{
-      if(key.keyCode == 49 || key.keyCode == 50 || key.keyCode == 51){
+      if(key.keyCode == 49 || key.keyCode == 50 || key.keyCode == 51 || key.keyCode == 97 || key.keyCode == 98 || key.keyCode == 99){
 
 
 
         if(window.currentSlide.type === "drawAsch"){
           var rest = {"slidenr":123,"userid":123,"correct":123, "correct":window.currentSlide.answernr+1};
 
-          if(key.keyCode == 49 ){
+          if(key.keyCode == 49 || key.keyCode == 97){
             rest.result = 1;
-          }else if(key.keyCode == 50 ){
+          }else if(key.keyCode == 50 || key.keyCode == 98){
             rest.result = 2;
-          }else if(key.keyCode == 51 ){
+          }else if(key.keyCode == 51 || key.keyCode == 99){
             rest.result = 3;
           }
 
@@ -104,7 +104,7 @@ function sketchProc(processing) {
     }
 
     //set has values
-    window.location.hash="#"+window.mySlidesPos;
+    //window.location.hash="#"+window.mySlidesPos;
 
     window.currentSlide = mySlides[mySlidesPos];
     playSlideSound();

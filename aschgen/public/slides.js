@@ -91,32 +91,15 @@ function slideGenerator () {
 			case "visualAsch":
 
 				var visualArray = new Array();
-				var min = 0.1;
-				var max = 1.05;
-				/*
-				for (var a = min; a < max; a=a+min) {
-					for (var b = min; b < max; b=b+min) {
-						for (var c = min; c < max; c=c+min) {
 
-							visualArray.push({
-								type : "drawAsch",
-							  	user : k,
-							  	v1 : a,
-							  	v2 : b,
-							  	v3 : c,
-							  	answer : 1
-							});
-						}
-					}
-				}*/
+				var stepSize = 0.025;
+				var a=3*stepSize;
+				var b=2*stepSize;
+				var n=stepSize;
 
-				var a=0.15;
-				var b=0.10;
-				var n=0.05;
+				for (var abc = 0; abc < 300; abc+=1) {
 
-				for (var abc = 0; abc < 80; abc+=1) {
-
-					if(a != (b+0.5) && a != n && b != n){
+					if(a != (b+2*stepSize) && a != n && b != n){
 						visualArray.push({
 							type : "drawAsch",
 						  	user : k,
@@ -128,16 +111,16 @@ function slideGenerator () {
 						});
 					}
 
-					if(a>=0.95 && b>=0.9 && n<0.95){
-						n+=0.05;
+					if(a>=(1-stepSize) && b>=(1-2*stepSize) && n<(1-stepSize)){
+						n+=stepSize;
 					}
 
-					if(a>=0.95 && b<0.9){
-						b+=0.05;
+					if(a>=(1-stepSize) && b<(1-2*stepSize)){
+						b+=stepSize;
 					}
 
-					if(a<0.95){
-						a+=0.05;
+					if(a<(1-stepSize)){
+						a+=stepSize;
 					}
 
 					
