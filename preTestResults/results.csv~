@@ -1,4 +1,4 @@
-Slide,Mistakes,V1,V2,V3,Min Delta
+Slide,Mistakes,Average Time, V1,V2,V3,Min Delta
 0,0,0,0.975,0.025,0.175,0.150
 1,0,2946,0.025,0.050,0.975,0.025
 2,5,5278,0.325,0.950,0.975,0.025

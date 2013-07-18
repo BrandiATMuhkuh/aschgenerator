@@ -121,13 +121,27 @@ function createAverage(){
 function showAverage(){
   
   var csv = "";
-  csv += "Slide,Mistakes,Average Time, V1,V2,V3,Min Delta\n";
+  csv += "Slide,Mistakes,Average Time, V1,V2,V3,Min Abs, Min Delta\n";
   var problems = 0;
   for(var k = 0; k < window.configSlides.length; k+=1){
     //if( window.configSlides[k].wrongs > 5){
     {
       csv+= k +","+ window.configSlides[k].wrongs +","+ parseInt(window.configSlides[k].average) +","+ window.configSlides[k].v1.toFixed(3)  +","+ window.configSlides[k].v2.toFixed(3) +","+ window.configSlides[k].v3.toFixed(3);
       //console.log(k +"\t"+ window.configSlides[k].wrongs +"\t"+ parseInt(window.configSlides[k].average) +"\t"+ window.configSlides[k].v1.toFixed(3) +"\t"+ window.configSlides[k].v2.toFixed(3) +"\t"+ window.configSlides[k].v3.toFixed(3));
+      
+      //calc delta
+      var s12 = [window.configSlides[k].v1.toFixed(3), window.configSlides[k].v2.toFixed(3)];
+      var s23 = [window.configSlides[k].v2.toFixed(3), window.configSlides[k].v3.toFixed(3)];
+      var s31 = [window.configSlides[k].v3.toFixed(3), window.configSlides[k].v1.toFixed(3)];
+      s12.sort(function(a,b){return b - a});
+      s23.sort(function(a,b){return b - a});
+      s31.sort(function(a,b){return b - a});
+      
+      var delatas = [(s12[1]*100)/s12[0],(s23[1]*100)/s23[0],(s31[1]*100)/s31[0]];
+      delatas.sort(function(a,b){return a- b});
+      csv+=","+ delatas[0].toFixed(3);
+      
+      
       
       var ta = Math.abs(window.configSlides[k].v1.toFixed(3) - window.configSlides[k].v2.toFixed(3));
       var tb = Math.abs(window.configSlides[k].v2.toFixed(3) - window.configSlides[k].v3.toFixed(3));
