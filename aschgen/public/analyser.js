@@ -96,8 +96,12 @@ function createAverage(){
   for(var k = 0; k < window.configSlides.length; k+=1){
     var slideAverage = 0;
     var incorrect = 0;
+    var tinkCount = 0;
     for(var i = 0; i < trackers; i+=1){
-      slideAverage += window.aschTracks[i].data[k].thinkTime;
+      if(window.aschTracks[i].data[k].thinkTime){
+        slideAverage += window.aschTracks[i].data[k].thinkTime;
+        tinkCount+=1
+      }
       
       if(window.aschTracks[i].data[k].result != window.aschTracks[i].data[k].correct){
         incorrect += 1;
@@ -105,21 +109,33 @@ function createAverage(){
     }
     
     window.configSlides[k].wrongs = incorrect;
-    window.configSlides[k].average = (slideAverage/trackers);
+    
+    window.configSlides[k].average = (slideAverage/tinkCount);
+    
+    if(isNaN(window.configSlides[k].average)){
+      window.configSlides[k].average=0;
+    }
   }
 }
 
 function showAverage(){
   
   var csv = "";
-  csv += "Slide,Mistakes,V1,V2,V3\n";
+  csv += "Slide,Mistakes,Average Time, V1,V2,V3,Min Delta\n";
   var problems = 0;
   for(var k = 0; k < window.configSlides.length; k+=1){
     //if( window.configSlides[k].wrongs > 5){
-      {
-      csv+= k +","+ window.configSlides[k].wrongs +","+ window.configSlides[k].v1.toFixed(3) +","+ window.configSlides[k].v2.toFixed(3) +","+ window.configSlides[k].v3.toFixed(3);
+    {
+      csv+= k +","+ window.configSlides[k].wrongs +","+ parseInt(window.configSlides[k].average) +","+ window.configSlides[k].v1.toFixed(3)  +","+ window.configSlides[k].v2.toFixed(3) +","+ window.configSlides[k].v3.toFixed(3);
       //console.log(k +"\t"+ window.configSlides[k].wrongs +"\t"+ parseInt(window.configSlides[k].average) +"\t"+ window.configSlides[k].v1.toFixed(3) +"\t"+ window.configSlides[k].v2.toFixed(3) +"\t"+ window.configSlides[k].v3.toFixed(3));
       
+      var ta = Math.abs(window.configSlides[k].v1.toFixed(3) - window.configSlides[k].v2.toFixed(3));
+      var tb = Math.abs(window.configSlides[k].v2.toFixed(3) - window.configSlides[k].v3.toFixed(3));
+      var tc = Math.abs(window.configSlides[k].v3.toFixed(3) - window.configSlides[k].v1.toFixed(3));
+      var tarr = [ta,tb,tc];
+      tarr.sort(function(a,b){return a - b});
+      //console.log(tarr);
+      csv+=","+tarr[0].toFixed(3);
       problems+=1;
       csv+="\n";
     }
