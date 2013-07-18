@@ -1,7 +1,7 @@
 window.aschTracks = [];
 window.aschResults = [];
 window.excludeIds = ["72ccc272d29a684a","14f59de248141a77","2031318a5fa4b87e", "6ecf3abea85e3adb"];
-
+window.excludeIds = ["72ccc272d29a684a","14f59de248141a77",]; //without times
 /**
 * Get all people  
 */
@@ -111,15 +111,24 @@ function createAverage(){
 
 function showAverage(){
   
+  var csv = "";
+  csv += "Slide,Mistakes,V1,V2,V3\n";
   var problems = 0;
   for(var k = 0; k < window.configSlides.length; k+=1){
-    if( window.configSlides[k].wrongs > 2){
+    //if( window.configSlides[k].wrongs > 5){
+      {
+      csv+= k +","+ window.configSlides[k].wrongs +","+ window.configSlides[k].v1.toFixed(3) +","+ window.configSlides[k].v2.toFixed(3) +","+ window.configSlides[k].v3.toFixed(3);
+      //console.log(k +"\t"+ window.configSlides[k].wrongs +"\t"+ parseInt(window.configSlides[k].average) +"\t"+ window.configSlides[k].v1.toFixed(3) +"\t"+ window.configSlides[k].v2.toFixed(3) +"\t"+ window.configSlides[k].v3.toFixed(3));
+      
       problems+=1;
-      console.log(k, window.configSlides[k].wrongs, window.configSlides[k].average);
+      csv+="\n";
     }
+    
+    
+    
   }
-  
-  console.log("problems: ",problems);
+  console.log(csv);
+  console.log("problems: ",problems, window.configSlides.length);
 }
 
 

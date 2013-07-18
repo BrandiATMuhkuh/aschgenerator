@@ -38,21 +38,32 @@
 
   function startMain(){
     console.log("start");
-    if(window.document.soundManagerLoaded && window.document.scriptFileLoaded && window.document.idButtonClicked){
 
-      dpd.newtrack.post({"infos":""+document.getElementById('inputUserInfo').value}, function(result, err) {
-          if(err) return console.log(err);
-          console.log(result, result.id);
-
-          window.document.globalUserId = result.id;
-          document.getElementById('startDiv').style.display = 'none';
+    function startEveryting(){
+      document.getElementById('startDiv').style.display = 'none';
           document.getElementById('innerdiv').style.display = 'block';
 
           slideGenerator();
           var canvas = document.getElementById("myCanvas");
           // attaching the sketchProc function to the canvas
           var processingInstance = new Processing(canvas, sketchProc);
+    }
+
+    if(window.document.soundManagerLoaded && window.document.scriptFileLoaded && window.document.idButtonClicked){
+
+      if(window.configUser.logging){
+
+        dpd.newtrack.post({"infos":""+document.getElementById('inputUserInfo').value}, function(result, err) {
+            if(err) return console.log(err);
+            console.log(result, result.id);
+
+            window.document.globalUserId = result.id;
+            startEveryting();
+            
         });
+      }else{
+        startEveryting();
+      }
 
       
     }

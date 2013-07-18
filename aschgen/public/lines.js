@@ -63,7 +63,9 @@ function sketchProc(processing) {
           rest.slidenr = window.mySlidesPos;
           rest.userid = window.document.globalUserId;
 
-          dpd.results.post(rest,function(){});
+          if(window.configUser.logging){
+            dpd.results.post(rest,function(){});
+          }
         }
 
         nextPage(true);

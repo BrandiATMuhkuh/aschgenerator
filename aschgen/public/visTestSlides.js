@@ -4,6 +4,7 @@ window.configUser = {
 	plural : 0, //can be 0 = Baseline, 1 = Version 1, 2 = Version 2
 	multi : false, //show target colors/Yes no
 	abc: true,
+	logging: true,
 };
 
 
