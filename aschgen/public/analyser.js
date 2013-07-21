@@ -121,7 +121,7 @@ function createAverage(){
 function showAverage(){
   
   var csv = "";
-  csv += "Slide,Mistakes,Average Time, V1,V2,V3,Min Abs, Min Delta\n";
+  csv += "Slide,Mistakes,Average Time, V1,V2,V3, Min Delta, Min Abs \n";
   var problems = 0;
   for(var k = 0; k < window.configSlides.length; k+=1){
     //if( window.configSlides[k].wrongs > 5){
