@@ -502,7 +502,8 @@ function slideGenerator () {
 							window.mySlides.push({
 								type : "drawManyWord",
 							  	user : b,
-								v1 : innerAr
+								v1 : innerAr,
+								robotW : innerAr[b]
 							});
 						}
 					}

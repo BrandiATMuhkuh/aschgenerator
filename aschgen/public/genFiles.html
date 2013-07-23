@@ -46,10 +46,14 @@
 				break;
 
 				case "drawManyWord":
+
+				
 					window.myXmlFile += "<child count='0' type='changeSlide' slideCount='"+i+"' />\n";
 					if(m[i].user != 4){
-					window.myXmlFile += "<child count='0' type='robotSay' robotNr='"+m[i].user+"' sayWhat='aschAudios' />\n";
+					window.myXmlFile += "<child count='0' type='robotSay' robotNr='"+m[i].user+"' sayWhat='"+m[i].robotW+"' />\n";
 					}
+
+
 				break;
 
 			}
