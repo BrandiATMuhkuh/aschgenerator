@@ -7,6 +7,8 @@ function slideGenerator () {
 		
 		switch(window.configSlides[i].type){
 
+
+
 			case "randAschList":
 				var ashList = shuffle(window.configSlides[i].list);
 
@@ -444,6 +446,29 @@ function slideGenerator () {
 
 			break;
 
+
+			case "finalRandMegaWords":
+
+				for (var three = 0; three < window.configSlides[i].iter; three += 1){
+					var myArray = window.configSlides[i].wordArray;
+					myArray = shuffle(myArray);
+					for (a in myArray) {
+						//console.log(myArray[a]);
+						
+						var innerAr = myArray[a].v1;
+						innerAr = shuffle(innerAr);
+						for (var b = 0; b < innerAr.length; b+=1) {
+							window.mySlides.push({
+								type : "drawManyWord",
+							  	user : b,
+								v1 : innerAr
+							});
+						}
+					}
+				}
+
+			break;
+
 			default:
 				window.mySlides.push(window.configSlides[i]);
 		}
@@ -454,18 +479,14 @@ function slideGenerator () {
 
 window.mySlides = [];
 
-function shuffle(array) {
-    var counter = array.length, temp, index;
+function shuffle(arrayb) {
+	var array = arrayb;
 
-    // While there are elements in the array
-    while (counter > 0) {
-        // Pick a random index
-        index = (Math.random() * counter--) | 0;
-
-        // And swap the last element with it
-        temp = array[counter];
-        array[counter] = array[index];
-        array[index] = temp;
+	for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 
     return array;
