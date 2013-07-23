@@ -11,6 +11,54 @@
 		console.log("script laod");
 		slideGenerator();
 
+		createXml();
+
+	}
+
+
+	function createXml(){
+		window.myXmlFile = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n";
+		window.myXmlFile += "<Tools attr='money'>\n";
+
+		var m = window.mySlides;
+		for (var i = 0; i < m.length; i++) {
+
+			switch(m[i].type){
+
+				case "drawCommand":
+					window.myXmlFile +=  "<child count='0' type='changeSlide' slideCount='"+i+"' />\n"
+				break;
+
+				case "drawAsch":
+					window.myXmlFile +=  "<child count='0' type='changeSlide' slideCount='"+i+"' />\n";
+					if(m[i].user != 4){
+
+						var sayWhat = "A";
+						if(m[i].roboAnswer == 0){
+							sayWhat = "A";
+						}else if(m[i].roboAnswer == 1){
+							sayWhat = "B";
+						}else if(m[i].roboAnswer == 2){
+							sayWhat = "C";
+						}
+						window.myXmlFile += "<child count='0' type='robotSay' robotNr='"+m[i].user+"' sayWhat='"+sayWhat+" />\n";
+					}
+				break;
+
+				case "drawManyWord":
+					window.myXmlFile += "<child count='0' type='changeSlide' slideCount='"+i+"' />\n";
+					if(m[i].user != 4){
+					window.myXmlFile += "<child count='0' type='robotSay' robotNr='"+m[i].user+"' sayWhat='aschAudios' />\n";
+					}
+				break;
+
+			}
+			//Things[i]
+		};
+
+		window.myXmlFile += "</Tools>";
+
+		console.log(window.myXmlFile);
 	}
 	</script>
 </head>

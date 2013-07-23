@@ -14,16 +14,57 @@ function slideGenerator () {
 
 				for (var k = 0; k < ashList.length; k++){
 					
+					var answernr = 0;
+					if(ashList[k].answer == ashList[k].v2){
+						answernr = 1;
+					}else if(ashList[k].answer == ashList[k].v3){
+						answernr = 2;
+					}
 
+
+					var carr = [Math.abs(ashList[k].v1 - ashList[k].answer),
+					Math.abs(ashList[k].v2 - ashList[k].answer),
+					Math.abs(ashList[k].v3 - ashList[k].answer)];
+					var samllestNr = 0;
+					if(window.configSlides[i].hardEasy=="hard"){
+						//Find the closest one as answer
+						var smallest = carr[samllestNr];
+
+						for(a=1; a < carr.length; a+=1){
+							if((carr[a] < carr[samllestNr] && carr[a] != 0) || carr[samllestNr] == 0){
+								samllestNr=a;
+							}
+						}
+						//console.log(samllestNr,carr);
+					}else if(window.configSlides[i].hardEasy=="easy"){
+						//Find the non-closest one as answer
+						
+						//Find the closest one as answer
+						var smallest = carr[samllestNr];
+
+						for(a=1; a < carr.length; a+=1){
+							if((carr[a] > carr[samllestNr] && carr[a] != 0) || carr[samllestNr] == 0){
+								samllestNr=a;
+							}
+						}
+						//console.log(samllestNr,carr);
+					}
+					//console.log(samllestNr,carr);
+					
 
 					for (var t = 0; t < 5; t++){
+
+						
+
 						window.mySlides.push({
 							type : "drawAsch",
 						  	user : t,
 						  	v1 : ashList[k].v1,
 						  	v2 : ashList[k].v2,
 						  	v3 : ashList[k].v3,
-						  	answer : ashList[k].answer
+						  	answer : ashList[k].answer,
+						  	'answernr': answernr,
+						  	roboAnswer: samllestNr,
 						});
 					}
 				}

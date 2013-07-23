@@ -76,6 +76,7 @@ window.configSlides =
 	// **************** Lines are hard ************
 	{
 	  	type : "randAschList",
+	  	hardEasy : "hard",
 	  	list : [
 
 		{
@@ -220,6 +221,7 @@ window.configSlides =
 	
 	{
 	  	type : "randAschList",
+	  	hardEasy : "easy",
 	  	list : [
 		{
 			"type": "drawAsch",
@@ -496,6 +498,7 @@ window.configSlides =
 	
 	{
 		type : "finalRandMegaWords",
+		hardEasy : "hard",
 		iter: 3,
 		wordArray : [
 
@@ -533,6 +536,7 @@ window.configSlides =
 	//**************** words are hard ************
 	{
 		type : "finalRandMegaWords",
+		hardEasy : "easy",
 		iter: 2,
 		wordArray : [
 		{
