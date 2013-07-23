@@ -3,10 +3,36 @@
 <head>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="dpd.js"></script>
+	<script type="text/javascript">
+	window.globalCount = 0;
+	window.globalRemoteId = "ad886c6cf15138fb";
+
+	function next(){
+		console.log('text');
+		window.globalCount += 1;
+		dpd.remote.put(window.globalRemoteId, {"pageNr":window.globalCount}, function(result, err) {
+		  if(err) return console.log(err);
+		  console.log(result, result.id);
+		});
+	}
+
+
+	function script(){
+		console.log("script laod");
+		var query = {"id":window.globalRemoteId};
+
+		dpd.remote.get(query, function (result) {
+		  console.log(result);
+		  globalCount = result.pageNr;
+		});
+
+	}
+	</script>
 </head>
-<body>
-	<h1>Welcome to Deployd!</h1>
-	<p>You've just created a Deployd app. You can add front-end files in the <code>public</code> folder.</p>
-	<p>If you're new to Deployd, have a look at the <a href="http://docs.deployd.com/docs/getting-started/what-is-deployd.md">Getting Started Guide</a> or <a href="http://docs.deployd.com/docs/getting-started/your-first-api.md">Hello World Tutorial<a>.</p>
+<body onload="script();">
+	
+
+	<button onclick="next()">next</button>
+
 </body>
 </html>
