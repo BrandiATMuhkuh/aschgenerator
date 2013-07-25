@@ -28,7 +28,8 @@ window.configSlides =
 		"v2": 0.025,
 		"v3": 0.175,
 		"answer": 0.025,
-		"answernr": 1
+		"answernr": 1,
+		"loudRobot" : false
 	},
 	{
 		"type": "drawAsch",
@@ -37,7 +38,8 @@ window.configSlides =
 		"v2": 0.025,
 		"v3": 0.175,
 		"answer": 0.025,
-		"answernr": 1
+		"answernr": 1,
+		"loudRobot" : false
 	},
 	{
 		"type": "drawAsch",
@@ -46,7 +48,8 @@ window.configSlides =
 		"v2": 0.025,
 		"v3": 0.175,
 		"answer": 0.025,
-		"answernr": 1
+		"answernr": 1,
+		"loudRobot" : false
 	},
 	{
 		"type": "drawAsch",
@@ -55,7 +58,8 @@ window.configSlides =
 		"v2": 0.025,
 		"v3": 0.175,
 		"answer": 0.025,
-		"answernr": 1
+		"answernr": 1,
+		"loudRobot" : false
 	},
 	{
 		"type": "drawAsch",
@@ -64,7 +68,8 @@ window.configSlides =
 		"v2": 0.025,
 		"v3": 0.175,
 		"answer": 0.025,
-		"answernr": 1
+		"answernr": 1,
+		"loudRobot" : false
 	},
 
 	{
@@ -73,6 +78,191 @@ window.configSlides =
 	  	v2 : "Start now.",  	
 	},
 	
+	// **************** Lines right thing *************
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.5250000000000001,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.5250000000000001,
+		"answernr": 0,
+		"roboAnswer": 0,
+		"testSlide" : 4
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.5250000000000001,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.5250000000000001,
+		"answernr": 0,
+		"roboAnswer": 0,
+		"testSlide" : 4
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.5250000000000001,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.5250000000000001,
+		"answernr": 0,
+		"roboAnswer": 0,
+		"testSlide" : 4
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.5250000000000001,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.5250000000000001,
+		"answernr": 0,
+		"roboAnswer": 0,
+		"testSlide" : 4
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.5250000000000001,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.5250000000000001,
+		"answernr": 0,
+		"roboAnswer": 0,
+		"testSlide" : 4
+	},
+
+
+
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.8000000000000004,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.025,
+		"answernr": 2,
+		"roboAnswer": 2,
+		"testSlide" : 5
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.8000000000000004,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.025,
+		"answernr": 2,
+		"roboAnswer": 2,
+		"testSlide" : 5
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.8000000000000004,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.025,
+		"answernr": 2,
+		"roboAnswer": 2,
+		"testSlide" : 5
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.8000000000000004,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.025,
+		"answernr": 2,
+		"roboAnswer": 2,
+		"testSlide" : 5
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.8000000000000004,
+		"v2": 0.9750000000000005,
+		"v3": 0.025,
+		"answer": 0.025,
+		"answernr": 2,
+		"roboAnswer": 2,
+		"testSlide" : 5
+	},
+
+
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.025,
+		"v2": 0.27499999999999997,
+		"v3": 0.05,
+		"answer": 0.27499999999999997,
+		"answernr": 1,
+		"roboAnswer": 1,
+		"testSlide" : 7
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.025,
+		"v2": 0.27499999999999997,
+		"v3": 0.05,
+		"answer": 0.27499999999999997,
+		"answernr": 1,
+		"roboAnswer": 1,
+		"testSlide" : 7
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.025,
+		"v2": 0.27499999999999997,
+		"v3": 0.05,
+		"answer": 0.27499999999999997,
+		"answernr": 1,
+		"roboAnswer": 1,
+		"testSlide" : 7
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.025,
+		"v2": 0.27499999999999997,
+		"v3": 0.05,
+		"answer": 0.27499999999999997,
+		"answernr": 1,
+		"roboAnswer": 1,
+		"testSlide" : 7
+	},
+
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.025,
+		"v2": 0.27499999999999997,
+		"v3": 0.05,
+		"answer": 0.27499999999999997,
+		"answernr": 1,
+		"roboAnswer": 1,
+		"testSlide" : 7
+	},
+
+
 	// **************** Lines are hard ************
 	{
 	  	type : "randAschList",
@@ -218,7 +408,8 @@ window.configSlides =
 
 
 	//**************** Lines are easy ************
-	
+
+
 	{
 	  	type : "randAschList",
 	  	hardEasy : "easy",
@@ -407,91 +598,136 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 0,
-		v1 : ["run", "spend", "lie", "fall", "pay"]
+		v1 : ["run", "spend", "lie", "fall", "pay"],
+		robotW : "run",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 1,
-		v1 : ["run", "spend", "lie", "fall", "pay"]
+		v1 : ["run", "spend", "lie", "fall", "pay"],
+		robotW : "spend",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 2,
-		v1 : ["run", "spend", "lie", "fall", "pay"]
+		v1 : ["run", "spend", "lie", "fall", "pay"],
+		robotW : "lie",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 3,
-		v1 : ["run", "spend", "lie", "fall", "pay"]
+		v1 : ["run", "spend", "lie", "fall", "pay"],
+		robotW : "fall",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 4,
-		v1 : ["run", "spend", "lie", "fall", "pay"]
+		v1 : ["run", "spend", "lie", "fall", "pay"],
+		robotW : "pay",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 0,
-		v1 : ["build", "catch", "cut", "grow", "buy"]
+		v1 : ["build", "catch", "cut", "grow", "buy"],
+		robotW : "build",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 1,
-		v1 : ["build", "catch", "cut", "grow", "buy"]
+		v1 : ["build", "catch", "cut", "grow", "buy"],
+		robotW : "catch",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 2,
-		v1 : ["build", "catch", "cut", "grow", "buy"]
+		v1 : ["build", "catch", "cut", "grow", "buy"],
+		robotW : "cut",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 3,
-		v1 : ["build", "catch", "cut", "grow", "buy"]
+		v1 : ["build", "catch", "cut", "grow", "buy"],
+		robotW : "grow",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 4,
-		v1 : ["build", "catch", "cut", "grow", "buy"]
+		v1 : ["build", "catch", "cut", "grow", "buy"],
+		robotW : "buy",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 0,
-		v1 : ["shake", "win", "teach", "lay", "throw"]
+		v1 : ["shake", "win", "teach", "lay", "throw"],
+		robotW : "shake",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 1,
-		v1 : ["shake", "win", "teach", "lay", "throw"]
+		v1 : ["shake", "win", "teach", "lay", "throw"],
+		robotW : "win",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 2,
-		v1 : ["shake", "win", "teach", "lay", "throw"]
+		v1 : ["shake", "win", "teach", "lay", "throw"],
+		robotW : "teach",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 3,
-		v1 : ["shake", "win", "teach", "lay", "throw"]
+		v1 : ["shake", "win", "teach", "lay", "throw"],
+		robotW : "lay",
+		hardEasy : "cor",
+		cor : true
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 4,
-		v1 : ["shake", "win", "teach", "lay", "throw"]
+		v1 : ["shake", "win", "teach", "lay", "throw"],
+		robotW : "throw",
+		hardEasy : "cor",
+		cor : true
 	},
 	
 	//**************** words are hard ************
@@ -499,37 +735,43 @@ window.configSlides =
 	{
 		type : "finalRandMegaWords",
 		hardEasy : "hard",
+		cor : false,
 		iter: 3,
 		wordArray : [
 
 		{
 			type : "drawManyWord",
 		  	user : 0,
-			v1 : ["sing", "sink", "shrink", "spring", "ring"]
+			v1 : ["sing", "sink", "shrink", "spring", "ring"],
+			scheme: "ung",
 		},
 
 		{
 			type : "drawManyWord",
 		  	user : 0,
-			v1 : ["spill", "smell", "spoil", "spell", "learn"]
+			v1 : ["spill", "smell", "spoil", "spell", "learn"],
+			scheme: "nt",
 		},
 
 		{
 			type : "drawManyWord",
 		  	user : 0,
-			v1 : ["plead", "kneel", "leap", "dream", "lean"]
+			v1 : ["plead", "kneel", "leap", "dream", "lean"],
+			scheme: "v",
 		},
 
 		{
 			type : "drawManyWord",
 		  	user : 0,
-			v1 : ["dive", "heave", "drive", "weave", "thrive"]
+			v1 : ["dive", "heave", "drive", "weave", "thrive"],
+			scheme: "ove",
 		},
 
 		{
 			type : "drawManyWord",
 		  	user : 0,
-			v1 : ["knit", "cost", "spit", "bust", "wet"]
+			v1 : ["knit", "cost", "spit", "bust", "wet"],
+			scheme: "id",
 		},]
 	},
 
@@ -537,7 +779,8 @@ window.configSlides =
 	{
 		type : "finalRandMegaWords",
 		hardEasy : "easy",
-		iter: 2,
+		cor : false,
+		iter: 3,
 		wordArray : [
 		{
 			type : "drawManyWord",

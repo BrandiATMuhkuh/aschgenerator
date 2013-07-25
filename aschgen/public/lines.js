@@ -169,7 +169,27 @@ function sketchProc(processing) {
     if((typeof currentSlide.user != 'undefined') && configUser.multi){
 
 
-      //calc user squeres
+      switch(currentSlide.type){
+          case "drawAsch":
+            drawHorizontalCubes(processing);
+          break;
+
+          case "drawManyWord":
+            drawVerticalCubes(processing);
+          break;
+      }
+      
+
+      
+      
+
+    }
+
+  };
+
+
+  function drawHorizontalCubes(processing){
+    //calc user squeres
       var leftOffset = (processing.width - (4 * 100))/4;
 
     
@@ -214,11 +234,55 @@ function sketchProc(processing) {
         processing.fill(255); 
       }
       processing.rect(100+leftOffset*4, 20, 100, 100);
+  }
 
-    }
+  function drawVerticalCubes(processing){
+    //calc user squeres
+      var leftOffset = 150;
 
-  };
+    
+      processing.stroke(142, 68, 173);
+      if(currentSlide.user == 0){
+        processing.fill(142, 68, 173);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(100, 20, 100, 100);
 
+
+      
+      processing.stroke(41, 128, 185);
+      if(currentSlide.user == 1){
+        processing.fill(41, 128, 185);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(100, 20+leftOffset, 100, 100);
+      
+      processing.stroke(39, 174, 96);
+      if(currentSlide.user == 2){
+        processing.fill(39, 174, 96);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(100, 20+leftOffset*2, 100, 100);
+      
+      processing.stroke(211, 84, 0);
+      if(currentSlide.user == 3){
+        processing.fill(211, 84, 0);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(100, 20+leftOffset*3, 100, 100);
+      
+      processing.stroke(243, 156, 18);
+      if(currentSlide.user == 4){
+        processing.fill(243, 156, 18);
+      }else{
+        processing.fill(255); 
+      }
+      processing.rect(100, 20+leftOffset*4, 100, 100);
+  }
 
 
   /**
@@ -245,17 +309,17 @@ function sketchProc(processing) {
     processing.textAlign(processing.CENTER);
     // First Line
     processing.rect(betweenOffset, barHeight+bottomOffset, 10, -(barHeight * aSize));    
-    processing.text("1", betweenOffset+6, barHeight+bottomOffset+50); 
+    processing.text("A", betweenOffset+6, barHeight+bottomOffset+50); 
     
     
     // Second Line
     processing.rect(betweenOffset*2, barHeight+bottomOffset, 10, -(barHeight * bSize));
-    processing.text("2", betweenOffset*2+6, barHeight+bottomOffset+50); 
+    processing.text("B", betweenOffset*2+6, barHeight+bottomOffset+50); 
     
 
     // Third Line
     processing.rect(betweenOffset*3, barHeight+bottomOffset, 10, -(barHeight * cSize));
-    processing.text("3", betweenOffset*3+6, barHeight+bottomOffset+50); 
+    processing.text("C", betweenOffset*3+6, barHeight+bottomOffset+50); 
   
     
 
@@ -299,12 +363,13 @@ function sketchProc(processing) {
     processing.textAlign(processing.CENTER);
 
     processing.textFont(font,100); 
-    var offset = 130;
-    processing.text(w0, processing.width/2, processing.height/3); 
-    processing.text(w1, processing.width/2, processing.height/3+1*offset);
-    processing.text(w2, processing.width/2, processing.height/3+2*offset); 
-    processing.text(w3, processing.width/2, processing.height/3+3*offset); 
-    processing.text(w4, processing.width/2, processing.height/3+4*offset); 
+    var offset = 150;
+    var offDown = -150;
+    processing.text(w0, processing.width/2, processing.height/3+offDown); 
+    processing.text(w1, processing.width/2, processing.height/3+1*offset+offDown);
+    processing.text(w2, processing.width/2, processing.height/3+2*offset+offDown); 
+    processing.text(w3, processing.width/2, processing.height/3+3*offset+offDown); 
+    processing.text(w4, processing.width/2, processing.height/3+4*offset+offDown); 
     
     
   }

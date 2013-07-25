@@ -16,6 +16,22 @@
 			"required": false,
 			"id": "name",
 			"order": 1
+		},
+		"xml": {
+			"name": "xml",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "xml",
+			"order": 2
+		},
+		"date": {
+			"name": "date",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "date",
+			"order": 3
 		}
 	}
 }

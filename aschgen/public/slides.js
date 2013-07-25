@@ -51,7 +51,7 @@ function slideGenerator () {
 					}
 					//console.log(samllestNr,carr);
 					
-
+					
 					for (var t = 0; t < 5; t++){
 
 						
@@ -65,6 +65,7 @@ function slideGenerator () {
 						  	answer : ashList[k].answer,
 						  	'answernr': answernr,
 						  	roboAnswer: samllestNr,
+						  	"loudRobot" : ashList[k].loudRobot
 						});
 					}
 				}
@@ -499,12 +500,17 @@ function slideGenerator () {
 						var innerAr = myArray[a].v1;
 						innerAr = shuffle(innerAr);
 						for (var b = 0; b < innerAr.length; b+=1) {
+							var v1 = [innerAr[0],innerAr[1],innerAr[2],innerAr[3],innerAr[4]];
 							window.mySlides.push({
 								type : "drawManyWord",
 							  	user : b,
-								v1 : innerAr,
-								robotW : innerAr[b]
+								v1 : v1,
+								robotW : v1[b],
+								hardEasy : window.configSlides[i].hardEasy,
+								scheme: myArray[a].scheme,
 							});
+
+							console.log(v1,b,v1[b]);
 						}
 					}
 				}
