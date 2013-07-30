@@ -11,15 +11,39 @@ window.configSlides =
 	
 	{
 	  	type : "drawCommand",
-	  	v1 : "Hello!!!",
-	  	v2 : "Hello and welcome to the experiment",  	
+	  	v1 : "Welcome to the test",
+	  	v2 : "",  	
 	},
 
 	{
 	  	type : "drawCommand",
-	  	v1 : "Visual Experiment",
-	  	v2 : "Instructions and test round",  	
+	  	v1 : "Researcher is speaking",
+	  	v2 : "Dear participants, my name is Alibaba and I’m the researcher conducting this test. First of all, I’m sorry I cannot be here with you because I’m attending a conference. Therefore an assistant will lead you through the experiment. ",  	
+		sound : "researcher/dear_participants.mp3"
 	},
+
+	{
+	  	type : "drawCommand",
+	  	v1 : "Researcher is speaking",
+	  	v2 : "In the following 20 minutes we are conducting a routine visual and vocal test. We want to keep track of the change in visual perception and vocal change. ",  	
+		sound : "researcher/inTheFollowing20Min.mp3"
+	},
+
+
+	{
+	  	type : "drawCommand",
+	  	v1 : "Researcher is speaking",
+	  	v2 : "If you wander why you sit in a room mixed with humanoids and humans. All humanoids lived the last 12 month with families in New Zealand and where treated like family members. Their visual and vocal systems work similar to the human once and they learning in the last 12 month to interpret and see like humans do. Therefore there audio visual system works like the human once. ",  	
+		sound : "researcher/ifYouWander.mp3"
+	},
+
+	{
+	  	type : "drawCommand",
+	  	v1 : "Researcher is speaking",
+	  	v2 : "Lets start with the test. As I said, the test is divided into two part. A visual and a vocal. I will give you an example before every part. ",  	
+		sound : "researcher/letsStartWithTheTest.mp3"
+	},
+
 
 	{
 		"type": "drawAsch",
@@ -29,7 +53,9 @@ window.configSlides =
 		"v3": 0.175,
 		"answer": 0.025,
 		"answernr": 1,
-		"loudRobot" : false
+		"loudRobot" : false,
+		"audioThatShouldBeSaid" : " You see on the left side of the slide three lines labeled with A, B and C. On your right side, you see one line with a questionmark (?). Your task is it to say, out loud what line, A, B or C, matches with the line on the right side. To make it easier for us to evaluate the data afterwards, we want you to say the answer sequentially. Starting from left to right. To make it easier for you to know when you have to say your answer, we added five colored squares on top of each slide. If the square with your color is full, it is your turn to say the answer. If you are not sure about your color or you forgot it. You find your matching colored paper sheet in front of you. As you see, the colored squares jump now from position one two five. ",
+		sound : "researcher/hereIsTheFirstExample.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -39,7 +65,7 @@ window.configSlides =
 		"v3": 0.175,
 		"answer": 0.025,
 		"answernr": 1,
-		"loudRobot" : false
+		"loudRobot" : false,
 	},
 	{
 		"type": "drawAsch",
@@ -74,8 +100,9 @@ window.configSlides =
 
 	{
 	  	type : "drawCommand",
-	  	v1 : "Lets start",
-	  	v2 : "Start now.",  	
+	  	v1 : "Visual test",
+	  	v2 : "I hope you understood everything. Let’s start now with the visual test.", 
+	  	sound : "researcher/letsStartVisual.mp3"
 	},
 	
 	// **************** Lines right thing *************
@@ -551,17 +578,25 @@ window.configSlides =
 		},]
 	},
 	
-	
+	{
+	  	type : "drawCommand",
+	  	v1 : "END of Visual Test",
+	  	v2 : "Thank you. The visual test if over now. ",
+	  	sound : "researcher/thankYouTheVisualTestIsOverNow.mp3"
+	},
+
 	{
 	  	type : "drawCommand",
 	  	v1 : "Vocal Experiment",
-	  	v2 : "Instructions and test round",  	
+	  	v2 : "Now, we will move on to the vocal test.",
+	  	sound : "researcher/nowWeMoveOnToVocalTest.mp3"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 0,
-		v1 : ["be", "have", "do", "speak", "mean"]
+		v1 : ["be", "have", "do", "speak", "mean"],
+		sound : "researcher/hereIsTheSecondExample.mp3"
 	},
 
 	{
@@ -591,8 +626,9 @@ window.configSlides =
 
 	{
 	  	type : "drawCommand",
-	  	v1 : "Lets start",
-	  	v2 : "Start now.",  	
+	  	v1 : "Vocal Test",
+	  	v2 : "I hope you understood everything. Let’s start now with the vocal test.", 
+	  	sound : "researcher/letsStartVocalTest.mp3"
 	},
 
 	{
@@ -816,8 +852,9 @@ window.configSlides =
 	
 	{
 	  	type : "drawCommand",
-	  	v1 : "THANK YOU!!!",
-	  	v2 : "Thank you so much for participating!!!"
+	  	v1 : "END",
+	  	v2 : "Thank you for participating in this test. My assistant will give you now some insight in the experiment.  ",
+	  	sound : "researcher/thankYouForParticipating.mp3"
 	}
 
 ]

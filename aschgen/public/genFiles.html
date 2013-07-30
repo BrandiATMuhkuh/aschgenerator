@@ -15,6 +15,18 @@
 
 	}
 
+	function storeCurrentSettingIntoDb(number){
+		/**
+		 * run the following command to store the genereated file in the database
+		 */
+		if(number){
+			dpd.test.post({"name":""+number,"xml":window.myXmlFile,"everything":window.mySlides}, function(result, err) {
+			  if(err) return console.log(err);
+			  console.log(result, result.id);
+			});
+		}
+	}
+
 
 	function createXml(){
 		window.myXmlFile = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n";
@@ -22,15 +34,16 @@
 
 		//go to slide zero
 		window.myXmlFile += "<child count='0' type='changeSlide' slideCount='0' />\n";
+		window.myXmlFile +=  "<child count='0' type='input' />\n";
 		
 
-		window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='0' />\n";
+		//window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='0' />\n";
 
-		window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='1' />\n";
+		//window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='1' />\n";
 
-		window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='2' />\n";
+		//window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='2' />\n";
 
-		window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='3' />\n";
+		//window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='3' />\n";
 
 		//Add the dree commands for saying hello
 
@@ -40,12 +53,18 @@
 			switch(m[i].type){
 
 				case "drawCommand":
-					window.myXmlFile +=  "<child count='0' type='changeSlide' slideCount='"+i+"' />\n"
+					window.myXmlFile +=  "<child count='0' type='changeSlide' slideCount='"+i+"' />\n";
+					window.myXmlFile +=  "<child count='0' type='input' />\n";
+					
 				break;
 
 				case "drawAsch":
 					window.myXmlFile +=  "<child count='0' type='changeSlide' slideCount='"+i+"' />\n";
 					if(m[i].user != 4 && (m[i].loudRobot || typeof m[i].loudRobot == "undefined")){
+						
+						//should be a random wait between 1 and 2 secs
+						window.myXmlFile +=  "<child count='0' type='msWait' wait='1000' />\n";
+						
 
 						var sayWhat = "A";
 						if(m[i].roboAnswer == 0){
@@ -58,6 +77,8 @@
 
 						var myABC = ["A","B","C"];
 						window.myXmlFile += "<child count='0' type='robotSayAsch' robotNr='"+m[i].user+"' sayWhat='"+sayWhat+"' correct='"+myABC[m[i].answernr]+"' />\n";
+					}else{
+						window.myXmlFile +=  "<child count='0' type='input' />\n";
 					}
 				break;
 
@@ -66,7 +87,11 @@
 
 					window.myXmlFile += "<child count='0' type='changeSlide' slideCount='"+i+"' />\n";
 					if(m[i].user != 4 && typeof m[i].robotW !== "undefined"){
+						//should be a random wait between 1 and 2 secs
+						window.myXmlFile +=  "<child count='0' type='msWait' wait='1000' />\n";
 						window.myXmlFile += "<child count='0' type='robotSayWord' robotNr='"+m[i].user+"' sayWhat='"+m[i].robotW+"' hardEasy='"+m[i].hardEasy+"' scheme='"+m[i].scheme+"' />\n";
+					}else{
+						window.myXmlFile +=  "<child count='0' type='input' />\n";
 					}
 
 

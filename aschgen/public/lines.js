@@ -106,7 +106,7 @@ function sketchProc(processing) {
     }
 
     //set has values
-    //window.location.hash="#"+window.mySlidesPos;
+    window.location.hash="#"+window.mySlidesPos;
 
     window.currentSlide = mySlides[mySlidesPos];
     playSlideSound();
@@ -193,43 +193,41 @@ function sketchProc(processing) {
       var leftOffset = (processing.width - (4 * 100))/4;
 
     
-      processing.stroke(142, 68, 173);
+      processing.stroke(227, 200, 173);
       if(currentSlide.user == 0){
-        processing.fill(142, 68, 173);
+        processing.fill(227, 200, 173);
       }else{
         processing.fill(255); 
       }
       processing.rect(100, 20, 100, 100);
-
-
       
-      processing.stroke(41, 128, 185);
+      processing.stroke(118, 99, 145);
       if(currentSlide.user == 1){
-        processing.fill(41, 128, 185);
+        processing.fill(118, 99, 145);
       }else{
         processing.fill(255); 
       }
       processing.rect(100+leftOffset, 20, 100, 100);
       
-      processing.stroke(39, 174, 96);
+      processing.stroke(220, 170, 181);
       if(currentSlide.user == 2){
-        processing.fill(39, 174, 96);
+        processing.fill(220, 170, 181);
       }else{
         processing.fill(255); 
       }
       processing.rect(100+leftOffset*2, 20, 100, 100);
       
-      processing.stroke(211, 84, 0);
+      processing.stroke(69, 149, 160);
       if(currentSlide.user == 3){
-        processing.fill(211, 84, 0);
+        processing.fill(69, 149, 160);
       }else{
         processing.fill(255); 
       }
       processing.rect(100+leftOffset*3, 20, 100, 100);
       
-      processing.stroke(243, 156, 18);
+      processing.stroke(165, 178, 88);
       if(currentSlide.user == 4){
-        processing.fill(243, 156, 18);
+        processing.fill(165, 178, 88);
       }else{
         processing.fill(255); 
       }
@@ -241,43 +239,41 @@ function sketchProc(processing) {
       var leftOffset = 150;
 
     
-      processing.stroke(142, 68, 173);
+      processing.stroke(227, 200, 173);
       if(currentSlide.user == 0){
-        processing.fill(142, 68, 173);
+        processing.fill(227, 200, 173);
       }else{
         processing.fill(255); 
       }
       processing.rect(100, 20, 100, 100);
-
-
       
-      processing.stroke(41, 128, 185);
+      processing.stroke(118, 99, 145);
       if(currentSlide.user == 1){
-        processing.fill(41, 128, 185);
+        processing.fill(118, 99, 145);
       }else{
         processing.fill(255); 
       }
       processing.rect(100, 20+leftOffset, 100, 100);
       
-      processing.stroke(39, 174, 96);
+      processing.stroke(220, 170, 181);
       if(currentSlide.user == 2){
-        processing.fill(39, 174, 96);
+        processing.fill(220, 170, 181);
       }else{
         processing.fill(255); 
       }
       processing.rect(100, 20+leftOffset*2, 100, 100);
       
-      processing.stroke(211, 84, 0);
+      processing.stroke(69, 149, 160);
       if(currentSlide.user == 3){
-        processing.fill(211, 84, 0);
+        processing.fill(69, 149, 160);
       }else{
         processing.fill(255); 
       }
       processing.rect(100, 20+leftOffset*3, 100, 100);
       
-      processing.stroke(243, 156, 18);
+      processing.stroke(165, 178, 88);
       if(currentSlide.user == 4){
-        processing.fill(243, 156, 18);
+        processing.fill(165, 178, 88);
       }else{
         processing.fill(255); 
       }
