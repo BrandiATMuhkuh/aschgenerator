@@ -1,3 +1,7 @@
+window.mySlides = [];
+window.mySlidecount = 0;
+window.myCsv = "s, n, c, \n";
+
 /**
  * this will read the configSlides json file and generate the slides.
  */
@@ -68,6 +72,10 @@ function slideGenerator () {
 						  	"loudRobot" : ashList[k].loudRobot
 						});
 					}
+
+
+					//console.log("sayWhat: ", window.mySlides.length,samllestNr);
+					window.myCsv += ""+(window.mySlides.length-1)+", "+samllestNr+", ,\n";
 				}
 
 			break;
@@ -510,8 +518,9 @@ function slideGenerator () {
 								scheme: myArray[a].scheme,
 							});
 
-							console.log(v1,b,v1[b]);
+							//console.log(v1,b,v1[b]);
 						}
+						window.myCsv += ""+(window.mySlides.length-1)+", ed, ,\n";
 					}
 				}
 
@@ -525,7 +534,7 @@ function slideGenerator () {
 }
 
 
-window.mySlides = [];
+
 
 function shuffle(arrayb) {
 	var array = arrayb;
@@ -549,4 +558,8 @@ function createValueArray(value,length){
 	return cool;
 }
 
+
+function incSlideCount(){
+	window.mySlidecount +=1;
+}
 

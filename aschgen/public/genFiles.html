@@ -77,6 +77,7 @@
 
 						var myABC = ["A","B","C"];
 						window.myXmlFile += "<child count='0' type='robotSayAsch' robotNr='"+m[i].user+"' sayWhat='"+sayWhat+"' correct='"+myABC[m[i].answernr]+"' />\n";
+						
 					}else{
 						window.myXmlFile +=  "<child count='0' type='input' />\n";
 					}
@@ -103,7 +104,7 @@
 
 		window.myXmlFile += "</Tools>";
 
-		console.log(window.myXmlFile);
+		//console.log(window.myXmlFile);
 	}
 	</script>
 </head>

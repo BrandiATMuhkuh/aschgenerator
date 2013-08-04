@@ -18,33 +18,58 @@ window.configSlides =
 	{
 	  	type : "drawCommand",
 	  	v1 : "Researcher is speaking",
-	  	v2 : "Dear participants, my name is Alibaba and I’m the researcher conducting this test. First of all, I’m sorry I cannot be here with you because I’m attending a conference. Therefore an assistant will lead you through the experiment. ",  	
-		sound : "researcher/dear_participants.mp3"
+	  	v2 : "Hello and welcome to our visual cognition and verbal communication test. Thank you for participating. The test consists of a visual task followed by a verbal task and takes about twenty minutes.",  	
+		sound : "instructions/inst1_hello.wav"
 	},
 
 	{
 	  	type : "drawCommand",
 	  	v1 : "Researcher is speaking",
-	  	v2 : "In the following 20 minutes we are conducting a routine visual and vocal test. We want to keep track of the change in visual perception and vocal change. ",  	
-		sound : "researcher/inTheFollowing20Min.mp3"
-	},
-
-
-	{
-	  	type : "drawCommand",
-	  	v1 : "Researcher is speaking",
-	  	v2 : "If you wander why you sit in a room mixed with humanoids and humans. All humanoids lived the last 12 month with families in New Zealand and where treated like family members. Their visual and vocal systems work similar to the human once and they learning in the last 12 month to interpret and see like humans do. Therefore there audio visual system works like the human once. ",  	
-		sound : "researcher/ifYouWander.mp3"
+	  	v2 : "The aim of this test is to assess the performance of the humanoid participants in visual cognition and verbal communication. Each of the humanoid participants has spent the last twelve months living with a New Zealand family and has used this time to train human-like cognitive abilities. The human participant is present in order to ensure that the test matches the Human Interface Technology Lab’s strict criteria for experimental design.",  	
+		sound : "instructions/inst2_intro_robot.wav"
 	},
 
 	{
 	  	type : "drawCommand",
 	  	v1 : "Researcher is speaking",
-	  	v2 : "Lets start with the test. As I said, the test is divided into two part. A visual and a vocal. I will give you an example before every part. ",  	
-		sound : "researcher/letsStartWithTheTest.mp3"
+	  	v2 : "This test is used as a reference for another test, one that we are running separately. In that test, we are interested in the visual and verbal abilities of humanoid robots. In order to ensure that the test matches the human interface technology lab’s strict criteria for experimental design, we created a reference test which only has human participants. This way, we can compare the data later.",  	
+		sound : "instructions/inst2_intro_human.wav"
 	},
 
 
+
+	{
+	  	type : "drawCommand",
+	  	v1 : "Researcher is speaking",
+	  	v2 : "The first task is a visual decision task. On the left hand side, you will see three bars, labelled A, B, and C. On the right hand side, you will see a reference bar. You will simply have to say the letter corresponding to the bar on the left that is the same height as the bar on the right.",  	
+		sound : "instructions/inst3_visual1.wav"
+	},
+
+	{
+	  	type : "drawCommand",
+	  	v1 : "Researcher is speaking",
+	  	v2 : "To make it easier for us to evaluate the data afterwards, participants take turns from left to right, in the order in which they are seated. To make it easier for you to know when it’s your turn to say your answer, we have added five coloured squares on top of the screen. If the square with your colour is full, it is your turn to say the answer. If you are not sure about your colour or if you forgot it, you can refer to the sheet of paper of the matching colour which is in front of you.",  	
+		sound : "instructions/inst4_visual2.wav"
+	},
+
+	{
+	  	type : "drawCommand",
+	  	v1 : "Researcher is speaking",
+	  	v2 : "Here is a practice round. All other rounds will look like this one.",  	
+		sound : "instructions/inst5_visual_pr_0.wav"
+	},
+
+
+	{
+		"type": "drawAsch",
+		"v1": 0.9750000000000005,
+		"v2": 0.025,
+		"v3": 0.175,
+		"answer": 0.025,
+		"answernr": 1,
+		"loudRobot" : false,
+		sound : "instructions/inst5_visual_pr_0.wav"
+	},
 	{
 		"type": "drawAsch",
 		"user": 0,
@@ -54,8 +79,7 @@ window.configSlides =
 		"answer": 0.025,
 		"answernr": 1,
 		"loudRobot" : false,
-		"audioThatShouldBeSaid" : " You see on the left side of the slide three lines labeled with A, B and C. On your right side, you see one line with a questionmark (?). Your task is it to say, out loud what line, A, B or C, matches with the line on the right side. To make it easier for us to evaluate the data afterwards, we want you to say the answer sequentially. Starting from left to right. To make it easier for you to know when you have to say your answer, we added five colored squares on top of each slide. If the square with your color is full, it is your turn to say the answer. If you are not sure about your color or you forgot it. You find your matching colored paper sheet in front of you. As you see, the colored squares jump now from position one two five. ",
-		sound : "researcher/hereIsTheFirstExample.mp3"
+		sound : "instructions/inst6_visual_pr_1.wav"
 	},
 	{
 		"type": "drawAsch",
@@ -66,6 +90,7 @@ window.configSlides =
 		"answer": 0.025,
 		"answernr": 1,
 		"loudRobot" : false,
+		sound : "instructions/inst7_visual_pr_2.wav"
 	},
 	{
 		"type": "drawAsch",
@@ -75,7 +100,8 @@ window.configSlides =
 		"v3": 0.175,
 		"answer": 0.025,
 		"answernr": 1,
-		"loudRobot" : false
+		"loudRobot" : false,
+		sound : "instructions/inst8_visual_pr_3.wav"
 	},
 	{
 		"type": "drawAsch",
@@ -85,7 +111,8 @@ window.configSlides =
 		"v3": 0.175,
 		"answer": 0.025,
 		"answernr": 1,
-		"loudRobot" : false
+		"loudRobot" : false,
+		sound : "instructions/inst9_visual_pr_4.wav"
 	},
 	{
 		"type": "drawAsch",
@@ -95,14 +122,15 @@ window.configSlides =
 		"v3": 0.175,
 		"answer": 0.025,
 		"answernr": 1,
-		"loudRobot" : false
+		"loudRobot" : false,
+		sound : "instructions/inst10_visual_pr_5.wav"
 	},
 
 	{
 	  	type : "drawCommand",
 	  	v1 : "Visual test",
-	  	v2 : "I hope you understood everything. Let’s start now with the visual test.", 
-	  	sound : "researcher/letsStartVisual.mp3"
+	  	v2 : "Here comes the task. It consists of about thirty rounds.", 
+	  	sound : "instructions/inst12_verbal_t.wav"
 	},
 	
 	// **************** Lines right thing *************
@@ -581,54 +609,58 @@ window.configSlides =
 	{
 	  	type : "drawCommand",
 	  	v1 : "END of Visual Test",
-	  	v2 : "Thank you. The visual test if over now. ",
-	  	sound : "researcher/thankYouTheVisualTestIsOverNow.mp3"
-	},
-
-	{
-	  	type : "drawCommand",
-	  	v1 : "Vocal Experiment",
-	  	v2 : "Now, we will move on to the vocal test.",
-	  	sound : "researcher/nowWeMoveOnToVocalTest.mp3"
+	  	v2 : "Thank you for finishing this task. Here comes the next task. It is a spoken production task. You will see verbs on the screen and you will have to say the verb and the past tense of the verb which belongs to you. Each verb belongs to one participant. So the first participant says the first verb and its  past tense, the second one says the second verb and its past tense, and so on. There are no good or bad answers here. Just say whatever form you would use in real life. And there is no reason to hurry.",
+	  	sound : "instructions/inst13_verbal1.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 0,
 		v1 : ["be", "have", "do", "speak", "mean"],
-		sound : "researcher/hereIsTheSecondExample.mp3"
+		sound : "instructions/inst14_verbal_pr_0.wav"
+	},
+
+	{
+		type : "drawManyWord",
+	  	user : 0,
+		v1 : ["be", "have", "do", "speak", "mean"],
+		sound : "instructions/inst15_verbal_pr_1.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 1,
-		v1 : ["be", "have", "do", "speak", "mean"]
+		v1 : ["be", "have", "do", "speak", "mean"],
+		sound : "instructions/inst16_verbal_pr_2.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 2,
-		v1 : ["be", "have", "do", "speak", "mean"]
+		v1 : ["be", "have", "do", "speak", "mean"],
+		sound : "instructions/inst17_verbal_pr_3.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 3,
-		v1 : ["be", "have", "do", "speak", "mean"]
+		v1 : ["be", "have", "do", "speak", "mean"],
+		sound : "instructions/inst18_verbal_pr_4.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 4,
-		v1 : ["be", "have", "do", "speak", "mean"]
+		v1 : ["be", "have", "do", "speak", "mean"],
+		sound : "instructions/inst19_verbal_pr_5.wav"
 	},
 
 
 	{
 	  	type : "drawCommand",
-	  	v1 : "Vocal Test",
-	  	v2 : "I hope you understood everything. Let’s start now with the vocal test.", 
-	  	sound : "researcher/letsStartVocalTest.mp3"
+	  	v1 : "Verbal Task",
+	  	v2 : "Here comes the test. It again consists of about thirty rounds", 
+	  	sound : "instructions/inst20_visual_t.wav"
 	},
 
 	{
@@ -852,9 +884,9 @@ window.configSlides =
 	
 	{
 	  	type : "drawCommand",
-	  	v1 : "END",
-	  	v2 : "Thank you for participating in this test. My assistant will give you now some insight in the experiment.  ",
-	  	sound : "researcher/thankYouForParticipating.mp3"
+	  	v1 : "END of Experiment",
+	  	v2 : "The test is now complete. Thank you for participating. Please talk to the research assistant before you leave.",
+	  	sound : "instructions/inst21_tschuess.wav"
 	}
 
 ]
