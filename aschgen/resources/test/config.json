@@ -32,6 +32,14 @@
 			"required": false,
 			"id": "date",
 			"order": 3
+		},
+		"csv": {
+			"name": "csv",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "csv",
+			"order": 4
 		}
 	}
 }

@@ -2,6 +2,8 @@ window.mySlides = [];
 window.mySlidecount = 0;
 window.myCsv = "s, n, c, \n";
 
+
+
 /**
  * this will read the configSlides json file and generate the slides.
  */
@@ -499,7 +501,63 @@ function slideGenerator () {
 
 			case "finalRandMegaWords":
 
+				var outOutArray = [];
+
+				//window.configSlides[i].wordArray.remove(window.configSlides[i].wordArray.length);
+				
+				for (a in window.configSlides[i].wordArray){
+					//_storeScheme.push(window.configSlides[i].wordArray[a].scheme);
+					var shiftArray = [];
+					for (var three = 0; three < window.configSlides[i].iter; three += 1){
+
+						
+						var inArr = arrayCopy(window.configSlides[i].wordArray[a].v1);
+						//console.log(inArr);
+						var store = inArr[inArr.length-1-three];
+						inArr = removeArrayItem(inArr,inArr.length-1-three);
+						//inArr.remove(inArr.length-1-three);
+						inArr = shuffle(inArr);
+						//console.log(inArr);
+						inArr.push(store);
+						shiftArray.push(inArr);
+						//shiftArray.scheme = window.configSlides[i].wordArray[a].scheme;
+					}
+					outOutArray.push({scheme: window.configSlides[i].wordArray[a].scheme,
+						arr : shiftArray});
+
+				}
+
+				var _outOutArray = shuffle(outOutArray);
+				//console.log("outOutArray", _outOutArray, outOutArray);
+
 				for (var three = 0; three < window.configSlides[i].iter; three += 1){
+					for (a in _outOutArray){
+						//console.log(_outOutArray[a].arr[three]);
+						var innerAr = _outOutArray[a].arr[three];
+						for (var b = 0; b < innerAr.length; b+=1) {
+							var v1 = [innerAr[0],innerAr[1],innerAr[2],innerAr[3],innerAr[4]];
+							window.mySlides.push({
+								type : "drawManyWord",
+							  	user : b,
+								v1 : v1,
+								robotW : v1[b],
+								hardEasy : window.configSlides[i].hardEasy,
+								scheme: _outOutArray[a].scheme,
+							});
+
+							//console.log(_outOutArray[a].scheme);
+						}
+					}
+
+				}
+
+				/*
+				for (var three = 0; three < window.configSlides[i].iter; three += 1){
+
+
+
+
+
 					var myArray = window.configSlides[i].wordArray;
 					myArray = shuffle(myArray);
 					for (a in myArray) {
@@ -522,7 +580,7 @@ function slideGenerator () {
 						}
 						window.myCsv += ""+(window.mySlides.length-1)+", ed, ,\n";
 					}
-				}
+				}*/
 
 			break;
 
@@ -537,7 +595,7 @@ function slideGenerator () {
 
 
 function shuffle(arrayb) {
-	var array = arrayb;
+	var array = arrayCopy(arrayb);
 
 	for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -563,3 +621,25 @@ function incSlideCount(){
 	window.mySlidecount +=1;
 }
 
+
+// Array Remove - By John Resig (MIT Licensed)
+removeArrayItem = function (array,key) {
+    var _array = [];
+    delete array[key];
+    for (var item in array) {
+        if (array[item])
+            _array.push(array[item]);
+    }
+    return _array;
+};
+
+
+arrayCopy = function (array){
+	var _array = [];
+
+	for (var item in array) {
+        _array.push(array[item]);
+    }
+
+	return _array;
+}

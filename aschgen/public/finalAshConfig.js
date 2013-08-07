@@ -8,7 +8,7 @@ window.configUser = {
 window.configSlides = 
 [
 
-	
+	/*
 	{
 	  	type : "drawCommand",
 	  	v1 : "Welcome to the test",
@@ -51,13 +51,7 @@ window.configSlides =
 	  	v2 : "To make it easier for us to evaluate the data afterwards, participants take turns from left to right, in the order in which they are seated. To make it easier for you to know when it’s your turn to say your answer, we have added five coloured squares on top of the screen. If the square with your colour is full, it is your turn to say the answer. If you are not sure about your colour or if you forgot it, you can refer to the sheet of paper of the matching colour which is in front of you.",  	
 		sound : "instructions/inst4_visual2.wav"
 	},
-
-	{
-	  	type : "drawCommand",
-	  	v1 : "Researcher is speaking",
-	  	v2 : "Here is a practice round. All other rounds will look like this one.",  	
-		sound : "instructions/inst5_visual_pr_0.wav"
-	},
+	
 
 
 	{
@@ -65,8 +59,8 @@ window.configSlides =
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
 		"v3": 0.175,
-		"answer": 0.025,
-		"answernr": 1,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
 		"loudRobot" : false,
 		sound : "instructions/inst5_visual_pr_0.wav"
 	},
@@ -76,8 +70,8 @@ window.configSlides =
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
 		"v3": 0.175,
-		"answer": 0.025,
-		"answernr": 1,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
 		"loudRobot" : false,
 		sound : "instructions/inst6_visual_pr_1.wav"
 	},
@@ -87,8 +81,8 @@ window.configSlides =
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
 		"v3": 0.175,
-		"answer": 0.025,
-		"answernr": 1,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
 		"loudRobot" : false,
 		sound : "instructions/inst7_visual_pr_2.wav"
 	},
@@ -98,8 +92,8 @@ window.configSlides =
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
 		"v3": 0.175,
-		"answer": 0.025,
-		"answernr": 1,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
 		"loudRobot" : false,
 		sound : "instructions/inst8_visual_pr_3.wav"
 	},
@@ -109,8 +103,8 @@ window.configSlides =
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
 		"v3": 0.175,
-		"answer": 0.025,
-		"answernr": 1,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
 		"loudRobot" : false,
 		sound : "instructions/inst9_visual_pr_4.wav"
 	},
@@ -120,8 +114,8 @@ window.configSlides =
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
 		"v3": 0.175,
-		"answer": 0.025,
-		"answernr": 1,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
 		"loudRobot" : false,
 		sound : "instructions/inst10_visual_pr_5.wav"
 	},
@@ -132,6 +126,8 @@ window.configSlides =
 	  	v2 : "Here comes the task. It consists of about thirty rounds.", 
 	  	sound : "instructions/inst12_verbal_t.wav"
 	},
+
+	*/
 	
 	// **************** Lines right thing *************
 	{
@@ -609,7 +605,7 @@ window.configSlides =
 	{
 	  	type : "drawCommand",
 	  	v1 : "END of Visual Test",
-	  	v2 : "Thank you for finishing this task. Here comes the next task. It is a spoken production task. You will see verbs on the screen and you will have to say the verb and the past tense of the verb which belongs to you. Each verb belongs to one participant. So the first participant says the first verb and its  past tense, the second one says the second verb and its past tense, and so on. There are no good or bad answers here. Just say whatever form you would use in real life. And there is no reason to hurry.",
+	  	v2 : "Thank you for finishing this task. Here comes the next task. It is a spoken production task. You will see verbs on the screen and you will have to say the verb and the past tense of the verb which belongs to you. Each verb belongs to one participant. So the first participant says the first verb and its  past tense, the second one says the second verb and its past tense, and so on.",
 	  	sound : "instructions/inst13_verbal1.wav"
 	},
 
@@ -666,8 +662,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 0,
-		v1 : ["run", "spend", "lie", "fall", "pay"],
-		robotW : "run",
+		v1 : ["look", "ask", "call", "seem", "use"],
+		robotW : "look",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -675,8 +671,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 1,
-		v1 : ["run", "spend", "lie", "fall", "pay"],
-		robotW : "spend",
+		v1 : ["look", "ask", "call", "seem", "use"],
+		robotW : "ask",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -684,8 +680,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 2,
-		v1 : ["run", "spend", "lie", "fall", "pay"],
-		robotW : "lie",
+		v1 : ["look", "ask", "call", "seem", "use"],
+		robotW : "call",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -693,8 +689,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 3,
-		v1 : ["run", "spend", "lie", "fall", "pay"],
-		robotW : "fall",
+		v1 : ["look", "ask", "call", "seem", "use"],
+		robotW : "seem",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -702,8 +698,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 4,
-		v1 : ["run", "spend", "lie", "fall", "pay"],
-		robotW : "pay",
+		v1 : ["look", "ask", "call", "seem", "use"],
+		robotW : "use",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -711,8 +707,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 0,
-		v1 : ["build", "catch", "cut", "grow", "buy"],
-		robotW : "build",
+		v1 : ["want", "turn", "change", "try", "start"],
+		robotW : "want",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -720,8 +716,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 1,
-		v1 : ["build", "catch", "cut", "grow", "buy"],
-		robotW : "catch",
+		v1 : ["want", "turn", "change", "try", "start"],
+		robotW : "turn",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -729,8 +725,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 2,
-		v1 : ["build", "catch", "cut", "grow", "buy"],
-		robotW : "cut",
+		v1 : ["want", "turn", "change", "try", "start"],
+		robotW : "change",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -738,8 +734,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 3,
-		v1 : ["build", "catch", "cut", "grow", "buy"],
-		robotW : "grow",
+		v1 : ["want", "turn", "change", "try", "start"],
+		robotW : "try",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -747,8 +743,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 4,
-		v1 : ["build", "catch", "cut", "grow", "buy"],
-		robotW : "buy",
+		v1 : ["want", "turn", "change", "try", "start"],
+		robotW : "start",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -756,8 +752,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 0,
-		v1 : ["shake", "win", "teach", "lay", "throw"],
-		robotW : "shake",
+		v1 : ["use", "walk", "stop", "work", "live"],
+		robotW : "use",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -765,8 +761,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 1,
-		v1 : ["shake", "win", "teach", "lay", "throw"],
-		robotW : "win",
+		v1 : ["use", "walk", "stop", "work", "live"],
+		robotW : "walk",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -774,8 +770,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 2,
-		v1 : ["shake", "win", "teach", "lay", "throw"],
-		robotW : "teach",
+		v1 : ["use", "walk", "stop", "work", "live"],
+		robotW : "stop",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -783,8 +779,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 3,
-		v1 : ["shake", "win", "teach", "lay", "throw"],
-		robotW : "lay",
+		v1 : ["use", "walk", "stop", "work", "live"],
+		robotW : "work",
 		hardEasy : "cor",
 		cor : true
 	},
@@ -792,8 +788,8 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 4,
-		v1 : ["shake", "win", "teach", "lay", "throw"],
-		robotW : "throw",
+		v1 : ["use", "walk", "stop", "work", "live"],
+		robotW : "live",
 		hardEasy : "cor",
 		cor : true
 	},
