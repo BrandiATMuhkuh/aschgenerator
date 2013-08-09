@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.6.19)  6 AUG 2013 12:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.6.19)  8 AUG 2013 09:57
 entering extended mode
  %&-line parsing enabled.
 **sigproc-sp.tex
@@ -223,12 +223,6 @@ Overfull \hbox (1.26794pt too wide) in paragraph at lines 159--160
 /n/9 ]: Mis-cel-la-neous;
  []
 
-
-Underfull \hbox (badness 1360) in paragraph at lines 183--183
-[][]\T1/aer/m/n/9 Two of these, the \T1/aett/m/n/9 \num-bero-fau-thors \T1/aer/
-m/n/9 and \T1/aett/m/n/9 \alig-nau-
- []
-
 [1
 
 
@@ -239,11 +233,11 @@ File: fly.eps Graphic file (type eps)
  <fly.eps>
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 382.
+(Font)              using `T1/aett/m/n' instead on input line 367.
 
 \c@theorem=\count108
 
-Underfull \hbox (badness 1603) in paragraph at lines 406--410
+Underfull \hbox (badness 1603) in paragraph at lines 391--395
 []\T1/aer/m/n/9 This uses the \T1/aer/bx/n/9 the-o-rem \T1/aer/m/n/9 en-vi-ron-
 ment, cre-ated by the
  []
@@ -253,7 +247,7 @@ File: rosette.ps Graphic file (type eps)
 <rosette.ps>
 File: flies.eps Graphic file (type eps)
  <flies.eps>
-Overfull \hbox (15.60826pt too wide) detected at line 462
+Overfull \hbox (15.60826pt too wide) detected at line 447
 \OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
 /m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
 m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A [] [] \OT1/cmr/m/n/9 = 0 \OMS/cm
@@ -285,6 +279,6 @@ Here is how much of TeX's memory you used:
  5022 multiletter control sequences out of 15000+50000
  45086 words of font info for 55 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 39i,12n,26p,228b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,12n,26p,398b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on sigproc-sp.dvi (5 pages, 28668 bytes).
+Output written on sigproc-sp.dvi (5 pages, 28240 bytes).
