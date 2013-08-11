@@ -121,14 +121,21 @@ function createAverage(){
 function showAverage(){
   
   var csv = "";
-  csv += "Slide,Mistakes,Average Time, V1,V2,V3, Min Delta, Min Abs \n";
+  csv += "Slide,Mistakes,Average Time, V1,V2,V3, dV1, dV2, dV3, Min1 Delta, Min2 Delta, Min3 Delta,Min1 Abs, answer \n";
   var problems = 0;
   for(var k = 0; k < window.configSlides.length; k+=1){
     //if( window.configSlides[k].wrongs > 5){
     {
+      //answer
+      
       csv+= k +","+ window.configSlides[k].wrongs +","+ parseInt(window.configSlides[k].average) +","+ window.configSlides[k].v1.toFixed(3)  +","+ window.configSlides[k].v2.toFixed(3) +","+ window.configSlides[k].v3.toFixed(3);
       //console.log(k +"\t"+ window.configSlides[k].wrongs +"\t"+ parseInt(window.configSlides[k].average) +"\t"+ window.configSlides[k].v1.toFixed(3) +"\t"+ window.configSlides[k].v2.toFixed(3) +"\t"+ window.configSlides[k].v3.toFixed(3));
       
+      //diffs in percentage
+      console.log(window.configSlides[k].answer.toFixed(3), (window.configSlides[k].v1.toFixed(3)*100/window.configSlides[k].answer.toFixed(3))+","+ (window.configSlides[k].v2.toFixed(3)*100/window.configSlides[k].answer.toFixed(3))+","+ (window.configSlides[k].v3.toFixed(3)*100/window.configSlides[k].answer.toFixed(3)));
+      csv+=","+ (100-(window.configSlides[k].v1.toFixed(3)*100/window.configSlides[k].answer.toFixed(3)).toFixed(3))+","+ (100-(window.configSlides[k].v2.toFixed(3)*100/window.configSlides[k].answer.toFixed(3)).toFixed(3))+","+ (100-(window.configSlides[k].v3.toFixed(3)*100/window.configSlides[k].answer.toFixed(3)).toFixed(3));
+
+
       //calc delta
       var s12 = [window.configSlides[k].v1.toFixed(3), window.configSlides[k].v2.toFixed(3)];
       var s23 = [window.configSlides[k].v2.toFixed(3), window.configSlides[k].v3.toFixed(3)];
@@ -140,6 +147,9 @@ function showAverage(){
       var delatas = [(s12[1]*100)/s12[0],(s23[1]*100)/s23[0],(s31[1]*100)/s31[0]];
       delatas.sort(function(a,b){return a- b});
       csv+=","+ delatas[0].toFixed(3);
+      csv+=","+ delatas[1].toFixed(3);
+      csv+=","+ delatas[2].toFixed(3);
+
       
       
       
@@ -149,7 +159,12 @@ function showAverage(){
       var tarr = [ta,tb,tc];
       tarr.sort(function(a,b){return a - b});
       //console.log(tarr);
-      csv+=","+tarr[0].toFixed(3);
+      csv+=","+tarr[0].toFixed(3)+",";
+
+
+      //answer
+      csv+=window.configSlides[k].answer.toFixed(3);
+
       problems+=1;
       csv+="\n";
     }
