@@ -6,6 +6,7 @@
 	<script type="text/javascript" src="finalAshConfig.js"></script>
 	<script type="text/javascript">
 
+	window.newCsv = "";
 
 	function script(){
 		console.log("script laod");
@@ -15,12 +16,23 @@
 
 	}
 
+	function createCsv(){
+		window.newCsv="Nr, C, P, Nr, C, P,\n";
+
+		for(a in window.myCsv1){
+			window.newCsv += window.myCsv1[a]+window.myCsv2[a];
+		}
+
+
+	}
+
 	function storeCurrentSettingIntoDb(number){
+		createCsv();
 		/**
 		 * run the following command to store the genereated file in the database
 		 */
 		if(number){
-			dpd.test.post({"name":""+number,"xml":window.myXmlFile,"everything":window.mySlides, "csv":window.myCsv}, function(result, err) {
+			dpd.test.post({"name":""+number,"xml":window.myXmlFile,"everything":window.mySlides, "csv":window.newCsv}, function(result, err) {
 			  if(err) return console.log(err);
 			  console.log(result, result.id);
 			});

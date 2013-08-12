@@ -8,7 +8,7 @@ window.configUser = {
 window.configSlides = 
 [
 
-	/*
+	
 	{
 	  	type : "drawCommand",
 	  	v1 : "Welcome to the test",
@@ -17,37 +17,37 @@ window.configSlides =
 
 	{
 	  	type : "drawCommand",
-	  	v1 : "Researcher is speaking",
+	  	v1 : "Introduction",
 	  	v2 : "Hello and welcome to our visual cognition and verbal communication test. Thank you for participating. The test consists of a visual task followed by a verbal task and takes about twenty minutes.",  	
 		sound : "instructions/inst1_hello.wav"
 	},
 
 	{
 	  	type : "drawCommand",
-	  	v1 : "Researcher is speaking",
+	  	v1 : "Introduction",
 	  	v2 : "The aim of this test is to assess the performance of the humanoid participants in visual cognition and verbal communication. Each of the humanoid participants has spent the last twelve months living with a New Zealand family and has used this time to train human-like cognitive abilities. The human participant is present in order to ensure that the test matches the Human Interface Technology Lab’s strict criteria for experimental design.",  	
 		sound : "instructions/inst2_intro_robot.wav"
 	},
-
+/*
 	{
 	  	type : "drawCommand",
 	  	v1 : "Researcher is speaking",
 	  	v2 : "This test is used as a reference for another test, one that we are running separately. In that test, we are interested in the visual and verbal abilities of humanoid robots. In order to ensure that the test matches the human interface technology lab’s strict criteria for experimental design, we created a reference test which only has human participants. This way, we can compare the data later.",  	
 		sound : "instructions/inst2_intro_human.wav"
 	},
-
+*/
 
 
 	{
 	  	type : "drawCommand",
-	  	v1 : "Researcher is speaking",
+	  	v1 : "Introduction",
 	  	v2 : "The first task is a visual decision task. On the left hand side, you will see three bars, labelled A, B, and C. On the right hand side, you will see a reference bar. You will simply have to say the letter corresponding to the bar on the left that is the same height as the bar on the right.",  	
 		sound : "instructions/inst3_visual1.wav"
 	},
 
 	{
 	  	type : "drawCommand",
-	  	v1 : "Researcher is speaking",
+	  	v1 : "Introduction",
 	  	v2 : "To make it easier for us to evaluate the data afterwards, participants take turns from left to right, in the order in which they are seated. To make it easier for you to know when it’s your turn to say your answer, we have added five coloured squares on top of the screen. If the square with your colour is full, it is your turn to say the answer. If you are not sure about your colour or if you forgot it, you can refer to the sheet of paper of the matching colour which is in front of you.",  	
 		sound : "instructions/inst4_visual2.wav"
 	},
@@ -127,7 +127,7 @@ window.configSlides =
 	  	sound : "instructions/inst12_verbal_t.wav"
 	},
 
-	*/
+	
 	
 	// **************** Lines right thing *************
 	{
@@ -613,42 +613,42 @@ window.configSlides =
 	{
 		type : "drawManyWord",
 	  	user : 0,
-		v1 : ["be", "have", "do", "speak", "mean"],
+		v1 : ["like", "talk", "watch", "pick", "pull"],
 		sound : "instructions/inst14_verbal_pr_0.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 0,
-		v1 : ["be", "have", "do", "speak", "mean"],
+		v1 : ["like", "talk", "watch", "pick", "pull"],
 		sound : "instructions/inst15_verbal_pr_1.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 1,
-		v1 : ["be", "have", "do", "speak", "mean"],
+		v1 : ["like", "talk", "watch", "pick", "pull"],
 		sound : "instructions/inst16_verbal_pr_2.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 2,
-		v1 : ["be", "have", "do", "speak", "mean"],
+		v1 : ["like", "talk", "watch", "pick", "pull"],
 		sound : "instructions/inst17_verbal_pr_3.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 3,
-		v1 : ["be", "have", "do", "speak", "mean"],
+		v1 : ["like", "talk", "watch", "pick", "pull"],
 		sound : "instructions/inst18_verbal_pr_4.wav"
 	},
 
 	{
 		type : "drawManyWord",
 	  	user : 4,
-		v1 : ["be", "have", "do", "speak", "mean"],
+		v1 : ["like", "talk", "watch", "pick", "pull"],
 		sound : "instructions/inst19_verbal_pr_5.wav"
 	},
 

@@ -1,7 +1,8 @@
 window.mySlides = [];
 window.mySlidecount = 0;
-window.myCsv = "s, n, c, \n";
-
+//window.myCsv = "s, n, c, \n";
+window.myCsv1 = [];
+window.myCsv2 = [];
 
 
 /**
@@ -32,6 +33,19 @@ function slideGenerator () {
 					Math.abs(ashList[k].v2 - ashList[k].answer),
 					Math.abs(ashList[k].v3 - ashList[k].answer)];
 					var samllestNr = 0;
+
+
+
+					//Find the closest one as answer
+					var smallest = carr[samllestNr];
+
+					for(a=1; a < carr.length; a+=1){
+						if((carr[a] < carr[samllestNr] && carr[a] != 0) || carr[samllestNr] == 0){
+							samllestNr=a;
+						}
+					}
+
+					/*
 					if(window.configSlides[i].hardEasy=="hard"){
 						//Find the closest one as answer
 						var smallest = carr[samllestNr];
@@ -56,7 +70,7 @@ function slideGenerator () {
 						//console.log(samllestNr,carr);
 					}
 					//console.log(samllestNr,carr);
-					
+					*/
 					
 					for (var t = 0; t < 5; t++){
 
@@ -77,7 +91,14 @@ function slideGenerator () {
 
 
 					//console.log("sayWhat: ", window.mySlides.length,samllestNr);
-					window.myCsv += ""+(window.mySlides.length-1)+", "+samllestNr+", ,\n";
+					var _abc = "A";
+					if(samllestNr == 1){
+						_abc = "B";
+					}else if(samllestNr == 2){
+						_abc = "C";
+					}
+
+					window.myCsv1.push(""+(window.mySlides.length-1)+", "+_abc+", ,");
 				}
 
 			break;
@@ -547,6 +568,7 @@ function slideGenerator () {
 
 							//console.log(_outOutArray[a].scheme);
 						}
+						window.myCsv2.push(""+(window.mySlides.length-1)+", ed, ,\n");
 					}
 
 				}
