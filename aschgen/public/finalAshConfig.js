@@ -37,7 +37,7 @@ window.configSlides =
 	},
 */
 
-
+////////////////////////////////////// FIRST TASK
 	{
 	  	type : "drawCommand",
 	  	v1 : "Introduction",
@@ -609,6 +609,8 @@ window.configSlides =
 	  	v2 : "Thank you for finishing this task. Here comes the next task. It is a spoken production task. You will see verbs on the screen and you will have to say the verb and the past tense of the verb which belongs to you. Each verb belongs to one participant. So the first participant says the first verb and its  past tense, the second one says the second verb and its past tense, and so on.",
 	  	sound : "instructions/inst13_verbal1.wav"
 	},
+
+
 
 	{
 		type : "drawManyWord",
