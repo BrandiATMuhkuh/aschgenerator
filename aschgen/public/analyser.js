@@ -38,8 +38,12 @@ function queryAllResutls(skip){
     });
 }
 
+function countPartis(){
+  console.log(window.aschTracks.length);
+}
 
 function startStats(){
+  countPartis();
    console.log("startStats", window.aschResults.length);
    
    for(var i = 0; i < window.aschTracks.length; i+=1){

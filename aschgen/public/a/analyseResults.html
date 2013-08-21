@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="../dpd.js"></script>
+</head>
+<body>
+	<h1>Analyse</h1>
+	<script type="text/javascript">
+
+	var _ret;
+	dpd.experresults.get(function (result, err) {
+	  if(err) return console.log(err);
+
+	  analyse(result);
+	  
+	});
+
+	function analyse(data){
+		//console.log(data);
+		
+		var histLa = {
+			"0" : {c:0, n:0},
+			"1" : {c:0, n:0},
+			"2" : {c:0, n:0},
+			"3" : {c:0, n:0},
+			"4" : {c:0, n:0},
+			"5" : {c:0, n:0},
+			"6" : {c:0, n:0},
+			"7" : {c:0, n:0},
+			"8" : {c:0, n:0},
+			"9" : {c:0, n:0},
+			"10" : {c:0, n:0},
+			"11" : {c:0, n:0},
+			"12" : {c:0, n:0},
+			"13" : {c:0, n:0},
+			"14" : {c:0, n:0},
+			"15" : {c:0, n:0},
+		};
+
+		var histLc = {
+			"0" : {c:0, n:0},
+			"1" : {c:0, n:0},
+			"2" : {c:0, n:0},
+			"3" : {c:0, n:0},
+			"4" : {c:0, n:0},
+			"5" : {c:0, n:0},
+			"6" : {c:0, n:0},
+			"7" : {c:0, n:0},
+			"8" : {c:0, n:0},
+			"9" : {c:0, n:0},
+			"10" : {c:0, n:0},
+			"11" : {c:0, n:0},
+			"12" : {c:0, n:0},
+			"13" : {c:0, n:0},
+			"14" : {c:0, n:0},
+			"15" : {c:0, n:0},
+		};
+		var csv = "P,La, Lc, Wa, Wc, Nationality, Native, Age, Group, Study, Addings\n";
+		for(a in data){
+			//console.log(data[a].res.survey);
+
+			if(a!=12 || true){
+				data[a].lineAmbigCount = countResults(data[a].res.lineAmbig);
+				data[a].lineAmbigAvr = data[a].lineAmbigCount/15;
+
+				data[a].lineNAmbigCount = countResults(data[a].res.lineNAmbig);
+				data[a].lineNAmbigAvr = data[a].lineNAmbigCount/15;
+
+				data[a].wordsAmbigCount = countResults(data[a].res.wordsAmbig);
+				data[a].wordsAmbigAvr = data[a].wordsAmbigCount/15;
+
+				data[a].wordsNAmbigCount = countResults(data[a].res.wordsNAmbig);
+				data[a].wordsNAmbigAvr = data[a].wordsNAmbigCount/15;
+
+				histLa[data[a].lineAmbigCount].c+=1;
+				histLc[data[a].lineNAmbigCount].c+=1;
+				
+
+				var _native = false;
+				if(data[a].res.survey.Q7==1){_native=true;}
+
+
+				var _group = "O";
+
+				if(data[a].res.survey.Q3==1){
+					_group = "UG"
+				}else if(data[a].res.survey.Q3==2){
+					_group = "G"
+				}else if(data[a].res.survey.Q3==3){
+					_group = "S"
+				}
+
+				csv += data[a].res.part+", "+data[a].lineAmbigCount+", "+data[a].lineNAmbigCount+", "+data[a].wordsAmbigCount+", "+data[a].wordsNAmbigCount+", "+data[a].res.survey.Q1+", "+_native+", "+data[a].res.survey.Q2_1+", "+_group+", "+data[a].res.survey.Q10+", "+data[a].res.survey.Q8+"\n";
+			}else{
+				//console.log(data[a]);
+			}
+
+		}
+
+		//console.log(csv);
+
+
+		var LaTest=0;
+		var LcTest=0;
+		var LaGes=0;
+		var LcGes=0;
+		for(a in histLa){
+			LaTest+=histLa[a].c;
+			histLa[a].n=a*histLa[a].c;
+			LaGes+=histLa[a].n;
+		}
+
+		for(a in histLc){
+			LcTest+=histLc[a].c;
+			histLc[a].n=a*histLc[a].c;
+			LcGes+=histLc[a].n;
+		}
+		var gesTests = LaTest*15;
+
+		console.log(gesTests,LaTest,LcTest,LaGes,LcGes,LaGes*100/gesTests, LcGes*100/gesTests, (LaGes+LcGes)*100/(gesTests*2)  );
+	}
+
+
+	function countResults(val){
+
+		var count = 0;
+		for(b in val){
+			//console.log(data[a].res.lineAmbig[b].res);
+			if(val[b].res){
+				count+=1;
+			}
+		}
+		return count;
+	}
+
+	</script>
+
+</body>
+</html>

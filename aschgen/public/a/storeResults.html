@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="../dpd.js"></script>
+	<script type="text/javascript" src="survey.js"></script>
+</head>
+<body>
+	<h1>Store and maybe analyse results</h1>
+	<input type="checkbox" id="isRobotCondition" value="1" checked="checked" />Is this a robot condition?<br />
+	<input type="text" name="part" id="part">Part<br />
+	<script type="text/javascript">
+
+	for (var i = 31; i <= 176; i+=5) {
+		document.write('<input type="checkbox" class="resultChecks" id="'+i+'" name="'+i+'" value="1" />'+i+'<br />');
+	};
+
+	for (var i = 204; i <= 349; i+=5) {
+		document.write('<input type="checkbox" class="resultChecks" id="'+i+'" name="'+i+'" value="1" />'+i+'<br />');
+	};
+	
+
+
+	function storeResult(){
+		var _storeObj = {};
+		_storeObj.isRobotCondition = document.getElementById("isRobotCondition").checked;
+		_storeObj.part = document.getElementById("part").value;
+		_storeObj.survey = {
+			Q1 : _map[_storeObj.part].Q1,
+			Q2_1 : _map[_storeObj.part].Q2_1,
+			Q3 : _map[_storeObj.part].Q3,
+			Q4 : _map[_storeObj.part].Q4,
+			Q5 : _map[_storeObj.part].Q5,
+			Q6 : _map[_storeObj.part].Q6,
+			Q7 : _map[_storeObj.part].Q7,
+			Q8 : _map[_storeObj.part].Q8,
+			Q9 : _map[_storeObj.part].Q9,
+			Q10 : _map[_storeObj.part].Q10,
+		};
+
+		var _res = document.getElementsByClassName("resultChecks");
+
+		/////////////////////////////////////
+		var _lineAmbig = [];
+		var _lineAmbigCount = 0;
+		for (var i = 0; i < 15; i+=1){
+			_lineAmbig.push({id:_res[i].id, res:_res[i].checked});
+			if(_res[i].checked){ 
+				_lineAmbigCount+=1;
+			}
+		}
+		_storeObj.lineAmbig = _lineAmbig;
+		//_storeObj.lineAmbigCount = _lineAmbigCount/15;
+
+
+		/////////////////////////////////////
+		var _lineNAmbig = [];
+		var _lineNAmbigCount = 0;
+		for (var i = 15; i < 30; i+=1){
+			_lineNAmbig.push({id:_res[i].id, res:_res[i].checked});
+			if(_res[i].checked){ 
+				_lineNAmbigCount+=1;
+			}
+		}
+		_storeObj.lineNAmbig = _lineNAmbig;
+		//_storeObj.lineNAmbigCount = _lineNAmbigCount/15;
+
+
+		/////////////////////////////////////
+		var _wordsAmbig = [];
+		var _wordsAmbigCount = 0;
+		for (var i = 30; i < 45; i+=1){
+			_wordsAmbig.push({id:_res[i].id, res:_res[i].checked});
+			if(_res[i].checked){ 
+				_wordsAmbigCount+=1;
+			}
+		}
+		_storeObj.wordsAmbig = _wordsAmbig;
+		//_storeObj.wordsAmbigCount = _wordsAmbigCount/15;
+
+
+		/////////////////////////////////////
+		var _wordsNAmbig = [];
+		var _wordsNAmbigCount = 0;
+		for (var i = 45; i < 60; i+=1){
+			_wordsNAmbig.push({id:_res[i].id, res:_res[i].checked});
+			if(_res[i].checked){ 
+				_wordsNAmbigCount+=1;
+			}
+		}
+		_storeObj.wordsNAmbig = _wordsNAmbig;
+		//_storeObj.wordsNAmbigCount = _wordsNAmbigCount/15;
+
+
+		console.log(_storeObj);
+		dpd.experresults.post({res:_storeObj}, function(result, err) {
+		});
+
+	}
+
+	</script>
+
+	<button type="button" onclick="storeResult()">Click Me!</button>
+	
+</body>
+</html>
