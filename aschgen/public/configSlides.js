@@ -9,7 +9,16 @@ window.configUser = {
 window.configSlides = 
 [
 
-	
+	{
+		"type": "drawAsch",
+		"v1": 1,
+		"v2": 0.95,
+		"v3": 1,
+		"answer": 1,
+		"answernr": 0,
+		"loudRobot": false,
+		"sound": "instructions/inst5_visual_pr_0.wav"
+	},
 	
 	{
 	  	type : "drawCommand",
@@ -26,7 +35,7 @@ window.configSlides =
 
 	{
 		type : "deltaAsch",
-		delta : 0.9
+		delta : 0.01
 	},
 	{
 		type : "deltaAsch",

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.6.19)  12 AUG 2013 07:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.6.19)  26 AUG 2013 10:19
 entering extended mode
  %&-line parsing enabled.
 **sigproc-sp.tex
@@ -106,31 +106,301 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
+(/usr/share/texmf-texlive/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2009/08/01 .dtx Todonotes source and documentation.
+Package: todonotes 2009/04/02
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+(/usr/share/texmf-texlive/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+\XKV@depth=\count91
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks23
+)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box28
+
+(/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks26
+))
+\pgf@x=\dimen115
+\pgf@y=\dimen116
+\pgf@xa=\dimen117
+\pgf@ya=\dimen118
+\pgf@xb=\dimen119
+\pgf@yb=\dimen120
+\pgf@xc=\dimen121
+\pgf@yc=\dimen122
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count92
+\c@pgf@countb=\count93
+\c@pgf@countc=\count94
+\c@pgf@countd=\count95
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-dvips.def on input line 900.
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-dvips.def
+File: pgfsys-dvips.def 2008/04/03  (rcs-revision 1.20)
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-postscript.def
+File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
+\pgf@objectcount=\count96
+)))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count97
+\pgfsyssoftpath@bigbuffer@items=\count98
+)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen123
+\pgfmath@count=\count99
+\pgfmath@box=\box29
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
+)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count100
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen124
+\pgf@picmaxx=\dimen125
+\pgf@picminy=\dimen126
+\pgf@picmaxy=\dimen127
+\pgf@pathminx=\dimen128
+\pgf@pathmaxx=\dimen129
+\pgf@pathminy=\dimen130
+\pgf@pathmaxy=\dimen131
+\pgf@xx=\dimen132
+\pgf@xy=\dimen133
+\pgf@yx=\dimen134
+\pgf@yy=\dimen135
+\pgf@zx=\dimen136
+\pgf@zy=\dimen137
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen138
+\pgf@path@lasty=\dimen139
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen140
+\pgf@shorten@start@additional=\dimen141
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count101
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen142
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen143
+\pgf@pt@y=\dimen144
+\pgf@pt@temp=\dimen145
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen146
+\pgf@sys@shading@range@num=\count102
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box33
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box34
+)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen147
+\pgf@nodesepend=\dimen148
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen149
+\pgffor@skip=\dimen150
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count103
+\pgfplotmarksize=\dimen151
+)
+\tikz@lastx=\dimen152
+\tikz@lasty=\dimen153
+\tikz@lastxsaved=\dimen154
+\tikz@lastysaved=\dimen155
+\tikzleveldistance=\dimen156
+\tikzsiblingdistance=\dimen157
+\tikz@figbox=\box35
+\tikz@tempbox=\box36
+\tikztreelevel=\count104
+\tikznumberofchildren=\count105
+\tikznumberofcurrentchild=\count106
+\tikz@fig@count=\count107
+
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count108
+\pgfmatrixcurrentcolumn=\count109
+\pgf@matrix@numberofcolumns=\count110
+)
+\tikz@expandcount=\count111
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
+hs.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+))) (/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count112
+\calc@Bcount=\count113
+\calc@Adimen=\dimen158
+\calc@Bdimen=\dimen159
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count114
+\calc@Cskip=\skip46
+)
+\c@@todonotes@numberoftodonotes=\count115
+)
 Document Class 'acm_proc_article-sp' <22nd. April '09>. Modified by G.K.M. Tobi
 n
 Based in part upon document Style `acmconf' <22 May 89>. Hacked 4/91 by
 shivers@cs.cmu.edu, 4/93 by theobald@cs.mcgill.ca
 Excerpts were taken from (Journal Style) 'esub2acm.cls'.
 ****** Bugs/comments/suggestions to Gerry Murray -- murray@hq.acm.org ******
-\footheight=\dimen115
-\@maxsep=\dimen116
-\@dblmaxsep=\dimen117
-\aucount=\count91
-\originalaucount=\count92
-\auwidth=\dimen118
-\auskip=\dimen119
-\auskipcount=\count93
-\auskip=\dimen120
-\allauboxes=\dimen121
-\addauthors=\toks21
-\addauflag=\count94
-\subtitletext=\toks22
-\savesection=\count95
-\sectioncntr=\count96
-\c@figure=\count97
-\c@table=\count98
-\titleboxnotes=\toks23
-\titleboxnoteflag=\count99
+\footheight=\dimen160
+\@maxsep=\dimen161
+\@dblmaxsep=\dimen162
+\aucount=\count116
+\originalaucount=\count117
+\auwidth=\dimen163
+\auskip=\dimen164
+\auskipcount=\count118
+\auskip=\dimen165
+\allauboxes=\dimen166
+\addauthors=\toks32
+\addauflag=\count119
+\subtitletext=\toks33
+\savesection=\count120
+\sectioncntr=\count121
+\c@figure=\count122
+\c@table=\count123
+\titleboxnotes=\toks34
+\titleboxnoteflag=\count124
 Document Class: acm_proc_article-sp 2009/04/22 - V3.2SP - based on esub2acm.sty
  <23 April 96>
 (/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
@@ -139,32 +409,32 @@ Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 )
-\@acmtitlebox=\box28
-\titlenotecount=\count100
-\tntoks=\toks24
-\tntokstwo=\toks25
-\tntoksthree=\toks26
-\tntoksfour=\toks27
-\tntoksfive=\toks28
-\catcount=\count101
-\copyrightnotice=\toks29
-\conf=\toks30
-\confinfo=\toks31
-\c@part=\count102
-\c@section=\count103
-\c@subsection=\count104
-\c@subsubsection=\count105
-\c@paragraph=\count106
+\@acmtitlebox=\box37
+\titlenotecount=\count125
+\tntoks=\toks35
+\tntokstwo=\toks36
+\tntoksthree=\toks37
+\tntoksfour=\toks38
+\tntoksfive=\toks39
+\catcount=\count126
+\copyrightnotice=\toks40
+\conf=\toks41
+\confinfo=\toks42
+\c@part=\count127
+\c@section=\count128
+\c@subsection=\count129
+\c@subsubsection=\count130
+\c@paragraph=\count131
 
 Using 'Abbrev' bibliography style
-LaTeX Info: Redefining \cite on input line 1236.
-\bibindent=\dimen122
-\colcntr=\count107
-\saveb@x=\box29
-\copyrtyr=\toks32
-\acmcopyr=\toks33
-\boilerplate=\toks34
-\copyrightetc=\toks35
+LaTeX Info: Redefining \cite on input line 1237.
+\bibindent=\dimen167
+\colcntr=\count132
+\saveb@x=\box38
+\copyrtyr=\toks43
+\acmcopyr=\toks44
+\boilerplate=\toks45
+\copyrightetc=\toks46
 (/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -191,69 +461,104 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Try loading font information for U+msa on input line 135.
+
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 99.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 135.
+LaTeX Font Info:    Try loading font information for U+msb on input line 99.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 135.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 99.
 
 (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for T1+aett on input line 136.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 100.
 
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Overfull \hbox (1.0793pt too wide) in paragraph at lines 137--143
+Overfull \hbox (1.0793pt too wide) in paragraph at lines 101--107
 \T1/aer/m/it/9 Prepar-ing ACM SIG Pro-ceed-ings Us-ing L[]T[]X$\OT1/cmr/m/n/9 2
 []$ \T1/aer/m/it/9 and BibT[]X\T1/aer/m/n/9 .
  []
 
 
-Overfull \hbox (1.26794pt too wide) in paragraph at lines 159--160
+Overfull \hbox (1.26794pt too wide) in paragraph at lines 123--124
 \T1/aer/m/n/9 H.4 [\T1/aer/bx/n/9 Information Sys-tems Ap-pli-ca-tions\T1/aer/m
 /n/9 ]: Mis-cel-la-neous;
  []
 
-[1
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
-] [2]
-File: fly.eps Graphic file (type eps)
- <fly.eps>
-File: fly.eps Graphic file (type eps)
- <fly.eps>
+]
+File: lines.eps Graphic file (type eps)
 
-LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
-(Font)              using `T1/aett/m/n' instead on input line 398.
+<lines.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-\c@theorem=\count108
-
-Underfull \hbox (badness 1603) in paragraph at lines 422--426
-[]\T1/aer/m/n/9 This uses the \T1/aer/bx/n/9 the-o-rem \T1/aer/m/n/9 en-vi-ron-
-ment, cre-ated by the
+ [2]
+Overfull \hbox (264.0pt too wide) in paragraph at lines 217--218
+[]
  []
 
-[3]
-\c@definition=\count109
-File: rosette.ps Graphic file (type eps)
- <rosette.ps>
-File: flies.eps Graphic file (type eps)
- <flies.eps>
-Overfull \hbox (15.60826pt too wide) detected at line 478
-\OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
-/m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
-m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9 ^^A [] [] \OT1/cmr/m/n/9 = 0 \OMS/cm
-sy/m/n/9 ^^A \OML/cmm/m/it/9 L \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ;
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
+
  []
+
+
+Underfull \vbox (badness 8094) has occurred while \output is active []
+
+ [3]
+Overfull \hbox (13.84897pt too wide) in paragraph at lines 235--251
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--258
+
+ []
+
+
+Overfull \hbox (6.98131pt too wide) in paragraph at lines 271--271
+[]\subsecfnt Do par-tic-i-pants con-form more to the robot group
+ []
+
+
+Overfull \hbox (1.19533pt too wide) in paragraph at lines 275--276
+[]\T1/aer/m/n/9 We per-formed a one-sample t-test to com-pare our robot/non-
+ []
+
+File: nonvsamlines.eps Graphic file (type eps)
+<nonvsamlines.eps> [4]
+Overfull \hbox (6.98131pt too wide) in paragraph at lines 288--288
+[]\subsecfnt Do par-tic-i-pants con-form more to the robot group
+ []
+
+
+Overfull \hbox (7.0904pt too wide) in paragraph at lines 292--293
+\T1/aer/m/n/9 p=0.335) be-tween lines/words and ambiguous/non-ambiguous
+ []
+
+
+Overfull \hbox (6.98131pt too wide) in paragraph at lines 316--316
+[]\subsecfnt Do par-tic-i-pants con-form more to the robot group
+ []
+
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 (./sigproc-sp.bbl
 Overfull \hbox (4.79341pt too wide) in paragraph at lines 1--1
@@ -262,28 +567,20 @@ Overfull \hbox (4.79341pt too wide) in paragraph at lines 1--1
 
 
 Overfull \hbox (22.39977pt too wide) in paragraph at lines 1--1
-\T1/aett/bx/n/9 jsmith@affiliation.org\T1/aer/m/n/9 ) and Julius P. Kumquat (Th
-e Kumquat
+\T1/aett/m/n/9 jsmith@affiliation.org\T1/aer/m/n/9 ) and Julius P. Kumquat (The
+ Kumquat
  []
 
-) [4]
-Overfull \vbox (151.6775pt too high) has occurred while \output is active []
+[6]) [7
 
-
-[5
-
-] (./sigproc-sp.aux)
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
+] (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 1864 strings out of 495062
- 20459 string characters out of 1182644
- 77973 words of memory out of 3000000
- 5022 multiletter control sequences out of 15000+50000
- 45086 words of font info for 55 fonts, out of 3000000 for 9000
+ 10617 strings out of 495062
+ 193669 string characters out of 1182644
+ 244237 words of memory out of 3000000
+ 13565 multiletter control sequences out of 15000+50000
+ 43426 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 39i,12n,26p,705b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,9n,78p,1443b,577s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on sigproc-sp.dvi (5 pages, 30928 bytes).
+Output written on sigproc-sp.dvi (7 pages, 65468 bytes).

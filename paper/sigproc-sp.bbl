@@ -1,35 +1,62 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{bowman:reasoning}
-M.~Bowman, S.~K. Debray, and L.~L. Peterson.
-\newblock Reasoning about naming systems.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):795--825, November 1993.
+\bibitem{asch1951effects}
+S.~E. Asch.
+\newblock {Effects of group pressure upon the modification and distortion of
+  judgments}.
+\newblock {\em Groups, Leadership, and Men. S}, pages 222--236, 1951.
 
-\bibitem{braams:babel}
-J.~Braams.
-\newblock Babel, a multilingual style-option system for use with latex's
-  standard document styles.
-\newblock {\em TUGboat}, 12(2):291--301, June 1991.
+\bibitem{asch1955opinions}
+S.~E. Asch.
+\newblock {Opinions and social pressure}.
+\newblock 1955.
 
-\bibitem{clark:pct}
-M.~Clark.
-\newblock Post congress tristesse.
-\newblock In {\em TeX90 Conference Proceedings}, pages 84--89. TeX Users Group,
-  March 1991.
+\bibitem{2011-16966-00119560101}
+S.~E. Asch.
+\newblock {Studies of independence and conformity: I. A minority of one against
+  a unanimous majority.}
+\newblock {\em Psychological Monographs: General and Applied}, 70(9):1--70,
+  1956.
 
-\bibitem{herlihy:methodology}
-M.~Herlihy.
-\newblock A methodology for implementing highly concurrent data objects.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):745--770, November 1993.
+\bibitem{Burkeman2003}
+O.~Burkeman.
+\newblock {Memo exposes Bush's new green strategy | Environment | The
+  Guardian}, 2003.
 
-\bibitem{Lamport:LaTeX}
-L.~Lamport.
-\newblock {\em LaTeX User's Guide and Document Reference Manual}.
-\newblock Addison-Wesley Publishing Company, Reading, Massachusetts, 1986.
+\bibitem{Cialdini2009}
+R.~B. Cialdini.
+\newblock {\em {Influence : science and practice}}.
+\newblock HarperCollins, 2009.
 
-\bibitem{salas:calculus}
-S.~Salas and E.~Hille.
-\newblock {\em Calculus: One and Several Variable}.
-\newblock John Wiley and Sons, New York, 1978.
+\bibitem{McLeod}
+S.~McLeod.
+\newblock {Asch Experiment}.
+
+\bibitem{McLeod2007}
+S.~A. McLeod.
+\newblock {What is Conformity? - Simply Psychology}, 2007.
+
+\bibitem{Murphy2012}
+D.~Murphy.
+\newblock {Leaked Apple store manual reveals madness behind the genius | News |
+  TechRadar}, 2012.
+
+\bibitem{NSA2011}
+NSA.
+\newblock {The world factbook Austria}, 2011.
+
+\bibitem{Samsung}
+Samsung.
+\newblock {Samsung Smart TV 2013}.
+
+\bibitem{sherif1935study}
+M.~Sherif.
+\newblock {A study of some social factors in perception.}
+\newblock {\em Archives of Psychology (Columbia University)}, 1935.
+
+\bibitem{Worldrobotcs.org2012}
+Worldrobotcs.org.
+\newblock {World Robotics - Industrial Robots 2012 Executive Summary}.
+\newblock Technical report, 2012.
 
 \end{thebibliography}
