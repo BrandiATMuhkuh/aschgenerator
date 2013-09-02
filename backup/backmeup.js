@@ -70,7 +70,7 @@ function pullExperresults(container, skip, limit){
     		pullResults(container,skip+=100,100);
     	}else{
     		//we reach this point only when we are finished    		    		
-    		storeFile("groupTestResults.json", JSON.stringify(container));
+    		storeFile("groupExperimentResults.json", JSON.stringify(container));
     	}
 	});
 }
