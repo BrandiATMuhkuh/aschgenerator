@@ -120,7 +120,7 @@ Asch.totalWordsNAmbig = function(){
 
 
 Asch.main = function() {
-	console.log(groupExperimentResults.length);
+	//console.log(groupExperimentResults.length);
 
 
 	for (a in groupExperimentResults){
@@ -174,6 +174,7 @@ Asch.main = function() {
 
 
 	this.fillPeopleTable();
+	this.fillMistakesTable();
 }
 
 
@@ -227,6 +228,57 @@ Asch.fillPeopleTable = function(){
 	peopleTableSum.rows[0].cells[2].innerHTML=""+Asch.totalLineNAmbig();
 	peopleTableSum.rows[0].cells[3].innerHTML=""+Asch.totalWordsAmbig();
 	peopleTableSum.rows[0].cells[4].innerHTML=""+Asch.totalWordsNAmbig();
+}
+
+Asch.fillMistakesTable = function(){
+	//console.log("wir kuemmern uns um den rock");
+	var table = document.getElementById("mistakesTable");
+
+	for(a in this.lineAmbig){
+		//console.log(a);
+		table.rows[a].insertCell(-1).innerHTML=this.lineAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.lineNAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.wordsAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.wordsNAmbig[a];
+	}
+
+	var total = document.getElementById("mistakesTableTotal");
+	total.rows[0].cells[1].innerHTML=Asch.totalLineAmbig()+"("+Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCount())+"%)";
+	total.rows[0].cells[2].innerHTML=Asch.totalLineNAmbig()+"("+Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCount())+"%)";
+	total.rows[0].cells[3].innerHTML=Asch.totalWordsAmbig()+"("+Math.round(Asch.totalWordsAmbig()*100/Asch.maxMistaceCount())+"%)";
+	total.rows[0].cells[4].innerHTML=Asch.totalWordsNAmbig()+"("+Math.round(Asch.totalWordsNAmbig()*100/Asch.maxMistaceCount())+"%)";
+
+
+	//draw graph
+	//Get the context of the canvas element we want to select
+	var ctx = document.getElementById("myChart").getContext("2d");
+
+	var data = {
+		labels : ["Line Ambiguous","Line non-Ambiguous","Word Ambiguous","Word non-Ambiguous"],
+		datasets : [
+			{
+				fillColor : "#ccc",
+				strokeColor : "#232323",
+				data : [
+					Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCount()),
+					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCount()),
+					Math.round(Asch.totalWordsAmbig()*100/Asch.maxMistaceCount()),
+					Math.round(Asch.totalWordsNAmbig()*100/Asch.maxMistaceCount())]
+			}/*,
+			{
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,1)",
+				data : [28,48,40,19,96,27,100]
+			}*/
+		]
+	};
+
+
+	var myNewChart = new Chart(ctx).Bar(data);
+}
+
+Asch.maxMistaceCount = function(){
+	return (groupExperimentResults.length*15);
 }
 
 
