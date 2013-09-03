@@ -36,7 +36,8 @@ function pullResults(container, skip, limit){
 
     		}
     		    		
-    		storeFile("individualLineTest.json", JSON.stringify(_excSave));
+    		storeFile("individualLineTest.js", "var individualLineTest="+JSON.stringify(_excSave)+";");
+            storeFile("individualLineTest.json", "var individualLineTest="+JSON.stringify(_excSave)+";");
     	}
 	});
 
@@ -55,7 +56,7 @@ function pullTest(container, skip, limit){
 
     		//console.log(JSON.stringify(container));
     		    		
-    		storeFile("groupTestScripts.json", JSON.stringify(container));
+    		storeFile("groupTestScripts.js", "var groupTestScripts="+JSON.stringify(container)+";");
     	}
 	});
 }
@@ -70,7 +71,7 @@ function pullExperresults(container, skip, limit){
     		pullResults(container,skip+=100,100);
     	}else{
     		//we reach this point only when we are finished    		    		
-    		storeFile("groupExperimentResults.json", JSON.stringify(container));
+    		storeFile("groupExperimentResults.js", "var groupExperimentResults="+JSON.stringify(container)+";");
     	}
 	});
 }
