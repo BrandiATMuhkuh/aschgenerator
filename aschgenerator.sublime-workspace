@@ -1,0 +1,548 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"con",
+				"container"
+			],
+			[
+				"re",
+				"resultO"
+			],
+			[
+				"test",
+				"testO"
+			],
+			[
+				"_",
+				"_csv"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"length",
+				"length-1"
+			],
+			[
+				"say",
+				"sayWhat"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"v",
+				"v3"
+			],
+			[
+				"myS",
+				"mySlidesPos"
+			],
+			[
+				"config",
+				"configUser"
+			],
+			[
+				"dr",
+				"drink"
+			],
+			[
+				"hum",
+				"humanTrue"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"ex",
+				"explosion-02"
+			],
+			[
+				"draw",
+				"drawAsch"
+			],
+			[
+				"per",
+				"percent"
+			],
+			[
+				"pro",
+				"processing"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "backup/backmeup.js",
+			"settings":
+			{
+				"buffer_size": 2403,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "aschgen/public/analyser.js",
+			"settings":
+			{
+				"buffer_size": 5735,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "aschgen/node.js",
+			"settings":
+			{
+				"buffer_size": 2463,
+				"line_ending": "Unix",
+				"name": "node.js"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"package cont",
+				"Package Control: Install Package"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"packa insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/a/storeResults.html",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/a/analyseResults.html",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/configSlides.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/finalAshConfig.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/errorEstimation.html",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/errorEstimation.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/analyser.html",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/analyser.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/a/survey.js",
+		"/home/forall/Downloads2/data/deployd.0",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/finalAshRunner.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/a/res.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/results/survey.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/storeResults.html",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/results/storeResults.html",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part24.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part24.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part24.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part23.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part23.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part23.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part22.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part22.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part22.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part21.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part21.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part21.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part20.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part20.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part20.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part19.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part19.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part19.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part18.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part18.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part18.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part17.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part17.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part17.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part16.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part16.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part16.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part15.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part15.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part15.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part14.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part14.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part14.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part13.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part13.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part13.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part12.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part12.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part12.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part11.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part11.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part11.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part10.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part10.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part10.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/partx.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part9.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part9.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part9.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part8.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part8.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part8.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part7.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part7.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part7.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part6.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part6.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part6.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part5.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part5.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part5.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part4.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part4.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part4.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/partx.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/partx.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part2.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/slides.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/index.html",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part2.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part2.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part3.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part3.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part3.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/genFiles.html",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/lines.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part1.csv",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part1.xml",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/part1.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/visTestSlides.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/participents/finalAshRunner.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/configPocket.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/storeGenFile.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/configOld.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/remote.html",
+		"/home/jbr134/Documents/Development/aschgenerator/configOld.js",
+		"/home/jbr134/Documents/Development/aschgenerator/configPocket.js",
+		"/home/jbr134/Documents/Development/aschgenerator/configSlides.js",
+		"/home/jbr134/Documents/Development/aschgenerator/index.html",
+		"/home/jbr134/Documents/Development/aschgenerator/slides.js",
+		"/home/jbr134/Documents/Development/aschgenerator/lines.js",
+		"/home/jbr134/Documents/Development/responsiporo/public/libs/flatui/index.html",
+		"/home/jbr134/Documents/Development/responsiporo/public/templates/task.html",
+		"/home/jbr134/Documents/Development/responsiporo/public/js/services.js",
+		"/home/jbr134/Documents/Development/responsiporo/public/index.html",
+		"/home/jbr134/Documents/Development/responsiporo/public/libs/flatui/js/application.js",
+		"/home/jbr134/Downloads/flattest/index.html",
+		"/home/jbr134/Downloads/flattest/js/application.js",
+		"/home/jbr134/Documents/Development/responsiporo/public/js/filters.js",
+		"/tmp/.fr-N5dB3w/layoutit/src/index.html",
+		"/tmp/.fr-LccO5j/layoutit/src/index.html",
+		"/tmp/.fr-SfkFvL/layoutit/readme.html",
+		"/home/jbr134/Downloads/layoutit/layoutit/src/index.html",
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/requirejs/bin/r.js",
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/test/specs/jsdoc/tag/type.js",
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/rhino/events.js",
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/underscore/index.html",
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/markdown/node_modules/nopt/lib/nopt.js",
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/jshint/packages/jshint/jshint.js",
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/jshint/node_modules/cli/cli.js",
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/catharsis/lib/parser.js",
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/.bin/r.js",
+		"/home/jbr134/.config/sublime-text-3/Packages/User/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"finalAshConfig.js",
+			"lines.js",
+			"flat-ui.css",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"myCsv",
+			"remove",
+			"correct",
+			"dpd",
+			"asch",
+			"showColor",
+			"wordGroup",
+			"tempSclide",
+			"radius: 30",
+			"34495E",
+			"2C3E50",
+			"16A085",
+			"1ABC9C",
+			"label-",
+			"TomatoListCtrl",
+			"[type]",
+			"TomatoProvider",
+			"create"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"cor",
+			"currentSlide",
+			"E67E22",
+			"D35400",
+			"Object"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "backup/backmeup.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								828,
+								828
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "aschgen/public/analyser.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5735,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "aschgen/node.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1352,
+								1352
+							]
+						],
+						"settings":
+						{
+							"auto_name": "node.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1080.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.708921468748,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "aschgenerator.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"create",
+				"collection/chatroom/resources/messages/validate.js"
+			],
+			[
+				"inde",
+				"public/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
