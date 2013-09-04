@@ -79,6 +79,8 @@ var Asch={
 		"15":0,
 	},
 	
+	nonambigIndividualLineList : [11,16,24,47,48,54,57,59,91,101,9,30,39,34,23],
+	ambigIndividualLineList : [79,46,13,20,38,61,98,31,58,64,69,77,100,105,6],
 
 };
 
@@ -175,6 +177,8 @@ Asch.main = function() {
 
 	this.fillPeopleTable();
 	this.fillMistakesTable();
+	this.fillIndividualVsGroupLine();
+	Asch.fillAschVsUs();
 }
 
 
@@ -281,6 +285,103 @@ Asch.maxMistaceCount = function(){
 	return (groupExperimentResults.length*15);
 }
 
+Asch.percentOfNonAmbigIndividualLineTest = function(){
+	var _ret=0;
+	var _tempUCount = {};
+
+	//Asch.nonambigIndividualLineList.indexOf(13);
+	//individualLineTest
+	for(a in individualLineTest){		
+		_tempUCount[individualLineTest[a].userid]=1;
+		if(individualLineTest[a].result != individualLineTest[a].correct){
+			//console.log("Errs");
+			if(Asch.nonambigIndividualLineList.indexOf(individualLineTest[a].slidenr) != -1){
+				_ret+=1;
+			}
+		}
+	}
+	var _usrCount = 0;
+	for(a in _tempUCount){
+		_usrCount+=1;
+	}
+	//console.log(_usrCount,_tempUCount);
+	return Math.round(_ret*100/(_usrCount*Asch.nonambigIndividualLineList.length));
+}
+
+Asch.percentOfAmbigIndividualLineTest = function(){
+	var _ret=0;
+	var _tempUCount = {};
+
+	//Asch.nonambigIndividualLineList.indexOf(13);
+	//individualLineTest
+	for(a in individualLineTest){
+		_tempUCount[individualLineTest[a].userid]=1;
+		if(individualLineTest[a].result != individualLineTest[a].correct){
+			//console.log("Errs");
+			if(Asch.ambigIndividualLineList.indexOf(individualLineTest[a].slidenr) != -1){
+				_ret+=1;
+				
+			}
+		}
+	}
+	var _usrCount = 0;
+	for(a in _tempUCount){
+		_usrCount+=1;
+	}
+	return Math.round(_ret*100/(_usrCount*Asch.ambigIndividualLineList.length));
+}
+
+Asch.fillIndividualVsGroupLine = function(){
+	//Asch.percentOfAmbigIndividualLineTest
+	//Asch.percentOfNonAmbigIndividualLineTest
+	////draw graph
+	//Get the context of the canvas element we want to select
+	var ctx = document.getElementById("indVsGroupLine").getContext("2d");
+
+	var data = {
+		labels : ["Individual Ambiguous","Group Ambiguous","Individual non-Ambiguous","group non-Ambiguous"],
+		datasets : [
+			{
+				fillColor : "#ccc",
+				strokeColor : "#232323",
+				data : [
+					Math.round(Asch.percentOfAmbigIndividualLineTest()),
+					Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCount()),
+					Math.round(Asch.percentOfNonAmbigIndividualLineTest()),
+					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCount()),
+					]
+			}/*,
+			{
+				fillColor : "rgba(151,187,205,0.5)",
+				strokeColor : "rgba(151,187,205,1)",
+				data : [28,48,40,19,96,27,100]
+			}*/
+		]
+	};
+
+
+	var myNewChart = new Chart(ctx).Bar(data);
+}
+
+Asch.fillAschVsUs = function(){
+	var ctx = document.getElementById("aschVsUs").getContext("2d");
+
+	var data = {
+		labels : ["Individual","Robots","Asch"],
+		datasets : [
+			{
+				fillColor : "#ccc",
+				strokeColor : "#232323",
+				data : [
+					Math.round(Asch.percentOfNonAmbigIndividualLineTest()),
+					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCount()),
+					32
+					]
+			},
+		]
+	};
+	var myNewChart = new Chart(ctx).Bar(data);
+}
 
 //Asch.main();
 //Asch.fillPeopleTable();
