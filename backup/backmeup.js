@@ -26,7 +26,7 @@ function pullResults(container, skip, limit){
     		//we reach this point only when we are finished
 
     		//console.log(JSON.stringify(container));
-    		var excludeIds = ["72ccc272d29a684a","14f59de248141a77","2031318a5fa4b87e", "6ecf3abea85e3adb"]; //those two values where test values. I exclode it in the backup file
+    		var excludeIds = ["72ccc272d29a684a","14f59de248141a77"]; //those two values where test values. I exclode it in the backup file
     		var _excSave = new Array();
 
     		for(a in container){
