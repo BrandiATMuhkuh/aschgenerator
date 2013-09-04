@@ -81,7 +81,7 @@ var Asch={
 	
 	nonambigIndividualLineList : [11,16,24,47,48,54,57,59,91,101,9,30,39,34,23],
 	ambigIndividualLineList : [79,46,13,20,38,61,98,31,58,64,69,77,100,105,6],
-
+	inValidWordParticipants : [13,23]
 };
 
 Asch.totalLineAmbig = function(){
@@ -197,6 +197,10 @@ function test(){
 
 Asch.fillPeopleTable = function(){
 	var table = document.getElementById("peopleTable");
+	var atLeastOne_lAt=0;
+	var atLeastOne_lNAt=0;
+	var atLeastOne_wAt=0;
+	var atLeastOne_wNAt=0;
 
 	for (a in groupExperimentResults){
 		var row=table.insertRow(-1);
@@ -224,6 +228,22 @@ Asch.fillPeopleTable = function(){
 		//cell1.innerHTML=groupExperimentResults[a].res.part;
 		//cell2.innerHTML=groupExperimentResults[a].res.survey.Q1;
 		//console.log(groupExperimentResults[a].res);
+		
+		if(groupExperimentResults[a].res.lAt>0){
+			atLeastOne_lAt+=1;
+		}
+
+		if(groupExperimentResults[a].res.lNAt>0){
+			atLeastOne_lNAt+=1;
+		}
+
+		if(groupExperimentResults[a].res.wAt>0){
+			atLeastOne_wAt+=1;
+		}
+
+		if(groupExperimentResults[a].res.wNAt>0){
+			atLeastOne_wNAt+=1;
+		}
 	}
 
 	//add sum
@@ -232,6 +252,14 @@ Asch.fillPeopleTable = function(){
 	peopleTableSum.rows[0].cells[2].innerHTML=""+Asch.totalLineNAmbig();
 	peopleTableSum.rows[0].cells[3].innerHTML=""+Asch.totalWordsAmbig();
 	peopleTableSum.rows[0].cells[4].innerHTML=""+Asch.totalWordsNAmbig();
+
+
+	//add min one
+	var peopleTableSum = document.getElementById("peopleTableMinOne");
+	peopleTableSum.rows[0].cells[1].innerHTML=""+atLeastOne_lAt;
+	peopleTableSum.rows[0].cells[2].innerHTML=""+atLeastOne_lNAt;
+	peopleTableSum.rows[0].cells[3].innerHTML=""+atLeastOne_wAt;
+	peopleTableSum.rows[0].cells[4].innerHTML=""+atLeastOne_wNAt;
 }
 
 Asch.fillMistakesTable = function(){
