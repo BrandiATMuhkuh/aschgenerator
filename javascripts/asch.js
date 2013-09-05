@@ -81,7 +81,7 @@ var Asch={
 	
 	nonambigIndividualLineList : [11,16,24,47,48,54,57,59,91,101,9,30,39,34,23],
 	ambigIndividualLineList : [79,46,13,20,38,61,98,31,58,64,69,77,100,105,6],
-	inValidWordParticipants : [13,23]
+	invalidWordParticipants : [13,23]
 };
 
 Asch.totalLineAmbig = function(){
@@ -105,6 +105,7 @@ Asch.totalLineNAmbig = function(){
 Asch.totalWordsAmbig = function(){
 	var _return = 0;
 	for(a in this.wordsAmbig){
+
 		_return += (a * this.wordsAmbig[a]);
 	}
 
@@ -152,25 +153,28 @@ Asch.main = function() {
 		Asch.lineNAmbig[_lNAt]+=1;
 		groupExperimentResults[a].res.lNAt=_lNAt;
 		//Asch.lineNAmbig.total+=_lNAt;
-
-		for(b in _wordsAmbig){
-			if(_wordsAmbig[b].res){
-				_wAt+=1;
+		if(this.invalidWordParticipants.indexOf(parseInt(groupExperimentResults[a].res.part)) == -1 ){
+			for(b in _wordsAmbig){
+				if(_wordsAmbig[b].res){
+					_wAt+=1;
+				}
 			}
-		}
-		Asch.wordsAmbig[_wAt]+=1;
-		groupExperimentResults[a].res.wAt=_wAt;
-		//Asch.wordsAmbig.total+=_wAt;
+			Asch.wordsAmbig[_wAt]+=1;
+			groupExperimentResults[a].res.wAt=_wAt;
+			//Asch.wordsAmbig.total+=_wAt;
 
-		for(b in _wordsNAmbig){
-			if(_wordsNAmbig[b].res){
-				_wNAt+=1;
+			for(b in _wordsNAmbig){
+				if(_wordsNAmbig[b].res){
+					_wNAt+=1;
+				}
 			}
+			Asch.wordsNAmbig[_wNAt]+=1;
+			groupExperimentResults[a].res.wNAt=_wNAt;
+			//Asch.wordsNAmbig.total+=_wNAt;
+		}else{
+			groupExperimentResults[a].res.wAt=NaN;
+			groupExperimentResults[a].res.wNAt=NaN;
 		}
-		Asch.wordsNAmbig[_wNAt]+=1;
-		groupExperimentResults[a].res.wNAt=_wNAt;
-		//Asch.wordsNAmbig.total+=_wNAt;
-
 
 	}
 
@@ -275,10 +279,10 @@ Asch.fillMistakesTable = function(){
 	}
 
 	var total = document.getElementById("mistakesTableTotal");
-	total.rows[0].cells[1].innerHTML=Asch.totalLineAmbig()+"("+Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCount())+"%)";
-	total.rows[0].cells[2].innerHTML=Asch.totalLineNAmbig()+"("+Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCount())+"%)";
-	total.rows[0].cells[3].innerHTML=Asch.totalWordsAmbig()+"("+Math.round(Asch.totalWordsAmbig()*100/Asch.maxMistaceCount())+"%)";
-	total.rows[0].cells[4].innerHTML=Asch.totalWordsNAmbig()+"("+Math.round(Asch.totalWordsNAmbig()*100/Asch.maxMistaceCount())+"%)";
+	total.rows[0].cells[1].innerHTML=Asch.totalLineAmbig()+"("+Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCountLines())+"%)";
+	total.rows[0].cells[2].innerHTML=Asch.totalLineNAmbig()+"("+Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCountLines())+"%)";
+	total.rows[0].cells[3].innerHTML=Asch.totalWordsAmbig()+"("+Math.round(Asch.totalWordsAmbig()*100/Asch.maxMistaceCountWords())+"%)";
+	total.rows[0].cells[4].innerHTML=Asch.totalWordsNAmbig()+"("+Math.round(Asch.totalWordsNAmbig()*100/Asch.maxMistaceCountWords())+"%)";
 
 
 	//draw graph
@@ -292,10 +296,10 @@ Asch.fillMistakesTable = function(){
 				fillColor : "#ccc",
 				strokeColor : "#232323",
 				data : [
-					Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCount()),
-					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCount()),
-					Math.round(Asch.totalWordsAmbig()*100/Asch.maxMistaceCount()),
-					Math.round(Asch.totalWordsNAmbig()*100/Asch.maxMistaceCount())]
+					Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalWordsAmbig()*100/Asch.maxMistaceCountWords()),
+					Math.round(Asch.totalWordsNAmbig()*100/Asch.maxMistaceCountWords())]
 			}/*,
 			{
 				fillColor : "rgba(151,187,205,0.5)",
@@ -309,8 +313,12 @@ Asch.fillMistakesTable = function(){
 	var myNewChart = new Chart(ctx).Bar(data);
 }
 
-Asch.maxMistaceCount = function(){
+Asch.maxMistaceCountLines = function(){
 	return (groupExperimentResults.length*15);
+}
+
+Asch.maxMistaceCountWords = function(){
+	return ((groupExperimentResults.length-Asch.invalidWordParticipants.length)*15);
 }
 
 Asch.percentOfNonAmbigIndividualLineTest = function(){
@@ -374,9 +382,9 @@ Asch.fillIndividualVsGroupLine = function(){
 				strokeColor : "#232323",
 				data : [
 					Math.round(Asch.percentOfAmbigIndividualLineTest()),
-					Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCount()),
+					Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCountLines()),
 					Math.round(Asch.percentOfNonAmbigIndividualLineTest()),
-					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCount()),
+					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCountLines()),
 					]
 			}/*,
 			{
@@ -402,7 +410,7 @@ Asch.fillAschVsUs = function(){
 				strokeColor : "#232323",
 				data : [
 					Math.round(Asch.percentOfNonAmbigIndividualLineTest()),
-					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCount()),
+					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCountLines()),
 					32
 					]
 			},
