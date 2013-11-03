@@ -179,7 +179,7 @@ Asch.main = function() {
 	}
 
 
-	this.fillPeopleTable();
+	//this.fillPeopleTable();
 	this.fillMistakesTable();
 	this.fillIndividualVsGroupLine();
 	Asch.fillAschVsUs();

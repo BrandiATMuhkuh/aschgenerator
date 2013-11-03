@@ -37,6 +37,49 @@
       </header>
       <section>
 
+
+<h3><a name="welcome-to-github-pages" class="anchor" href="#table-number-mistakes"><span class="octicon octicon-link"></span></a>How about creating some peer pressure with robots ;-)</h3>
+
+<p>One this page you will find all data and all programms we created during the experiment. The paper in which we descripe the experiment and it's outcomes in currently under peer reviewing and we will add it here as soon we got an okey.</p>
+
+<h3><a name="welcome-to-github-pages" class="anchor" href="#table-number-mistakes"><span class="octicon octicon-link"></span></a>Recreate the experiment</h3>
+
+<p>This is a list of things you need to recreate the experiment. I give an introduction how to use all of them</p>
+<ul>
+<li>Projector on a Machine</li>
+<li>4x <a href="http://www.aldebaran-robotics.com/en/">Nao Robots</a></li>
+<li>Machine running a <a href="http://deployd.com/">deployd</a> server</li>
+<li>Machine running the controller (can be same machine)</li>
+<li>Experiment setting data</li>
+</ul>
+
+<h4>The experiment setting data</h4>
+<p>Find data in the github repo: <a href="https://github.com/BrandiATMuhkuh/aschgenerator/tree/master/aschgen/public/participents">The setting data</a></p>
+
+<p>We created for every participant three files: <code>part[x].csv, part[x].js and part[x].xml</code>. The <code>part[x].csv</code> file is a list of all tasks and should be printed out by the experimenter. You should use it to write down if the participant did something right or wrong. We believe a paper is always better than a computer. The <code>part[x].js</code> file includes the lines and words shown to the particpants. This will be loaded by the <a href="http://deployd.com/">deployd</a> server. Last but not least, the <code>part[x].xml</code> file which will be loaded by the controller.</p>
+
+<h4>Run the presentation on the projector by using deployd and part[x].js file</h4>
+<p>
+The following is a list of dependencies. Please install in this order
+  <ol>
+  <li><a href="http://nodejs.org/">NodeJs</a> - Is a webserver based on javascript</li>
+  <li><a href="http://www.mongodb.org/">mongoDB</a> - Is a NoSQL database using JSON to store data (Yes, Javascript. Again!)</li>
+  <li><a href="http://deployd.com/">deployd</a> - Combines NodeJs and mongoDb to create a simple and fast webserver with <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST API</a></li>
+  <li><a href="https://npmjs.org/package/jsonreq">jsonreq</a> - Is an simple JSON request library for NodeJs</li>
+  </ol>
+</p>
+
+<p>Lets assume everything worked fine. What's next? </p>
+<ol>
+  <li>Download our GitHub repository: <a href="https://github.com/BrandiATMuhkuh/aschgenerator">our Repostitor</a> by using the following git command: <code>git clone git@github.com:BrandiATMuhkuh/aschgenerator.git</code> or by downloading the <a href="https://github.com/BrandiATMuhkuh/aschgenerator/archive/master.zip">zip file</a>.</li>
+  <li>navigate to the <code>cd  aschgenerator/aschgen</code></li>
+  <li>run the command <code>dpd</code>. This will start the deployd server</li>
+  <li>Open your browser and add the following line to your address bar: <code><a href="http://localhost:2403/index.html?file=vparticipents/part1">http://localhost:2403/index.html?file=participents/part1</a></code></li>
+  <li>Now you will see the presentation for participant 1 (<code>part1</code>). Change the number of <code>part[x]</code> at the end of the link to load the presentation for an other participant.</li>
+</ol>
+
+
+<!--
 <h3><a name="welcome-to-github-pages" class="anchor" href="#table-parts"><span class="octicon octicon-link"></span></a>Table of all your particpants</h3>
 
 <p>Text</p>
@@ -53,7 +96,7 @@
 <tfoot id="peopleTableSum">
   <tr><th>Sum:</th><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 </tfoot>
-</table>
+</table>-->
 
 <h3><a name="welcome-to-github-pages" class="anchor" href="#table-number-mistakes"><span class="octicon octicon-link"></span></a>Table of number of mistakes</h3>
 

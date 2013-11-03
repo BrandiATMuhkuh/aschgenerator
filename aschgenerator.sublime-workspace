@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-weight"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
 				"con",
 				"container"
 			],
@@ -100,15 +108,35 @@
 	"buffers":
 	[
 		{
-			"file": "backup/backmeup.js",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2403,
+				"buffer_size": 9486,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"file": "stylesheets/styles.css",
+			"settings":
+			{
+				"buffer_size": 6718,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "javascripts/asch.js",
+			"settings":
+			{
+				"buffer_size": 10496,
+				"line_ending": "Unix",
+				"name": "asch.js"
+			}
+		},
+		{
+			"contents": "window.aschTracks = [];\nwindow.aschResults = [];\nwindow.excludeIds = [\"72ccc272d29a684a\",\"14f59de248141a77\",\"2031318a5fa4b87e\", \"6ecf3abea85e3adb\"];\nwindow.excludeIds = [\"72ccc272d29a684a\",\"14f59de248141a77\",]; //without times\n/**\n* Get all people  \n*/\ndpd.newtrack.get(function (result, err) {\n\n\n  for(var i = 0; i < result.length; i+=1){\n    if(window.excludeIds.indexOf(result[i].id) === -1){\n      window.aschTracks.push(result[i]); \n    }\n  }\n     \n  /**\n  * get all results\n  */\n  queryAllResutls(0);\n  \n  \n  \n});\n\n\nfunction queryAllResutls(skip){\n    var limit = 500;\n    var query = {$limit: limit,$skip: skip, $sort: {slidenr: 1}};\n    dpd.results.get(query, function (result, err) {\n      \n      if(result.length === 0){\n        startStats();\n        return;\n      }\n      aschResults = window.aschResults.concat(result); \n      queryAllResutls(skip+limit);\n    });\n}\n\nfunction countPartis(){\n  console.log(window.aschTracks.length);\n}\n\nfunction startStats(){\n  countPartis();\n   console.log(\"startStats\", window.aschResults.length);\n   \n   for(var i = 0; i < window.aschTracks.length; i+=1){\n     console.log(\"create data array\");\n     window.aschTracks[i].data = new Array();\n     \n     var thinking = null;\n     \n     for(var k = 0; k < window.aschResults.length; k+=1){\n       if(window.aschTracks[i].id === window.aschResults[k].userid){\n         \n         //console.log(window.aschResults[k].date);\n         if(thinking != null){\n           window.aschResults[k].thinkTime = window.aschResults[k].date - thinking;\n         }else{\n           thinking=0;\n         }\n         \n         window.aschTracks[i].data.push(window.aschResults[k]);\n         \n         thinking = window.aschResults[k].date;\n       }\n     }\n   }\n   \n   // clean configue slides\n   cleanConfigSlides();\n   \n   // create average\n   createAverage();\n   \n   //show averages\n   showAverage();\n    \n}\n\nfunction cleanConfigSlides(){\n  \n  var cfiles = [];\n  for(var k = 0; k < window.configSlides.length; k+=1){\n    \n    if(window.configSlides[k].type === \"drawAsch\"){\n      cfiles.push(window.configSlides[k]);\n    }\n  }\n\n\n  window.configSlides = cfiles;\n}\n\nfunction createAverage(){\n  var trackers = window.aschTracks.length;\n  \n  for(var k = 0; k < window.configSlides.length; k+=1){\n    var slideAverage = 0;\n    var incorrect = 0;\n    var tinkCount = 0;\n    for(var i = 0; i < trackers; i+=1){\n      if(window.aschTracks[i].data[k].thinkTime){\n        slideAverage += window.aschTracks[i].data[k].thinkTime;\n        tinkCount+=1\n      }\n      \n      if(window.aschTracks[i].data[k].result != window.aschTracks[i].data[k].correct){\n        incorrect += 1;\n      }\n    }\n    \n    window.configSlides[k].wrongs = incorrect;\n    \n    window.configSlides[k].average = (slideAverage/tinkCount);\n    \n    if(isNaN(window.configSlides[k].average)){\n      window.configSlides[k].average=0;\n    }\n  }\n}\n\nfunction showAverage(){\n  \n  var csv = \"\";\n  csv += \"Slide,Mistakes,Average Time, V1,V2,V3, dV1, dV2, dV3, Min1 Delta, Min2 Delta, Min3 Delta,Min1 Abs, answer \\n\";\n  var problems = 0;\n  for(var k = 0; k < window.configSlides.length; k+=1){\n    //if( window.configSlides[k].wrongs > 5){\n    {\n      //answer\n      \n      csv+= k +\",\"+ window.configSlides[k].wrongs +\",\"+ parseInt(window.configSlides[k].average) +\",\"+ window.configSlides[k].v1.toFixed(3)  +\",\"+ window.configSlides[k].v2.toFixed(3) +\",\"+ window.configSlides[k].v3.toFixed(3);\n      //console.log(k +\"\\t\"+ window.configSlides[k].wrongs +\"\\t\"+ parseInt(window.configSlides[k].average) +\"\\t\"+ window.configSlides[k].v1.toFixed(3) +\"\\t\"+ window.configSlides[k].v2.toFixed(3) +\"\\t\"+ window.configSlides[k].v3.toFixed(3));\n      \n      //diffs in percentage\n      console.log(window.configSlides[k].answer.toFixed(3), (window.configSlides[k].v1.toFixed(3)*100/window.configSlides[k].answer.toFixed(3))+\",\"+ (window.configSlides[k].v2.toFixed(3)*100/window.configSlides[k].answer.toFixed(3))+\",\"+ (window.configSlides[k].v3.toFixed(3)*100/window.configSlides[k].answer.toFixed(3)));\n      csv+=\",\"+ (100-(window.configSlides[k].v1.toFixed(3)*100/window.configSlides[k].answer.toFixed(3)).toFixed(3))+\",\"+ (100-(window.configSlides[k].v2.toFixed(3)*100/window.configSlides[k].answer.toFixed(3)).toFixed(3))+\",\"+ (100-(window.configSlides[k].v3.toFixed(3)*100/window.configSlides[k].answer.toFixed(3)).toFixed(3));\n\n\n      //calc delta\n      var s12 = [window.configSlides[k].v1.toFixed(3), window.configSlides[k].v2.toFixed(3)];\n      var s23 = [window.configSlides[k].v2.toFixed(3), window.configSlides[k].v3.toFixed(3)];\n      var s31 = [window.configSlides[k].v3.toFixed(3), window.configSlides[k].v1.toFixed(3)];\n      s12.sort(function(a,b){return b - a});\n      s23.sort(function(a,b){return b - a});\n      s31.sort(function(a,b){return b - a});\n      \n      var delatas = [(s12[1]*100)/s12[0],(s23[1]*100)/s23[0],(s31[1]*100)/s31[0]];\n      delatas.sort(function(a,b){return a- b});\n      csv+=\",\"+ delatas[0].toFixed(3);\n      csv+=\",\"+ delatas[1].toFixed(3);\n      csv+=\",\"+ delatas[2].toFixed(3);\n\n      \n      \n      \n      var ta = Math.abs(window.configSlides[k].v1.toFixed(3) - window.configSlides[k].v2.toFixed(3));\n      var tb = Math.abs(window.configSlides[k].v2.toFixed(3) - window.configSlides[k].v3.toFixed(3));\n      var tc = Math.abs(window.configSlides[k].v3.toFixed(3) - window.configSlides[k].v1.toFixed(3));\n      var tarr = [ta,tb,tc];\n      tarr.sort(function(a,b){return a - b});\n      //console.log(tarr);\n      csv+=\",\"+tarr[0].toFixed(3)+\",\";\n\n\n      //answer\n      csv+=window.configSlides[k].answer.toFixed(3);\n\n      problems+=1;\n      csv+=\"\\n\";\n    }\n    \n    \n    \n  }\n  console.log(csv);\n  console.log(\"problems: \",problems, window.configSlides.length);\n}\n\n\n\n",
 			"file": "aschgen/public/analyser.js",
+			"file_size": 5735,
+			"file_write_time": 130228120732053178,
 			"settings":
 			{
 				"buffer_size": 5735,
@@ -116,12 +144,11 @@
 			}
 		},
 		{
-			"file": "aschgen/node.js",
+			"file": "javascripts/groupTestScripts.js",
 			"settings":
 			{
-				"buffer_size": 2463,
-				"line_ending": "Unix",
-				"name": "node.js"
+				"buffer_size": 2592991,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -172,6 +199,16 @@
 	},
 	"file_history":
 	[
+		"/home/jbr134/Documents/Development/aschgenerator/backup/backmeup.js",
+		"/home/jbr134/Documents/Development/aschgenerator/javascripts/individualLineTest.js",
+		"/home/jbr134/Documents/Development/aschgenerator/javascripts/groupTestScripts.js",
+		"/home/jbr134/Documents/Development/aschgenerator/javascripts/groupExperimentResults.js",
+		"/home/jbr134/Documents/Development/aschgenerator/javascripts/sorttable.js",
+		"/home/jbr134/Documents/Development/aschgenerator/backup/individualLineTest.js",
+		"/home/jbr134/Documents/Development/aschgenerator/javascripts/scale.fix.js",
+		"/home/jbr134/Documents/Development/aschgenerator/params.json",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/analyser.js",
+		"/home/jbr134/Documents/Development/aschgenerator/aschgen/node.js",
 		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/a/storeResults.html",
 		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/a/analyseResults.html",
 		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/configSlides.js",
@@ -179,7 +216,6 @@
 		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/errorEstimation.html",
 		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/errorEstimation.js",
 		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/analyser.html",
-		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/analyser.js",
 		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/a/survey.js",
 		"/home/forall/Downloads2/data/deployd.0",
 		"/home/jbr134/Documents/Development/aschgenerator/aschgen/public/finalAshRunner.js",
@@ -290,20 +326,11 @@
 		"/tmp/.fr-LccO5j/layoutit/src/index.html",
 		"/tmp/.fr-SfkFvL/layoutit/readme.html",
 		"/home/jbr134/Downloads/layoutit/layoutit/src/index.html",
-		"/home/jbr134/Documents/Development/responsiporo/node_modules/requirejs/bin/r.js",
-		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/test/specs/jsdoc/tag/type.js",
-		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/rhino/events.js",
-		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/underscore/index.html",
-		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/markdown/node_modules/nopt/lib/nopt.js",
-		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/jshint/packages/jshint/jshint.js",
-		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/jshint/node_modules/cli/cli.js",
-		"/home/jbr134/Documents/Development/responsiporo/node_modules/jsdoc/node_modules/catharsis/lib/parser.js",
-		"/home/jbr134/Documents/Development/responsiporo/node_modules/.bin/r.js",
-		"/home/jbr134/.config/sublime-text-3/Packages/User/Package Control.sublime-settings"
+		"/home/jbr134/Documents/Development/responsiporo/node_modules/requirejs/bin/r.js"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 52.0
 	},
 	"find_in_files":
 	{
@@ -321,6 +348,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\n}",
+			"td",
+			"table",
 			"myCsv",
 			"remove",
 			"correct",
@@ -366,41 +396,95 @@
 			[
 				{
 					"buffer": 0,
-					"file": "backup/backmeup.js",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2403,
+						"buffer_size": 9486,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								828,
-								828
+								2940,
+								2940
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 486.0,
+						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "aschgen/public/analyser.js",
+					"file": "stylesheets/styles.css",
 					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6718,
+								6718
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6858.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "javascripts/asch.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3092,
+								3092
+							]
+						],
+						"settings":
+						{
+							"auto_name": "asch.js",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2754.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "aschgen/public/analyser.js",
+					"semi_transient": true,
 					"settings":
 					{
 						"buffer_size": 5735,
@@ -410,8 +494,8 @@
 						"selection":
 						[
 							[
-								125,
-								125
+								0,
+								0
 							]
 						],
 						"settings":
@@ -425,31 +509,36 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 2,
-					"file": "aschgen/node.js",
-					"semi_transient": false,
+					"buffer": 4,
+					"file": "javascripts/groupTestScripts.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2463,
+						"buffer_size": 2592991,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1352,
-								1352
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_name": "node.js",
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1080.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -485,7 +574,7 @@
 		"cols":
 		[
 			0.0,
-			0.708921468748,
+			0.962908011869,
 			1.0
 		],
 		"rows":
@@ -540,7 +629,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 283.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
