@@ -30,14 +30,7 @@ window.configSlides =
 	},
 
 
-/*
-	{
-	  	type : "drawCommand",
-	  	v1 : "Researcher is speaking",
-	  	v2 : "This test is used as a reference for another test, one that we are running separately. In that test, we are interested in the visual and verbal abilities of humanoid robots. In order to ensure that the test matches the human interface technology lab’s strict criteria for experimental design, we created a reference test which only has human participants. This way, we can compare the data later.",  	
-		sound : "instructions/inst2_intro_human.wav"
-	},
-*/
+
 
 ////////////////////////////////////// FIRST TASK
 	{
@@ -54,16 +47,8 @@ window.configSlides =
 		sound : "instructions/inst_firstblock.mp3"
 	},
 
-	{
-	  	type : "drawCommand",
-	  	v1 : "Introduction",
-	  	v2 : "Here is a practice round. All other rounds will look like this one.",  	
-		sound : "instructions/inst_all_practice.mp3"
-	},
-	
 
-
-	{
+		{
 		"type": "drawAsch",
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
@@ -71,7 +56,7 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_0.mp3"
+		sound : "instructions/inst_all_practice.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -82,7 +67,18 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_1.mp3"
+		sound : "instructions/inst_visual_pr0.mp3"
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9750000000000005,
+		"v2": 0.025,
+		"v3": 0.175,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
+		"loudRobot" : false,
+		sound : "instructions/inst_visual_pr1.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -93,7 +89,7 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_2.mp3"
+		sound : "instructions/inst_visual_pr2.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -104,7 +100,7 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_3.mp3"
+		sound : "instructions/inst_visual_pr3.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -115,7 +111,7 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_4.mp3"
+		sound : "instructions/inst_visual_pr4.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -126,14 +122,14 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_0.mp3"
+		sound : "instructions/inst_visual_pr5.mp3"
 	},
 
 	{
 	  	type : "drawCommand",
 	  	v1 : "Visual test",
 	  	v2 : "Here comes the task. It consists of about thirty rounds.", 
-	  	sound : "instructions/inst12_verbal_t.wav"
+	  	sound : "instructions/inst_all_t.mp3"
 	},
 
 	

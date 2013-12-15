@@ -29,6 +29,7 @@ window.configSlides =
 		sound : "instructions/inst_intro_human.mp3"
 	},
 
+////////////////////////////////////// FIRST TASK
 
 	{
 	  	type : "drawCommand",
@@ -42,6 +43,13 @@ window.configSlides =
 	  	v1 : "Instructions Verbal Task",
 	  	v2 : "Please remember to say the verb which is assigned to you, and the past tense of this verb. There are no good or bad answers here. Just say whatever form you would use in real life. And there is no reason to hurry.",
 	  	sound : "instructions/inst_verbal2.mp3"
+	},
+
+	{
+	  	type : "drawCommand",
+	  	v1 : "Introduction",
+	  	v2 : "To make it easier for us to evaluate the data afterwards, participants take turns from left to right, in the order in which they are seated. To make it easier for you to know when it’s your turn to say your answer, we have added five coloured squares on the screen. If the square with your colour is full, it is your turn to say the answer. If you are not sure about your colour or if you forgot it, you can refer to the sheet of paper of the matching colour which is in front of you.",  	
+		sound : "instructions/inst_firstblock.mp3"
 	},
 
 
@@ -329,19 +337,7 @@ window.configSlides =
 		sound : "instructions/inst_visual1.mp3"
 	},
 
-	{
-	  	type : "drawCommand",
-	  	v1 : "Introduction",
-	  	v2 : "To make it easier for us to evaluate the data afterwards, participants take turns from left to right, in the order in which they are seated. To make it easier for you to know when it’s your turn to say your answer, we have added five coloured squares on the screen. If the square with your colour is full, it is your turn to say the answer. If you are not sure about your colour or if you forgot it, you can refer to the sheet of paper of the matching colour which is in front of you.",  	
-		sound : "instructions/inst_firstblock.mp3"
-	},
 
-	{
-	  	type : "drawCommand",
-	  	v1 : "Introduction",
-	  	v2 : "Here is a practice round. All other rounds will look like this one.",  	
-		sound : "instructions/inst_all_practice.mp3"
-	},
 	
 
 
@@ -353,7 +349,7 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_0.mp3"
+		sound : "instructions/inst_all_practice.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -364,7 +360,18 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_1.mp3"
+		sound : "instructions/inst_visual_pr0.mp3"
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9750000000000005,
+		"v2": 0.025,
+		"v3": 0.175,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
+		"loudRobot" : false,
+		sound : "instructions/inst_visual_pr1.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -375,7 +382,7 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_2.mp3"
+		sound : "instructions/inst_visual_pr2.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -386,7 +393,7 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_3.mp3"
+		sound : "instructions/inst_visual_pr3.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -397,7 +404,7 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_4.mp3"
+		sound : "instructions/inst_visual_pr4.mp3"
 	},
 	{
 		"type": "drawAsch",
@@ -408,14 +415,14 @@ window.configSlides =
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"loudRobot" : false,
-		sound : "instructions/inst_visual_pr_0.mp3"
+		sound : "instructions/inst_visual_pr5.mp3"
 	},
 
 	{
 	  	type : "drawCommand",
 	  	v1 : "Visual test",
 	  	v2 : "Here comes the task. It consists of about thirty rounds.", 
-	  	sound : "instructions/inst12_verbal_t.wav"
+	  	sound : "instructions/inst_all_t.mp3"
 	},
 
 	
