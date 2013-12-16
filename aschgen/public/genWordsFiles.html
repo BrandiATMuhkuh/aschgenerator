@@ -20,7 +20,7 @@
 		window.newCsv="Nr, C, P, Nr, C, P,\n";
 
 		for(a in window.myCsv1){
-			window.newCsv += window.myCsv1[a]+window.myCsv2[a];
+			window.newCsv += window.myCsv2[a]+window.myCsv1[a]+"\n";
 		}
 
 
@@ -54,15 +54,18 @@
 		//go to slide zero
 		window.myXmlFile += "<child count='0' type='changeSlide' slideCount='0' />\n";
 		window.myXmlFile +=  "<child count='0' type='input' />\n";
+
+		window.myXmlFile += "<child count='0' type='robotsGase' robotNr='0' />\n";
+		window.myXmlFile +=  "<child count='0' type='input' />\n";
+		
+		window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='0' />\n";
+		window.myXmlFile +=  "<child count='0' type='input' />\n";
 		
 
-		//window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='0' />\n";
+		window.myXmlFile += "<child count='0' type='robotTurnStart' robotNr='0' />\n";
+		window.myXmlFile +=  "<child count='0' type='input' />\n";
 
-		//window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='1' />\n";
-
-		//window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='2' />\n";
-
-		//window.myXmlFile += "<child count='0' type='robotSayHello' robotNr='3' />\n";
+	
 
 		//Add the dree commands for saying hello
 
@@ -73,8 +76,12 @@
 
 				case "drawCommand":
 					window.myXmlFile +=  "<child count='0' type='changeSlide' slideCount='"+i+"' />\n";
-					window.myXmlFile +=  "<child count='0' type='input' />\n";
-					
+
+					if(typeof m[i].wait != "undefined"){
+						window.myXmlFile +=  "<child count='0' type='msWait' wait='"+m[i].wait+"' />\n";
+					}else{
+						window.myXmlFile +=  "<child count='0' type='input' />\n";
+					}
 				break;
 
 				case "drawAsch":

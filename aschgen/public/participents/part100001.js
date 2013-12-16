@@ -15,7 +15,8 @@ window.configSlides = [
 		"type": "drawCommand",
 		"v1": "Introduction",
 		"v2": "Hello and welcome to our verbal communication and visual cognition test. Thank you for participating. The test consists of a verbal task followed by a visual task and takes about twenty minutes.",
-		"sound": "instructions/inst_hello_lines_words.mp3"
+		"sound": "instructions/inst_hello_lines_words.mp3",
+		"wait": "15500"
 	},
 	{
 		"type": "drawCommand",
@@ -333,24 +334,10 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"shrink",
 			"spring",
-			"sink",
 			"sing",
-			"ring"
-		],
-		"robotW": "shrink",
-		"hardEasy": "hard",
-		"scheme": "ung"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
 			"shrink",
-			"spring",
 			"sink",
-			"sing",
 			"ring"
 		],
 		"robotW": "spring",
@@ -359,26 +346,12 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
-		"user": 2,
+		"user": 1,
 		"v1": [
-			"shrink",
 			"spring",
-			"sink",
 			"sing",
-			"ring"
-		],
-		"robotW": "sink",
-		"hardEasy": "hard",
-		"scheme": "ung"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
 			"shrink",
-			"spring",
 			"sink",
-			"sing",
 			"ring"
 		],
 		"robotW": "sing",
@@ -387,12 +360,40 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"spring",
+			"sing",
+			"shrink",
+			"sink",
+			"ring"
+		],
+		"robotW": "shrink",
+		"hardEasy": "hard",
+		"scheme": "ung"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"spring",
+			"sing",
+			"shrink",
+			"sink",
+			"ring"
+		],
+		"robotW": "sink",
+		"hardEasy": "hard",
+		"scheme": "ung"
+	},
+	{
+		"type": "drawManyWord",
 		"user": 4,
 		"v1": [
-			"shrink",
 			"spring",
-			"sink",
 			"sing",
+			"shrink",
+			"sink",
 			"ring"
 		],
 		"robotW": "ring",
@@ -403,22 +404,8 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"spell",
 			"smell",
-			"spill",
-			"spoil",
-			"learn"
-		],
-		"robotW": "spell",
-		"hardEasy": "hard",
-		"scheme": "nt"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
 			"spell",
-			"smell",
 			"spill",
 			"spoil",
 			"learn"
@@ -429,10 +416,24 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"smell",
+			"spell",
+			"spill",
+			"spoil",
+			"learn"
+		],
+		"robotW": "spell",
+		"hardEasy": "hard",
+		"scheme": "nt"
+	},
+	{
+		"type": "drawManyWord",
 		"user": 2,
 		"v1": [
-			"spell",
 			"smell",
+			"spell",
 			"spill",
 			"spoil",
 			"learn"
@@ -445,8 +446,8 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 3,
 		"v1": [
-			"spell",
 			"smell",
+			"spell",
 			"spill",
 			"spoil",
 			"learn"
@@ -459,8 +460,8 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 4,
 		"v1": [
-			"spell",
 			"smell",
+			"spell",
 			"spill",
 			"spoil",
 			"learn"
@@ -468,146 +469,6 @@ window.configSlides = [
 		"robotW": "learn",
 		"hardEasy": "hard",
 		"scheme": "nt"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"drive",
-			"heave",
-			"weave",
-			"dive",
-			"thrive"
-		],
-		"robotW": "drive",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"drive",
-			"heave",
-			"weave",
-			"dive",
-			"thrive"
-		],
-		"robotW": "heave",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"drive",
-			"heave",
-			"weave",
-			"dive",
-			"thrive"
-		],
-		"robotW": "weave",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"drive",
-			"heave",
-			"weave",
-			"dive",
-			"thrive"
-		],
-		"robotW": "dive",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"drive",
-			"heave",
-			"weave",
-			"dive",
-			"thrive"
-		],
-		"robotW": "thrive",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"plead",
-			"leap",
-			"dream",
-			"kneel",
-			"lean"
-		],
-		"robotW": "plead",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"plead",
-			"leap",
-			"dream",
-			"kneel",
-			"lean"
-		],
-		"robotW": "leap",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"plead",
-			"leap",
-			"dream",
-			"kneel",
-			"lean"
-		],
-		"robotW": "dream",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"plead",
-			"leap",
-			"dream",
-			"kneel",
-			"lean"
-		],
-		"robotW": "kneel",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"plead",
-			"leap",
-			"dream",
-			"kneel",
-			"lean"
-		],
-		"robotW": "lean",
-		"hardEasy": "hard",
-		"scheme": "v"
 	},
 	{
 		"type": "drawManyWord",
@@ -683,24 +544,150 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"sing",
-			"shrink",
-			"ring",
-			"sink",
-			"spring"
+			"plead",
+			"kneel",
+			"dream",
+			"leap",
+			"lean"
 		],
-		"robotW": "sing",
+		"robotW": "plead",
 		"hardEasy": "hard",
-		"scheme": "ung"
+		"scheme": "v"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 1,
 		"v1": [
-			"sing",
+			"plead",
+			"kneel",
+			"dream",
+			"leap",
+			"lean"
+		],
+		"robotW": "kneel",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"plead",
+			"kneel",
+			"dream",
+			"leap",
+			"lean"
+		],
+		"robotW": "dream",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"plead",
+			"kneel",
+			"dream",
+			"leap",
+			"lean"
+		],
+		"robotW": "leap",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"plead",
+			"kneel",
+			"dream",
+			"leap",
+			"lean"
+		],
+		"robotW": "lean",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
+			"dive",
+			"drive",
+			"heave",
+			"weave",
+			"thrive"
+		],
+		"robotW": "dive",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"dive",
+			"drive",
+			"heave",
+			"weave",
+			"thrive"
+		],
+		"robotW": "drive",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"dive",
+			"drive",
+			"heave",
+			"weave",
+			"thrive"
+		],
+		"robotW": "heave",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"dive",
+			"drive",
+			"heave",
+			"weave",
+			"thrive"
+		],
+		"robotW": "weave",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"dive",
+			"drive",
+			"heave",
+			"weave",
+			"thrive"
+		],
+		"robotW": "thrive",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
 			"shrink",
-			"ring",
 			"sink",
+			"ring",
+			"sing",
 			"spring"
 		],
 		"robotW": "shrink",
@@ -709,12 +696,26 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"shrink",
+			"sink",
+			"ring",
+			"sing",
+			"spring"
+		],
+		"robotW": "sink",
+		"hardEasy": "hard",
+		"scheme": "ung"
+	},
+	{
+		"type": "drawManyWord",
 		"user": 2,
 		"v1": [
-			"sing",
 			"shrink",
-			"ring",
 			"sink",
+			"ring",
+			"sing",
 			"spring"
 		],
 		"robotW": "ring",
@@ -725,13 +726,13 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 3,
 		"v1": [
-			"sing",
 			"shrink",
-			"ring",
 			"sink",
+			"ring",
+			"sing",
 			"spring"
 		],
-		"robotW": "sink",
+		"robotW": "sing",
 		"hardEasy": "hard",
 		"scheme": "ung"
 	},
@@ -739,10 +740,10 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 4,
 		"v1": [
-			"sing",
 			"shrink",
-			"ring",
 			"sink",
+			"ring",
+			"sing",
 			"spring"
 		],
 		"robotW": "spring",
@@ -754,8 +755,8 @@ window.configSlides = [
 		"user": 0,
 		"v1": [
 			"spill",
-			"spoil",
 			"learn",
+			"spoil",
 			"smell",
 			"spell"
 		],
@@ -768,22 +769,8 @@ window.configSlides = [
 		"user": 1,
 		"v1": [
 			"spill",
-			"spoil",
 			"learn",
-			"smell",
-			"spell"
-		],
-		"robotW": "spoil",
-		"hardEasy": "hard",
-		"scheme": "nt"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"spill",
 			"spoil",
-			"learn",
 			"smell",
 			"spell"
 		],
@@ -793,11 +780,25 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"spill",
+			"learn",
+			"spoil",
+			"smell",
+			"spell"
+		],
+		"robotW": "spoil",
+		"hardEasy": "hard",
+		"scheme": "nt"
+	},
+	{
+		"type": "drawManyWord",
 		"user": 3,
 		"v1": [
 			"spill",
-			"spoil",
 			"learn",
+			"spoil",
 			"smell",
 			"spell"
 		],
@@ -810,8 +811,8 @@ window.configSlides = [
 		"user": 4,
 		"v1": [
 			"spill",
-			"spoil",
 			"learn",
+			"spoil",
 			"smell",
 			"spell"
 		],
@@ -823,192 +824,10 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"thrive",
-			"dive",
-			"drive",
-			"heave",
-			"weave"
-		],
-		"robotW": "thrive",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"thrive",
-			"dive",
-			"drive",
-			"heave",
-			"weave"
-		],
-		"robotW": "dive",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"thrive",
-			"dive",
-			"drive",
-			"heave",
-			"weave"
-		],
-		"robotW": "drive",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"thrive",
-			"dive",
-			"drive",
-			"heave",
-			"weave"
-		],
-		"robotW": "heave",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"thrive",
-			"dive",
-			"drive",
-			"heave",
-			"weave"
-		],
-		"robotW": "weave",
-		"hardEasy": "hard",
-		"scheme": "ove"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"leap",
-			"kneel",
-			"lean",
-			"plead",
-			"dream"
-		],
-		"robotW": "leap",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"leap",
-			"kneel",
-			"lean",
-			"plead",
-			"dream"
-		],
-		"robotW": "kneel",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"leap",
-			"kneel",
-			"lean",
-			"plead",
-			"dream"
-		],
-		"robotW": "lean",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"leap",
-			"kneel",
-			"lean",
-			"plead",
-			"dream"
-		],
-		"robotW": "plead",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"leap",
-			"kneel",
-			"lean",
-			"plead",
-			"dream"
-		],
-		"robotW": "dream",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
+			"spit",
+			"wet",
 			"cost",
 			"knit",
-			"wet",
-			"spit",
-			"bust"
-		],
-		"robotW": "cost",
-		"hardEasy": "hard",
-		"scheme": "id"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"cost",
-			"knit",
-			"wet",
-			"spit",
-			"bust"
-		],
-		"robotW": "knit",
-		"hardEasy": "hard",
-		"scheme": "id"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"cost",
-			"knit",
-			"wet",
-			"spit",
-			"bust"
-		],
-		"robotW": "wet",
-		"hardEasy": "hard",
-		"scheme": "id"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"cost",
-			"knit",
-			"wet",
-			"spit",
 			"bust"
 		],
 		"robotW": "spit",
@@ -1017,12 +836,54 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
-		"user": 4,
+		"user": 1,
 		"v1": [
+			"spit",
+			"wet",
 			"cost",
 			"knit",
-			"wet",
+			"bust"
+		],
+		"robotW": "wet",
+		"hardEasy": "hard",
+		"scheme": "id"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
 			"spit",
+			"wet",
+			"cost",
+			"knit",
+			"bust"
+		],
+		"robotW": "cost",
+		"hardEasy": "hard",
+		"scheme": "id"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"spit",
+			"wet",
+			"cost",
+			"knit",
+			"bust"
+		],
+		"robotW": "knit",
+		"hardEasy": "hard",
+		"scheme": "id"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"spit",
+			"wet",
+			"cost",
+			"knit",
 			"bust"
 		],
 		"robotW": "bust",
@@ -1033,52 +894,150 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"sink",
-			"spring",
-			"sing",
-			"ring",
-			"shrink"
+			"lean",
+			"plead",
+			"kneel",
+			"leap",
+			"dream"
 		],
-		"robotW": "sink",
+		"robotW": "lean",
 		"hardEasy": "hard",
-		"scheme": "ung"
+		"scheme": "v"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 1,
 		"v1": [
-			"sink",
-			"spring",
-			"sing",
-			"ring",
-			"shrink"
+			"lean",
+			"plead",
+			"kneel",
+			"leap",
+			"dream"
 		],
-		"robotW": "spring",
+		"robotW": "plead",
 		"hardEasy": "hard",
-		"scheme": "ung"
+		"scheme": "v"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 2,
 		"v1": [
-			"sink",
-			"spring",
-			"sing",
-			"ring",
-			"shrink"
+			"lean",
+			"plead",
+			"kneel",
+			"leap",
+			"dream"
 		],
-		"robotW": "sing",
+		"robotW": "kneel",
 		"hardEasy": "hard",
-		"scheme": "ung"
+		"scheme": "v"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 3,
 		"v1": [
-			"sink",
-			"spring",
-			"sing",
+			"lean",
+			"plead",
+			"kneel",
+			"leap",
+			"dream"
+		],
+		"robotW": "leap",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"lean",
+			"plead",
+			"kneel",
+			"leap",
+			"dream"
+		],
+		"robotW": "dream",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
+			"dive",
+			"heave",
+			"drive",
+			"thrive",
+			"weave"
+		],
+		"robotW": "dive",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"dive",
+			"heave",
+			"drive",
+			"thrive",
+			"weave"
+		],
+		"robotW": "heave",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"dive",
+			"heave",
+			"drive",
+			"thrive",
+			"weave"
+		],
+		"robotW": "drive",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"dive",
+			"heave",
+			"drive",
+			"thrive",
+			"weave"
+		],
+		"robotW": "thrive",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"dive",
+			"heave",
+			"drive",
+			"thrive",
+			"weave"
+		],
+		"robotW": "weave",
+		"hardEasy": "hard",
+		"scheme": "ove"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
 			"ring",
+			"sing",
+			"spring",
+			"sink",
 			"shrink"
 		],
 		"robotW": "ring",
@@ -1087,12 +1046,54 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"ring",
+			"sing",
+			"spring",
+			"sink",
+			"shrink"
+		],
+		"robotW": "sing",
+		"hardEasy": "hard",
+		"scheme": "ung"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"ring",
+			"sing",
+			"spring",
+			"sink",
+			"shrink"
+		],
+		"robotW": "spring",
+		"hardEasy": "hard",
+		"scheme": "ung"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"ring",
+			"sing",
+			"spring",
+			"sink",
+			"shrink"
+		],
+		"robotW": "sink",
+		"hardEasy": "hard",
+		"scheme": "ung"
+	},
+	{
+		"type": "drawManyWord",
 		"user": 4,
 		"v1": [
-			"sink",
-			"spring",
-			"sing",
 			"ring",
+			"sing",
+			"spring",
+			"sink",
 			"shrink"
 		],
 		"robotW": "shrink",
@@ -1103,52 +1104,10 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
+			"learn",
+			"spell",
 			"spill",
 			"smell",
-			"spell",
-			"learn",
-			"spoil"
-		],
-		"robotW": "spill",
-		"hardEasy": "hard",
-		"scheme": "nt"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"spill",
-			"smell",
-			"spell",
-			"learn",
-			"spoil"
-		],
-		"robotW": "smell",
-		"hardEasy": "hard",
-		"scheme": "nt"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"spill",
-			"smell",
-			"spell",
-			"learn",
-			"spoil"
-		],
-		"robotW": "spell",
-		"hardEasy": "hard",
-		"scheme": "nt"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"spill",
-			"smell",
-			"spell",
-			"learn",
 			"spoil"
 		],
 		"robotW": "learn",
@@ -1157,12 +1116,54 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
-		"user": 4,
+		"user": 1,
 		"v1": [
+			"learn",
+			"spell",
 			"spill",
 			"smell",
-			"spell",
+			"spoil"
+		],
+		"robotW": "spell",
+		"hardEasy": "hard",
+		"scheme": "nt"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
 			"learn",
+			"spell",
+			"spill",
+			"smell",
+			"spoil"
+		],
+		"robotW": "spill",
+		"hardEasy": "hard",
+		"scheme": "nt"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"learn",
+			"spell",
+			"spill",
+			"smell",
+			"spoil"
+		],
+		"robotW": "smell",
+		"hardEasy": "hard",
+		"scheme": "nt"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"learn",
+			"spell",
+			"spill",
+			"smell",
 			"spoil"
 		],
 		"robotW": "spoil",
@@ -1173,10 +1174,150 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
+			"wet",
+			"bust",
+			"cost",
+			"knit",
+			"spit"
+		],
+		"robotW": "wet",
+		"hardEasy": "hard",
+		"scheme": "id"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"wet",
+			"bust",
+			"cost",
+			"knit",
+			"spit"
+		],
+		"robotW": "bust",
+		"hardEasy": "hard",
+		"scheme": "id"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"wet",
+			"bust",
+			"cost",
+			"knit",
+			"spit"
+		],
+		"robotW": "cost",
+		"hardEasy": "hard",
+		"scheme": "id"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"wet",
+			"bust",
+			"cost",
+			"knit",
+			"spit"
+		],
+		"robotW": "knit",
+		"hardEasy": "hard",
+		"scheme": "id"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"wet",
+			"bust",
+			"cost",
+			"knit",
+			"spit"
+		],
+		"robotW": "spit",
+		"hardEasy": "hard",
+		"scheme": "id"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
+			"dream",
+			"kneel",
+			"plead",
+			"lean",
+			"leap"
+		],
+		"robotW": "dream",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"dream",
+			"kneel",
+			"plead",
+			"lean",
+			"leap"
+		],
+		"robotW": "kneel",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"dream",
+			"kneel",
+			"plead",
+			"lean",
+			"leap"
+		],
+		"robotW": "plead",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"dream",
+			"kneel",
+			"plead",
+			"lean",
+			"leap"
+		],
+		"robotW": "lean",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"dream",
+			"kneel",
+			"plead",
+			"lean",
+			"leap"
+		],
+		"robotW": "leap",
+		"hardEasy": "hard",
+		"scheme": "v"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
 			"heave",
-			"thrive",
-			"dive",
 			"weave",
+			"dive",
+			"thrive",
 			"drive"
 		],
 		"robotW": "heave",
@@ -1188,12 +1329,12 @@ window.configSlides = [
 		"user": 1,
 		"v1": [
 			"heave",
-			"thrive",
-			"dive",
 			"weave",
+			"dive",
+			"thrive",
 			"drive"
 		],
-		"robotW": "thrive",
+		"robotW": "weave",
 		"hardEasy": "hard",
 		"scheme": "ove"
 	},
@@ -1202,9 +1343,9 @@ window.configSlides = [
 		"user": 2,
 		"v1": [
 			"heave",
-			"thrive",
-			"dive",
 			"weave",
+			"dive",
+			"thrive",
 			"drive"
 		],
 		"robotW": "dive",
@@ -1216,12 +1357,12 @@ window.configSlides = [
 		"user": 3,
 		"v1": [
 			"heave",
-			"thrive",
-			"dive",
 			"weave",
+			"dive",
+			"thrive",
 			"drive"
 		],
-		"robotW": "weave",
+		"robotW": "thrive",
 		"hardEasy": "hard",
 		"scheme": "ove"
 	},
@@ -1230,9 +1371,9 @@ window.configSlides = [
 		"user": 4,
 		"v1": [
 			"heave",
-			"thrive",
-			"dive",
 			"weave",
+			"dive",
+			"thrive",
 			"drive"
 		],
 		"robotW": "drive",
@@ -1243,306 +1384,10 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"plead",
-			"lean",
-			"kneel",
-			"dream",
-			"leap"
-		],
-		"robotW": "plead",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"plead",
-			"lean",
-			"kneel",
-			"dream",
-			"leap"
-		],
-		"robotW": "lean",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"plead",
-			"lean",
-			"kneel",
-			"dream",
-			"leap"
-		],
-		"robotW": "kneel",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"plead",
-			"lean",
-			"kneel",
-			"dream",
-			"leap"
-		],
-		"robotW": "dream",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"plead",
-			"lean",
-			"kneel",
-			"dream",
-			"leap"
-		],
-		"robotW": "leap",
-		"hardEasy": "hard",
-		"scheme": "v"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"knit",
-			"bust",
-			"wet",
-			"cost",
-			"spit"
-		],
-		"robotW": "knit",
-		"hardEasy": "hard",
-		"scheme": "id"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"knit",
-			"bust",
-			"wet",
-			"cost",
-			"spit"
-		],
-		"robotW": "bust",
-		"hardEasy": "hard",
-		"scheme": "id"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"knit",
-			"bust",
-			"wet",
-			"cost",
-			"spit"
-		],
-		"robotW": "wet",
-		"hardEasy": "hard",
-		"scheme": "id"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"knit",
-			"bust",
-			"wet",
-			"cost",
-			"spit"
-		],
-		"robotW": "cost",
-		"hardEasy": "hard",
-		"scheme": "id"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"knit",
-			"bust",
-			"wet",
-			"cost",
-			"spit"
-		],
-		"robotW": "spit",
-		"hardEasy": "hard",
-		"scheme": "id"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"hold",
-			"get",
-			"give",
-			"see",
-			"write"
-		],
-		"robotW": "hold",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"hold",
-			"get",
-			"give",
-			"see",
-			"write"
-		],
-		"robotW": "get",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"hold",
-			"get",
-			"give",
-			"see",
-			"write"
-		],
-		"robotW": "give",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"hold",
-			"get",
-			"give",
-			"see",
-			"write"
-		],
-		"robotW": "see",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"hold",
-			"get",
-			"give",
-			"see",
-			"write"
-		],
-		"robotW": "write",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"put",
-			"tell",
-			"go",
-			"hit",
-			"read"
-		],
-		"robotW": "put",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"put",
-			"tell",
-			"go",
-			"hit",
-			"read"
-		],
-		"robotW": "tell",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"put",
-			"tell",
-			"go",
-			"hit",
-			"read"
-		],
-		"robotW": "go",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"put",
-			"tell",
-			"go",
-			"hit",
-			"read"
-		],
-		"robotW": "hit",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"put",
-			"tell",
-			"go",
-			"hit",
-			"read"
-		],
-		"robotW": "read",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"feel",
-			"know",
 			"come",
 			"sit",
-			"keep"
-		],
-		"robotW": "feel",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
 			"feel",
 			"know",
-			"come",
-			"sit",
-			"keep"
-		],
-		"robotW": "know",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"feel",
-			"know",
-			"come",
-			"sit",
 			"keep"
 		],
 		"robotW": "come",
@@ -1550,12 +1395,12 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
-		"user": 3,
+		"user": 1,
 		"v1": [
-			"feel",
-			"know",
 			"come",
 			"sit",
+			"feel",
+			"know",
 			"keep"
 		],
 		"robotW": "sit",
@@ -1563,12 +1408,38 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
-		"user": 4,
+		"user": 2,
 		"v1": [
-			"feel",
-			"know",
 			"come",
 			"sit",
+			"feel",
+			"know",
+			"keep"
+		],
+		"robotW": "feel",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"come",
+			"sit",
+			"feel",
+			"know",
+			"keep"
+		],
+		"robotW": "know",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"come",
+			"sit",
+			"feel",
+			"know",
 			"keep"
 		],
 		"robotW": "keep",
@@ -1578,88 +1449,23 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"take",
-			"find",
-			"hear",
-			"say",
-			"stand"
-		],
-		"robotW": "take",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"take",
-			"find",
-			"hear",
-			"say",
-			"stand"
-		],
-		"robotW": "find",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"take",
-			"find",
-			"hear",
-			"say",
-			"stand"
-		],
-		"robotW": "hear",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"take",
-			"find",
-			"hear",
-			"say",
-			"stand"
-		],
-		"robotW": "say",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"take",
-			"find",
-			"hear",
-			"say",
-			"stand"
-		],
-		"robotW": "stand",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"make",
-			"think",
-			"leave",
 			"bring",
+			"think",
+			"make",
+			"leave",
 			"lose"
 		],
-		"robotW": "make",
+		"robotW": "bring",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 1,
 		"v1": [
-			"make",
-			"think",
-			"leave",
 			"bring",
+			"think",
+			"make",
+			"leave",
 			"lose"
 		],
 		"robotW": "think",
@@ -1669,10 +1475,23 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 2,
 		"v1": [
-			"make",
-			"think",
-			"leave",
 			"bring",
+			"think",
+			"make",
+			"leave",
+			"lose"
+		],
+		"robotW": "make",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"bring",
+			"think",
+			"make",
+			"leave",
 			"lose"
 		],
 		"robotW": "leave",
@@ -1680,25 +1499,12 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"make",
-			"think",
-			"leave",
-			"bring",
-			"lose"
-		],
-		"robotW": "bring",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
 		"user": 4,
 		"v1": [
-			"make",
-			"think",
-			"leave",
 			"bring",
+			"think",
+			"make",
+			"leave",
 			"lose"
 		],
 		"robotW": "lose",
@@ -1708,130 +1514,195 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"see",
-			"give",
-			"get",
-			"write",
-			"hold"
-		],
-		"robotW": "see",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"see",
-			"give",
-			"get",
-			"write",
-			"hold"
-		],
-		"robotW": "give",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"see",
-			"give",
-			"get",
-			"write",
-			"hold"
-		],
-		"robotW": "get",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"see",
-			"give",
-			"get",
-			"write",
-			"hold"
-		],
-		"robotW": "write",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"see",
-			"give",
-			"get",
-			"write",
-			"hold"
-		],
-		"robotW": "hold",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"put",
-			"read",
 			"go",
 			"tell",
-			"hit"
-		],
-		"robotW": "put",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
+			"hit",
 			"put",
-			"read",
-			"go",
-			"tell",
-			"hit"
-		],
-		"robotW": "read",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"put",
-			"read",
-			"go",
-			"tell",
-			"hit"
+			"read"
 		],
 		"robotW": "go",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
-		"user": 3,
+		"user": 1,
 		"v1": [
-			"put",
-			"read",
 			"go",
 			"tell",
-			"hit"
+			"hit",
+			"put",
+			"read"
 		],
 		"robotW": "tell",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
-		"user": 4,
+		"user": 2,
 		"v1": [
-			"put",
-			"read",
 			"go",
 			"tell",
-			"hit"
+			"hit",
+			"put",
+			"read"
 		],
 		"robotW": "hit",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"go",
+			"tell",
+			"hit",
+			"put",
+			"read"
+		],
+		"robotW": "put",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"go",
+			"tell",
+			"hit",
+			"put",
+			"read"
+		],
+		"robotW": "read",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
+			"find",
+			"say",
+			"take",
+			"hear",
+			"stand"
+		],
+		"robotW": "find",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"find",
+			"say",
+			"take",
+			"hear",
+			"stand"
+		],
+		"robotW": "say",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"find",
+			"say",
+			"take",
+			"hear",
+			"stand"
+		],
+		"robotW": "take",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"find",
+			"say",
+			"take",
+			"hear",
+			"stand"
+		],
+		"robotW": "hear",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"find",
+			"say",
+			"take",
+			"hear",
+			"stand"
+		],
+		"robotW": "stand",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
+			"hold",
+			"get",
+			"give",
+			"see",
+			"write"
+		],
+		"robotW": "hold",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"hold",
+			"get",
+			"give",
+			"see",
+			"write"
+		],
+		"robotW": "get",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"hold",
+			"get",
+			"give",
+			"see",
+			"write"
+		],
+		"robotW": "give",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"hold",
+			"get",
+			"give",
+			"see",
+			"write"
+		],
+		"robotW": "see",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"hold",
+			"get",
+			"give",
+			"see",
+			"write"
+		],
+		"robotW": "write",
 		"hardEasy": "easy"
 	},
 	{
@@ -1903,22 +1774,152 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"find",
-			"take",
-			"stand",
-			"say",
-			"hear"
+			"think",
+			"lose",
+			"leave",
+			"make",
+			"bring"
 		],
-		"robotW": "find",
+		"robotW": "think",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 1,
 		"v1": [
-			"find",
-			"take",
+			"think",
+			"lose",
+			"leave",
+			"make",
+			"bring"
+		],
+		"robotW": "lose",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"think",
+			"lose",
+			"leave",
+			"make",
+			"bring"
+		],
+		"robotW": "leave",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"think",
+			"lose",
+			"leave",
+			"make",
+			"bring"
+		],
+		"robotW": "make",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"think",
+			"lose",
+			"leave",
+			"make",
+			"bring"
+		],
+		"robotW": "bring",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
+			"go",
+			"read",
+			"tell",
+			"put",
+			"hit"
+		],
+		"robotW": "go",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"go",
+			"read",
+			"tell",
+			"put",
+			"hit"
+		],
+		"robotW": "read",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"go",
+			"read",
+			"tell",
+			"put",
+			"hit"
+		],
+		"robotW": "tell",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"go",
+			"read",
+			"tell",
+			"put",
+			"hit"
+		],
+		"robotW": "put",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"go",
+			"read",
+			"tell",
+			"put",
+			"hit"
+		],
+		"robotW": "hit",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
 			"stand",
+			"take",
+			"find",
+			"say",
+			"hear"
+		],
+		"robotW": "stand",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"stand",
+			"take",
+			"find",
 			"say",
 			"hear"
 		],
@@ -1929,22 +1930,22 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 2,
 		"v1": [
-			"find",
-			"take",
 			"stand",
+			"take",
+			"find",
 			"say",
 			"hear"
 		],
-		"robotW": "stand",
+		"robotW": "find",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 3,
 		"v1": [
-			"find",
-			"take",
 			"stand",
+			"take",
+			"find",
 			"say",
 			"hear"
 		],
@@ -1955,9 +1956,9 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 4,
 		"v1": [
-			"find",
-			"take",
 			"stand",
+			"take",
+			"find",
 			"say",
 			"hear"
 		],
@@ -1968,76 +1969,11 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"leave",
-			"make",
-			"think",
-			"lose",
-			"bring"
-		],
-		"robotW": "leave",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"leave",
-			"make",
-			"think",
-			"lose",
-			"bring"
-		],
-		"robotW": "make",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"leave",
-			"make",
-			"think",
-			"lose",
-			"bring"
-		],
-		"robotW": "think",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"leave",
-			"make",
-			"think",
-			"lose",
-			"bring"
-		],
-		"robotW": "lose",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"leave",
-			"make",
-			"think",
-			"lose",
-			"bring"
-		],
-		"robotW": "bring",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
 			"write",
-			"hold",
-			"get",
+			"give",
 			"see",
-			"give"
+			"get",
+			"hold"
 		],
 		"robotW": "write",
 		"hardEasy": "easy"
@@ -2047,116 +1983,51 @@ window.configSlides = [
 		"user": 1,
 		"v1": [
 			"write",
-			"hold",
-			"get",
+			"give",
 			"see",
-			"give"
-		],
-		"robotW": "hold",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"write",
-			"hold",
 			"get",
-			"see",
-			"give"
-		],
-		"robotW": "get",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 3,
-		"v1": [
-			"write",
-			"hold",
-			"get",
-			"see",
-			"give"
-		],
-		"robotW": "see",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 4,
-		"v1": [
-			"write",
-			"hold",
-			"get",
-			"see",
-			"give"
+			"hold"
 		],
 		"robotW": "give",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
-		"user": 0,
-		"v1": [
-			"hit",
-			"tell",
-			"read",
-			"go",
-			"put"
-		],
-		"robotW": "hit",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 1,
-		"v1": [
-			"hit",
-			"tell",
-			"read",
-			"go",
-			"put"
-		],
-		"robotW": "tell",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
 		"user": 2,
 		"v1": [
-			"hit",
-			"tell",
-			"read",
-			"go",
-			"put"
+			"write",
+			"give",
+			"see",
+			"get",
+			"hold"
 		],
-		"robotW": "read",
+		"robotW": "see",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 3,
 		"v1": [
-			"hit",
-			"tell",
-			"read",
-			"go",
-			"put"
+			"write",
+			"give",
+			"see",
+			"get",
+			"hold"
 		],
-		"robotW": "go",
+		"robotW": "get",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 4,
 		"v1": [
-			"hit",
-			"tell",
-			"read",
-			"go",
-			"put"
+			"write",
+			"give",
+			"see",
+			"get",
+			"hold"
 		],
-		"robotW": "put",
+		"robotW": "hold",
 		"hardEasy": "easy"
 	},
 	{
@@ -2164,8 +2035,8 @@ window.configSlides = [
 		"user": 0,
 		"v1": [
 			"keep",
-			"know",
 			"come",
+			"know",
 			"sit",
 			"feel"
 		],
@@ -2177,21 +2048,8 @@ window.configSlides = [
 		"user": 1,
 		"v1": [
 			"keep",
-			"know",
 			"come",
-			"sit",
-			"feel"
-		],
-		"robotW": "know",
-		"hardEasy": "easy"
-	},
-	{
-		"type": "drawManyWord",
-		"user": 2,
-		"v1": [
-			"keep",
 			"know",
-			"come",
 			"sit",
 			"feel"
 		],
@@ -2200,11 +2058,24 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"keep",
+			"come",
+			"know",
+			"sit",
+			"feel"
+		],
+		"robotW": "know",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
 		"user": 3,
 		"v1": [
 			"keep",
-			"know",
 			"come",
+			"know",
 			"sit",
 			"feel"
 		],
@@ -2216,8 +2087,8 @@ window.configSlides = [
 		"user": 4,
 		"v1": [
 			"keep",
-			"know",
 			"come",
+			"know",
 			"sit",
 			"feel"
 		],
@@ -2228,36 +2099,140 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"take",
-			"say",
-			"hear",
-			"stand",
-			"find"
+			"make",
+			"think",
+			"bring",
+			"lose",
+			"leave"
 		],
-		"robotW": "take",
+		"robotW": "make",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 1,
 		"v1": [
-			"take",
-			"say",
-			"hear",
-			"stand",
-			"find"
+			"make",
+			"think",
+			"bring",
+			"lose",
+			"leave"
 		],
-		"robotW": "say",
+		"robotW": "think",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 2,
 		"v1": [
-			"take",
-			"say",
+			"make",
+			"think",
+			"bring",
+			"lose",
+			"leave"
+		],
+		"robotW": "bring",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"make",
+			"think",
+			"bring",
+			"lose",
+			"leave"
+		],
+		"robotW": "lose",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"make",
+			"think",
+			"bring",
+			"lose",
+			"leave"
+		],
+		"robotW": "leave",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
+			"go",
+			"read",
+			"hit",
+			"tell",
+			"put"
+		],
+		"robotW": "go",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 1,
+		"v1": [
+			"go",
+			"read",
+			"hit",
+			"tell",
+			"put"
+		],
+		"robotW": "read",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 2,
+		"v1": [
+			"go",
+			"read",
+			"hit",
+			"tell",
+			"put"
+		],
+		"robotW": "hit",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"go",
+			"read",
+			"hit",
+			"tell",
+			"put"
+		],
+		"robotW": "tell",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"go",
+			"read",
+			"hit",
+			"tell",
+			"put"
+		],
+		"robotW": "put",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 0,
+		"v1": [
 			"hear",
 			"stand",
+			"say",
+			"take",
 			"find"
 		],
 		"robotW": "hear",
@@ -2265,12 +2240,12 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
-		"user": 3,
+		"user": 1,
 		"v1": [
-			"take",
-			"say",
 			"hear",
 			"stand",
+			"say",
+			"take",
 			"find"
 		],
 		"robotW": "stand",
@@ -2278,12 +2253,38 @@ window.configSlides = [
 	},
 	{
 		"type": "drawManyWord",
-		"user": 4,
+		"user": 2,
 		"v1": [
-			"take",
-			"say",
 			"hear",
 			"stand",
+			"say",
+			"take",
+			"find"
+		],
+		"robotW": "say",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 3,
+		"v1": [
+			"hear",
+			"stand",
+			"say",
+			"take",
+			"find"
+		],
+		"robotW": "take",
+		"hardEasy": "easy"
+	},
+	{
+		"type": "drawManyWord",
+		"user": 4,
+		"v1": [
+			"hear",
+			"stand",
+			"say",
+			"take",
 			"find"
 		],
 		"robotW": "find",
@@ -2293,65 +2294,65 @@ window.configSlides = [
 		"type": "drawManyWord",
 		"user": 0,
 		"v1": [
-			"think",
-			"bring",
-			"lose",
-			"make",
-			"leave"
+			"get",
+			"write",
+			"see",
+			"hold",
+			"give"
 		],
-		"robotW": "think",
+		"robotW": "get",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 1,
 		"v1": [
-			"think",
-			"bring",
-			"lose",
-			"make",
-			"leave"
+			"get",
+			"write",
+			"see",
+			"hold",
+			"give"
 		],
-		"robotW": "bring",
+		"robotW": "write",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 2,
 		"v1": [
-			"think",
-			"bring",
-			"lose",
-			"make",
-			"leave"
+			"get",
+			"write",
+			"see",
+			"hold",
+			"give"
 		],
-		"robotW": "lose",
+		"robotW": "see",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 3,
 		"v1": [
-			"think",
-			"bring",
-			"lose",
-			"make",
-			"leave"
+			"get",
+			"write",
+			"see",
+			"hold",
+			"give"
 		],
-		"robotW": "make",
+		"robotW": "hold",
 		"hardEasy": "easy"
 	},
 	{
 		"type": "drawManyWord",
 		"user": 4,
 		"v1": [
-			"think",
-			"bring",
-			"lose",
-			"make",
-			"leave"
+			"get",
+			"write",
+			"see",
+			"hold",
+			"give"
 		],
-		"robotW": "leave",
+		"robotW": "give",
 		"hardEasy": "easy"
 	},
 	{
@@ -2616,306 +2617,6 @@ window.configSlides = [
 	{
 		"type": "drawAsch",
 		"user": 0,
-		"v1": 0.9500000000000005,
-		"v2": 0.3,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.9500000000000005,
-		"v2": 0.3,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.9500000000000005,
-		"v2": 0.3,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.9500000000000005,
-		"v2": 0.3,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.9500000000000005,
-		"v2": 0.3,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.9750000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.6000000000000002,
-		"answer": 0.9750000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.9750000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.6000000000000002,
-		"answer": 0.9750000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.9750000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.6000000000000002,
-		"answer": 0.9750000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.9750000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.6000000000000002,
-		"answer": 0.9750000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.9750000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.6000000000000002,
-		"answer": 0.9750000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.9500000000000005,
-		"v2": 0.9000000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.9500000000000005,
-		"v2": 0.9000000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.9500000000000005,
-		"v2": 0.9000000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.9500000000000005,
-		"v2": 0.9000000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.9500000000000005,
-		"v2": 0.9000000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.7000000000000003,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.7000000000000003,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.7000000000000003,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.7000000000000003,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.7000000000000003,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.9500000000000005,
-		"v2": 0.8000000000000004,
-		"v3": 0.9750000000000005,
-		"answer": 0.9750000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.9500000000000005,
-		"v2": 0.8000000000000004,
-		"v3": 0.9750000000000005,
-		"answer": 0.9750000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.9500000000000005,
-		"v2": 0.8000000000000004,
-		"v3": 0.9750000000000005,
-		"answer": 0.9750000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.9500000000000005,
-		"v2": 0.8000000000000004,
-		"v3": 0.9750000000000005,
-		"answer": 0.9750000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.9500000000000005,
-		"v2": 0.8000000000000004,
-		"v3": 0.9750000000000005,
-		"answer": 0.9750000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.9250000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.9250000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.9250000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.9250000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.9250000000000005,
-		"v2": 0.9500000000000005,
-		"v3": 0.9750000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
 		"v1": 0.9750000000000005,
 		"v2": 0.9500000000000005,
 		"v3": 0.175,
@@ -2960,6 +2661,56 @@ window.configSlides = [
 		"v2": 0.9500000000000005,
 		"v3": 0.175,
 		"answer": 0.9500000000000005,
+		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8500000000000004,
+		"answer": 0.9750000000000005,
+		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8500000000000004,
+		"answer": 0.9750000000000005,
+		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8500000000000004,
+		"answer": 0.9750000000000005,
+		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8500000000000004,
+		"answer": 0.9750000000000005,
+		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8500000000000004,
+		"answer": 0.9750000000000005,
 		"answernr": 1,
 		"roboAnswer": 0
 	},
@@ -3017,107 +2768,7 @@ window.configSlides = [
 		"type": "drawAsch",
 		"user": 0,
 		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.8250000000000004,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.8250000000000004,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.8250000000000004,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.8250000000000004,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.8250000000000004,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.15,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.15,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.15,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.15,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.15,
-		"answer": 0.9500000000000005,
-		"answernr": 0,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.9500000000000005,
-		"v2": 0.37500000000000006,
+		"v2": 0.3,
 		"v3": 0.9750000000000005,
 		"answer": 0.9500000000000005,
 		"answernr": 0,
@@ -3127,7 +2778,7 @@ window.configSlides = [
 		"type": "drawAsch",
 		"user": 1,
 		"v1": 0.9500000000000005,
-		"v2": 0.37500000000000006,
+		"v2": 0.3,
 		"v3": 0.9750000000000005,
 		"answer": 0.9500000000000005,
 		"answernr": 0,
@@ -3137,7 +2788,7 @@ window.configSlides = [
 		"type": "drawAsch",
 		"user": 2,
 		"v1": 0.9500000000000005,
-		"v2": 0.37500000000000006,
+		"v2": 0.3,
 		"v3": 0.9750000000000005,
 		"answer": 0.9500000000000005,
 		"answernr": 0,
@@ -3147,7 +2798,7 @@ window.configSlides = [
 		"type": "drawAsch",
 		"user": 3,
 		"v1": 0.9500000000000005,
-		"v2": 0.37500000000000006,
+		"v2": 0.3,
 		"v3": 0.9750000000000005,
 		"answer": 0.9500000000000005,
 		"answernr": 0,
@@ -3157,7 +2808,7 @@ window.configSlides = [
 		"type": "drawAsch",
 		"user": 4,
 		"v1": 0.9500000000000005,
-		"v2": 0.37500000000000006,
+		"v2": 0.3,
 		"v3": 0.9750000000000005,
 		"answer": 0.9500000000000005,
 		"answernr": 0,
@@ -3218,99 +2869,49 @@ window.configSlides = [
 		"user": 0,
 		"v1": 0.9500000000000005,
 		"v2": 0.9750000000000005,
-		"v3": 0.8500000000000004,
-		"answer": 0.9750000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
+		"v3": 0.15,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
 	},
 	{
 		"type": "drawAsch",
 		"user": 1,
 		"v1": 0.9500000000000005,
 		"v2": 0.9750000000000005,
-		"v3": 0.8500000000000004,
-		"answer": 0.9750000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
+		"v3": 0.15,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
 	},
 	{
 		"type": "drawAsch",
 		"user": 2,
 		"v1": 0.9500000000000005,
 		"v2": 0.9750000000000005,
-		"v3": 0.8500000000000004,
-		"answer": 0.9750000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
+		"v3": 0.15,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
 	},
 	{
 		"type": "drawAsch",
 		"user": 3,
 		"v1": 0.9500000000000005,
 		"v2": 0.9750000000000005,
-		"v3": 0.8500000000000004,
-		"answer": 0.9750000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
+		"v3": 0.15,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
 	},
 	{
 		"type": "drawAsch",
 		"user": 4,
 		"v1": 0.9500000000000005,
 		"v2": 0.9750000000000005,
-		"v3": 0.8500000000000004,
-		"answer": 0.9750000000000005,
-		"answernr": 1,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.125,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
+		"v3": 0.15,
 		"answer": 0.9500000000000005,
-		"answernr": 2,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.125,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 2,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.125,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 2,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.125,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 2,
-		"roboAnswer": 1
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.125,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 2,
+		"answernr": 0,
 		"roboAnswer": 1
 	},
 	{
@@ -3366,50 +2967,150 @@ window.configSlides = [
 	{
 		"type": "drawAsch",
 		"user": 0,
-		"v1": 0.9750000000000005,
-		"v2": 0.025,
-		"v3": 0.6750000000000003,
-		"answer": 0.9750000000000005,
+		"v1": 0.125,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.125,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.125,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.125,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.125,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8250000000000004,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8250000000000004,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8250000000000004,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8250000000000004,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.8250000000000004,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9500000000000005,
+		"v2": 0.9000000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 1,
-		"v1": 0.9750000000000005,
-		"v2": 0.025,
-		"v3": 0.6750000000000003,
-		"answer": 0.9750000000000005,
+		"v1": 0.9500000000000005,
+		"v2": 0.9000000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 2,
-		"v1": 0.9750000000000005,
-		"v2": 0.025,
-		"v3": 0.6750000000000003,
-		"answer": 0.9750000000000005,
+		"v1": 0.9500000000000005,
+		"v2": 0.9000000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 3,
-		"v1": 0.9750000000000005,
-		"v2": 0.025,
-		"v3": 0.6750000000000003,
-		"answer": 0.9750000000000005,
+		"v1": 0.9500000000000005,
+		"v2": 0.9000000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 4,
-		"v1": 0.9750000000000005,
-		"v2": 0.025,
-		"v3": 0.6750000000000003,
-		"answer": 0.9750000000000005,
+		"v1": 0.9500000000000005,
+		"v2": 0.9000000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
 	},
@@ -3417,57 +3118,157 @@ window.configSlides = [
 		"type": "drawAsch",
 		"user": 0,
 		"v1": 0.9750000000000005,
-		"v2": 0.8500000000000004,
-		"v3": 0.025,
-		"answer": 0.8500000000000004,
+		"v2": 0.9500000000000005,
+		"v3": 0.6000000000000002,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.9750000000000005,
+		"v2": 0.9500000000000005,
+		"v3": 0.6000000000000002,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.9750000000000005,
+		"v2": 0.9500000000000005,
+		"v3": 0.6000000000000002,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.9750000000000005,
+		"v2": 0.9500000000000005,
+		"v3": 0.6000000000000002,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.9750000000000005,
+		"v2": 0.9500000000000005,
+		"v3": 0.6000000000000002,
+		"answer": 0.9750000000000005,
+		"answernr": 0,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9500000000000005,
+		"v2": 0.37500000000000006,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.9500000000000005,
+		"v2": 0.37500000000000006,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.9500000000000005,
+		"v2": 0.37500000000000006,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.9500000000000005,
+		"v2": 0.37500000000000006,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.9500000000000005,
+		"v2": 0.37500000000000006,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9250000000000005,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 1,
 		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
 		"user": 1,
-		"v1": 0.9750000000000005,
-		"v2": 0.8500000000000004,
-		"v3": 0.025,
-		"answer": 0.8500000000000004,
+		"v1": 0.9250000000000005,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 1,
 		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
 		"user": 2,
-		"v1": 0.9750000000000005,
-		"v2": 0.8500000000000004,
-		"v3": 0.025,
-		"answer": 0.8500000000000004,
+		"v1": 0.9250000000000005,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 1,
 		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
 		"user": 3,
-		"v1": 0.9750000000000005,
-		"v2": 0.8500000000000004,
-		"v3": 0.025,
-		"answer": 0.8500000000000004,
+		"v1": 0.9250000000000005,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 1,
 		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
 		"user": 4,
-		"v1": 0.9750000000000005,
-		"v2": 0.8500000000000004,
-		"v3": 0.025,
-		"answer": 0.8500000000000004,
+		"v1": 0.9250000000000005,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
 		"answernr": 1,
 		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
 		"user": 0,
-		"v1": 0.6500000000000002,
-		"v2": 0.025,
+		"v1": 0.9500000000000005,
+		"v2": 0.8000000000000004,
 		"v3": 0.9750000000000005,
 		"answer": 0.9750000000000005,
 		"answernr": 2,
@@ -3476,8 +3277,8 @@ window.configSlides = [
 	{
 		"type": "drawAsch",
 		"user": 1,
-		"v1": 0.6500000000000002,
-		"v2": 0.025,
+		"v1": 0.9500000000000005,
+		"v2": 0.8000000000000004,
 		"v3": 0.9750000000000005,
 		"answer": 0.9750000000000005,
 		"answernr": 2,
@@ -3486,8 +3287,8 @@ window.configSlides = [
 	{
 		"type": "drawAsch",
 		"user": 2,
-		"v1": 0.6500000000000002,
-		"v2": 0.025,
+		"v1": 0.9500000000000005,
+		"v2": 0.8000000000000004,
 		"v3": 0.9750000000000005,
 		"answer": 0.9750000000000005,
 		"answernr": 2,
@@ -3496,8 +3297,8 @@ window.configSlides = [
 	{
 		"type": "drawAsch",
 		"user": 3,
-		"v1": 0.6500000000000002,
-		"v2": 0.025,
+		"v1": 0.9500000000000005,
+		"v2": 0.8000000000000004,
 		"v3": 0.9750000000000005,
 		"answer": 0.9750000000000005,
 		"answernr": 2,
@@ -3506,10 +3307,110 @@ window.configSlides = [
 	{
 		"type": "drawAsch",
 		"user": 4,
-		"v1": 0.6500000000000002,
-		"v2": 0.025,
+		"v1": 0.9500000000000005,
+		"v2": 0.8000000000000004,
 		"v3": 0.9750000000000005,
 		"answer": 0.9750000000000005,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.7000000000000003,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.7000000000000003,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.7000000000000003,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.7000000000000003,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.7000000000000003,
+		"v2": 0.9500000000000005,
+		"v3": 0.9750000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.025,
+		"v2": 0.15,
+		"v3": 0.05,
+		"answer": 0.05,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.025,
+		"v2": 0.15,
+		"v3": 0.05,
+		"answer": 0.05,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.025,
+		"v2": 0.15,
+		"v3": 0.05,
+		"answer": 0.05,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.025,
+		"v2": 0.15,
+		"v3": 0.05,
+		"answer": 0.05,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.025,
+		"v2": 0.15,
+		"v3": 0.05,
+		"answer": 0.05,
 		"answernr": 2,
 		"roboAnswer": 0
 	},
@@ -3568,49 +3469,199 @@ window.configSlides = [
 		"user": 0,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.7750000000000004,
-		"answer": 0.9750000000000005,
-		"answernr": 1,
-		"roboAnswer": 2
+		"v3": 0.8750000000000004,
+		"answer": 0.8750000000000004,
+		"answernr": 2,
+		"roboAnswer": 1
 	},
 	{
 		"type": "drawAsch",
 		"user": 1,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.7750000000000004,
-		"answer": 0.9750000000000005,
-		"answernr": 1,
-		"roboAnswer": 2
+		"v3": 0.8750000000000004,
+		"answer": 0.8750000000000004,
+		"answernr": 2,
+		"roboAnswer": 1
 	},
 	{
 		"type": "drawAsch",
 		"user": 2,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.7750000000000004,
-		"answer": 0.9750000000000005,
-		"answernr": 1,
-		"roboAnswer": 2
+		"v3": 0.8750000000000004,
+		"answer": 0.8750000000000004,
+		"answernr": 2,
+		"roboAnswer": 1
 	},
 	{
 		"type": "drawAsch",
 		"user": 3,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.7750000000000004,
-		"answer": 0.9750000000000005,
-		"answernr": 1,
-		"roboAnswer": 2
+		"v3": 0.8750000000000004,
+		"answer": 0.8750000000000004,
+		"answernr": 2,
+		"roboAnswer": 1
 	},
 	{
 		"type": "drawAsch",
 		"user": 4,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.7750000000000004,
-		"answer": 0.9750000000000005,
+		"v3": 0.8750000000000004,
+		"answer": 0.8750000000000004,
+		"answernr": 2,
+		"roboAnswer": 1
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9750000000000005,
+		"v2": 0.8500000000000004,
+		"v3": 0.025,
+		"answer": 0.8500000000000004,
 		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.9750000000000005,
+		"v2": 0.8500000000000004,
+		"v3": 0.025,
+		"answer": 0.8500000000000004,
+		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.9750000000000005,
+		"v2": 0.8500000000000004,
+		"v3": 0.025,
+		"answer": 0.8500000000000004,
+		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.9750000000000005,
+		"v2": 0.8500000000000004,
+		"v3": 0.025,
+		"answer": 0.8500000000000004,
+		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.9750000000000005,
+		"v2": 0.8500000000000004,
+		"v3": 0.025,
+		"answer": 0.8500000000000004,
+		"answernr": 1,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9750000000000005,
+		"v2": 0.19999999999999998,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.9750000000000005,
+		"v2": 0.19999999999999998,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.9750000000000005,
+		"v2": 0.19999999999999998,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.9750000000000005,
+		"v2": 0.19999999999999998,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.9750000000000005,
+		"v2": 0.19999999999999998,
+		"v3": 0.9500000000000005,
+		"answer": 0.9500000000000005,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.7500000000000003,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.7500000000000003,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.7500000000000003,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.7500000000000003,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.7500000000000003,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.7500000000000003,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.7500000000000003,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.7500000000000003,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.7500000000000003,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.7500000000000003,
+		"answernr": 0,
 		"roboAnswer": 2
 	},
 	{
@@ -3666,9 +3717,109 @@ window.configSlides = [
 	{
 		"type": "drawAsch",
 		"user": 0,
+		"v1": 0.6750000000000003,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.6750000000000003,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.6750000000000003,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.6750000000000003,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.6750000000000003,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.6750000000000003,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.6750000000000003,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.6750000000000003,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.6750000000000003,
+		"v2": 0.9750000000000005,
+		"v3": 0.9500000000000005,
+		"answer": 0.6750000000000003,
+		"answernr": 0,
+		"roboAnswer": 2
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.7250000000000003,
+		"answer": 0.7250000000000003,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 1,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.7250000000000003,
+		"answer": 0.7250000000000003,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 2,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.7250000000000003,
+		"answer": 0.7250000000000003,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 3,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.7250000000000003,
+		"answer": 0.7250000000000003,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 4,
+		"v1": 0.9500000000000005,
+		"v2": 0.9750000000000005,
+		"v3": 0.7250000000000003,
+		"answer": 0.7250000000000003,
+		"answernr": 2,
+		"roboAnswer": 0
+	},
+	{
+		"type": "drawAsch",
+		"user": 0,
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9000000000000005,
+		"v3": 0.6750000000000003,
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
@@ -3678,7 +3829,7 @@ window.configSlides = [
 		"user": 1,
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9000000000000005,
+		"v3": 0.6750000000000003,
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
@@ -3688,7 +3839,7 @@ window.configSlides = [
 		"user": 2,
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9000000000000005,
+		"v3": 0.6750000000000003,
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
@@ -3698,7 +3849,7 @@ window.configSlides = [
 		"user": 3,
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9000000000000005,
+		"v3": 0.6750000000000003,
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
@@ -3708,7 +3859,7 @@ window.configSlides = [
 		"user": 4,
 		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9000000000000005,
+		"v3": 0.6750000000000003,
 		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
@@ -3766,202 +3917,52 @@ window.configSlides = [
 	{
 		"type": "drawAsch",
 		"user": 0,
-		"v1": 0.025,
-		"v2": 0.15,
-		"v3": 0.05,
-		"answer": 0.05,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.025,
-		"v2": 0.15,
-		"v3": 0.05,
-		"answer": 0.05,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.025,
-		"v2": 0.15,
-		"v3": 0.05,
-		"answer": 0.05,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.025,
-		"v2": 0.15,
-		"v3": 0.05,
-		"answer": 0.05,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.025,
-		"v2": 0.15,
-		"v3": 0.05,
-		"answer": 0.05,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.7500000000000003,
+		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9750000000000005,
-		"answer": 0.7500000000000003,
+		"v3": 0.9000000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 1,
-		"v1": 0.7500000000000003,
+		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9750000000000005,
-		"answer": 0.7500000000000003,
+		"v3": 0.9000000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 2,
-		"v1": 0.7500000000000003,
+		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9750000000000005,
-		"answer": 0.7500000000000003,
+		"v3": 0.9000000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 3,
-		"v1": 0.7500000000000003,
+		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9750000000000005,
-		"answer": 0.7500000000000003,
+		"v3": 0.9000000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 4,
-		"v1": 0.7500000000000003,
+		"v1": 0.9750000000000005,
 		"v2": 0.025,
-		"v3": 0.9750000000000005,
-		"answer": 0.7500000000000003,
+		"v3": 0.9000000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 0,
 		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.6750000000000003,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
-		"answer": 0.6750000000000003,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.6750000000000003,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
-		"answer": 0.6750000000000003,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.6750000000000003,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
-		"answer": 0.6750000000000003,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.6750000000000003,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
-		"answer": 0.6750000000000003,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.6750000000000003,
-		"v2": 0.9750000000000005,
-		"v3": 0.9500000000000005,
-		"answer": 0.6750000000000003,
-		"answernr": 0,
-		"roboAnswer": 2
-	},
-	{
-		"type": "drawAsch",
-		"user": 0,
-		"v1": 0.9750000000000005,
-		"v2": 0.19999999999999998,
-		"v3": 0.9500000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 1,
-		"v1": 0.9750000000000005,
-		"v2": 0.19999999999999998,
-		"v3": 0.9500000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 2,
-		"v1": 0.9750000000000005,
-		"v2": 0.19999999999999998,
-		"v3": 0.9500000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 3,
-		"v1": 0.9750000000000005,
-		"v2": 0.19999999999999998,
-		"v3": 0.9500000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
-	},
-	{
-		"type": "drawAsch",
-		"user": 4,
-		"v1": 0.9750000000000005,
-		"v2": 0.19999999999999998,
-		"v3": 0.9500000000000005,
-		"answer": 0.9500000000000005,
-		"answernr": 2,
-		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
@@ -4018,98 +4019,98 @@ window.configSlides = [
 		"user": 0,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.8750000000000004,
-		"answer": 0.8750000000000004,
-		"answernr": 2,
-		"roboAnswer": 1
+		"v3": 0.7750000000000004,
+		"answer": 0.9750000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 1,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.8750000000000004,
-		"answer": 0.8750000000000004,
-		"answernr": 2,
-		"roboAnswer": 1
+		"v3": 0.7750000000000004,
+		"answer": 0.9750000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 2,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.8750000000000004,
-		"answer": 0.8750000000000004,
-		"answernr": 2,
-		"roboAnswer": 1
+		"v3": 0.7750000000000004,
+		"answer": 0.9750000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 3,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.8750000000000004,
-		"answer": 0.8750000000000004,
-		"answernr": 2,
-		"roboAnswer": 1
+		"v3": 0.7750000000000004,
+		"answer": 0.9750000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 4,
 		"v1": 0.025,
 		"v2": 0.9750000000000005,
-		"v3": 0.8750000000000004,
-		"answer": 0.8750000000000004,
-		"answernr": 2,
-		"roboAnswer": 1
+		"v3": 0.7750000000000004,
+		"answer": 0.9750000000000005,
+		"answernr": 1,
+		"roboAnswer": 2
 	},
 	{
 		"type": "drawAsch",
 		"user": 0,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.7250000000000003,
-		"answer": 0.7250000000000003,
+		"v1": 0.6500000000000002,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 2,
 		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
 		"user": 1,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.7250000000000003,
-		"answer": 0.7250000000000003,
+		"v1": 0.6500000000000002,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 2,
 		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
 		"user": 2,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.7250000000000003,
-		"answer": 0.7250000000000003,
+		"v1": 0.6500000000000002,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 2,
 		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
 		"user": 3,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.7250000000000003,
-		"answer": 0.7250000000000003,
+		"v1": 0.6500000000000002,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 2,
 		"roboAnswer": 0
 	},
 	{
 		"type": "drawAsch",
 		"user": 4,
-		"v1": 0.9500000000000005,
-		"v2": 0.9750000000000005,
-		"v3": 0.7250000000000003,
-		"answer": 0.7250000000000003,
+		"v1": 0.6500000000000002,
+		"v2": 0.025,
+		"v3": 0.9750000000000005,
+		"answer": 0.9750000000000005,
 		"answernr": 2,
 		"roboAnswer": 0
 	},
@@ -4119,4 +4120,4 @@ window.configSlides = [
 		"v2": "The test is now complete. Thank you for participating. Please talk to the research assistant before you leave.",
 		"sound": "instructions/inst_cheers2.mp3"
 	}
-]
+];

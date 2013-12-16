@@ -19,7 +19,8 @@ window.configSlides =
 	  	type : "drawCommand",
 	  	v1 : "Introduction",
 	  	v2 : "Hello and welcome to our verbal communication and visual cognition test. Thank you for participating. The test consists of a verbal task followed by a visual task and takes about twenty minutes.",  	
-		sound : "instructions/inst_hello_lines_words.mp3"
+		sound : "instructions/inst_hello_lines_words.mp3",
+		wait: "15500"
 	},
 
 	{

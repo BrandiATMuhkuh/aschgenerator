@@ -568,7 +568,7 @@ function slideGenerator () {
 
 							//console.log(_outOutArray[a].scheme);
 						}
-						window.myCsv2.push(""+(window.mySlides.length-1)+", ed, ,\n");
+						window.myCsv2.push(""+(window.mySlides.length-1)+", ed, ,");
 					}
 
 				}
