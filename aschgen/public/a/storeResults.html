@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1>Store and maybe analyse results</h1>
-	<input type="checkbox" id="isRobotCondition" value="1" checked="checked" />Is this a robot condition?<br />
+	<input type="checkbox" id="isRobotCondition" value="1" />Is this a robot condition?<br />
 	<input type="text" name="part" id="part">Part<br />
 	<script type="text/javascript">
 
@@ -36,6 +36,7 @@
 			Q8 : _map[_storeObj.part].Q8,
 			Q9 : _map[_storeObj.part].Q9,
 			Q10 : _map[_storeObj.part].Q10,
+			Q11 : _map[_storeObj.part].Q11,
 		};
 
 		var _res = document.getElementsByClassName("resultChecks");
