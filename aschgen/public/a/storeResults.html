@@ -7,15 +7,16 @@
 </head>
 <body>
 	<h1>Store and maybe analyse results</h1>
-	<input type="checkbox" id="isRobotCondition" value="1" />Is this a robot condition?<br />
+	<input type="checkbox" id="isRobotCondition" value="1" checked="checked" />Is this a robot condition?<br />
+	<input type="checkbox" id="isLinesFirst" value="1" />Lines First?<br />
 	<input type="text" name="part" id="part">Part<br />
 	<script type="text/javascript">
 
-	for (var i = 31; i <= 176; i+=5) {
+	for (var i = 32; i <= 177; i+=5) {
 		document.write('<input type="checkbox" class="resultChecks" id="'+i+'" name="'+i+'" value="1" />'+i+'<br />');
 	};
-
-	for (var i = 204; i <= 349; i+=5) {
+document.write('<hr />');
+	for (var i = 207; i <= 352; i+=5) {
 		document.write('<input type="checkbox" class="resultChecks" id="'+i+'" name="'+i+'" value="1" />'+i+'<br />');
 	};
 	
@@ -24,6 +25,7 @@
 	function storeResult(){
 		var _storeObj = {};
 		_storeObj.isRobotCondition = document.getElementById("isRobotCondition").checked;
+		_storeObj.isLinesFirst = document.getElementById("isLinesFirst").checked;
 		_storeObj.part = document.getElementById("part").value;
 		_storeObj.survey = {
 			Q1 : _map[_storeObj.part].Q1,
@@ -41,10 +43,22 @@
 
 		var _res = document.getElementsByClassName("resultChecks");
 
+		var _lineAmbigStart = 0;
+		var _lineNAmbigStart = 15;
+		var _wordsAmbigStart = 30;
+		var _wordsNAmbigStart = 45;
+
+		if(!_storeObj.isLinesFirst){
+			_lineAmbigStart = 30;
+			_lineNAmbigStart = 45;
+			_wordsAmbigStart = 0;
+			_wordsNAmbigStart = 15;
+		}
+
 		/////////////////////////////////////
 		var _lineAmbig = [];
 		var _lineAmbigCount = 0;
-		for (var i = 0; i < 15; i+=1){
+		for (var i = _lineAmbigStart; i < (_lineAmbigStart+15); i+=1){
 			_lineAmbig.push({id:_res[i].id, res:_res[i].checked});
 			if(_res[i].checked){ 
 				_lineAmbigCount+=1;
@@ -57,7 +71,7 @@
 		/////////////////////////////////////
 		var _lineNAmbig = [];
 		var _lineNAmbigCount = 0;
-		for (var i = 15; i < 30; i+=1){
+		for (var i = _lineNAmbigStart; i < (_lineNAmbigStart+15); i+=1){
 			_lineNAmbig.push({id:_res[i].id, res:_res[i].checked});
 			if(_res[i].checked){ 
 				_lineNAmbigCount+=1;
@@ -70,7 +84,7 @@
 		/////////////////////////////////////
 		var _wordsAmbig = [];
 		var _wordsAmbigCount = 0;
-		for (var i = 30; i < 45; i+=1){
+		for (var i = _wordsAmbigStart; i < (_wordsAmbigStart+15); i+=1){
 			_wordsAmbig.push({id:_res[i].id, res:_res[i].checked});
 			if(_res[i].checked){ 
 				_wordsAmbigCount+=1;
@@ -83,7 +97,7 @@
 		/////////////////////////////////////
 		var _wordsNAmbig = [];
 		var _wordsNAmbigCount = 0;
-		for (var i = 45; i < 60; i+=1){
+		for (var i = _wordsNAmbigStart; i < (_wordsNAmbigStart+15); i+=1){
 			_wordsNAmbig.push({id:_res[i].id, res:_res[i].checked});
 			if(_res[i].checked){ 
 				_wordsNAmbigCount+=1;
