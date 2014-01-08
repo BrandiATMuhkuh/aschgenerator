@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+	<style type="text/css">
+		body {
+			background-color:black;
+			color: white;
+			font-family: monospace;
+			font-size: 200px;
+			text-align: center;
+		}
+	</style>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="dpd.js"></script>
+	<script type="text/javascript">
+	window.globalCount = 80;
+	window.globalRemoteId = "ad886c6cf15138fb";
+
+
+	dpd.remote.on('put', function(message) {
+	    //console.log(message);
+	    if(message.id=="86222b1d35503829"){
+	      if(message.pageNr==0){
+	      		document.getElementById("indicat").innerHTML="A";
+				console.log("A");
+			}else if(message.pageNr==1){
+				document.getElementById("indicat").innerHTML="B";
+			}else if(message.pageNr==2){
+				document.getElementById("indicat").innerHTML="C";
+			}
+	    }
+	  });
+
+	</script>
+</head>
+<body>
+	
+	<div id="indicat">...</div>
+
+</body>
+</html>

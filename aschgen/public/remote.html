@@ -8,15 +8,32 @@
 	window.globalRemoteId = "ad886c6cf15138fb";
 
 	function next(){
-		console.log('text');
+		//console.log('text');
 		window.globalCount += 1;
 		dpd.remote.put(window.globalRemoteId, {"pageNr":window.globalCount}, function(result, err) {
-		  if(err) return console.log(err);
-		  console.log(result, result.id);
+
+		  //console.log(result, result.id);
 		});
+
+		//console.log(window.configSlides[window.globalCount]);
+		var curObj = window.configSlides[window.globalCount+1];
+		if(curObj["type"]=="drawAsch"){
+			//console.log("type: ",curObj["type"]);
+			//console.log(curObj);
+			//
+			dpd.remote.put("86222b1d35503829", {"pageNr":curObj.roboAnswer}, function(result, err) {});
+
+			if(curObj.roboAnswer==0){
+				console.log("A");
+			}else if(curObj.roboAnswer==1){
+				console.log("B");
+			}else if(curObj.roboAnswer==2){
+				console.log("C");
+			}
+		}
 	}
 
-
+	/*
 	function script(){
 		console.log("script laod");
 		var query = {"id":window.globalRemoteId};
@@ -26,10 +43,28 @@
 		  globalCount = result.pageNr;
 		});
 
-	}
+	}*/
+
+	var filename = "configSlides.js";
+	  if(window.location.search.split("=")[1]){
+	    filename = window.location.search.split("=")[1]+".js";
+	  }
+
+	  var fileref=document.createElement('script');
+	  fileref.setAttribute("type","text/javascript");
+	  fileref.setAttribute("src", filename);
+
+	  fileref.onload = function(){
+	    window.document.scriptFileLoaded = true;
+	    
+	    console.log("loaded");
+	  };
+
+	  document.getElementsByTagName("head")[0].appendChild(fileref);
+
 	</script>
 </head>
-<body onload="script();">
+<body >
 	
 
 	<button onclick="next()">next</button>

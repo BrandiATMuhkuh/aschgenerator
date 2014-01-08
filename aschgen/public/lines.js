@@ -80,7 +80,9 @@ function sketchProc(processing) {
    */
   dpd.remote.on('put', function(message) {
     console.log(message);
-    nextPage(message.pageNr);
+    if(message.id=="ad886c6cf15138fb"){
+      nextPage(message.pageNr);
+    }
   });
 
   /**
