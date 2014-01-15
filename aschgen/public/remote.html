@@ -7,6 +7,8 @@
 	window.globalCount = 0;
 	window.globalRemoteId = "ad886c6cf15138fb";
 
+	
+
 	function next(){
 		//console.log('text');
 		window.globalCount += 1;
@@ -16,34 +18,31 @@
 		});
 
 		//console.log(window.configSlides[window.globalCount]);
-		var curObj = window.configSlides[window.globalCount+1];
+		var curObj = window.configSlides[window.globalCount+4];
 		if(curObj["type"]=="drawAsch"){
 			//console.log("type: ",curObj["type"]);
 			//console.log(curObj);
 			//
 			dpd.remote.put("86222b1d35503829", {"pageNr":curObj.roboAnswer}, function(result, err) {});
 
-			if(curObj.roboAnswer==0){
-				console.log("A");
-			}else if(curObj.roboAnswer==1){
-				console.log("B");
-			}else if(curObj.roboAnswer==2){
-				console.log("C");
-			}
+			
 		}
+
+		document.getElementById("pageNr").innerHTML=""+window.globalCount;
+
 	}
 
-	/*
-	function script(){
-		console.log("script laod");
-		var query = {"id":window.globalRemoteId};
+	function resetRemote(){
+		dpd.remote.put("86222b1d35503829", {"pageNr":42}, function(result, err) {});
 
-		dpd.remote.get(query, function (result) {
-		  console.log(result);
-		  globalCount = result.pageNr;
-		});
+	}
 
-	}*/
+	window.onkeyup=function(e){
+		//console.log(e)
+		if(e.keyIdentifier == "Right"){
+			next();
+		}
+	}
 
 	var filename = "configSlides.js";
 	  if(window.location.search.split("=")[1]){
@@ -66,8 +65,9 @@
 </head>
 <body >
 	
-
+	<div id="pageNr">nr</div>
 	<button onclick="next()">next</button>
+	<button onclick="resetRemote()">resetRemote</button>
 
 </body>
 </html>
