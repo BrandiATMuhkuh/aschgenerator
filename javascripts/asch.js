@@ -2,7 +2,7 @@
 
 var Asch={
 	
-	lineAmbig : {
+	humanLineAmbig : {
 		//"total":0,
 		"0":0,
 		"1":0,
@@ -21,7 +21,7 @@ var Asch={
 		"14":0,
 		"15":0,
 	},
-	lineNAmbig : {
+	humanLineNAmbig : {
 		//total:0,
 		"0":0,
 		"1":0,
@@ -40,7 +40,7 @@ var Asch={
 		"14":0,
 		"15":0,
 	},
-	wordsAmbig : {
+	humanWordsAmbig : {
 		//total:0,
 		"0":0,
 		"1":0,
@@ -59,7 +59,7 @@ var Asch={
 		"14":0,
 		"15":0,
 	},
-	wordsNAmbig : {
+	humanWordsNAmbig : {
 		//total:0,
 		"0":0,
 		"1":0,
@@ -84,38 +84,38 @@ var Asch={
 	invalidWordParticipants : [13,23]
 };
 
-Asch.totalLineAmbig = function(){
+Asch.totalhumanLineAmbig = function(){
 	var _return = 0;
-	for(a in this.lineAmbig){
-		_return += (a * this.lineAmbig[a]);
+	for(a in this.humanLineAmbig){
+		_return += (a * this.humanLineAmbig[a]);
 	}
 
 	return _return;
 }
 
-Asch.totalLineNAmbig = function(){
+Asch.totalhumanLineNAmbig = function(){
 	var _return = 0;
-	for(a in this.lineNAmbig){
-		_return += (a * this.lineNAmbig[a]);
+	for(a in this.humanLineNAmbig){
+		_return += (a * this.humanLineNAmbig[a]);
 	}
 
 	return _return;
 }
 
-Asch.totalWordsAmbig = function(){
+Asch.totalhumanWordsAmbig = function(){
 	var _return = 0;
-	for(a in this.wordsAmbig){
+	for(a in this.humanWordsAmbig){
 
-		_return += (a * this.wordsAmbig[a]);
+		_return += (a * this.humanWordsAmbig[a]);
 	}
 
 	return _return;
 }
 
-Asch.totalWordsNAmbig = function(){
+Asch.totalhumanWordsNAmbig = function(){
 	var _return = 0;
-	for(a in this.wordsNAmbig){
-		_return += (a * this.wordsNAmbig[a]);
+	for(a in this.humanWordsNAmbig){
+		_return += (a * this.humanWordsNAmbig[a]);
 	}
 
 	return _return;
@@ -127,53 +127,56 @@ Asch.main = function() {
 
 
 	for (a in groupExperimentResults){
-		var _lineAmbig = groupExperimentResults[a].res.lineAmbig;
-		var _lineNAmbig = groupExperimentResults[a].res.lineNAmbig;
-		var _wordsAmbig = groupExperimentResults[a].res.wordsAmbig;
-		var _wordsNAmbig = groupExperimentResults[a].res.wordsNAmbig;
-		var _lAt=0, _lNAt=0, _wAt=0, _wNAt=0;
-		
+		if(groupExperimentResults[a].res.isRobotCondition==false){
+			var _lineAmbig = groupExperimentResults[a].res.lineAmbig;
+			var _lineNAmbig = groupExperimentResults[a].res.lineNAmbig;
+			var _wordsAmbig = groupExperimentResults[a].res.wordsAmbig;
+			var _wordsNAmbig = groupExperimentResults[a].res.wordsNAmbig;
+			var _lAt=0, _lNAt=0, _wAt=0, _wNAt=0;
+			
 
-		//TODO Add excaption if something did not work out perfectly during the experiment
-		for(b in _lineAmbig){
-			if(_lineAmbig[b].res){
-				_lAt+=1;				
-			}
-		}
-		Asch.lineAmbig[_lAt]+=1;
-		groupExperimentResults[a].res.lAt=_lAt;
-		//Asch.lineAmbig.total+=_lAt;
-		// add here how many mistakes part one made, ...
-
-		for(b in _lineNAmbig){
-			if(_lineNAmbig[b].res){
-				_lNAt+=1;				
-			}
-		}
-		Asch.lineNAmbig[_lNAt]+=1;
-		groupExperimentResults[a].res.lNAt=_lNAt;
-		//Asch.lineNAmbig.total+=_lNAt;
-		if(this.invalidWordParticipants.indexOf(parseInt(groupExperimentResults[a].res.part)) == -1 ){
-			for(b in _wordsAmbig){
-				if(_wordsAmbig[b].res){
-					_wAt+=1;
+			//TODO Add excaption if something did not work out perfectly during the experiment
+			for(b in _lineAmbig){
+				if(_lineAmbig[b].res){
+					_lAt+=1;				
 				}
 			}
-			Asch.wordsAmbig[_wAt]+=1;
-			groupExperimentResults[a].res.wAt=_wAt;
-			//Asch.wordsAmbig.total+=_wAt;
+			Asch.humanLineAmbig[_lAt]+=1;
+			groupExperimentResults[a].res.lAt=_lAt;
+			//Asch.lineAmbig.total+=_lAt;
+			// add here how many mistakes part one made, ...
 
-			for(b in _wordsNAmbig){
-				if(_wordsNAmbig[b].res){
-					_wNAt+=1;
+			for(b in _lineNAmbig){
+				if(_lineNAmbig[b].res){
+					_lNAt+=1;				
 				}
 			}
-			Asch.wordsNAmbig[_wNAt]+=1;
-			groupExperimentResults[a].res.wNAt=_wNAt;
-			//Asch.wordsNAmbig.total+=_wNAt;
-		}else{
-			groupExperimentResults[a].res.wAt=NaN;
-			groupExperimentResults[a].res.wNAt=NaN;
+			Asch.humanLineNAmbig[_lNAt]+=1;
+			groupExperimentResults[a].res.lNAt=_lNAt;
+			//Asch.lineNAmbig.total+=_lNAt;
+			if(this.invalidWordParticipants.indexOf(parseInt(groupExperimentResults[a].res.part)) == -1 ){
+				for(b in _wordsAmbig){
+					if(_wordsAmbig[b].res){
+						_wAt+=1;
+					}
+				}
+				Asch.humanWordsAmbig[_wAt]+=1;
+				groupExperimentResults[a].res.wAt=_wAt;
+				//Asch.wordsAmbig.total+=_wAt;
+
+				for(b in _wordsNAmbig){
+					if(_wordsNAmbig[b].res){
+						_wNAt+=1;
+					}
+				}
+				Asch.humanWordsNAmbig[_wNAt]+=1;
+				groupExperimentResults[a].res.wNAt=_wNAt;
+				//Asch.wordsNAmbig.total+=_wNAt;
+			}else{
+				groupExperimentResults[a].res.wAt=NaN;
+				groupExperimentResults[a].res.wNAt=NaN;
+			}
+
 		}
 
 	}
@@ -188,10 +191,10 @@ Asch.main = function() {
 
 function test(){
 	var all = 0;
-	for(k in Asch["lineAmbig"]){
+	for(k in Asch["humanLineAmbig"]){
 		
 		if(k!="total"){
-			all += (k*Asch["lineAmbig"][k]);
+			all += (k*Asch["humanLineAmbig"][k]);
 		}
 		
 	}
@@ -252,10 +255,10 @@ Asch.fillPeopleTable = function(){
 
 	//add sum
 	var peopleTableSum = document.getElementById("peopleTableSum");
-	peopleTableSum.rows[0].cells[1].innerHTML=""+Asch.totalLineAmbig();
-	peopleTableSum.rows[0].cells[2].innerHTML=""+Asch.totalLineNAmbig();
-	peopleTableSum.rows[0].cells[3].innerHTML=""+Asch.totalWordsAmbig();
-	peopleTableSum.rows[0].cells[4].innerHTML=""+Asch.totalWordsNAmbig();
+	peopleTableSum.rows[0].cells[1].innerHTML=""+Asch.totalhumanLineAmbig();
+	peopleTableSum.rows[0].cells[2].innerHTML=""+Asch.totalhumanLineNAmbig();
+	peopleTableSum.rows[0].cells[3].innerHTML=""+Asch.totalhumanWordsAmbig();
+	peopleTableSum.rows[0].cells[4].innerHTML=""+Asch.totalhumanWordsNAmbig();
 
 
 	//add min one
@@ -270,19 +273,19 @@ Asch.fillMistakesTable = function(){
 	//console.log("wir kuemmern uns um den rock");
 	var table = document.getElementById("mistakesTable");
 
-	for(a in this.lineAmbig){
+	for(a in this.humanLineAmbig){
 		//console.log(a);
-		table.rows[a].insertCell(-1).innerHTML=this.lineAmbig[a];
-		table.rows[a].insertCell(-1).innerHTML=this.lineNAmbig[a];
-		table.rows[a].insertCell(-1).innerHTML=this.wordsAmbig[a];
-		table.rows[a].insertCell(-1).innerHTML=this.wordsNAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.humanLineAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.humanLineNAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.humanWordsAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.humanWordsNAmbig[a];
 	}
 
 	var total = document.getElementById("mistakesTableTotal");
-	total.rows[0].cells[1].innerHTML=Asch.totalLineAmbig()+"("+Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCountLines())+"%)";
-	total.rows[0].cells[2].innerHTML=Asch.totalLineNAmbig()+"("+Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCountLines())+"%)";
-	total.rows[0].cells[3].innerHTML=Asch.totalWordsAmbig()+"("+Math.round(Asch.totalWordsAmbig()*100/Asch.maxMistaceCountWords())+"%)";
-	total.rows[0].cells[4].innerHTML=Asch.totalWordsNAmbig()+"("+Math.round(Asch.totalWordsNAmbig()*100/Asch.maxMistaceCountWords())+"%)";
+	total.rows[0].cells[1].innerHTML=Asch.totalhumanLineAmbig()+"("+Math.round(Asch.totalhumanLineAmbig()*100/Asch.maxMistaceCountLines())+"%)";
+	total.rows[0].cells[2].innerHTML=Asch.totalhumanLineNAmbig()+"("+Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxMistaceCountLines())+"%)";
+	total.rows[0].cells[3].innerHTML=Asch.totalhumanWordsAmbig()+"("+Math.round(Asch.totalhumanWordsAmbig()*100/Asch.maxMistaceCountWords())+"%)";
+	total.rows[0].cells[4].innerHTML=Asch.totalhumanWordsNAmbig()+"("+Math.round(Asch.totalhumanWordsNAmbig()*100/Asch.maxMistaceCountWords())+"%)";
 
 
 	//draw graph
@@ -296,10 +299,10 @@ Asch.fillMistakesTable = function(){
 				fillColor : "#ccc",
 				strokeColor : "#232323",
 				data : [
-					Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCountLines()),
-					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCountLines()),
-					Math.round(Asch.totalWordsAmbig()*100/Asch.maxMistaceCountWords()),
-					Math.round(Asch.totalWordsNAmbig()*100/Asch.maxMistaceCountWords())]
+					Math.round(Asch.totalhumanLineAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalhumanWordsAmbig()*100/Asch.maxMistaceCountWords()),
+					Math.round(Asch.totalhumanWordsNAmbig()*100/Asch.maxMistaceCountWords())]
 			}/*,
 			{
 				fillColor : "rgba(151,187,205,0.5)",
@@ -382,9 +385,9 @@ Asch.fillIndividualVsGroupLine = function(){
 				strokeColor : "#232323",
 				data : [
 					Math.round(Asch.percentOfAmbigIndividualLineTest()),
-					Math.round(Asch.totalLineAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalhumanLineAmbig()*100/Asch.maxMistaceCountLines()),
 					Math.round(Asch.percentOfNonAmbigIndividualLineTest()),
-					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxMistaceCountLines()),
 					]
 			}/*,
 			{
@@ -410,7 +413,7 @@ Asch.fillAschVsUs = function(){
 				strokeColor : "#232323",
 				data : [
 					Math.round(Asch.percentOfNonAmbigIndividualLineTest()),
-					Math.round(Asch.totalLineNAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxMistaceCountLines()),
 					32
 					]
 			},
