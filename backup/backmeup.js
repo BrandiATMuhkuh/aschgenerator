@@ -8,7 +8,7 @@ function main (){
 	console.log("start");
 	pullResults(new Array(),0,100);
 	pullTest(new Array(),0,100);
-	pullExperresults(new Array(),0,100);
+	pullExperresults(new Array(),23,100);
 
 };
 
@@ -50,7 +50,7 @@ function pullTest(container, skip, limit){
     	
     	container=container.concat(data);
     	if(data.length===100){
-    		pullResults(container,skip+=100,100);
+    		pullTest(container,skip+=100,100);
     	}else{
     		//we reach this point only when we are finished
 
@@ -63,13 +63,14 @@ function pullTest(container, skip, limit){
 }
 
 function pullExperresults(container, skip, limit){
+
 	json.get('http://localhost:2403/experresults?{"$skip": '+skip+',"$limit": '+limit+'}', function (err, data) {
     	//console.log("bla",err,data);
     	//console.log(data.length);
     	
     	container=container.concat(data);
     	if(data.length===100){
-    		pullResults(container,skip+=100,100);
+    		pullExperresults(container,skip+=100,100);
     	}else{
     		//we reach this point only when we are finished    		    		
     		storeFile("groupExperimentResults.js", "var groupExperimentResults="+JSON.stringify(container)+";");
