@@ -2,6 +2,11 @@
 
 var Asch={
 	
+maxhumanMistakeCountLines : 0,
+maxhumanMistakeCountWords : 0,
+maxrobotMistakeCountLines : 0,
+maxrobotMistakeCountWords : 0,
+
 	humanLineAmbig : {
 		//"total":0,
 		"0":0,
@@ -78,10 +83,85 @@ var Asch={
 		"14":0,
 		"15":0,
 	},
+	robotLineAmbig : {
+		//"total":0,
+		"0":0,
+		"1":0,
+		"2":0,
+		"3":0,
+		"4":0,
+		"5":0,
+		"6":0,
+		"7":0,
+		"8":0,
+		"9":0,
+		"10":0,
+		"11":0,
+		"12":0,
+		"13":0,
+		"14":0,
+		"15":0,
+	},
+	robotLineNAmbig : {
+		//total:0,
+		"0":0,
+		"1":0,
+		"2":0,
+		"3":0,
+		"4":0,
+		"5":0,
+		"6":0,
+		"7":0,
+		"8":0,
+		"9":0,
+		"10":0,
+		"11":0,
+		"12":0,
+		"13":0,
+		"14":0,
+		"15":0,
+	},
+	robotWordsAmbig : {
+		//total:0,
+		"0":0,
+		"1":0,
+		"2":0,
+		"3":0,
+		"4":0,
+		"5":0,
+		"6":0,
+		"7":0,
+		"8":0,
+		"9":0,
+		"10":0,
+		"11":0,
+		"12":0,
+		"13":0,
+		"14":0,
+		"15":0,
+	},
+	robotWordsNAmbig : {
+		//total:0,
+		"0":0,
+		"1":0,
+		"2":0,
+		"3":0,
+		"4":0,
+		"5":0,
+		"6":0,
+		"7":0,
+		"8":0,
+		"9":0,
+		"10":0,
+		"11":0,
+		"12":0,
+		"13":0,
+		"14":0,
+		"15":0,
+	},
 	
 	nonambigIndividualLineList : [11,16,24,47,48,54,57,59,91,101,9,30,39,34,23],
-	ambigIndividualLineList : [79,46,13,20,38,61,98,31,58,64,69,77,100,105,6],
-	invalidWordParticipants : [13,23]
+	ambigIndividualLineList : [79,46,13,20,38,61,98,31,58,64,69,77,100,105,6]
 };
 
 Asch.totalhumanLineAmbig = function(){
@@ -121,13 +201,56 @@ Asch.totalhumanWordsNAmbig = function(){
 	return _return;
 }
 
+Asch.totalrobotLineAmbig = function(){
+	var _return = 0;
+	for(a in this.robotLineAmbig){
+		_return += (a * this.robotLineAmbig[a]);
+	}
+
+	return _return;
+}
+
+Asch.totalrobotLineNAmbig = function(){
+	var _return = 0;
+	for(a in this.robotLineNAmbig){
+		_return += (a * this.robotLineNAmbig[a]);
+	}
+
+	return _return;
+}
+
+Asch.totalrobotWordsAmbig = function(){
+	var _return = 0;
+	for(a in this.robotWordsAmbig){
+
+		_return += (a * this.robotWordsAmbig[a]);
+	}
+
+	return _return;
+}
+
+Asch.totalrobotWordsNAmbig = function(){
+	var _return = 0;
+	for(a in this.robotWordsNAmbig){
+		_return += (a * this.robotWordsNAmbig[a]);
+	}
+
+	return _return;
+}
+
+
 
 Asch.main = function() {
 	//console.log(groupExperimentResults.length);
 
 
+
 	for (a in groupExperimentResults){
 		if(groupExperimentResults[a].res.isRobotCondition==false){
+			this.maxhumanMistakeCountLines += 1;
+			this.maxhumanMistakeCountWords += 1;
+			
+
 			var _lineAmbig = groupExperimentResults[a].res.lineAmbig;
 			var _lineNAmbig = groupExperimentResults[a].res.lineNAmbig;
 			var _wordsAmbig = groupExperimentResults[a].res.wordsAmbig;
@@ -154,35 +277,85 @@ Asch.main = function() {
 			Asch.humanLineNAmbig[_lNAt]+=1;
 			groupExperimentResults[a].res.lNAt=_lNAt;
 			//Asch.lineNAmbig.total+=_lNAt;
-			if(this.invalidWordParticipants.indexOf(parseInt(groupExperimentResults[a].res.part)) == -1 ){
-				for(b in _wordsAmbig){
-					if(_wordsAmbig[b].res){
-						_wAt+=1;
-					}
+			
+			for(b in _wordsAmbig){
+				if(_wordsAmbig[b].res){
+					_wAt+=1;
 				}
-				Asch.humanWordsAmbig[_wAt]+=1;
-				groupExperimentResults[a].res.wAt=_wAt;
-				//Asch.wordsAmbig.total+=_wAt;
-
-				for(b in _wordsNAmbig){
-					if(_wordsNAmbig[b].res){
-						_wNAt+=1;
-					}
-				}
-				Asch.humanWordsNAmbig[_wNAt]+=1;
-				groupExperimentResults[a].res.wNAt=_wNAt;
-				//Asch.wordsNAmbig.total+=_wNAt;
-			}else{
-				groupExperimentResults[a].res.wAt=NaN;
-				groupExperimentResults[a].res.wNAt=NaN;
 			}
+			Asch.humanWordsAmbig[_wAt]+=1;
+			groupExperimentResults[a].res.wAt=_wAt;
+			//Asch.wordsAmbig.total+=_wAt;
+
+			for(b in _wordsNAmbig){
+				if(_wordsNAmbig[b].res){
+					_wNAt+=1;
+				}
+			}
+			Asch.humanWordsNAmbig[_wNAt]+=1;
+			groupExperimentResults[a].res.wNAt=_wNAt;
+			//Asch.wordsNAmbig.total+=_wNAt;
+			
+
+		}else{
+			this.maxrobotMistakeCountLines += 1;
+			this.maxrobotMistakeCountWords += 1;
+			var _lineAmbig = groupExperimentResults[a].res.lineAmbig;
+			var _lineNAmbig = groupExperimentResults[a].res.lineNAmbig;
+			var _wordsAmbig = groupExperimentResults[a].res.wordsAmbig;
+			var _wordsNAmbig = groupExperimentResults[a].res.wordsNAmbig;
+			var _lAt=0, _lNAt=0, _wAt=0, _wNAt=0;
+			
+
+			//TODO Add excaption if something did not work out perfectly during the experiment
+			for(b in _lineAmbig){
+				if(_lineAmbig[b].res){
+					_lAt+=1;				
+				}
+			}
+			Asch.robotLineAmbig[_lAt]+=1;
+			groupExperimentResults[a].res.lAt=_lAt;
+			//Asch.lineAmbig.total+=_lAt;
+			// add here how many mistakes part one made, ...
+
+			for(b in _lineNAmbig){
+				if(_lineNAmbig[b].res){
+					_lNAt+=1;				
+				}
+			}
+			Asch.robotLineNAmbig[_lNAt]+=1;
+			groupExperimentResults[a].res.lNAt=_lNAt;
+			//Asch.lineNAmbig.total+=_lNAt;
+			
+			for(b in _wordsAmbig){
+				if(_wordsAmbig[b].res){
+					_wAt+=1;
+				}
+			}
+			Asch.robotWordsAmbig[_wAt]+=1;
+			groupExperimentResults[a].res.wAt=_wAt;
+			//Asch.wordsAmbig.total+=_wAt;
+
+			for(b in _wordsNAmbig){
+				if(_wordsNAmbig[b].res){
+					_wNAt+=1;
+				}
+			}
+			Asch.robotWordsNAmbig[_wNAt]+=1;
+			groupExperimentResults[a].res.wNAt=_wNAt;
+			//Asch.wordsNAmbig.total+=_wNAt;
+			
 
 		}
 
 	}
 
+	this.maxrobotMistakeCountLines = this.maxrobotMistakeCountLines*15;
+	this.maxrobotMistakeCountWords = this.maxrobotMistakeCountWords*15;
+	this.maxhumanMistakeCountLines = this.maxhumanMistakeCountLines*15
+	this.maxhumanMistakeCountWords = this.maxhumanMistakeCountWords*15;
 
-	//this.fillPeopleTable();
+	this.fillPeopleTable();
 	this.fillMistakesTable();
 	this.fillIndividualVsGroupLine();
 	Asch.fillAschVsUs();
@@ -281,11 +454,24 @@ Asch.fillMistakesTable = function(){
 		table.rows[a].insertCell(-1).innerHTML=this.humanWordsNAmbig[a];
 	}
 
+	for(a in this.robotLineAmbig){
+		//console.log(a);
+		table.rows[a].insertCell(-1).innerHTML=this.robotLineAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.robotLineNAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.robotWordsAmbig[a];
+		table.rows[a].insertCell(-1).innerHTML=this.robotWordsNAmbig[a];
+	}
+
 	var total = document.getElementById("mistakesTableTotal");
-	total.rows[0].cells[1].innerHTML=Asch.totalhumanLineAmbig()+"("+Math.round(Asch.totalhumanLineAmbig()*100/Asch.maxMistaceCountLines())+"%)";
-	total.rows[0].cells[2].innerHTML=Asch.totalhumanLineNAmbig()+"("+Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxMistaceCountLines())+"%)";
-	total.rows[0].cells[3].innerHTML=Asch.totalhumanWordsAmbig()+"("+Math.round(Asch.totalhumanWordsAmbig()*100/Asch.maxMistaceCountWords())+"%)";
-	total.rows[0].cells[4].innerHTML=Asch.totalhumanWordsNAmbig()+"("+Math.round(Asch.totalhumanWordsNAmbig()*100/Asch.maxMistaceCountWords())+"%)";
+	total.rows[0].cells[1].innerHTML=Asch.totalhumanLineAmbig()+"("+Math.round(Asch.totalhumanLineAmbig()*100/Asch.maxhumanMistakeCountLines)+"%)";
+	total.rows[0].cells[2].innerHTML=Asch.totalhumanLineNAmbig()+"("+Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxhumanMistakeCountLines)+"%)";
+	total.rows[0].cells[3].innerHTML=Asch.totalhumanWordsAmbig()+"("+Math.round(Asch.totalhumanWordsAmbig()*100/Asch.maxhumanMistakeCountWords)+"%)";
+	total.rows[0].cells[4].innerHTML=Asch.totalhumanWordsNAmbig()+"("+Math.round(Asch.totalhumanWordsNAmbig()*100/Asch.maxhumanMistakeCountWords)+"%)";
+
+	total.rows[0].cells[5].innerHTML=Asch.totalrobotLineAmbig()+"("+Math.round(Asch.totalrobotLineAmbig()*100/Asch.maxrobotMistakeCountLines)+"%)";
+	total.rows[0].cells[6].innerHTML=Asch.totalrobotLineNAmbig()+"("+Math.round(Asch.totalrobotLineNAmbig()*100/Asch.maxrobotMistakeCountLines)+"%)";
+	total.rows[0].cells[7].innerHTML=Asch.totalrobotWordsAmbig()+"("+Math.round(Asch.totalrobotWordsAmbig()*100/Asch.maxrobotMistakeCountLines)+"%)";
+	total.rows[0].cells[8].innerHTML=Asch.totalrobotWordsNAmbig()+"("+Math.round(Asch.totalrobotWordsNAmbig()*100/Asch.maxrobotMistakeCountLines)+"%)";
 
 
 	//draw graph
@@ -293,16 +479,20 @@ Asch.fillMistakesTable = function(){
 	var ctx = document.getElementById("myChart").getContext("2d");
 
 	var data = {
-		labels : ["Line Ambiguous","Line non-Ambiguous","Word Ambiguous","Word non-Ambiguous"],
+		labels : ["LA(H)","LnA(H)","WA(H)","WnA(H)","LA(R)","LnA(R)","WA(R)","WnA(R)"],
 		datasets : [
 			{
 				fillColor : "#ccc",
 				strokeColor : "#232323",
 				data : [
-					Math.round(Asch.totalhumanLineAmbig()*100/Asch.maxMistaceCountLines()),
-					Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxMistaceCountLines()),
-					Math.round(Asch.totalhumanWordsAmbig()*100/Asch.maxMistaceCountWords()),
-					Math.round(Asch.totalhumanWordsNAmbig()*100/Asch.maxMistaceCountWords())]
+					Math.round(Asch.totalhumanLineAmbig()*100/Asch.maxhumanMistakeCountLines),
+					Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxhumanMistakeCountLines),
+					Math.round(Asch.totalhumanWordsAmbig()*100/Asch.maxhumanMistakeCountWords),
+					Math.round(Asch.totalhumanWordsNAmbig()*100/Asch.maxhumanMistakeCountWords),
+					Math.round(Asch.totalrobotLineAmbig()*100/Asch.maxrobotMistakeCountLines),
+					Math.round(Asch.totalrobotLineNAmbig()*100/Asch.maxrobotMistakeCountLines),
+					Math.round(Asch.totalrobotWordsAmbig()*100/Asch.maxrobotMistakeCountWords),
+					Math.round(Asch.totalrobotWordsNAmbig()*100/Asch.maxrobotMistakeCountWords)]
 			}/*,
 			{
 				fillColor : "rgba(151,187,205,0.5)",
@@ -316,13 +506,7 @@ Asch.fillMistakesTable = function(){
 	var myNewChart = new Chart(ctx).Bar(data);
 }
 
-Asch.maxMistaceCountLines = function(){
-	return (groupExperimentResults.length*15);
-}
 
-Asch.maxMistaceCountWords = function(){
-	return ((groupExperimentResults.length-Asch.invalidWordParticipants.length)*15);
-}
 
 Asch.percentOfNonAmbigIndividualLineTest = function(){
 	var _ret=0;
@@ -385,9 +569,9 @@ Asch.fillIndividualVsGroupLine = function(){
 				strokeColor : "#232323",
 				data : [
 					Math.round(Asch.percentOfAmbigIndividualLineTest()),
-					Math.round(Asch.totalhumanLineAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalhumanLineAmbig()*100/Asch.maxhumanMistakeCountLines),
 					Math.round(Asch.percentOfNonAmbigIndividualLineTest()),
-					Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxhumanMistakeCountLines),
 					]
 			}/*,
 			{
@@ -413,7 +597,7 @@ Asch.fillAschVsUs = function(){
 				strokeColor : "#232323",
 				data : [
 					Math.round(Asch.percentOfNonAmbigIndividualLineTest()),
-					Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxMistaceCountLines()),
+					Math.round(Asch.totalhumanLineNAmbig()*100/Asch.maxhumanMistakeCountLines),
 					32
 					]
 			},
