@@ -100,77 +100,13 @@ DynAsch.main = function(){
 	console.log("F|F|F|T|"+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue);
 	console.log("F|F|F|F|"+DynAsch.conformitCount(false, false, "wordsNAmbig").aschValue);
 
-	DynAsch.justAll();
 	DynAsch.showCounterBlance();
+	DynAsch.wordLinesFirstContainer();
+	DynAsch.individVsRest();
+	DynAsch.histogram();
 }
 
-DynAsch.justAll = function(){
-	
-	console.log((DynAsch.conformitCount(true, true, "lineAmbig").aschValue+DynAsch.conformitCount(true, false, "lineAmbig").aschValue)/2);
-	console.log(this.conformitCount(true, true, "lineAmbig").aschValue);
-	console.log(this.conformitCount(true, false, "lineAmbig").aschValue);
-	//CLA(R) Counter balanced Line Ambiuas Humans
-	//FLA(R) First Line Ambiuas Humans
-	//LLA(R) Last Line Ambiuas Humans
 
-
-
-	new Chart(document.getElementById("aschVSall").getContext("2d")).Bar({
-	labels : [
-		"LA(R)(Count, First, Last)",
-		"WA(R)(Count, First, Last)",
-		"LnA(R)(Count, First, Last)",
-		"LnA(R)(Count, First, Last)",
-		"LnA(R)(Count, First, Last)",
-		"LnA(R)(Count, First, Last)",
-		"LnA(R)(Count, First, Last)",
-		"LnA(R)(Count, First, Last)"],
-	datasets : [
-		{
-			fillColor : "rgba(220,220,220,0.5)",
-			strokeColor : "rgba(220,220,220,1)",
-			data : [
-				(DynAsch.conformitCount(true, true, "lineAmbig").aschValue+DynAsch.conformitCount(true, false, "lineAmbig").aschValue)/2,
-				(DynAsch.conformitCount(true, true, "wordsAmbig").aschValue+DynAsch.conformitCount(true, false, "wordsAmbig").aschValue)/2,
-				(DynAsch.conformitCount(true, true, "lineNAmbig").aschValue+DynAsch.conformitCount(true, false, "lineNAmbig").aschValue)/2,
-				(DynAsch.conformitCount(true, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(true, false, "wordsNAmbig").aschValue)/2,
-
-				(DynAsch.conformitCount(true, true, "lineAmbig").aschValue+DynAsch.conformitCount(true, false, "lineAmbig").aschValue)/2,
-				(DynAsch.conformitCount(true, true, "wordsAmbig").aschValue+DynAsch.conformitCount(true, false, "wordsAmbig").aschValue)/2,
-				(DynAsch.conformitCount(true, true, "lineNAmbig").aschValue+DynAsch.conformitCount(true, false, "lineNAmbig").aschValue)/2,
-				(DynAsch.conformitCount(true, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(true, false, "wordsNAmbig").aschValue)/2]
-		},
-		{
-			fillColor : "rgba(151,187,205,0.5)",
-			strokeColor : "rgba(151,187,205,1)",
-			data : [
-				DynAsch.conformitCount(true, true, "lineAmbig").aschValue,
-				DynAsch.conformitCount(true, true, "wordsAmbig").aschValue,
-				DynAsch.conformitCount(true, true, "lineNAmbig").aschValue,
-				DynAsch.conformitCount(true, true, "wordsNAmbig").aschValue,
-
-				DynAsch.conformitCount(true, true, "lineAmbig").aschValue,
-				DynAsch.conformitCount(true, true, "wordsAmbig").aschValue,
-				DynAsch.conformitCount(true, true, "lineNAmbig").aschValue,
-				DynAsch.conformitCount(true, true, "wordsNAmbig").aschValue]
-		},
-		{
-			fillColor : "rgba(50,20,205,0.5)",
-			strokeColor : "rgba(50,20,205,1)",
-			data : [
-				DynAsch.conformitCount(true, false, "lineAmbig").aschValue,
-				DynAsch.conformitCount(true, false, "wordsAmbig").aschValue,
-				DynAsch.conformitCount(true, false, "lineNAmbig").aschValue,
-				DynAsch.conformitCount(true, false, "wordsNAmbig").aschValue,
-
-				DynAsch.conformitCount(true, false, "lineAmbig").aschValue,
-				DynAsch.conformitCount(true, false, "wordsAmbig").aschValue,
-				DynAsch.conformitCount(true, false, "lineNAmbig").aschValue,
-				DynAsch.conformitCount(true, false, "wordsNAmbig").aschValue]
-		}
-	]
-	},defaults);
-}
 
 DynAsch.showCounterBlance = function(){
 	$(function ()  
@@ -243,6 +179,169 @@ DynAsch.showCounterBlance = function(){
 	);
 }
 
+DynAsch.wordLinesFirstContainer = function(){
+	$(function ()  
+					{
+	   var dataSource = [
+	    { state: "ambig Lines", 
+	    	ro: (DynAsch.conformitCount(true, true, "lineAmbig").aschValue+DynAsch.conformitCount(true, false, "lineAmbig").aschValue)/2,
+	    	hu: (DynAsch.conformitCount(false, true, "lineAmbig").aschValue+DynAsch.conformitCount(false, false, "lineAmbig").aschValue)/2
+	    },
+	    { state: "non-ambig Lines", 
+	    	ro: (DynAsch.conformitCount(true, true, "lineNAmbig").aschValue+DynAsch.conformitCount(true, false, "lineNAmbig").aschValue)/2,
+	    	hu: (DynAsch.conformitCount(false, true, "lineNAmbig").aschValue+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue)/2
+	    },
+
+	    { state: "ambig Words", 
+	    	ro: (DynAsch.conformitCount(true, true, "wordsAmbig").aschValue+DynAsch.conformitCount(true, false, "lineNAmbig").aschValue)/2,
+	    	hu: (DynAsch.conformitCount(false, true, "wordsAmbig").aschValue+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue)/2
+	    },
+	    { state: "non-ambig Words", 
+	    	ro: (DynAsch.conformitCount(true, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(true, false, "lineNAmbig").aschValue)/2,
+	    	hu: (DynAsch.conformitCount(false, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue)/2
+	    }
+	];
+
+	$("#wordLinesFirstContainer").dxChart({
+	    dataSource: dataSource,
+	    commonSeriesSettings: {
+	        argumentField: "state",
+	        type: "spline",
+	        hoverMode: "allArgumentPoints",
+	        selectionMode: "allArgumentPoints",
+	        label: {
+	            visible: true,
+	            format: "fixedPoint",
+	            precision: 0
+	        }
+	    },
+	    series: [
+	        { valueField: "ro", name: "robot" },
+	        { valueField: "hu", name: "human" }
+	    ],
+	    title: "Robots vs. Humans",
+	    legend: {
+	        verticalAlignment: "bottom",
+	        horizontalAlignment: "center"
+	    },
+	    pointClick: function (point) {
+	        this.select();
+	    }
+	});
+	}
+
+	);
+}
+
+DynAsch.individVsRest = function(){
+	$(function ()  
+					{
+	   var dataSource = [
+	    { state: "ambig Lines", 
+	    	in: 28,
+	    	ro: (DynAsch.conformitCount(true, true, "lineAmbig").aschValue+DynAsch.conformitCount(true, false, "lineAmbig").aschValue)/2,
+	    	hu: (DynAsch.conformitCount(false, true, "lineAmbig").aschValue+DynAsch.conformitCount(false, false, "lineAmbig").aschValue)/2
+	    },
+	    { state: "non-ambig Lines", 
+	    	in: 2,
+	    	ro: (DynAsch.conformitCount(true, true, "lineNAmbig").aschValue+DynAsch.conformitCount(true, false, "lineNAmbig").aschValue)/2,
+	    	hu: (DynAsch.conformitCount(false, true, "lineNAmbig").aschValue+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue)/2
+	    }
+	];
+
+	$("#individLinesContainer").dxChart({
+		tooltip: {
+	        enabled: true
+	    },
+	    dataSource: dataSource,
+	    commonSeriesSettings: {
+	        argumentField: "state",
+	        type: "spline",
+	        hoverMode: "allArgumentPoints",
+	        selectionMode: "allArgumentPoints",
+	        label: {
+	            visible: true,
+	            format: "fixedPoint",
+	            precision: 0
+	        }
+	    },
+	    series: [
+	    	{ valueField: "in", name: "individual" },
+	        { valueField: "ro", name: "robot" },
+	        { valueField: "hu", name: "human" }
+	    ],
+	    title: "Individuals vs. Robots vs. Humans - Lines",
+	    legend: {
+	        verticalAlignment: "bottom",
+	        horizontalAlignment: "center"
+	    },
+	    pointClick: function (point) {
+	        this.select();
+	    }
+	});
+	}
+
+	);
+}
+
+DynAsch.histogram = function(){
+	$(function ()  
+					{
+	   var dataSource = [];
+
+	for(var a=1; a<14; a++){
+		dataSource.push({ state: ""+a, 
+	    	alr: (DynAsch.conformitCount(true, true, "lineAmbig").errorTotal(a)+DynAsch.conformitCount(true, false, "lineAmbig").errorTotal(a))/2,
+	    	nalr: (DynAsch.conformitCount(true, true, "lineNAmbig").errorTotal(a)+DynAsch.conformitCount(true, false, "lineNAmbig").errorTotal(a))/2,
+	    	alh: (DynAsch.conformitCount(false, true, "lineAmbig").errorTotal(a)+DynAsch.conformitCount(false, false, "lineAmbig").errorTotal(a))/2,
+	    	nalh: (DynAsch.conformitCount(false, true, "lineNAmbig").errorTotal(a)+DynAsch.conformitCount(false, false, "lineNAmbig").errorTotal(a))/2,
+	    	awr: (DynAsch.conformitCount(true, true, "wordsAmbig").errorTotal(a)+DynAsch.conformitCount(true, false, "wordsAmbig").errorTotal(a))/2,
+	    	nawr: (DynAsch.conformitCount(true, true, "wordsNAmbig").errorTotal(a)+DynAsch.conformitCount(true, false, "wordsNAmbig").errorTotal(a))/2,
+	    	awh: (DynAsch.conformitCount(false, true, "wordsAmbig").errorTotal(a)+DynAsch.conformitCount(false, false, "wordsAmbig").errorTotal(a))/2,
+	    	nawh: (DynAsch.conformitCount(false, true, "wordsNAmbig").errorTotal(a)+DynAsch.conformitCount(false, false, "wordsNAmbig").errorTotal(a))/2,
+	    });	
+	}
+
+	$("#histrogramContainer").dxChart({
+		tooltip: {
+	        enabled: true
+	    },
+	    dataSource: dataSource,
+	    commonSeriesSettings: {
+	        argumentField: "state",
+	        type: "spline",
+	        hoverMode: "allArgumentPoints",
+	        selectionMode: "allArgumentPoints",
+	        label: {
+	            visible: false,
+	            format: "fixedPoint",
+	            precision: 0
+	        }
+	    },
+	    series: [
+	    	{ valueField: "alr", name: "ambig lines robot" },
+	        { valueField: "nalr", name: "non-ambig lines robot" },
+	        { valueField: "alh", name: "ambig lines humans" },
+	        { valueField: "nalh", name: "non-ambig lines humans" },
+	        { valueField: "awr", name: "ambig words robot" },
+	        { valueField: "nawr", name: "non-ambig words robot" },
+	        { valueField: "awh", name: "ambig words humans" },
+	        { valueField: "nawh", name: "non-ambig words humans" },
+	    ],
+	    title: "Absolute number per trial",
+	    legend: {
+	        verticalAlignment: "bottom",
+	        horizontalAlignment: "center"
+	    },
+	    pointClick: function (point) {
+	        this.select();
+	    }
+	});
+	}
+
+	);
+}
+
 /**
  * [conformitCount description]
  * @param  {string} robotCondtion true, false
@@ -279,6 +378,10 @@ DynAsch.conformitCount = function(robotCondtion,first,lineAmbig){
 			"15":0,
 		}
 	} 
+
+	anAsch.errorTotal = function(nr){
+		return this.innerAsch[nr]*nr;
+	}
 
 	
 	
