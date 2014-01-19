@@ -1,77 +1,3 @@
-var defaults = {
-				
-	//Boolean - If we show the scale above the chart data			
-	scaleOverlay : true,
-	
-	//Boolean - If we want to override with a hard coded scale
-	scaleOverride : true,
-	
-	//** Required if scaleOverride is true **
-	//Number - The number of steps in a hard coded scale
-	scaleSteps : 20,
-	//Number - The value jump in the hard coded scale
-	scaleStepWidth : 5,
-	//Number - The scale starting value
-	scaleStartValue : 0.0,
-
-	//String - Colour of the scale line	
-	scaleLineColor : "rgba(2,0,0,1)",
-	
-	//Number - Pixel width of the scale line	
-	scaleLineWidth : 2,
-
-	//Boolean - Whether to show labels on the scale	
-	scaleShowLabels : true,
-	
-	//Interpolated JS string - can access value
-	scaleLabel : "<%=value%>",
-	
-	//String - Scale label font declaration for the scale label
-	scaleFontFamily : "'Arial'",
-	
-	//Number - Scale label font size in pixels	
-	scaleFontSize : 12,
-	
-	//String - Scale label font weight style	
-	scaleFontStyle : "normal",
-	
-	//String - Scale label font colour	
-	scaleFontColor : "#666",	
-	
-	///Boolean - Whether grid lines are shown across the chart
-	scaleShowGridLines : true,
-	
-	//String - Colour of the grid lines
-	scaleGridLineColor : "rgba(0,0,0,.05)",
-	
-	//Number - Width of the grid lines
-	scaleGridLineWidth : 20,	
-
-	//Boolean - If there is a stroke on each bar	
-	barShowStroke : true,
-	
-	//Number - Pixel width of the bar stroke	
-	barStrokeWidth : 2,
-	
-	//Number - Spacing between each of the X value sets
-	barValueSpacing : 10,
-	
-	//Number - Spacing between data sets within X values
-	barDatasetSpacing : 1,
-	
-	//Boolean - Whether to animate the chart
-	animation : true,
-
-	//Number - Number of animation steps
-	animationSteps : 60,
-	
-	//String - Animation easing effect
-	animationEasing : "easeOutQuart",
-
-	//Function - Fires when the animation is complete
-	onAnimationComplete : null
-	
-}
 
 var DynAsch={
 };
@@ -104,6 +30,8 @@ DynAsch.main = function(){
 	DynAsch.wordLinesFirstContainer();
 	DynAsch.individVsRest();
 	DynAsch.histogram();
+	//DynAsch.wordError(true, true);
+	DynAsch.wordCountError();
 }
 
 
@@ -184,7 +112,7 @@ DynAsch.wordLinesFirstContainer = function(){
 					{
 	   var dataSource = [
 	    { state: "ambig Lines", 
-	    	ro: (DynAsch.conformitCount(true, true, "lineAmbig").aschValue+DynAsch.conformitCount(true, false, "lineAmbig").aschValue)/2,
+	    	ro:	(DynAsch.conformitCount(true, true, "lineAmbig").aschValue+DynAsch.conformitCount(true, false, "lineAmbig").aschValue)/2,
 	    	hu: (DynAsch.conformitCount(false, true, "lineAmbig").aschValue+DynAsch.conformitCount(false, false, "lineAmbig").aschValue)/2
 	    },
 	    { state: "non-ambig Lines", 
@@ -193,12 +121,12 @@ DynAsch.wordLinesFirstContainer = function(){
 	    },
 
 	    { state: "ambig Words", 
-	    	ro: (DynAsch.conformitCount(true, true, "wordsAmbig").aschValue+DynAsch.conformitCount(true, false, "lineNAmbig").aschValue)/2,
-	    	hu: (DynAsch.conformitCount(false, true, "wordsAmbig").aschValue+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue)/2
+	    	ro: (DynAsch.conformitCount(true, true, "wordsAmbig").aschValue+DynAsch.conformitCount(true, false, "wordsAmbig").aschValue)/2,
+	    	hu: (DynAsch.conformitCount(false, true, "wordsAmbig").aschValue+DynAsch.conformitCount(false, false, "wordsAmbig").aschValue)/2
 	    },
 	    { state: "non-ambig Words", 
-	    	ro: (DynAsch.conformitCount(true, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(true, false, "lineNAmbig").aschValue)/2,
-	    	hu: (DynAsch.conformitCount(false, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue)/2
+	    	ro: (DynAsch.conformitCount(true, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(true, false, "wordsNAmbig").aschValue)/2,
+	    	hu: (DynAsch.conformitCount(false, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(false, false, "wordsNAmbig").aschValue)/2
 	    }
 	];
 
@@ -340,6 +268,178 @@ DynAsch.histogram = function(){
 	}
 
 	);
+}
+
+
+DynAsch.wordCountError = function(){
+
+	console.log(DynAsch.wordError(true, true));
+	$(function ()  
+					{
+	   var dataSource = [
+	    { state: "ambig word (R)", 
+	    	er0: DynAsch.wordError(true, true).error0,
+	    	er1: DynAsch.wordError(true, true).error1,
+	    	er2: DynAsch.wordError(true, true).error2
+	    },
+	    { state: "non-ambig word (R)", 
+	    	er0: DynAsch.wordError(true, false).error0,
+	    	er1: DynAsch.wordError(true, false).error1,
+	    	er2: DynAsch.wordError(true, false).error2
+	    },
+	    { state: "ambig word (H)", 
+	    	er0: DynAsch.wordError(false, true).error0,
+	    	er1: DynAsch.wordError(false, true).error1,
+	    	er2: DynAsch.wordError(false, true).error2
+	    },
+	    { state: "non-ambig word (H)", 
+	    	er0: DynAsch.wordError(false, false).error0,
+	    	er1: DynAsch.wordError(false, false).error1,
+	    	er2: DynAsch.wordError(false, false).error2
+	    }
+	];
+
+	$("#wordCountError").dxChart({
+		tooltip: {
+	        enabled: true
+	    },
+	    dataSource: dataSource,
+	    commonSeriesSettings: {
+	        argumentField: "state",
+	        type: "bar",
+	        hoverMode: "allArgumentPoints",
+	        selectionMode: "allArgumentPoints",
+	        label: {
+	            visible: true,
+	            format: "fixedPoint",
+	            precision: 0
+	        }
+	    },
+	    series: [
+	    	{ valueField: "er0", name: "no repeat" },
+	        { valueField: "er1", name: "one repeat" },
+	        { valueField: "er2", name: "two repeats" }
+	    ],
+	    title: "repetition error rate - words",
+	    legend: {
+	        verticalAlignment: "bottom",
+	        horizontalAlignment: "center"
+	    },
+	    pointClick: function (point) {
+	        this.select();
+	    }
+	});
+	}
+
+	);
+}
+
+/**
+ * [wordError description]
+ * @param  {[type]} robotCondtion true, false
+ * @param  {[type]} wordsAmbig    true, false (false is wordsNAmbig)
+ * @return {[type]}               [description]
+ */
+DynAsch.wordError = function(robotCondtion, wordsAmbig){
+	
+
+	var lineAmbig = "wordsAmbig";
+	var _retObj = {
+		"error0": 0,
+		"error1": 0,
+		"error2": 0,
+	};
+	var wordTemp = {};
+
+
+	if(!wordsAmbig){
+		lineAmbig = "wordsNAmbig";
+	}
+
+console.log('WordError: ',robotCondtion, lineAmbig);
+
+
+	for (a in groupExperimentResults){
+
+		if(groupExperimentResults[a]["res"]["isRobotCondition"]==robotCondtion){
+
+			var l = groupExperimentResults[a]["res"][lineAmbig];
+
+			var mySum = 0;
+			for(n in l){
+			
+				if(wordTemp[l[n].word]==undefined){
+					//Add object 
+					wordTemp[l[n].word] = {
+						"error0":0,
+						"error1":0,
+						"error2":0,
+						"total0":0,
+						"total1":0,
+						"total2":0
+					};
+
+				}
+
+				//Here add stuff
+				//console.log(l[n]);	
+
+				if(l[n].hearCount==0){
+					wordTemp[l[n].word].total0 = wordTemp[l[n].word].total0+1;
+					if(l[n].res){
+						wordTemp[l[n].word].error0 = wordTemp[l[n].word].error0+1;
+					}
+				}else if(l[n].hearCount==1){
+					wordTemp[l[n].word].total1 = wordTemp[l[n].word].total1+1;
+					if(l[n].res){
+						wordTemp[l[n].word].error1 = wordTemp[l[n].word].error1+1;
+					}
+				} else if(l[n].hearCount==2){
+					wordTemp[l[n].word].total2 = wordTemp[l[n].word].total2+1;
+					if(l[n].res){
+						wordTemp[l[n].word].error2 = wordTemp[l[n].word].error2+1;
+					}
+				}
+			}
+			
+		}
+
+
+	}
+
+	_retObj['words'] = wordTemp;
+
+	var _tempErro0 = 0;
+	var _tempTotal0 = 0;
+	var _tempErro1 = 0;
+	var _tempTotal1 = 0;
+	var _tempErro2 = 0;
+	var _tempTotal2 = 0;
+
+	for (a in wordTemp){
+		//console.log(a);
+
+		_tempErro0 = _tempErro0 + wordTemp[a].error0;
+		_tempTotal0 = _tempTotal0 + wordTemp[a].total0;
+		_tempErro1 = _tempErro1 + wordTemp[a].error1;
+		_tempTotal1 = _tempTotal1 + wordTemp[a].total1;
+		_tempErro2 = _tempErro2 + wordTemp[a].error2;
+		_tempTotal2 = _tempTotal2 + wordTemp[a].total2;
+	}
+
+	var t = (_tempErro0*100/_tempTotal0+_tempErro1*100/_tempTotal1+_tempErro2*100/_tempTotal2)/3;
+
+	_retObj['error0'] = _tempErro0*100/_tempTotal0;
+	_retObj['error1'] = _tempErro1*100/_tempTotal1;
+	_retObj['error2'] = _tempErro2*100/_tempTotal2;
+
+	//console.log(_tempErro0,_tempTotal0,_tempErro0*100/_tempTotal0);
+	//console.log(_tempErro1,_tempTotal1,_tempErro1*100/_tempTotal1);
+	//console.log(_tempErro2,_tempTotal2,_tempErro2*100/_tempTotal2);
+	//console.log(t);
+	//console.log(_retObj);
+
+	return _retObj;
 }
 
 /**
