@@ -5,6 +5,7 @@ var DynAsch={
 DynAsch.main = function(){
 	console.log("Start DynAsch");
 
+	/*
 	//console.log(this.conformitCount(true, true, "lineAmbig").aschValue);
 	console.log("T|T|T|T|"+DynAsch.conformitCount(true, true, "lineAmbig").aschValue);
 	console.log("T|T|T|F|"+DynAsch.conformitCount(true, true, "wordsAmbig").aschValue);
@@ -24,14 +25,15 @@ DynAsch.main = function(){
 	console.log("F|F|T|T|"+DynAsch.conformitCount(false, false, "lineAmbig").aschValue);
 	console.log("F|F|T|F|"+DynAsch.conformitCount(false, false, "wordsAmbig").aschValue);
 	console.log("F|F|F|T|"+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue);
-	console.log("F|F|F|F|"+DynAsch.conformitCount(false, false, "wordsNAmbig").aschValue);
+	console.log("F|F|F|F|"+DynAsch.conformitCount(false, false, "wordsNAmbig").aschValue);*/
 
 	DynAsch.showCounterBlance();
 	DynAsch.wordLinesFirstContainer();
 	DynAsch.individVsRest();
 	DynAsch.histogram();
-	//DynAsch.wordError(true, true);
 	DynAsch.wordCountError();
+	DynAsch.conditionCSV();
+	DynAsch.individualConditionCSV();
 }
 
 
@@ -273,7 +275,7 @@ DynAsch.histogram = function(){
 
 DynAsch.wordCountError = function(){
 
-	console.log(DynAsch.wordError(true, true));
+	//console.log(DynAsch.wordError(true, true));
 	$(function ()  
 					{
 	   var dataSource = [
@@ -356,7 +358,7 @@ DynAsch.wordError = function(robotCondtion, wordsAmbig){
 		lineAmbig = "wordsNAmbig";
 	}
 
-console.log('WordError: ',robotCondtion, lineAmbig);
+//console.log('WordError: ',robotCondtion, lineAmbig);
 
 
 	for (a in groupExperimentResults){
@@ -505,7 +507,6 @@ DynAsch.conformitCount = function(robotCondtion,first,lineAmbig){
 			anAsch.sum+=mySum;
 		}
 
-
 	}
 
 
@@ -525,3 +526,125 @@ DynAsch.conformitCount = function(robotCondtion,first,lineAmbig){
 
 
 
+DynAsch.conditionCSV = function(){
+
+
+
+	var obj = {
+
+
+	};
+
+
+	var arrBla = [];
+	arrBla.push(DynAsch.conformitCount(true, true, "lineAmbig").innerAsch);
+	arrBla.push(DynAsch.conformitCount(true, false, "lineAmbig").innerAsch);
+
+	arrBla.push(DynAsch.conformitCount(true, true, "lineNAmbig").innerAsch);
+	arrBla.push(DynAsch.conformitCount(true, false, "lineNAmbig").innerAsch);
+
+	arrBla.push(DynAsch.conformitCount(true, true, "wordsAmbig").innerAsch);
+	arrBla.push(DynAsch.conformitCount(true, false, "wordsAmbig").innerAsch);
+
+	arrBla.push(DynAsch.conformitCount(true, true, "wordsNAmbig").innerAsch);
+	arrBla.push(DynAsch.conformitCount(true, false, "wordsNAmbig").innerAsch);
+
+
+	arrBla.push(DynAsch.conformitCount(false, true, "lineAmbig").innerAsch);
+	arrBla.push(DynAsch.conformitCount(false, false, "lineAmbig").innerAsch);
+
+	arrBla.push(DynAsch.conformitCount(false, true, "lineNAmbig").innerAsch);
+	arrBla.push(DynAsch.conformitCount(false, false, "lineNAmbig").innerAsch);
+
+	arrBla.push(DynAsch.conformitCount(false, true, "wordsAmbig").innerAsch);
+	arrBla.push(DynAsch.conformitCount(false, false, "wordsAmbig").innerAsch);
+
+	arrBla.push(DynAsch.conformitCount(false, true, "wordsNAmbig").innerAsch);
+	arrBla.push(DynAsch.conformitCount(false, false, "wordsNAmbig").innerAsch);
+
+
+	var myCSV = "err, a, b, c, d, e, f, g, h\n";
+
+	//console.log(arrBla[0]);
+
+	for(a in arrBla[0]){
+		//console.log(a);
+
+		var t = "";
+		
+		var k = 0
+		for(var i = 0; i<16; i = i+2){
+			//console.log(i, arrBla[i]);
+
+			t += (arrBla[i][a]+arrBla[i+1][a] ); 
+
+			if(i<14){
+				t+=", ";
+			}
+
+			k++;
+		}
+
+		//t=a+", "+t+"\t";
+
+		myCSV += a+", "+t+"\n"
+		/*
+		for(k in arrBla){
+			//console.log(k,arrBla[k][a]);
+			t += arrBla[k][a]+", "; 
+		}*/
+
+		
+	}
+	//console.log(myCSV);
+
+}
+
+DynAsch.individualConditionCSV = function(){
+	console.log("individualConditionCSV");
+
+	var csv = "participtant, al, nal, aw, naw, robot\n";
+
+	for (a in groupExperimentResults){
+		//console.log(groupExperimentResults[a].res);
+
+		var lineAmbig = groupExperimentResults[a].res.lineAmbig;
+		var lineNAmbig = groupExperimentResults[a].res.lineNAmbig;
+		var wordsAmbig = groupExperimentResults[a].res.wordsAmbig;
+		var wordsNAmbig = groupExperimentResults[a].res.wordsNAmbig;
+
+		var countlineAmbig = 0;
+		for(k in lineAmbig){
+			if(lineAmbig[k].res){
+				countlineAmbig++;
+			}
+		}
+
+		var countlineNAmbig = 0;
+		for(k in lineNAmbig){
+			if(lineNAmbig[k].res){
+				countlineNAmbig++;
+			}
+		}
+
+		var countwordsAmbig = 0;
+		for(k in wordsAmbig){
+			if(wordsAmbig[k].res){
+				countwordsAmbig++;
+			}
+		}
+
+		var countwordsNAmbig = 0;
+		for(k in wordsNAmbig){
+			if(wordsNAmbig[k].res){
+				countwordsNAmbig++;
+			}
+		}
+
+		csv+=""+groupExperimentResults[a].res.part+", "+countlineAmbig+", "+countlineNAmbig+", "+countwordsAmbig+", "+countwordsNAmbig+", "+groupExperimentResults[a].res.isRobotCondition+"\n";
+		console.log(groupExperimentResults[a].res.part, groupExperimentResults[a].res.isRobotCondition, countlineAmbig, countlineNAmbig, countwordsAmbig, countwordsNAmbig);
+
+	}
+
+	console.log(csv);
+}
