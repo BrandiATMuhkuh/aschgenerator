@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+43, 203, 0, cost, 
+43, 204, 1, knit, 
+43, 205, 2, bust, 
+43, 206, 3, spit, 
+43, 207, 4, wet, true
+43, 208, 0, spell, 
+43, 209, 1, spoil, 
+43, 210, 2, spill, 
+43, 211, 3, smell, 
+43, 212, 4, learn, true
+43, 213, 0, leap, 
+43, 214, 1, plead, 
+43, 215, 2, kneel, 
+43, 216, 3, dream, 
+43, 217, 4, lean, true
+43, 218, 0, shrink, 
+43, 219, 1, sing, 
+43, 220, 2, spring, 
+43, 221, 3, sink, 
+43, 222, 4, ring, true
+43, 223, 0, dive, 
+43, 224, 1, drive, 
+43, 225, 2, heave, 
+43, 226, 3, weave, 
+43, 227, 4, thrive, true
+43, 228, 0, cost, 
+43, 229, 1, knit, 
+43, 230, 2, wet, 
+43, 231, 3, spit, 
+43, 232, 4, bust, true
+43, 233, 0, learn, 
+43, 234, 1, smell, 
+43, 235, 2, spill, 
+43, 236, 3, spoil, 
+43, 237, 4, spell, true
+43, 238, 0, kneel, 
+43, 239, 1, leap, 
+43, 240, 2, plead, 
+43, 241, 3, lean, 
+43, 242, 4, dream, true
+43, 243, 0, sink, 
+43, 244, 1, sing, 
+43, 245, 2, shrink, 
+43, 246, 3, ring, 
+43, 247, 4, spring, true
+43, 248, 0, dive, 
+43, 249, 1, heave, 
+43, 250, 2, thrive, 
+43, 251, 3, drive, 
+43, 252, 4, weave, true
+43, 253, 0, wet, 
+43, 254, 1, cost, 
+43, 255, 2, knit, 
+43, 256, 3, bust, 
+43, 257, 4, spit, true
+43, 258, 0, spell, 
+43, 259, 1, learn, 
+43, 260, 2, smell, 
+43, 261, 3, spill, 
+43, 262, 4, spoil, true
+43, 263, 0, dream, 
+43, 264, 1, plead, 
+43, 265, 2, kneel, 
+43, 266, 3, lean, 
+43, 267, 4, leap, true
+43, 268, 0, spring, 
+43, 269, 1, ring, 
+43, 270, 2, sing, 
+43, 271, 3, sink, 
+43, 272, 4, shrink, true
+43, 273, 0, heave, 
+43, 274, 1, thrive, 
+43, 275, 2, dive, 
+43, 276, 3, weave, 
+43, 277, 4, drive, true
+43, 278, 0, give, 
+43, 279, 1, get, 
+43, 280, 2, see, 
+43, 281, 3, hold, 
+43, 282, 4, write, false
+43, 283, 0, make, 
+43, 284, 1, bring, 
+43, 285, 2, leave, 
+43, 286, 3, think, 
+43, 287, 4, lose, false
+43, 288, 0, say, 
+43, 289, 1, take, 
+43, 290, 2, find, 
+43, 291, 3, hear, 
+43, 292, 4, stand, true
+43, 293, 0, tell, 
+43, 294, 1, hit, 
+43, 295, 2, go, 
+43, 296, 3, put, 
+43, 297, 4, read, true
+43, 298, 0, feel, 
+43, 299, 1, know, 
+43, 300, 2, come, 
+43, 301, 3, sit, 
+43, 302, 4, keep, false
+43, 303, 0, give, 
+43, 304, 1, see, 
+43, 305, 2, write, 
+43, 306, 3, get, 
+43, 307, 4, hold, true
+43, 308, 0, lose, 
+43, 309, 1, think, 
+43, 310, 2, leave, 
+43, 311, 3, make, 
+43, 312, 4, bring, true
+43, 313, 0, stand, 
+43, 314, 1, take, 
+43, 315, 2, say, 
+43, 316, 3, find, 
+43, 317, 4, hear, true
+43, 318, 0, tell, 
+43, 319, 1, put, 
+43, 320, 2, go, 
+43, 321, 3, read, 
+43, 322, 4, hit, true
+43, 323, 0, keep, 
+43, 324, 1, come, 
+43, 325, 2, know, 
+43, 326, 3, feel, 
+43, 327, 4, sit, true
+43, 328, 0, get, 
+43, 329, 1, hold, 
+43, 330, 2, see, 
+43, 331, 3, write, 
+43, 332, 4, give, false
+43, 333, 0, bring, 
+43, 334, 1, make, 
+43, 335, 2, think, 
+43, 336, 3, lose, 
+43, 337, 4, leave, true
+43, 338, 0, hear, 
+43, 339, 1, say, 
+43, 340, 2, stand, 
+43, 341, 3, take, 
+43, 342, 4, find, true
+43, 343, 0, tell, 
+43, 344, 1, read, 
+43, 345, 2, go, 
+43, 346, 3, hit, 
+43, 347, 4, put, true
+43, 348, 0, come, 
+43, 349, 1, know, 
+43, 350, 2, sit, 
+43, 351, 3, keep, 
+43, 352, 4, feel, true

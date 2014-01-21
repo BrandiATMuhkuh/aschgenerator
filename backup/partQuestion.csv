@@ -1,0 +1,48 @@
+Part, Robot, LinesFirst, Age, Gender, Affiliation, Interacted with social robots, studies, additional Infos
+30, true, false, 21, Male, Undergraduate Student, false, Engineering, undefined
+31, true, true, 20, Female, Undergraduate Student, false, BSc in Biological Sciences, undefined
+32, true, false, 22, Male, Undergraduate Student, false, Natural Resources Engineering and Mathematics, undefined
+33, true, true, 24, Male, Postgraduate Student, false, Civil engineering PhD, undefined
+34, true, false, 22, Male, Undergraduate Student, false, Electrical Engineering, undefined
+35, true, true, 21, Male, Undergraduate Student, false, Electrical Engineering, undefined
+36, true, false, 20, Male, Undergraduate Student, false, Electrical Engineering, undefined
+37, true, true, 21, Female, Undergraduate Student, false, Biology, undefined
+38, true, false, 18, Male, Undergraduate Student, false, Mathematics and Japanese, undefined
+39, true, true, 23, Male, Undergraduate Student, false, Computer Science, undefined
+40, true, false, 19, Male, Undergraduate Student, false, Computer science, undefined
+41, true, true, 15, Female, Other, false, undefined, undefined
+42, true, false, 22, Male, Undergraduate Student, false, Engineering, undefined
+43, true, true, 21, Male, Undergraduate Student, false, Electrical and Electronic Engineering, Not Feeling 100%
+44, true, false, 21, Male, Postgraduate Student, true, Computer Science, undefined
+45, true, true, 21, Male, Undergraduate Student, false, Computer Science, Born Korea
+46, true, false, 36, Male, Undergraduate Student, false, Maths and Computer Sciance, undefined
+47, true, true, 31, Male, Other, false, undefined, undefined
+48, true, false, 18, Male, Undergraduate Student, false, Mechanical Engineering, undefined
+49, true, true, 22, Female, Postgraduate Student, false, Computer Science, undefined
+50, true, false, 18, Male, Undergraduate Student, false, Maths, undefined
+51, true, true, 24, Male, Undergraduate Student, false, biological sciences, undefined
+52, true, false, 24, Male, Other, false, Project and Operations Management CPIT, undefined
+130, false, false, 20, Female, Undergraduate Student, false, Mathematics, undefined
+131, false, true, 21, Female, Undergraduate Student, false, Science  Biochemist, undefined
+132, false, false, 20, Male, Undergraduate Student, false, Biology, undefined
+133, false, true, 21, Male, Undergraduate Student, false, Civil Engineering, undefined
+134, false, false, 22, Male, Undergraduate Student, false, Taxation and Accounting, undefined
+135, false, true, 29, Female, Postgraduate Student, false, arts , undefined
+136, false, false, 40, Female, Undergraduate Student, false, biology psychology, undefined
+137, false, true, 18, Female, Undergraduate Student, false, Fine Arts BA, undefined
+138, false, false, 19, Male, Undergraduate Student, false, engineering, undefined
+139, false, true, 32, Female, Undergraduate Student, false, Engineering, undefined
+140, false, false, 20, Female, Postgraduate Student, false, undefined, undefined
+141, false, true, 30, Male, Postgraduate Student, false, Physics, undefined
+142, false, false, 22, Male, Postgraduate Student, false, Engineering Management, undefined
+143, false, true, 21, Male, Undergraduate Student, false, Mechatronics Engineering, undefined
+144, false, false, 21, Male, Undergraduate Student, false, Electrical Engineering, undefined
+145, false, true, 18, Male, Undergraduate Student, true, Fine Arts (film), undefined
+146, false, false, 20, Female, Undergraduate Student, false, BA, undefined
+147, false, true, 20, Female, Undergraduate Student, false, Geography and history, undefined
+148, false, false, 17, Female, Other, false, undefined, undefined
+149, false, true, 18, Female, Other, false, high school, undefined
+150, false, false, 19, Female, Undergraduate Student, false, English and Philosophy, undefined
+151, false, true, 20, Male, Undergraduate Student, false, Engineering, undefined
+152, false, false, 18, Male, Undergraduate Student, false, Engineering, undefined
+153, false, true, 23, Female, Undergraduate Student, false, Bachelor of arts majoring in media and communication, undefined

@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+143, 203, 0, cost, 
+143, 204, 1, knit, 
+143, 205, 2, bust, 
+143, 206, 3, spit, 
+143, 207, 4, wet, true
+143, 208, 0, spell, 
+143, 209, 1, spoil, 
+143, 210, 2, spill, 
+143, 211, 3, smell, 
+143, 212, 4, learn, true
+143, 213, 0, leap, 
+143, 214, 1, plead, 
+143, 215, 2, kneel, 
+143, 216, 3, dream, 
+143, 217, 4, lean, true
+143, 218, 0, shrink, 
+143, 219, 1, sing, 
+143, 220, 2, spring, 
+143, 221, 3, sink, 
+143, 222, 4, ring, true
+143, 223, 0, dive, 
+143, 224, 1, drive, 
+143, 225, 2, heave, 
+143, 226, 3, weave, 
+143, 227, 4, thrive, true
+143, 228, 0, cost, 
+143, 229, 1, knit, 
+143, 230, 2, wet, 
+143, 231, 3, spit, 
+143, 232, 4, bust, true
+143, 233, 0, learn, 
+143, 234, 1, smell, 
+143, 235, 2, spill, 
+143, 236, 3, spoil, 
+143, 237, 4, spell, true
+143, 238, 0, kneel, 
+143, 239, 1, leap, 
+143, 240, 2, plead, 
+143, 241, 3, lean, 
+143, 242, 4, dream, true
+143, 243, 0, sink, 
+143, 244, 1, sing, 
+143, 245, 2, shrink, 
+143, 246, 3, ring, 
+143, 247, 4, spring, true
+143, 248, 0, dive, 
+143, 249, 1, heave, 
+143, 250, 2, thrive, 
+143, 251, 3, drive, 
+143, 252, 4, weave, true
+143, 253, 0, wet, 
+143, 254, 1, cost, 
+143, 255, 2, knit, 
+143, 256, 3, bust, 
+143, 257, 4, spit, true
+143, 258, 0, spell, 
+143, 259, 1, learn, 
+143, 260, 2, smell, 
+143, 261, 3, spill, 
+143, 262, 4, spoil, true
+143, 263, 0, dream, 
+143, 264, 1, plead, 
+143, 265, 2, kneel, 
+143, 266, 3, lean, 
+143, 267, 4, leap, true
+143, 268, 0, spring, 
+143, 269, 1, ring, 
+143, 270, 2, sing, 
+143, 271, 3, sink, 
+143, 272, 4, shrink, true
+143, 273, 0, heave, 
+143, 274, 1, thrive, 
+143, 275, 2, dive, 
+143, 276, 3, weave, 
+143, 277, 4, drive, true
+143, 278, 0, give, 
+143, 279, 1, get, 
+143, 280, 2, see, 
+143, 281, 3, hold, 
+143, 282, 4, write, true
+143, 283, 0, make, 
+143, 284, 1, bring, 
+143, 285, 2, leave, 
+143, 286, 3, think, 
+143, 287, 4, lose, true
+143, 288, 0, say, 
+143, 289, 1, take, 
+143, 290, 2, find, 
+143, 291, 3, hear, 
+143, 292, 4, stand, true
+143, 293, 0, tell, 
+143, 294, 1, hit, 
+143, 295, 2, go, 
+143, 296, 3, put, 
+143, 297, 4, read, false
+143, 298, 0, feel, 
+143, 299, 1, know, 
+143, 300, 2, come, 
+143, 301, 3, sit, 
+143, 302, 4, keep, false
+143, 303, 0, give, 
+143, 304, 1, see, 
+143, 305, 2, write, 
+143, 306, 3, get, 
+143, 307, 4, hold, false
+143, 308, 0, lose, 
+143, 309, 1, think, 
+143, 310, 2, leave, 
+143, 311, 3, make, 
+143, 312, 4, bring, false
+143, 313, 0, stand, 
+143, 314, 1, take, 
+143, 315, 2, say, 
+143, 316, 3, find, 
+143, 317, 4, hear, false
+143, 318, 0, tell, 
+143, 319, 1, put, 
+143, 320, 2, go, 
+143, 321, 3, read, 
+143, 322, 4, hit, false
+143, 323, 0, keep, 
+143, 324, 1, come, 
+143, 325, 2, know, 
+143, 326, 3, feel, 
+143, 327, 4, sit, false
+143, 328, 0, get, 
+143, 329, 1, hold, 
+143, 330, 2, see, 
+143, 331, 3, write, 
+143, 332, 4, give, false
+143, 333, 0, bring, 
+143, 334, 1, make, 
+143, 335, 2, think, 
+143, 336, 3, lose, 
+143, 337, 4, leave, true
+143, 338, 0, hear, 
+143, 339, 1, say, 
+143, 340, 2, stand, 
+143, 341, 3, take, 
+143, 342, 4, find, false
+143, 343, 0, tell, 
+143, 344, 1, read, 
+143, 345, 2, go, 
+143, 346, 3, hit, 
+143, 347, 4, put, false
+143, 348, 0, come, 
+143, 349, 1, know, 
+143, 350, 2, sit, 
+143, 351, 3, keep, 
+143, 352, 4, feel, false

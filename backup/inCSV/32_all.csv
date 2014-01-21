@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+32, 28, 0, heave, 
+32, 29, 1, drive, 
+32, 30, 2, weave, 
+32, 31, 3, dive, 
+32, 32, 4, thrive, true
+32, 33, 0, dream, 
+32, 34, 1, plead, 
+32, 35, 2, kneel, 
+32, 36, 3, leap, 
+32, 37, 4, lean, true
+32, 38, 0, sink, 
+32, 39, 1, sing, 
+32, 40, 2, spring, 
+32, 41, 3, shrink, 
+32, 42, 4, ring, false
+32, 43, 0, spoil, 
+32, 44, 1, spell, 
+32, 45, 2, smell, 
+32, 46, 3, spill, 
+32, 47, 4, learn, true
+32, 48, 0, cost, 
+32, 49, 1, spit, 
+32, 50, 2, bust, 
+32, 51, 3, knit, 
+32, 52, 4, wet, true
+32, 53, 0, dive, 
+32, 54, 1, heave, 
+32, 55, 2, drive, 
+32, 56, 3, thrive, 
+32, 57, 4, weave, true
+32, 58, 0, kneel, 
+32, 59, 1, leap, 
+32, 60, 2, lean, 
+32, 61, 3, plead, 
+32, 62, 4, dream, true
+32, 63, 0, ring, 
+32, 64, 1, shrink, 
+32, 65, 2, sink, 
+32, 66, 3, sing, 
+32, 67, 4, spring, false
+32, 68, 0, learn, 
+32, 69, 1, spoil, 
+32, 70, 2, spill, 
+32, 71, 3, smell, 
+32, 72, 4, spell, true
+32, 73, 0, knit, 
+32, 74, 1, spit, 
+32, 75, 2, cost, 
+32, 76, 3, wet, 
+32, 77, 4, bust, true
+32, 78, 0, heave, 
+32, 79, 1, dive, 
+32, 80, 2, thrive, 
+32, 81, 3, weave, 
+32, 82, 4, drive, false
+32, 83, 0, kneel, 
+32, 84, 1, lean, 
+32, 85, 2, dream, 
+32, 86, 3, plead, 
+32, 87, 4, leap, true
+32, 88, 0, spring, 
+32, 89, 1, ring, 
+32, 90, 2, sink, 
+32, 91, 3, sing, 
+32, 92, 4, shrink, false
+32, 93, 0, spell, 
+32, 94, 1, spill, 
+32, 95, 2, learn, 
+32, 96, 3, smell, 
+32, 97, 4, spoil, true
+32, 98, 0, wet, 
+32, 99, 1, cost, 
+32, 100, 2, knit, 
+32, 101, 3, bust, 
+32, 102, 4, spit, false
+32, 103, 0, know, 
+32, 104, 1, come, 
+32, 105, 2, feel, 
+32, 106, 3, sit, 
+32, 107, 4, keep, false
+32, 108, 0, think, 
+32, 109, 1, bring, 
+32, 110, 2, leave, 
+32, 111, 3, make, 
+32, 112, 4, lose, false
+32, 113, 0, say, 
+32, 114, 1, hear, 
+32, 115, 2, find, 
+32, 116, 3, take, 
+32, 117, 4, stand, false
+32, 118, 0, put, 
+32, 119, 1, go, 
+32, 120, 2, tell, 
+32, 121, 3, hit, 
+32, 122, 4, read, false
+32, 123, 0, get, 
+32, 124, 1, see, 
+32, 125, 2, give, 
+32, 126, 3, hold, 
+32, 127, 4, write, false
+32, 128, 0, keep, 
+32, 129, 1, know, 
+32, 130, 2, come, 
+32, 131, 3, feel, 
+32, 132, 4, sit, false
+32, 133, 0, leave, 
+32, 134, 1, lose, 
+32, 135, 2, think, 
+32, 136, 3, make, 
+32, 137, 4, bring, false
+32, 138, 0, take, 
+32, 139, 1, say, 
+32, 140, 2, stand, 
+32, 141, 3, find, 
+32, 142, 4, hear, false
+32, 143, 0, put, 
+32, 144, 1, read, 
+32, 145, 2, go, 
+32, 146, 3, tell, 
+32, 147, 4, hit, false
+32, 148, 0, write, 
+32, 149, 1, give, 
+32, 150, 2, see, 
+32, 151, 3, get, 
+32, 152, 4, hold, false
+32, 153, 0, sit, 
+32, 154, 1, keep, 
+32, 155, 2, come, 
+32, 156, 3, know, 
+32, 157, 4, feel, false
+32, 158, 0, think, 
+32, 159, 1, make, 
+32, 160, 2, bring, 
+32, 161, 3, lose, 
+32, 162, 4, leave, false
+32, 163, 0, take, 
+32, 164, 1, stand, 
+32, 165, 2, hear, 
+32, 166, 3, say, 
+32, 167, 4, find, false
+32, 168, 0, read, 
+32, 169, 1, tell, 
+32, 170, 2, go, 
+32, 171, 3, hit, 
+32, 172, 4, put, false
+32, 173, 0, write, 
+32, 174, 1, hold, 
+32, 175, 2, get, 
+32, 176, 3, see, 
+32, 177, 4, give, false

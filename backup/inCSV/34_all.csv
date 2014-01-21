@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+34, 28, 0, spring, 
+34, 29, 1, shrink, 
+34, 30, 2, sing, 
+34, 31, 3, sink, 
+34, 32, 4, ring, false
+34, 33, 0, spell, 
+34, 34, 1, spill, 
+34, 35, 2, spoil, 
+34, 36, 3, smell, 
+34, 37, 4, learn, true
+34, 38, 0, drive, 
+34, 39, 1, dive, 
+34, 40, 2, weave, 
+34, 41, 3, heave, 
+34, 42, 4, thrive, true
+34, 43, 0, leap, 
+34, 44, 1, kneel, 
+34, 45, 2, plead, 
+34, 46, 3, dream, 
+34, 47, 4, lean, true
+34, 48, 0, bust, 
+34, 49, 1, cost, 
+34, 50, 2, knit, 
+34, 51, 3, spit, 
+34, 52, 4, wet, true
+34, 53, 0, ring, 
+34, 54, 1, shrink, 
+34, 55, 2, sing, 
+34, 56, 3, sink, 
+34, 57, 4, spring, false
+34, 58, 0, smell, 
+34, 59, 1, learn, 
+34, 60, 2, spill, 
+34, 61, 3, spoil, 
+34, 62, 4, spell, true
+34, 63, 0, drive, 
+34, 64, 1, thrive, 
+34, 65, 2, heave, 
+34, 66, 3, dive, 
+34, 67, 4, weave, true
+34, 68, 0, lean, 
+34, 69, 1, leap, 
+34, 70, 2, plead, 
+34, 71, 3, kneel, 
+34, 72, 4, dream, true
+34, 73, 0, cost, 
+34, 74, 1, knit, 
+34, 75, 2, spit, 
+34, 76, 3, wet, 
+34, 77, 4, bust, true
+34, 78, 0, spring, 
+34, 79, 1, sink, 
+34, 80, 2, sing, 
+34, 81, 3, ring, 
+34, 82, 4, shrink, false
+34, 83, 0, spill, 
+34, 84, 1, spell, 
+34, 85, 2, learn, 
+34, 86, 3, smell, 
+34, 87, 4, spoil, true
+34, 88, 0, dive, 
+34, 89, 1, thrive, 
+34, 90, 2, heave, 
+34, 91, 3, weave, 
+34, 92, 4, drive, false
+34, 93, 0, dream, 
+34, 94, 1, plead, 
+34, 95, 2, kneel, 
+34, 96, 3, lean, 
+34, 97, 4, leap, false
+34, 98, 0, bust, 
+34, 99, 1, cost, 
+34, 100, 2, knit, 
+34, 101, 3, wet, 
+34, 102, 4, spit, false
+34, 103, 0, say, 
+34, 104, 1, find, 
+34, 105, 2, take, 
+34, 106, 3, hear, 
+34, 107, 4, stand, false
+34, 108, 0, think, 
+34, 109, 1, make, 
+34, 110, 2, leave, 
+34, 111, 3, bring, 
+34, 112, 4, lose, false
+34, 113, 0, give, 
+34, 114, 1, get, 
+34, 115, 2, see, 
+34, 116, 3, hold, 
+34, 117, 4, write, false
+34, 118, 0, sit, 
+34, 119, 1, know, 
+34, 120, 2, feel, 
+34, 121, 3, come, 
+34, 122, 4, keep, false
+34, 123, 0, go, 
+34, 124, 1, put, 
+34, 125, 2, tell, 
+34, 126, 3, hit, 
+34, 127, 4, read, false
+34, 128, 0, take, 
+34, 129, 1, say, 
+34, 130, 2, stand, 
+34, 131, 3, find, 
+34, 132, 4, hear, false
+34, 133, 0, lose, 
+34, 134, 1, think, 
+34, 135, 2, make, 
+34, 136, 3, leave, 
+34, 137, 4, bring, false
+34, 138, 0, get, 
+34, 139, 1, give, 
+34, 140, 2, see, 
+34, 141, 3, write, 
+34, 142, 4, hold, false
+34, 143, 0, feel, 
+34, 144, 1, know, 
+34, 145, 2, keep, 
+34, 146, 3, come, 
+34, 147, 4, sit, false
+34, 148, 0, put, 
+34, 149, 1, read, 
+34, 150, 2, go, 
+34, 151, 3, tell, 
+34, 152, 4, hit, false
+34, 153, 0, stand, 
+34, 154, 1, say, 
+34, 155, 2, take, 
+34, 156, 3, hear, 
+34, 157, 4, find, false
+34, 158, 0, make, 
+34, 159, 1, lose, 
+34, 160, 2, think, 
+34, 161, 3, bring, 
+34, 162, 4, leave, false
+34, 163, 0, hold, 
+34, 164, 1, write, 
+34, 165, 2, see, 
+34, 166, 3, get, 
+34, 167, 4, give, false
+34, 168, 0, know, 
+34, 169, 1, keep, 
+34, 170, 2, sit, 
+34, 171, 3, come, 
+34, 172, 4, feel, false
+34, 173, 0, hit, 
+34, 174, 1, tell, 
+34, 175, 2, go, 
+34, 176, 3, read, 
+34, 177, 4, put, false

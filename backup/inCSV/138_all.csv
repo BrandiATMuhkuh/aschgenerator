@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+138, 28, 0, knit, 
+138, 29, 1, bust, 
+138, 30, 2, spit, 
+138, 31, 3, cost, 
+138, 32, 4, wet, false
+138, 33, 0, spill, 
+138, 34, 1, spell, 
+138, 35, 2, spoil, 
+138, 36, 3, smell, 
+138, 37, 4, learn, true
+138, 38, 0, heave, 
+138, 39, 1, dive, 
+138, 40, 2, drive, 
+138, 41, 3, weave, 
+138, 42, 4, thrive, true
+138, 43, 0, sing, 
+138, 44, 1, spring, 
+138, 45, 2, shrink, 
+138, 46, 3, sink, 
+138, 47, 4, ring, true
+138, 48, 0, kneel, 
+138, 49, 1, plead, 
+138, 50, 2, dream, 
+138, 51, 3, leap, 
+138, 52, 4, lean, true
+138, 53, 0, spit, 
+138, 54, 1, wet, 
+138, 55, 2, knit, 
+138, 56, 3, cost, 
+138, 57, 4, bust, true
+138, 58, 0, spill, 
+138, 59, 1, learn, 
+138, 60, 2, smell, 
+138, 61, 3, spoil, 
+138, 62, 4, spell, true
+138, 63, 0, drive, 
+138, 64, 1, dive, 
+138, 65, 2, thrive, 
+138, 66, 3, heave, 
+138, 67, 4, weave, true
+138, 68, 0, sing, 
+138, 69, 1, ring, 
+138, 70, 2, sink, 
+138, 71, 3, shrink, 
+138, 72, 4, spring, false
+138, 73, 0, kneel, 
+138, 74, 1, lean, 
+138, 75, 2, plead, 
+138, 76, 3, leap, 
+138, 77, 4, dream, false
+138, 78, 0, knit, 
+138, 79, 1, cost, 
+138, 80, 2, bust, 
+138, 81, 3, wet, 
+138, 82, 4, spit, true
+138, 83, 0, spell, 
+138, 84, 1, smell, 
+138, 85, 2, learn, 
+138, 86, 3, spill, 
+138, 87, 4, spoil, true
+138, 88, 0, heave, 
+138, 89, 1, weave, 
+138, 90, 2, dive, 
+138, 91, 3, thrive, 
+138, 92, 4, drive, false
+138, 93, 0, sink, 
+138, 94, 1, sing, 
+138, 95, 2, ring, 
+138, 96, 3, spring, 
+138, 97, 4, shrink, true
+138, 98, 0, kneel, 
+138, 99, 1, plead, 
+138, 100, 2, dream, 
+138, 101, 3, lean, 
+138, 102, 4, leap, true
+138, 103, 0, take, 
+138, 104, 1, say, 
+138, 105, 2, hear, 
+138, 106, 3, find, 
+138, 107, 4, stand, false
+138, 108, 0, hit, 
+138, 109, 1, put, 
+138, 110, 2, tell, 
+138, 111, 3, go, 
+138, 112, 4, read, false
+138, 113, 0, get, 
+138, 114, 1, hold, 
+138, 115, 2, give, 
+138, 116, 3, see, 
+138, 117, 4, write, false
+138, 118, 0, know, 
+138, 119, 1, come, 
+138, 120, 2, sit, 
+138, 121, 3, feel, 
+138, 122, 4, keep, false
+138, 123, 0, make, 
+138, 124, 1, leave, 
+138, 125, 2, think, 
+138, 126, 3, bring, 
+138, 127, 4, lose, false
+138, 128, 0, take, 
+138, 129, 1, find, 
+138, 130, 2, say, 
+138, 131, 3, stand, 
+138, 132, 4, hear, false
+138, 133, 0, put, 
+138, 134, 1, go, 
+138, 135, 2, tell, 
+138, 136, 3, read, 
+138, 137, 4, hit, true
+138, 138, 0, see, 
+138, 139, 1, write, 
+138, 140, 2, give, 
+138, 141, 3, get, 
+138, 142, 4, hold, false
+138, 143, 0, know, 
+138, 144, 1, keep, 
+138, 145, 2, come, 
+138, 146, 3, feel, 
+138, 147, 4, sit, false
+138, 148, 0, lose, 
+138, 149, 1, leave, 
+138, 150, 2, think, 
+138, 151, 3, make, 
+138, 152, 4, bring, false
+138, 153, 0, take, 
+138, 154, 1, hear, 
+138, 155, 2, say, 
+138, 156, 3, stand, 
+138, 157, 4, find, false
+138, 158, 0, go, 
+138, 159, 1, read, 
+138, 160, 2, tell, 
+138, 161, 3, hit, 
+138, 162, 4, put, true
+138, 163, 0, write, 
+138, 164, 1, hold, 
+138, 165, 2, get, 
+138, 166, 3, see, 
+138, 167, 4, give, false
+138, 168, 0, sit, 
+138, 169, 1, keep, 
+138, 170, 2, come, 
+138, 171, 3, know, 
+138, 172, 4, feel, false
+138, 173, 0, make, 
+138, 174, 1, bring, 
+138, 175, 2, lose, 
+138, 176, 3, think, 
+138, 177, 4, leave, false

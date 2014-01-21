@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+144, 28, 0, weave, 
+144, 29, 1, heave, 
+144, 30, 2, dive, 
+144, 31, 3, drive, 
+144, 32, 4, thrive, true
+144, 33, 0, sing, 
+144, 34, 1, sink, 
+144, 35, 2, shrink, 
+144, 36, 3, spring, 
+144, 37, 4, ring, true
+144, 38, 0, spit, 
+144, 39, 1, bust, 
+144, 40, 2, knit, 
+144, 41, 3, cost, 
+144, 42, 4, wet, true
+144, 43, 0, spell, 
+144, 44, 1, spoil, 
+144, 45, 2, smell, 
+144, 46, 3, spill, 
+144, 47, 4, learn, true
+144, 48, 0, kneel, 
+144, 49, 1, plead, 
+144, 50, 2, leap, 
+144, 51, 3, dream, 
+144, 52, 4, lean, true
+144, 53, 0, drive, 
+144, 54, 1, dive, 
+144, 55, 2, thrive, 
+144, 56, 3, heave, 
+144, 57, 4, weave, true
+144, 58, 0, ring, 
+144, 59, 1, sink, 
+144, 60, 2, sing, 
+144, 61, 3, shrink, 
+144, 62, 4, spring, true
+144, 63, 0, cost, 
+144, 64, 1, spit, 
+144, 65, 2, knit, 
+144, 66, 3, wet, 
+144, 67, 4, bust, true
+144, 68, 0, spoil, 
+144, 69, 1, smell, 
+144, 70, 2, learn, 
+144, 71, 3, spill, 
+144, 72, 4, spell, true
+144, 73, 0, lean, 
+144, 74, 1, leap, 
+144, 75, 2, plead, 
+144, 76, 3, kneel, 
+144, 77, 4, dream, true
+144, 78, 0, thrive, 
+144, 79, 1, weave, 
+144, 80, 2, heave, 
+144, 81, 3, dive, 
+144, 82, 4, drive, true
+144, 83, 0, sink, 
+144, 84, 1, spring, 
+144, 85, 2, ring, 
+144, 86, 3, sing, 
+144, 87, 4, shrink, true
+144, 88, 0, knit, 
+144, 89, 1, bust, 
+144, 90, 2, cost, 
+144, 91, 3, wet, 
+144, 92, 4, spit, true
+144, 93, 0, learn, 
+144, 94, 1, spell, 
+144, 95, 2, spill, 
+144, 96, 3, smell, 
+144, 97, 4, spoil, true
+144, 98, 0, kneel, 
+144, 99, 1, dream, 
+144, 100, 2, plead, 
+144, 101, 3, lean, 
+144, 102, 4, leap, true
+144, 103, 0, hit, 
+144, 104, 1, go, 
+144, 105, 2, tell, 
+144, 106, 3, put, 
+144, 107, 4, read, true
+144, 108, 0, sit, 
+144, 109, 1, feel, 
+144, 110, 2, know, 
+144, 111, 3, come, 
+144, 112, 4, keep, true
+144, 113, 0, think, 
+144, 114, 1, bring, 
+144, 115, 2, leave, 
+144, 116, 3, make, 
+144, 117, 4, lose, true
+144, 118, 0, hold, 
+144, 119, 1, get, 
+144, 120, 2, give, 
+144, 121, 3, see, 
+144, 122, 4, write, true
+144, 123, 0, say, 
+144, 124, 1, find, 
+144, 125, 2, hear, 
+144, 126, 3, take, 
+144, 127, 4, stand, true
+144, 128, 0, put, 
+144, 129, 1, read, 
+144, 130, 2, tell, 
+144, 131, 3, go, 
+144, 132, 4, hit, true
+144, 133, 0, come, 
+144, 134, 1, know, 
+144, 135, 2, keep, 
+144, 136, 3, feel, 
+144, 137, 4, sit, true
+144, 138, 0, think, 
+144, 139, 1, lose, 
+144, 140, 2, leave, 
+144, 141, 3, make, 
+144, 142, 4, bring, true
+144, 143, 0, see, 
+144, 144, 1, write, 
+144, 145, 2, get, 
+144, 146, 3, give, 
+144, 147, 4, hold, true
+144, 148, 0, say, 
+144, 149, 1, find, 
+144, 150, 2, stand, 
+144, 151, 3, take, 
+144, 152, 4, hear, false
+144, 153, 0, read, 
+144, 154, 1, hit, 
+144, 155, 2, tell, 
+144, 156, 3, go, 
+144, 157, 4, put, true
+144, 158, 0, sit, 
+144, 159, 1, keep, 
+144, 160, 2, come, 
+144, 161, 3, know, 
+144, 162, 4, feel, false
+144, 163, 0, think, 
+144, 164, 1, make, 
+144, 165, 2, lose, 
+144, 166, 3, bring, 
+144, 167, 4, leave, true
+144, 168, 0, write, 
+144, 169, 1, see, 
+144, 170, 2, get, 
+144, 171, 3, hold, 
+144, 172, 4, give, true
+144, 173, 0, say, 
+144, 174, 1, stand, 
+144, 175, 2, hear, 
+144, 176, 3, take, 
+144, 177, 4, find, true

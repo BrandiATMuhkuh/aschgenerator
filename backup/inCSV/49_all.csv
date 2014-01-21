@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+49, 203, 0, weave, 
+49, 204, 1, drive, 
+49, 205, 2, heave, 
+49, 206, 3, dive, 
+49, 207, 4, thrive, true
+49, 208, 0, spill, 
+49, 209, 1, spell, 
+49, 210, 2, smell, 
+49, 211, 3, spoil, 
+49, 212, 4, learn, true
+49, 213, 0, knit, 
+49, 214, 1, cost, 
+49, 215, 2, bust, 
+49, 216, 3, spit, 
+49, 217, 4, wet, true
+49, 218, 0, spring, 
+49, 219, 1, shrink, 
+49, 220, 2, sink, 
+49, 221, 3, sing, 
+49, 222, 4, ring, false
+49, 223, 0, dream, 
+49, 224, 1, kneel, 
+49, 225, 2, leap, 
+49, 226, 3, plead, 
+49, 227, 4, lean, false
+49, 228, 0, drive, 
+49, 229, 1, dive, 
+49, 230, 2, thrive, 
+49, 231, 3, heave, 
+49, 232, 4, weave, false
+49, 233, 0, smell, 
+49, 234, 1, spill, 
+49, 235, 2, spoil, 
+49, 236, 3, learn, 
+49, 237, 4, spell, false
+49, 238, 0, knit, 
+49, 239, 1, cost, 
+49, 240, 2, spit, 
+49, 241, 3, wet, 
+49, 242, 4, bust, false
+49, 243, 0, ring, 
+49, 244, 1, sing, 
+49, 245, 2, sink, 
+49, 246, 3, shrink, 
+49, 247, 4, spring, false
+49, 248, 0, leap, 
+49, 249, 1, plead, 
+49, 250, 2, kneel, 
+49, 251, 3, lean, 
+49, 252, 4, dream, true
+49, 253, 0, dive, 
+49, 254, 1, thrive, 
+49, 255, 2, weave, 
+49, 256, 3, heave, 
+49, 257, 4, drive, false
+49, 258, 0, learn, 
+49, 259, 1, spell, 
+49, 260, 2, smell, 
+49, 261, 3, spill, 
+49, 262, 4, spoil, true
+49, 263, 0, cost, 
+49, 264, 1, bust, 
+49, 265, 2, knit, 
+49, 266, 3, wet, 
+49, 267, 4, spit, false
+49, 268, 0, sing, 
+49, 269, 1, spring, 
+49, 270, 2, ring, 
+49, 271, 3, sink, 
+49, 272, 4, shrink, false
+49, 273, 0, plead, 
+49, 274, 1, dream, 
+49, 275, 2, lean, 
+49, 276, 3, kneel, 
+49, 277, 4, leap, false
+49, 278, 0, hear, 
+49, 279, 1, take, 
+49, 280, 2, find, 
+49, 281, 3, say, 
+49, 282, 4, stand, false
+49, 283, 0, know, 
+49, 284, 1, feel, 
+49, 285, 2, sit, 
+49, 286, 3, come, 
+49, 287, 4, keep, false
+49, 288, 0, get, 
+49, 289, 1, hold, 
+49, 290, 2, see, 
+49, 291, 3, give, 
+49, 292, 4, write, false
+49, 293, 0, tell, 
+49, 294, 1, go, 
+49, 295, 2, hit, 
+49, 296, 3, put, 
+49, 297, 4, read, false
+49, 298, 0, think, 
+49, 299, 1, make, 
+49, 300, 2, leave, 
+49, 301, 3, bring, 
+49, 302, 4, lose, false
+49, 303, 0, take, 
+49, 304, 1, say, 
+49, 305, 2, stand, 
+49, 306, 3, find, 
+49, 307, 4, hear, false
+49, 308, 0, come, 
+49, 309, 1, feel, 
+49, 310, 2, know, 
+49, 311, 3, keep, 
+49, 312, 4, sit, false
+49, 313, 0, give, 
+49, 314, 1, get, 
+49, 315, 2, see, 
+49, 316, 3, write, 
+49, 317, 4, hold, false
+49, 318, 0, tell, 
+49, 319, 1, put, 
+49, 320, 2, read, 
+49, 321, 3, go, 
+49, 322, 4, hit, false
+49, 323, 0, think, 
+49, 324, 1, leave, 
+49, 325, 2, lose, 
+49, 326, 3, make, 
+49, 327, 4, bring, false
+49, 328, 0, hear, 
+49, 329, 1, stand, 
+49, 330, 2, take, 
+49, 331, 3, say, 
+49, 332, 4, find, false
+49, 333, 0, keep, 
+49, 334, 1, sit, 
+49, 335, 2, know, 
+49, 336, 3, come, 
+49, 337, 4, feel, false
+49, 338, 0, write, 
+49, 339, 1, see, 
+49, 340, 2, hold, 
+49, 341, 3, get, 
+49, 342, 4, give, false
+49, 343, 0, read, 
+49, 344, 1, tell, 
+49, 345, 2, go, 
+49, 346, 3, hit, 
+49, 347, 4, put, false
+49, 348, 0, make, 
+49, 349, 1, lose, 
+49, 350, 2, bring, 
+49, 351, 3, think, 
+49, 352, 4, leave, false

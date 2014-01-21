@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+130, 28, 0, spoil, 
+130, 29, 1, spell, 
+130, 30, 2, spill, 
+130, 31, 3, smell, 
+130, 32, 4, learn, false
+130, 33, 0, shrink, 
+130, 34, 1, sing, 
+130, 35, 2, spring, 
+130, 36, 3, sink, 
+130, 37, 4, ring, false
+130, 38, 0, leap, 
+130, 39, 1, kneel, 
+130, 40, 2, plead, 
+130, 41, 3, dream, 
+130, 42, 4, lean, true
+130, 43, 0, bust, 
+130, 44, 1, cost, 
+130, 45, 2, spit, 
+130, 46, 3, knit, 
+130, 47, 4, wet, true
+130, 48, 0, heave, 
+130, 49, 1, drive, 
+130, 50, 2, dive, 
+130, 51, 3, weave, 
+130, 52, 4, thrive, true
+130, 53, 0, learn, 
+130, 54, 1, spill, 
+130, 55, 2, smell, 
+130, 56, 3, spoil, 
+130, 57, 4, spell, true
+130, 58, 0, shrink, 
+130, 59, 1, sink, 
+130, 60, 2, ring, 
+130, 61, 3, sing, 
+130, 62, 4, spring, false
+130, 63, 0, kneel, 
+130, 64, 1, plead, 
+130, 65, 2, lean, 
+130, 66, 3, leap, 
+130, 67, 4, dream, true
+130, 68, 0, cost, 
+130, 69, 1, knit, 
+130, 70, 2, spit, 
+130, 71, 3, wet, 
+130, 72, 4, bust, true
+130, 73, 0, drive, 
+130, 74, 1, heave, 
+130, 75, 2, thrive, 
+130, 76, 3, dive, 
+130, 77, 4, weave, false
+130, 78, 0, smell, 
+130, 79, 1, spell, 
+130, 80, 2, learn, 
+130, 81, 3, spill, 
+130, 82, 4, spoil, true
+130, 83, 0, spring, 
+130, 84, 1, sink, 
+130, 85, 2, ring, 
+130, 86, 3, sing, 
+130, 87, 4, shrink, false
+130, 88, 0, plead, 
+130, 89, 1, lean, 
+130, 90, 2, kneel, 
+130, 91, 3, dream, 
+130, 92, 4, leap, false
+130, 93, 0, knit, 
+130, 94, 1, cost, 
+130, 95, 2, bust, 
+130, 96, 3, wet, 
+130, 97, 4, spit, false
+130, 98, 0, thrive, 
+130, 99, 1, heave, 
+130, 100, 2, dive, 
+130, 101, 3, weave, 
+130, 102, 4, drive, false
+130, 103, 0, get, 
+130, 104, 1, give, 
+130, 105, 2, hold, 
+130, 106, 3, see, 
+130, 107, 4, write, false
+130, 108, 0, bring, 
+130, 109, 1, think, 
+130, 110, 2, make, 
+130, 111, 3, leave, 
+130, 112, 4, lose, false
+130, 113, 0, feel, 
+130, 114, 1, sit, 
+130, 115, 2, come, 
+130, 116, 3, know, 
+130, 117, 4, keep, false
+130, 118, 0, go, 
+130, 119, 1, tell, 
+130, 120, 2, hit, 
+130, 121, 3, put, 
+130, 122, 4, read, false
+130, 123, 0, say, 
+130, 124, 1, take, 
+130, 125, 2, find, 
+130, 126, 3, hear, 
+130, 127, 4, stand, false
+130, 128, 0, get, 
+130, 129, 1, see, 
+130, 130, 2, write, 
+130, 131, 3, give, 
+130, 132, 4, hold, false
+130, 133, 0, lose, 
+130, 134, 1, think, 
+130, 135, 2, leave, 
+130, 136, 3, make, 
+130, 137, 4, bring, false
+130, 138, 0, keep, 
+130, 139, 1, know, 
+130, 140, 2, come, 
+130, 141, 3, feel, 
+130, 142, 4, sit, false
+130, 143, 0, read, 
+130, 144, 1, go, 
+130, 145, 2, put, 
+130, 146, 3, tell, 
+130, 147, 4, hit, false
+130, 148, 0, find, 
+130, 149, 1, take, 
+130, 150, 2, stand, 
+130, 151, 3, say, 
+130, 152, 4, hear, false
+130, 153, 0, get, 
+130, 154, 1, see, 
+130, 155, 2, write, 
+130, 156, 3, hold, 
+130, 157, 4, give, false
+130, 158, 0, make, 
+130, 159, 1, think, 
+130, 160, 2, lose, 
+130, 161, 3, bring, 
+130, 162, 4, leave, false
+130, 163, 0, come, 
+130, 164, 1, keep, 
+130, 165, 2, know, 
+130, 166, 3, sit, 
+130, 167, 4, feel, false
+130, 168, 0, hit, 
+130, 169, 1, read, 
+130, 170, 2, tell, 
+130, 171, 3, go, 
+130, 172, 4, put, false
+130, 173, 0, hear, 
+130, 174, 1, stand, 
+130, 175, 2, take, 
+130, 176, 3, say, 
+130, 177, 4, find, false

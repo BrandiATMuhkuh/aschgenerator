@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+47, 203, 0, heave, 
+47, 204, 1, dive, 
+47, 205, 2, weave, 
+47, 206, 3, drive, 
+47, 207, 4, thrive, true
+47, 208, 0, spring, 
+47, 209, 1, sing, 
+47, 210, 2, shrink, 
+47, 211, 3, sink, 
+47, 212, 4, ring, false
+47, 213, 0, cost, 
+47, 214, 1, spit, 
+47, 215, 2, knit, 
+47, 216, 3, bust, 
+47, 217, 4, wet, false
+47, 218, 0, kneel, 
+47, 219, 1, leap, 
+47, 220, 2, plead, 
+47, 221, 3, dream, 
+47, 222, 4, lean, false
+47, 223, 0, spell, 
+47, 224, 1, spill, 
+47, 225, 2, smell, 
+47, 226, 3, spoil, 
+47, 227, 4, learn, true
+47, 228, 0, drive, 
+47, 229, 1, thrive, 
+47, 230, 2, heave, 
+47, 231, 3, dive, 
+47, 232, 4, weave, false
+47, 233, 0, ring, 
+47, 234, 1, sink, 
+47, 235, 2, shrink, 
+47, 236, 3, sing, 
+47, 237, 4, spring, false
+47, 238, 0, spit, 
+47, 239, 1, knit, 
+47, 240, 2, wet, 
+47, 241, 3, cost, 
+47, 242, 4, bust, true
+47, 243, 0, kneel, 
+47, 244, 1, lean, 
+47, 245, 2, plead, 
+47, 246, 3, leap, 
+47, 247, 4, dream, false
+47, 248, 0, smell, 
+47, 249, 1, spill, 
+47, 250, 2, learn, 
+47, 251, 3, spoil, 
+47, 252, 4, spell, false
+47, 253, 0, heave, 
+47, 254, 1, weave, 
+47, 255, 2, thrive, 
+47, 256, 3, dive, 
+47, 257, 4, drive, false
+47, 258, 0, spring, 
+47, 259, 1, sing, 
+47, 260, 2, ring, 
+47, 261, 3, sink, 
+47, 262, 4, shrink, false
+47, 263, 0, wet, 
+47, 264, 1, bust, 
+47, 265, 2, knit, 
+47, 266, 3, cost, 
+47, 267, 4, spit, false
+47, 268, 0, lean, 
+47, 269, 1, kneel, 
+47, 270, 2, plead, 
+47, 271, 3, dream, 
+47, 272, 4, leap, false
+47, 273, 0, spell, 
+47, 274, 1, learn, 
+47, 275, 2, spill, 
+47, 276, 3, smell, 
+47, 277, 4, spoil, false
+47, 278, 0, come, 
+47, 279, 1, feel, 
+47, 280, 2, know, 
+47, 281, 3, sit, 
+47, 282, 4, keep, false
+47, 283, 0, see, 
+47, 284, 1, get, 
+47, 285, 2, give, 
+47, 286, 3, hold, 
+47, 287, 4, write, false
+47, 288, 0, think, 
+47, 289, 1, leave, 
+47, 290, 2, bring, 
+47, 291, 3, make, 
+47, 292, 4, lose, false
+47, 293, 0, take, 
+47, 294, 1, say, 
+47, 295, 2, find, 
+47, 296, 3, hear, 
+47, 297, 4, stand, false
+47, 298, 0, hit, 
+47, 299, 1, go, 
+47, 300, 2, tell, 
+47, 301, 3, put, 
+47, 302, 4, read, false
+47, 303, 0, know, 
+47, 304, 1, feel, 
+47, 305, 2, keep, 
+47, 306, 3, come, 
+47, 307, 4, sit, false
+47, 308, 0, write, 
+47, 309, 1, see, 
+47, 310, 2, get, 
+47, 311, 3, give, 
+47, 312, 4, hold, false
+47, 313, 0, leave, 
+47, 314, 1, lose, 
+47, 315, 2, make, 
+47, 316, 3, think, 
+47, 317, 4, bring, false
+47, 318, 0, say, 
+47, 319, 1, find, 
+47, 320, 2, take, 
+47, 321, 3, stand, 
+47, 322, 4, hear, false
+47, 323, 0, put, 
+47, 324, 1, tell, 
+47, 325, 2, go, 
+47, 326, 3, read, 
+47, 327, 4, hit, false
+47, 328, 0, know, 
+47, 329, 1, sit, 
+47, 330, 2, keep, 
+47, 331, 3, come, 
+47, 332, 4, feel, false
+47, 333, 0, see, 
+47, 334, 1, hold, 
+47, 335, 2, get, 
+47, 336, 3, write, 
+47, 337, 4, give, false
+47, 338, 0, lose, 
+47, 339, 1, make, 
+47, 340, 2, think, 
+47, 341, 3, bring, 
+47, 342, 4, leave, false
+47, 343, 0, say, 
+47, 344, 1, take, 
+47, 345, 2, stand, 
+47, 346, 3, hear, 
+47, 347, 4, find, false
+47, 348, 0, tell, 
+47, 349, 1, go, 
+47, 350, 2, hit, 
+47, 351, 3, read, 
+47, 352, 4, put, false

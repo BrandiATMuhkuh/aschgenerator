@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+44, 28, 0, weave, 
+44, 29, 1, heave, 
+44, 30, 2, dive, 
+44, 31, 3, drive, 
+44, 32, 4, thrive, true
+44, 33, 0, sing, 
+44, 34, 1, sink, 
+44, 35, 2, shrink, 
+44, 36, 3, spring, 
+44, 37, 4, ring, true
+44, 38, 0, spit, 
+44, 39, 1, bust, 
+44, 40, 2, knit, 
+44, 41, 3, cost, 
+44, 42, 4, wet, false
+44, 43, 0, spell, 
+44, 44, 1, spoil, 
+44, 45, 2, smell, 
+44, 46, 3, spill, 
+44, 47, 4, learn, true
+44, 48, 0, kneel, 
+44, 49, 1, plead, 
+44, 50, 2, leap, 
+44, 51, 3, dream, 
+44, 52, 4, lean, false
+44, 53, 0, drive, 
+44, 54, 1, dive, 
+44, 55, 2, thrive, 
+44, 56, 3, heave, 
+44, 57, 4, weave, false
+44, 58, 0, ring, 
+44, 59, 1, sink, 
+44, 60, 2, sing, 
+44, 61, 3, shrink, 
+44, 62, 4, spring, false
+44, 63, 0, cost, 
+44, 64, 1, spit, 
+44, 65, 2, knit, 
+44, 66, 3, wet, 
+44, 67, 4, bust, true
+44, 68, 0, spoil, 
+44, 69, 1, smell, 
+44, 70, 2, learn, 
+44, 71, 3, spill, 
+44, 72, 4, spell, true
+44, 73, 0, lean, 
+44, 74, 1, leap, 
+44, 75, 2, plead, 
+44, 76, 3, kneel, 
+44, 77, 4, dream, true
+44, 78, 0, thrive, 
+44, 79, 1, weave, 
+44, 80, 2, heave, 
+44, 81, 3, dive, 
+44, 82, 4, drive, false
+44, 83, 0, sink, 
+44, 84, 1, spring, 
+44, 85, 2, ring, 
+44, 86, 3, sing, 
+44, 87, 4, shrink, false
+44, 88, 0, knit, 
+44, 89, 1, bust, 
+44, 90, 2, cost, 
+44, 91, 3, wet, 
+44, 92, 4, spit, false
+44, 93, 0, learn, 
+44, 94, 1, spell, 
+44, 95, 2, spill, 
+44, 96, 3, smell, 
+44, 97, 4, spoil, true
+44, 98, 0, kneel, 
+44, 99, 1, dream, 
+44, 100, 2, plead, 
+44, 101, 3, lean, 
+44, 102, 4, leap, false
+44, 103, 0, hit, 
+44, 104, 1, go, 
+44, 105, 2, tell, 
+44, 106, 3, put, 
+44, 107, 4, read, false
+44, 108, 0, sit, 
+44, 109, 1, feel, 
+44, 110, 2, know, 
+44, 111, 3, come, 
+44, 112, 4, keep, false
+44, 113, 0, think, 
+44, 114, 1, bring, 
+44, 115, 2, leave, 
+44, 116, 3, make, 
+44, 117, 4, lose, false
+44, 118, 0, hold, 
+44, 119, 1, get, 
+44, 120, 2, give, 
+44, 121, 3, see, 
+44, 122, 4, write, false
+44, 123, 0, say, 
+44, 124, 1, find, 
+44, 125, 2, hear, 
+44, 126, 3, take, 
+44, 127, 4, stand, false
+44, 128, 0, put, 
+44, 129, 1, read, 
+44, 130, 2, tell, 
+44, 131, 3, go, 
+44, 132, 4, hit, false
+44, 133, 0, come, 
+44, 134, 1, know, 
+44, 135, 2, keep, 
+44, 136, 3, feel, 
+44, 137, 4, sit, false
+44, 138, 0, think, 
+44, 139, 1, lose, 
+44, 140, 2, leave, 
+44, 141, 3, make, 
+44, 142, 4, bring, false
+44, 143, 0, see, 
+44, 144, 1, write, 
+44, 145, 2, get, 
+44, 146, 3, give, 
+44, 147, 4, hold, false
+44, 148, 0, say, 
+44, 149, 1, find, 
+44, 150, 2, stand, 
+44, 151, 3, take, 
+44, 152, 4, hear, false
+44, 153, 0, read, 
+44, 154, 1, hit, 
+44, 155, 2, tell, 
+44, 156, 3, go, 
+44, 157, 4, put, false
+44, 158, 0, sit, 
+44, 159, 1, keep, 
+44, 160, 2, come, 
+44, 161, 3, know, 
+44, 162, 4, feel, false
+44, 163, 0, think, 
+44, 164, 1, make, 
+44, 165, 2, lose, 
+44, 166, 3, bring, 
+44, 167, 4, leave, false
+44, 168, 0, write, 
+44, 169, 1, see, 
+44, 170, 2, get, 
+44, 171, 3, hold, 
+44, 172, 4, give, false
+44, 173, 0, say, 
+44, 174, 1, stand, 
+44, 175, 2, hear, 
+44, 176, 3, take, 
+44, 177, 4, find, false

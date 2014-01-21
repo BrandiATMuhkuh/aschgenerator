@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+141, 203, 0, spell, 
+141, 204, 1, smell, 
+141, 205, 2, spoil, 
+141, 206, 3, spill, 
+141, 207, 4, learn, true
+141, 208, 0, sink, 
+141, 209, 1, shrink, 
+141, 210, 2, spring, 
+141, 211, 3, sing, 
+141, 212, 4, ring, false
+141, 213, 0, kneel, 
+141, 214, 1, leap, 
+141, 215, 2, plead, 
+141, 216, 3, dream, 
+141, 217, 4, lean, true
+141, 218, 0, knit, 
+141, 219, 1, bust, 
+141, 220, 2, cost, 
+141, 221, 3, spit, 
+141, 222, 4, wet, true
+141, 223, 0, drive, 
+141, 224, 1, weave, 
+141, 225, 2, heave, 
+141, 226, 3, dive, 
+141, 227, 4, thrive, true
+141, 228, 0, spill, 
+141, 229, 1, learn, 
+141, 230, 2, smell, 
+141, 231, 3, spoil, 
+141, 232, 4, spell, false
+141, 233, 0, ring, 
+141, 234, 1, shrink, 
+141, 235, 2, sing, 
+141, 236, 3, sink, 
+141, 237, 4, spring, false
+141, 238, 0, lean, 
+141, 239, 1, plead, 
+141, 240, 2, leap, 
+141, 241, 3, kneel, 
+141, 242, 4, dream, false
+141, 243, 0, knit, 
+141, 244, 1, spit, 
+141, 245, 2, cost, 
+141, 246, 3, wet, 
+141, 247, 4, bust, true
+141, 248, 0, heave, 
+141, 249, 1, drive, 
+141, 250, 2, dive, 
+141, 251, 3, thrive, 
+141, 252, 4, weave, false
+141, 253, 0, smell, 
+141, 254, 1, learn, 
+141, 255, 2, spill, 
+141, 256, 3, spell, 
+141, 257, 4, spoil, true
+141, 258, 0, sing, 
+141, 259, 1, ring, 
+141, 260, 2, spring, 
+141, 261, 3, sink, 
+141, 262, 4, shrink, false
+141, 263, 0, kneel, 
+141, 264, 1, dream, 
+141, 265, 2, lean, 
+141, 266, 3, plead, 
+141, 267, 4, leap, false
+141, 268, 0, knit, 
+141, 269, 1, cost, 
+141, 270, 2, wet, 
+141, 271, 3, bust, 
+141, 272, 4, spit, true
+141, 273, 0, weave, 
+141, 274, 1, heave, 
+141, 275, 2, thrive, 
+141, 276, 3, dive, 
+141, 277, 4, drive, false
+141, 278, 0, know, 
+141, 279, 1, come, 
+141, 280, 2, sit, 
+141, 281, 3, feel, 
+141, 282, 4, keep, false
+141, 283, 0, see, 
+141, 284, 1, get, 
+141, 285, 2, hold, 
+141, 286, 3, give, 
+141, 287, 4, write, false
+141, 288, 0, find, 
+141, 289, 1, take, 
+141, 290, 2, say, 
+141, 291, 3, hear, 
+141, 292, 4, stand, false
+141, 293, 0, make, 
+141, 294, 1, leave, 
+141, 295, 2, bring, 
+141, 296, 3, think, 
+141, 297, 4, lose, false
+141, 298, 0, go, 
+141, 299, 1, put, 
+141, 300, 2, tell, 
+141, 301, 3, hit, 
+141, 302, 4, read, false
+141, 303, 0, keep, 
+141, 304, 1, come, 
+141, 305, 2, feel, 
+141, 306, 3, know, 
+141, 307, 4, sit, false
+141, 308, 0, write, 
+141, 309, 1, give, 
+141, 310, 2, see, 
+141, 311, 3, get, 
+141, 312, 4, hold, false
+141, 313, 0, say, 
+141, 314, 1, find, 
+141, 315, 2, stand, 
+141, 316, 3, take, 
+141, 317, 4, hear, false
+141, 318, 0, make, 
+141, 319, 1, think, 
+141, 320, 2, leave, 
+141, 321, 3, lose, 
+141, 322, 4, bring, false
+141, 323, 0, go, 
+141, 324, 1, read, 
+141, 325, 2, tell, 
+141, 326, 3, put, 
+141, 327, 4, hit, false
+141, 328, 0, come, 
+141, 329, 1, keep, 
+141, 330, 2, sit, 
+141, 331, 3, know, 
+141, 332, 4, feel, false
+141, 333, 0, get, 
+141, 334, 1, see, 
+141, 335, 2, hold, 
+141, 336, 3, write, 
+141, 337, 4, give, false
+141, 338, 0, say, 
+141, 339, 1, stand, 
+141, 340, 2, hear, 
+141, 341, 3, take, 
+141, 342, 4, find, false
+141, 343, 0, think, 
+141, 344, 1, bring, 
+141, 345, 2, make, 
+141, 346, 3, lose, 
+141, 347, 4, leave, false
+141, 348, 0, hit, 
+141, 349, 1, tell, 
+141, 350, 2, read, 
+141, 351, 3, go, 
+141, 352, 4, put, false

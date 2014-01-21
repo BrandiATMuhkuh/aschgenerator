@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+133, 203, 0, spill, 
+133, 204, 1, spell, 
+133, 205, 2, smell, 
+133, 206, 3, spoil, 
+133, 207, 4, learn, true
+133, 208, 0, bust, 
+133, 209, 1, knit, 
+133, 210, 2, spit, 
+133, 211, 3, cost, 
+133, 212, 4, wet, true
+133, 213, 0, sing, 
+133, 214, 1, sink, 
+133, 215, 2, spring, 
+133, 216, 3, shrink, 
+133, 217, 4, ring, true
+133, 218, 0, dream, 
+133, 219, 1, kneel, 
+133, 220, 2, plead, 
+133, 221, 3, leap, 
+133, 222, 4, lean, true
+133, 223, 0, weave, 
+133, 224, 1, heave, 
+133, 225, 2, drive, 
+133, 226, 3, dive, 
+133, 227, 4, thrive, true
+133, 228, 0, learn, 
+133, 229, 1, smell, 
+133, 230, 2, spoil, 
+133, 231, 3, spill, 
+133, 232, 4, spell, true
+133, 233, 0, spit, 
+133, 234, 1, cost, 
+133, 235, 2, knit, 
+133, 236, 3, wet, 
+133, 237, 4, bust, true
+133, 238, 0, sink, 
+133, 239, 1, shrink, 
+133, 240, 2, sing, 
+133, 241, 3, ring, 
+133, 242, 4, spring, false
+133, 243, 0, kneel, 
+133, 244, 1, plead, 
+133, 245, 2, leap, 
+133, 246, 3, lean, 
+133, 247, 4, dream, true
+133, 248, 0, thrive, 
+133, 249, 1, dive, 
+133, 250, 2, drive, 
+133, 251, 3, heave, 
+133, 252, 4, weave, true
+133, 253, 0, learn, 
+133, 254, 1, spell, 
+133, 255, 2, spill, 
+133, 256, 3, smell, 
+133, 257, 4, spoil, true
+133, 258, 0, bust, 
+133, 259, 1, knit, 
+133, 260, 2, wet, 
+133, 261, 3, cost, 
+133, 262, 4, spit, true
+133, 263, 0, sing, 
+133, 264, 1, spring, 
+133, 265, 2, ring, 
+133, 266, 3, sink, 
+133, 267, 4, shrink, false
+133, 268, 0, plead, 
+133, 269, 1, kneel, 
+133, 270, 2, lean, 
+133, 271, 3, dream, 
+133, 272, 4, leap, false
+133, 273, 0, heave, 
+133, 274, 1, thrive, 
+133, 275, 2, dive, 
+133, 276, 3, weave, 
+133, 277, 4, drive, false
+133, 278, 0, say, 
+133, 279, 1, find, 
+133, 280, 2, take, 
+133, 281, 3, hear, 
+133, 282, 4, stand, false
+133, 283, 0, tell, 
+133, 284, 1, hit, 
+133, 285, 2, put, 
+133, 286, 3, go, 
+133, 287, 4, read, false
+133, 288, 0, make, 
+133, 289, 1, leave, 
+133, 290, 2, think, 
+133, 291, 3, bring, 
+133, 292, 4, lose, false
+133, 293, 0, see, 
+133, 294, 1, get, 
+133, 295, 2, give, 
+133, 296, 3, hold, 
+133, 297, 4, write, false
+133, 298, 0, feel, 
+133, 299, 1, come, 
+133, 300, 2, sit, 
+133, 301, 3, know, 
+133, 302, 4, keep, false
+133, 303, 0, stand, 
+133, 304, 1, take, 
+133, 305, 2, say, 
+133, 306, 3, find, 
+133, 307, 4, hear, false
+133, 308, 0, put, 
+133, 309, 1, tell, 
+133, 310, 2, go, 
+133, 311, 3, read, 
+133, 312, 4, hit, true
+133, 313, 0, think, 
+133, 314, 1, leave, 
+133, 315, 2, make, 
+133, 316, 3, lose, 
+133, 317, 4, bring, false
+133, 318, 0, see, 
+133, 319, 1, get, 
+133, 320, 2, write, 
+133, 321, 3, give, 
+133, 322, 4, hold, false
+133, 323, 0, feel, 
+133, 324, 1, come, 
+133, 325, 2, know, 
+133, 326, 3, keep, 
+133, 327, 4, sit, false
+133, 328, 0, say, 
+133, 329, 1, hear, 
+133, 330, 2, take, 
+133, 331, 3, stand, 
+133, 332, 4, find, false
+133, 333, 0, tell, 
+133, 334, 1, go, 
+133, 335, 2, read, 
+133, 336, 3, hit, 
+133, 337, 4, put, true
+133, 338, 0, make, 
+133, 339, 1, bring, 
+133, 340, 2, think, 
+133, 341, 3, lose, 
+133, 342, 4, leave, true
+133, 343, 0, see, 
+133, 344, 1, hold, 
+133, 345, 2, get, 
+133, 346, 3, write, 
+133, 347, 4, give, false
+133, 348, 0, come, 
+133, 349, 1, keep, 
+133, 350, 2, sit, 
+133, 351, 3, know, 
+133, 352, 4, feel, false

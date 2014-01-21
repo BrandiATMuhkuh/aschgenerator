@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+136, 28, 0, drive, 
+136, 29, 1, dive, 
+136, 30, 2, weave, 
+136, 31, 3, heave, 
+136, 32, 4, thrive, true
+136, 33, 0, smell, 
+136, 34, 1, spoil, 
+136, 35, 2, spill, 
+136, 36, 3, spell, 
+136, 37, 4, learn, true
+136, 38, 0, bust, 
+136, 39, 1, cost, 
+136, 40, 2, spit, 
+136, 41, 3, knit, 
+136, 42, 4, wet, true
+136, 43, 0, plead, 
+136, 44, 1, kneel, 
+136, 45, 2, dream, 
+136, 46, 3, leap, 
+136, 47, 4, lean, true
+136, 48, 0, shrink, 
+136, 49, 1, spring, 
+136, 50, 2, sink, 
+136, 51, 3, sing, 
+136, 52, 4, ring, false
+136, 53, 0, heave, 
+136, 54, 1, dive, 
+136, 55, 2, drive, 
+136, 56, 3, thrive, 
+136, 57, 4, weave, true
+136, 58, 0, spill, 
+136, 59, 1, smell, 
+136, 60, 2, learn, 
+136, 61, 3, spoil, 
+136, 62, 4, spell, true
+136, 63, 0, cost, 
+136, 64, 1, spit, 
+136, 65, 2, wet, 
+136, 66, 3, knit, 
+136, 67, 4, bust, true
+136, 68, 0, kneel, 
+136, 69, 1, leap, 
+136, 70, 2, plead, 
+136, 71, 3, lean, 
+136, 72, 4, dream, true
+136, 73, 0, ring, 
+136, 74, 1, sink, 
+136, 75, 2, shrink, 
+136, 76, 3, sing, 
+136, 77, 4, spring, false
+136, 78, 0, heave, 
+136, 79, 1, weave, 
+136, 80, 2, dive, 
+136, 81, 3, thrive, 
+136, 82, 4, drive, true
+136, 83, 0, learn, 
+136, 84, 1, smell, 
+136, 85, 2, spill, 
+136, 86, 3, spell, 
+136, 87, 4, spoil, true
+136, 88, 0, cost, 
+136, 89, 1, wet, 
+136, 90, 2, knit, 
+136, 91, 3, bust, 
+136, 92, 4, spit, true
+136, 93, 0, dream, 
+136, 94, 1, plead, 
+136, 95, 2, lean, 
+136, 96, 3, kneel, 
+136, 97, 4, leap, false
+136, 98, 0, sink, 
+136, 99, 1, ring, 
+136, 100, 2, sing, 
+136, 101, 3, spring, 
+136, 102, 4, shrink, false
+136, 103, 0, take, 
+136, 104, 1, find, 
+136, 105, 2, say, 
+136, 106, 3, hear, 
+136, 107, 4, stand, true
+136, 108, 0, come, 
+136, 109, 1, know, 
+136, 110, 2, feel, 
+136, 111, 3, sit, 
+136, 112, 4, keep, false
+136, 113, 0, leave, 
+136, 114, 1, make, 
+136, 115, 2, think, 
+136, 116, 3, bring, 
+136, 117, 4, lose, false
+136, 118, 0, hold, 
+136, 119, 1, see, 
+136, 120, 2, get, 
+136, 121, 3, give, 
+136, 122, 4, write, false
+136, 123, 0, go, 
+136, 124, 1, tell, 
+136, 125, 2, put, 
+136, 126, 3, hit, 
+136, 127, 4, read, true
+136, 128, 0, say, 
+136, 129, 1, find, 
+136, 130, 2, stand, 
+136, 131, 3, take, 
+136, 132, 4, hear, false
+136, 133, 0, come, 
+136, 134, 1, keep, 
+136, 135, 2, feel, 
+136, 136, 3, know, 
+136, 137, 4, sit, false
+136, 138, 0, lose, 
+136, 139, 1, make, 
+136, 140, 2, leave, 
+136, 141, 3, think, 
+136, 142, 4, bring, true
+136, 143, 0, get, 
+136, 144, 1, see, 
+136, 145, 2, give, 
+136, 146, 3, write, 
+136, 147, 4, hold, false
+136, 148, 0, tell, 
+136, 149, 1, go, 
+136, 150, 2, read, 
+136, 151, 3, put, 
+136, 152, 4, hit, false
+136, 153, 0, stand, 
+136, 154, 1, say, 
+136, 155, 2, hear, 
+136, 156, 3, take, 
+136, 157, 4, find, true
+136, 158, 0, sit, 
+136, 159, 1, keep, 
+136, 160, 2, come, 
+136, 161, 3, know, 
+136, 162, 4, feel, true
+136, 163, 0, lose, 
+136, 164, 1, think, 
+136, 165, 2, make, 
+136, 166, 3, bring, 
+136, 167, 4, leave, true
+136, 168, 0, hold, 
+136, 169, 1, write, 
+136, 170, 2, get, 
+136, 171, 3, see, 
+136, 172, 4, give, false
+136, 173, 0, tell, 
+136, 174, 1, read, 
+136, 175, 2, hit, 
+136, 176, 3, go, 
+136, 177, 4, put, false

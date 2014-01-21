@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+41, 203, 0, spell, 
+41, 204, 1, smell, 
+41, 205, 2, spoil, 
+41, 206, 3, spill, 
+41, 207, 4, learn, true
+41, 208, 0, sink, 
+41, 209, 1, shrink, 
+41, 210, 2, spring, 
+41, 211, 3, sing, 
+41, 212, 4, ring, false
+41, 213, 0, kneel, 
+41, 214, 1, leap, 
+41, 215, 2, plead, 
+41, 216, 3, dream, 
+41, 217, 4, lean, true
+41, 218, 0, knit, 
+41, 219, 1, bust, 
+41, 220, 2, cost, 
+41, 221, 3, spit, 
+41, 222, 4, wet, true
+41, 223, 0, drive, 
+41, 224, 1, weave, 
+41, 225, 2, heave, 
+41, 226, 3, dive, 
+41, 227, 4, thrive, true
+41, 228, 0, spill, 
+41, 229, 1, learn, 
+41, 230, 2, smell, 
+41, 231, 3, spoil, 
+41, 232, 4, spell, true
+41, 233, 0, ring, 
+41, 234, 1, shrink, 
+41, 235, 2, sing, 
+41, 236, 3, sink, 
+41, 237, 4, spring, false
+41, 238, 0, lean, 
+41, 239, 1, plead, 
+41, 240, 2, leap, 
+41, 241, 3, kneel, 
+41, 242, 4, dream, true
+41, 243, 0, knit, 
+41, 244, 1, spit, 
+41, 245, 2, cost, 
+41, 246, 3, wet, 
+41, 247, 4, bust, true
+41, 248, 0, heave, 
+41, 249, 1, drive, 
+41, 250, 2, dive, 
+41, 251, 3, thrive, 
+41, 252, 4, weave, false
+41, 253, 0, smell, 
+41, 254, 1, learn, 
+41, 255, 2, spill, 
+41, 256, 3, spell, 
+41, 257, 4, spoil, false
+41, 258, 0, sing, 
+41, 259, 1, ring, 
+41, 260, 2, spring, 
+41, 261, 3, sink, 
+41, 262, 4, shrink, true
+41, 263, 0, kneel, 
+41, 264, 1, dream, 
+41, 265, 2, lean, 
+41, 266, 3, plead, 
+41, 267, 4, leap, false
+41, 268, 0, knit, 
+41, 269, 1, cost, 
+41, 270, 2, wet, 
+41, 271, 3, bust, 
+41, 272, 4, spit, true
+41, 273, 0, weave, 
+41, 274, 1, heave, 
+41, 275, 2, thrive, 
+41, 276, 3, dive, 
+41, 277, 4, drive, false
+41, 278, 0, know, 
+41, 279, 1, come, 
+41, 280, 2, sit, 
+41, 281, 3, feel, 
+41, 282, 4, keep, false
+41, 283, 0, see, 
+41, 284, 1, get, 
+41, 285, 2, hold, 
+41, 286, 3, give, 
+41, 287, 4, write, false
+41, 288, 0, find, 
+41, 289, 1, take, 
+41, 290, 2, say, 
+41, 291, 3, hear, 
+41, 292, 4, stand, false
+41, 293, 0, make, 
+41, 294, 1, leave, 
+41, 295, 2, bring, 
+41, 296, 3, think, 
+41, 297, 4, lose, false
+41, 298, 0, go, 
+41, 299, 1, put, 
+41, 300, 2, tell, 
+41, 301, 3, hit, 
+41, 302, 4, read, false
+41, 303, 0, keep, 
+41, 304, 1, come, 
+41, 305, 2, feel, 
+41, 306, 3, know, 
+41, 307, 4, sit, false
+41, 308, 0, write, 
+41, 309, 1, give, 
+41, 310, 2, see, 
+41, 311, 3, get, 
+41, 312, 4, hold, false
+41, 313, 0, say, 
+41, 314, 1, find, 
+41, 315, 2, stand, 
+41, 316, 3, take, 
+41, 317, 4, hear, false
+41, 318, 0, make, 
+41, 319, 1, think, 
+41, 320, 2, leave, 
+41, 321, 3, lose, 
+41, 322, 4, bring, false
+41, 323, 0, go, 
+41, 324, 1, read, 
+41, 325, 2, tell, 
+41, 326, 3, put, 
+41, 327, 4, hit, false
+41, 328, 0, come, 
+41, 329, 1, keep, 
+41, 330, 2, sit, 
+41, 331, 3, know, 
+41, 332, 4, feel, false
+41, 333, 0, get, 
+41, 334, 1, see, 
+41, 335, 2, hold, 
+41, 336, 3, write, 
+41, 337, 4, give, false
+41, 338, 0, say, 
+41, 339, 1, stand, 
+41, 340, 2, hear, 
+41, 341, 3, take, 
+41, 342, 4, find, false
+41, 343, 0, think, 
+41, 344, 1, bring, 
+41, 345, 2, make, 
+41, 346, 3, lose, 
+41, 347, 4, leave, false
+41, 348, 0, hit, 
+41, 349, 1, tell, 
+41, 350, 2, read, 
+41, 351, 3, go, 
+41, 352, 4, put, false

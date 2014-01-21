@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+31, 203, 0, spoil, 
+31, 204, 1, spell, 
+31, 205, 2, smell, 
+31, 206, 3, spill, 
+31, 207, 4, learn, true
+31, 208, 0, sing, 
+31, 209, 1, sink, 
+31, 210, 2, shrink, 
+31, 211, 3, spring, 
+31, 212, 4, ring, false
+31, 213, 0, leap, 
+31, 214, 1, dream, 
+31, 215, 2, kneel, 
+31, 216, 3, plead, 
+31, 217, 4, lean, true
+31, 218, 0, heave, 
+31, 219, 1, drive, 
+31, 220, 2, dive, 
+31, 221, 3, weave, 
+31, 222, 4, thrive, true
+31, 223, 0, bust, 
+31, 224, 1, spit, 
+31, 225, 2, knit, 
+31, 226, 3, cost, 
+31, 227, 4, wet, true
+31, 228, 0, spoil, 
+31, 229, 1, learn, 
+31, 230, 2, smell, 
+31, 231, 3, spill, 
+31, 232, 4, spell, true
+31, 233, 0, shrink, 
+31, 234, 1, ring, 
+31, 235, 2, sink, 
+31, 236, 3, sing, 
+31, 237, 4, spring, false
+31, 238, 0, plead, 
+31, 239, 1, leap, 
+31, 240, 2, lean, 
+31, 241, 3, kneel, 
+31, 242, 4, dream, true
+31, 243, 0, drive, 
+31, 244, 1, heave, 
+31, 245, 2, thrive, 
+31, 246, 3, dive, 
+31, 247, 4, weave, true
+31, 248, 0, knit, 
+31, 249, 1, cost, 
+31, 250, 2, wet, 
+31, 251, 3, spit, 
+31, 252, 4, bust, true
+31, 253, 0, learn, 
+31, 254, 1, smell, 
+31, 255, 2, spell, 
+31, 256, 3, spill, 
+31, 257, 4, spoil, true
+31, 258, 0, ring, 
+31, 259, 1, spring, 
+31, 260, 2, sink, 
+31, 261, 3, sing, 
+31, 262, 4, shrink, false
+31, 263, 0, plead, 
+31, 264, 1, dream, 
+31, 265, 2, kneel, 
+31, 266, 3, lean, 
+31, 267, 4, leap, true
+31, 268, 0, dive, 
+31, 269, 1, weave, 
+31, 270, 2, thrive, 
+31, 271, 3, heave, 
+31, 272, 4, drive, false
+31, 273, 0, wet, 
+31, 274, 1, bust, 
+31, 275, 2, knit, 
+31, 276, 3, cost, 
+31, 277, 4, spit, true
+31, 278, 0, feel, 
+31, 279, 1, know, 
+31, 280, 2, come, 
+31, 281, 3, sit, 
+31, 282, 4, keep, false
+31, 283, 0, bring, 
+31, 284, 1, leave, 
+31, 285, 2, make, 
+31, 286, 3, think, 
+31, 287, 4, lose, true
+31, 288, 0, get, 
+31, 289, 1, hold, 
+31, 290, 2, give, 
+31, 291, 3, see, 
+31, 292, 4, write, true
+31, 293, 0, take, 
+31, 294, 1, say, 
+31, 295, 2, find, 
+31, 296, 3, hear, 
+31, 297, 4, stand, true
+31, 298, 0, tell, 
+31, 299, 1, go, 
+31, 300, 2, put, 
+31, 301, 3, hit, 
+31, 302, 4, read, true
+31, 303, 0, keep, 
+31, 304, 1, know, 
+31, 305, 2, come, 
+31, 306, 3, feel, 
+31, 307, 4, sit, true
+31, 308, 0, lose, 
+31, 309, 1, leave, 
+31, 310, 2, make, 
+31, 311, 3, think, 
+31, 312, 4, bring, true
+31, 313, 0, give, 
+31, 314, 1, write, 
+31, 315, 2, get, 
+31, 316, 3, see, 
+31, 317, 4, hold, true
+31, 318, 0, find, 
+31, 319, 1, say, 
+31, 320, 2, stand, 
+31, 321, 3, take, 
+31, 322, 4, hear, false
+31, 323, 0, tell, 
+31, 324, 1, read, 
+31, 325, 2, go, 
+31, 326, 3, put, 
+31, 327, 4, hit, true
+31, 328, 0, sit, 
+31, 329, 1, come, 
+31, 330, 2, keep, 
+31, 331, 3, know, 
+31, 332, 4, feel, true
+31, 333, 0, think, 
+31, 334, 1, make, 
+31, 335, 2, bring, 
+31, 336, 3, lose, 
+31, 337, 4, leave, true
+31, 338, 0, see, 
+31, 339, 1, hold, 
+31, 340, 2, write, 
+31, 341, 3, get, 
+31, 342, 4, give, false
+31, 343, 0, stand, 
+31, 344, 1, hear, 
+31, 345, 2, take, 
+31, 346, 3, say, 
+31, 347, 4, find, false
+31, 348, 0, hit, 
+31, 349, 1, go, 
+31, 350, 2, read, 
+31, 351, 3, tell, 
+31, 352, 4, put, true

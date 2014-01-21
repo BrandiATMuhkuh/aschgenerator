@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+142, 28, 0, spring, 
+142, 29, 1, sink, 
+142, 30, 2, sing, 
+142, 31, 3, shrink, 
+142, 32, 4, ring, false
+142, 33, 0, heave, 
+142, 34, 1, drive, 
+142, 35, 2, dive, 
+142, 36, 3, weave, 
+142, 37, 4, thrive, true
+142, 38, 0, spit, 
+142, 39, 1, cost, 
+142, 40, 2, bust, 
+142, 41, 3, knit, 
+142, 42, 4, wet, true
+142, 43, 0, spoil, 
+142, 44, 1, spell, 
+142, 45, 2, spill, 
+142, 46, 3, smell, 
+142, 47, 4, learn, true
+142, 48, 0, plead, 
+142, 49, 1, kneel, 
+142, 50, 2, dream, 
+142, 51, 3, leap, 
+142, 52, 4, lean, false
+142, 53, 0, sink, 
+142, 54, 1, shrink, 
+142, 55, 2, sing, 
+142, 56, 3, ring, 
+142, 57, 4, spring, false
+142, 58, 0, heave, 
+142, 59, 1, dive, 
+142, 60, 2, drive, 
+142, 61, 3, thrive, 
+142, 62, 4, weave, true
+142, 63, 0, cost, 
+142, 64, 1, wet, 
+142, 65, 2, knit, 
+142, 66, 3, spit, 
+142, 67, 4, bust, true
+142, 68, 0, spill, 
+142, 69, 1, learn, 
+142, 70, 2, smell, 
+142, 71, 3, spoil, 
+142, 72, 4, spell, true
+142, 73, 0, lean, 
+142, 74, 1, leap, 
+142, 75, 2, plead, 
+142, 76, 3, kneel, 
+142, 77, 4, dream, true
+142, 78, 0, spring, 
+142, 79, 1, sing, 
+142, 80, 2, sink, 
+142, 81, 3, ring, 
+142, 82, 4, shrink, false
+142, 83, 0, dive, 
+142, 84, 1, heave, 
+142, 85, 2, thrive, 
+142, 86, 3, weave, 
+142, 87, 4, drive, false
+142, 88, 0, knit, 
+142, 89, 1, cost, 
+142, 90, 2, bust, 
+142, 91, 3, wet, 
+142, 92, 4, spit, false
+142, 93, 0, smell, 
+142, 94, 1, spill, 
+142, 95, 2, learn, 
+142, 96, 3, spell, 
+142, 97, 4, spoil, true
+142, 98, 0, kneel, 
+142, 99, 1, dream, 
+142, 100, 2, plead, 
+142, 101, 3, lean, 
+142, 102, 4, leap, false
+142, 103, 0, find, 
+142, 104, 1, take, 
+142, 105, 2, hear, 
+142, 106, 3, say, 
+142, 107, 4, stand, false
+142, 108, 0, bring, 
+142, 109, 1, make, 
+142, 110, 2, think, 
+142, 111, 3, leave, 
+142, 112, 4, lose, false
+142, 113, 0, sit, 
+142, 114, 1, know, 
+142, 115, 2, come, 
+142, 116, 3, feel, 
+142, 117, 4, keep, false
+142, 118, 0, tell, 
+142, 119, 1, hit, 
+142, 120, 2, put, 
+142, 121, 3, go, 
+142, 122, 4, read, false
+142, 123, 0, get, 
+142, 124, 1, see, 
+142, 125, 2, hold, 
+142, 126, 3, give, 
+142, 127, 4, write, false
+142, 128, 0, stand, 
+142, 129, 1, say, 
+142, 130, 2, take, 
+142, 131, 3, find, 
+142, 132, 4, hear, false
+142, 133, 0, make, 
+142, 134, 1, lose, 
+142, 135, 2, leave, 
+142, 136, 3, think, 
+142, 137, 4, bring, false
+142, 138, 0, know, 
+142, 139, 1, keep, 
+142, 140, 2, feel, 
+142, 141, 3, come, 
+142, 142, 4, sit, false
+142, 143, 0, put, 
+142, 144, 1, read, 
+142, 145, 2, tell, 
+142, 146, 3, go, 
+142, 147, 4, hit, true
+142, 148, 0, get, 
+142, 149, 1, give, 
+142, 150, 2, write, 
+142, 151, 3, see, 
+142, 152, 4, hold, false
+142, 153, 0, say, 
+142, 154, 1, hear, 
+142, 155, 2, stand, 
+142, 156, 3, take, 
+142, 157, 4, find, false
+142, 158, 0, think, 
+142, 159, 1, bring, 
+142, 160, 2, make, 
+142, 161, 3, lose, 
+142, 162, 4, leave, false
+142, 163, 0, keep, 
+142, 164, 1, come, 
+142, 165, 2, know, 
+142, 166, 3, sit, 
+142, 167, 4, feel, false
+142, 168, 0, tell, 
+142, 169, 1, read, 
+142, 170, 2, hit, 
+142, 171, 3, go, 
+142, 172, 4, put, false
+142, 173, 0, hold, 
+142, 174, 1, write, 
+142, 175, 2, see, 
+142, 176, 3, get, 
+142, 177, 4, give, false

@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+48, 28, 0, plead, 
+48, 29, 1, dream, 
+48, 30, 2, kneel, 
+48, 31, 3, leap, 
+48, 32, 4, lean, true
+48, 33, 0, weave, 
+48, 34, 1, heave, 
+48, 35, 2, dive, 
+48, 36, 3, drive, 
+48, 37, 4, thrive, false
+48, 38, 0, sink, 
+48, 39, 1, shrink, 
+48, 40, 2, spring, 
+48, 41, 3, sing, 
+48, 42, 4, ring, false
+48, 43, 0, cost, 
+48, 44, 1, bust, 
+48, 45, 2, knit, 
+48, 46, 3, spit, 
+48, 47, 4, wet, true
+48, 48, 0, spell, 
+48, 49, 1, spoil, 
+48, 50, 2, smell, 
+48, 51, 3, spill, 
+48, 52, 4, learn, true
+48, 53, 0, lean, 
+48, 54, 1, leap, 
+48, 55, 2, plead, 
+48, 56, 3, kneel, 
+48, 57, 4, dream, false
+48, 58, 0, thrive, 
+48, 59, 1, drive, 
+48, 60, 2, heave, 
+48, 61, 3, dive, 
+48, 62, 4, weave, false
+48, 63, 0, shrink, 
+48, 64, 1, sing, 
+48, 65, 2, ring, 
+48, 66, 3, sink, 
+48, 67, 4, spring, false
+48, 68, 0, knit, 
+48, 69, 1, spit, 
+48, 70, 2, cost, 
+48, 71, 3, wet, 
+48, 72, 4, bust, false
+48, 73, 0, spoil, 
+48, 74, 1, learn, 
+48, 75, 2, smell, 
+48, 76, 3, spill, 
+48, 77, 4, spell, false
+48, 78, 0, lean, 
+48, 79, 1, plead, 
+48, 80, 2, kneel, 
+48, 81, 3, dream, 
+48, 82, 4, leap, false
+48, 83, 0, dive, 
+48, 84, 1, thrive, 
+48, 85, 2, weave, 
+48, 86, 3, heave, 
+48, 87, 4, drive, false
+48, 88, 0, ring, 
+48, 89, 1, sing, 
+48, 90, 2, sink, 
+48, 91, 3, spring, 
+48, 92, 4, shrink, false
+48, 93, 0, cost, 
+48, 94, 1, knit, 
+48, 95, 2, bust, 
+48, 96, 3, wet, 
+48, 97, 4, spit, false
+48, 98, 0, learn, 
+48, 99, 1, spill, 
+48, 100, 2, spell, 
+48, 101, 3, smell, 
+48, 102, 4, spoil, true
+48, 103, 0, bring, 
+48, 104, 1, leave, 
+48, 105, 2, think, 
+48, 106, 3, make, 
+48, 107, 4, lose, false
+48, 108, 0, sit, 
+48, 109, 1, know, 
+48, 110, 2, feel, 
+48, 111, 3, come, 
+48, 112, 4, keep, false
+48, 113, 0, put, 
+48, 114, 1, hit, 
+48, 115, 2, go, 
+48, 116, 3, tell, 
+48, 117, 4, read, false
+48, 118, 0, get, 
+48, 119, 1, give, 
+48, 120, 2, see, 
+48, 121, 3, hold, 
+48, 122, 4, write, false
+48, 123, 0, say, 
+48, 124, 1, take, 
+48, 125, 2, find, 
+48, 126, 3, hear, 
+48, 127, 4, stand, false
+48, 128, 0, leave, 
+48, 129, 1, make, 
+48, 130, 2, lose, 
+48, 131, 3, think, 
+48, 132, 4, bring, false
+48, 133, 0, keep, 
+48, 134, 1, feel, 
+48, 135, 2, know, 
+48, 136, 3, come, 
+48, 137, 4, sit, false
+48, 138, 0, go, 
+48, 139, 1, read, 
+48, 140, 2, put, 
+48, 141, 3, tell, 
+48, 142, 4, hit, false
+48, 143, 0, write, 
+48, 144, 1, see, 
+48, 145, 2, get, 
+48, 146, 3, give, 
+48, 147, 4, hold, false
+48, 148, 0, find, 
+48, 149, 1, say, 
+48, 150, 2, stand, 
+48, 151, 3, take, 
+48, 152, 4, hear, false
+48, 153, 0, bring, 
+48, 154, 1, make, 
+48, 155, 2, lose, 
+48, 156, 3, think, 
+48, 157, 4, leave, false
+48, 158, 0, sit, 
+48, 159, 1, know, 
+48, 160, 2, keep, 
+48, 161, 3, come, 
+48, 162, 4, feel, false
+48, 163, 0, hit, 
+48, 164, 1, tell, 
+48, 165, 2, read, 
+48, 166, 3, go, 
+48, 167, 4, put, false
+48, 168, 0, write, 
+48, 169, 1, hold, 
+48, 170, 2, get, 
+48, 171, 3, see, 
+48, 172, 4, give, false
+48, 173, 0, stand, 
+48, 174, 1, take, 
+48, 175, 2, hear, 
+48, 176, 3, say, 
+48, 177, 4, find, false

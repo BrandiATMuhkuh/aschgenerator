@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+52, 28, 0, drive, 
+52, 29, 1, dive, 
+52, 30, 2, weave, 
+52, 31, 3, heave, 
+52, 32, 4, thrive, true
+52, 33, 0, spoil, 
+52, 34, 1, spill, 
+52, 35, 2, spell, 
+52, 36, 3, smell, 
+52, 37, 4, learn, true
+52, 38, 0, cost, 
+52, 39, 1, bust, 
+52, 40, 2, spit, 
+52, 41, 3, knit, 
+52, 42, 4, wet, true
+52, 43, 0, kneel, 
+52, 44, 1, plead, 
+52, 45, 2, dream, 
+52, 46, 3, leap, 
+52, 47, 4, lean, true
+52, 48, 0, spring, 
+52, 49, 1, sink, 
+52, 50, 2, sing, 
+52, 51, 3, shrink, 
+52, 52, 4, ring, true
+52, 53, 0, drive, 
+52, 54, 1, heave, 
+52, 55, 2, thrive, 
+52, 56, 3, dive, 
+52, 57, 4, weave, true
+52, 58, 0, learn, 
+52, 59, 1, smell, 
+52, 60, 2, spill, 
+52, 61, 3, spoil, 
+52, 62, 4, spell, true
+52, 63, 0, spit, 
+52, 64, 1, cost, 
+52, 65, 2, knit, 
+52, 66, 3, wet, 
+52, 67, 4, bust, true
+52, 68, 0, kneel, 
+52, 69, 1, plead, 
+52, 70, 2, leap, 
+52, 71, 3, lean, 
+52, 72, 4, dream, true
+52, 73, 0, sing, 
+52, 74, 1, ring, 
+52, 75, 2, shrink, 
+52, 76, 3, sink, 
+52, 77, 4, spring, true
+52, 78, 0, heave, 
+52, 79, 1, thrive, 
+52, 80, 2, weave, 
+52, 81, 3, dive, 
+52, 82, 4, drive, true
+52, 83, 0, smell, 
+52, 84, 1, spell, 
+52, 85, 2, spill, 
+52, 86, 3, learn, 
+52, 87, 4, spoil, true
+52, 88, 0, wet, 
+52, 89, 1, knit, 
+52, 90, 2, cost, 
+52, 91, 3, bust, 
+52, 92, 4, spit, true
+52, 93, 0, kneel, 
+52, 94, 1, dream, 
+52, 95, 2, lean, 
+52, 96, 3, plead, 
+52, 97, 4, leap, true
+52, 98, 0, sink, 
+52, 99, 1, sing, 
+52, 100, 2, spring, 
+52, 101, 3, ring, 
+52, 102, 4, shrink, true
+52, 103, 0, hold, 
+52, 104, 1, get, 
+52, 105, 2, give, 
+52, 106, 3, see, 
+52, 107, 4, write, true
+52, 108, 0, sit, 
+52, 109, 1, know, 
+52, 110, 2, come, 
+52, 111, 3, feel, 
+52, 112, 4, keep, true
+52, 113, 0, leave, 
+52, 114, 1, make, 
+52, 115, 2, bring, 
+52, 116, 3, think, 
+52, 117, 4, lose, true
+52, 118, 0, put, 
+52, 119, 1, tell, 
+52, 120, 2, hit, 
+52, 121, 3, go, 
+52, 122, 4, read, true
+52, 123, 0, find, 
+52, 124, 1, take, 
+52, 125, 2, say, 
+52, 126, 3, hear, 
+52, 127, 4, stand, true
+52, 128, 0, write, 
+52, 129, 1, give, 
+52, 130, 2, get, 
+52, 131, 3, see, 
+52, 132, 4, hold, true
+52, 133, 0, feel, 
+52, 134, 1, come, 
+52, 135, 2, keep, 
+52, 136, 3, know, 
+52, 137, 4, sit, true
+52, 138, 0, lose, 
+52, 139, 1, leave, 
+52, 140, 2, make, 
+52, 141, 3, think, 
+52, 142, 4, bring, true
+52, 143, 0, tell, 
+52, 144, 1, read, 
+52, 145, 2, put, 
+52, 146, 3, go, 
+52, 147, 4, hit, true
+52, 148, 0, find, 
+52, 149, 1, take, 
+52, 150, 2, stand, 
+52, 151, 3, say, 
+52, 152, 4, hear, true
+52, 153, 0, get, 
+52, 154, 1, see, 
+52, 155, 2, hold, 
+52, 156, 3, write, 
+52, 157, 4, give, true
+52, 158, 0, keep, 
+52, 159, 1, come, 
+52, 160, 2, know, 
+52, 161, 3, sit, 
+52, 162, 4, feel, false
+52, 163, 0, think, 
+52, 164, 1, lose, 
+52, 165, 2, make, 
+52, 166, 3, bring, 
+52, 167, 4, leave, true
+52, 168, 0, hit, 
+52, 169, 1, read, 
+52, 170, 2, go, 
+52, 171, 3, tell, 
+52, 172, 4, put, true
+52, 173, 0, stand, 
+52, 174, 1, say, 
+52, 175, 2, take, 
+52, 176, 3, hear, 
+52, 177, 4, find, true

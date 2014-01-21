@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+135, 203, 0, shrink, 
+135, 204, 1, sink, 
+135, 205, 2, spring, 
+135, 206, 3, sing, 
+135, 207, 4, ring, true
+135, 208, 0, spit, 
+135, 209, 1, bust, 
+135, 210, 2, knit, 
+135, 211, 3, cost, 
+135, 212, 4, wet, true
+135, 213, 0, spoil, 
+135, 214, 1, spill, 
+135, 215, 2, spell, 
+135, 216, 3, smell, 
+135, 217, 4, learn, true
+135, 218, 0, dive, 
+135, 219, 1, drive, 
+135, 220, 2, heave, 
+135, 221, 3, weave, 
+135, 222, 4, thrive, true
+135, 223, 0, dream, 
+135, 224, 1, leap, 
+135, 225, 2, plead, 
+135, 226, 3, kneel, 
+135, 227, 4, lean, true
+135, 228, 0, sing, 
+135, 229, 1, sink, 
+135, 230, 2, ring, 
+135, 231, 3, shrink, 
+135, 232, 4, spring, false
+135, 233, 0, cost, 
+135, 234, 1, knit, 
+135, 235, 2, wet, 
+135, 236, 3, spit, 
+135, 237, 4, bust, true
+135, 238, 0, spoil, 
+135, 239, 1, smell, 
+135, 240, 2, spill, 
+135, 241, 3, learn, 
+135, 242, 4, spell, true
+135, 243, 0, thrive, 
+135, 244, 1, heave, 
+135, 245, 2, dive, 
+135, 246, 3, drive, 
+135, 247, 4, weave, true
+135, 248, 0, leap, 
+135, 249, 1, lean, 
+135, 250, 2, kneel, 
+135, 251, 3, plead, 
+135, 252, 4, dream, true
+135, 253, 0, sink, 
+135, 254, 1, spring, 
+135, 255, 2, sing, 
+135, 256, 3, ring, 
+135, 257, 4, shrink, false
+135, 258, 0, wet, 
+135, 259, 1, cost, 
+135, 260, 2, bust, 
+135, 261, 3, knit, 
+135, 262, 4, spit, false
+135, 263, 0, smell, 
+135, 264, 1, spell, 
+135, 265, 2, learn, 
+135, 266, 3, spill, 
+135, 267, 4, spoil, true
+135, 268, 0, thrive, 
+135, 269, 1, heave, 
+135, 270, 2, dive, 
+135, 271, 3, weave, 
+135, 272, 4, drive, true
+135, 273, 0, dream, 
+135, 274, 1, plead, 
+135, 275, 2, lean, 
+135, 276, 3, kneel, 
+135, 277, 4, leap, false
+135, 278, 0, think, 
+135, 279, 1, make, 
+135, 280, 2, bring, 
+135, 281, 3, leave, 
+135, 282, 4, lose, false
+135, 283, 0, come, 
+135, 284, 1, feel, 
+135, 285, 2, sit, 
+135, 286, 3, know, 
+135, 287, 4, keep, false
+135, 288, 0, take, 
+135, 289, 1, find, 
+135, 290, 2, hear, 
+135, 291, 3, say, 
+135, 292, 4, stand, false
+135, 293, 0, hold, 
+135, 294, 1, get, 
+135, 295, 2, see, 
+135, 296, 3, give, 
+135, 297, 4, write, false
+135, 298, 0, tell, 
+135, 299, 1, put, 
+135, 300, 2, go, 
+135, 301, 3, hit, 
+135, 302, 4, read, false
+135, 303, 0, make, 
+135, 304, 1, think, 
+135, 305, 2, lose, 
+135, 306, 3, leave, 
+135, 307, 4, bring, false
+135, 308, 0, feel, 
+135, 309, 1, keep, 
+135, 310, 2, come, 
+135, 311, 3, know, 
+135, 312, 4, sit, false
+135, 313, 0, stand, 
+135, 314, 1, take, 
+135, 315, 2, say, 
+135, 316, 3, find, 
+135, 317, 4, hear, false
+135, 318, 0, get, 
+135, 319, 1, write, 
+135, 320, 2, see, 
+135, 321, 3, give, 
+135, 322, 4, hold, false
+135, 323, 0, go, 
+135, 324, 1, put, 
+135, 325, 2, read, 
+135, 326, 3, tell, 
+135, 327, 4, hit, false
+135, 328, 0, think, 
+135, 329, 1, bring, 
+135, 330, 2, lose, 
+135, 331, 3, make, 
+135, 332, 4, leave, false
+135, 333, 0, know, 
+135, 334, 1, keep, 
+135, 335, 2, sit, 
+135, 336, 3, come, 
+135, 337, 4, feel, false
+135, 338, 0, take, 
+135, 339, 1, stand, 
+135, 340, 2, say, 
+135, 341, 3, hear, 
+135, 342, 4, find, false
+135, 343, 0, get, 
+135, 344, 1, see, 
+135, 345, 2, write, 
+135, 346, 3, hold, 
+135, 347, 4, give, false
+135, 348, 0, hit, 
+135, 349, 1, tell, 
+135, 350, 2, read, 
+135, 351, 3, go, 
+135, 352, 4, put, false

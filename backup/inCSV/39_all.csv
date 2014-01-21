@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+39, 203, 0, cost, 
+39, 204, 1, knit, 
+39, 205, 2, bust, 
+39, 206, 3, spit, 
+39, 207, 4, wet, false
+39, 208, 0, spring, 
+39, 209, 1, sink, 
+39, 210, 2, sing, 
+39, 211, 3, shrink, 
+39, 212, 4, ring, false
+39, 213, 0, kneel, 
+39, 214, 1, dream, 
+39, 215, 2, plead, 
+39, 216, 3, leap, 
+39, 217, 4, lean, true
+39, 218, 0, spoil, 
+39, 219, 1, smell, 
+39, 220, 2, spell, 
+39, 221, 3, spill, 
+39, 222, 4, learn, false
+39, 223, 0, drive, 
+39, 224, 1, weave, 
+39, 225, 2, heave, 
+39, 226, 3, dive, 
+39, 227, 4, thrive, true
+39, 228, 0, knit, 
+39, 229, 1, wet, 
+39, 230, 2, cost, 
+39, 231, 3, spit, 
+39, 232, 4, bust, true
+39, 233, 0, sing, 
+39, 234, 1, shrink, 
+39, 235, 2, sink, 
+39, 236, 3, ring, 
+39, 237, 4, spring, false
+39, 238, 0, plead, 
+39, 239, 1, leap, 
+39, 240, 2, kneel, 
+39, 241, 3, lean, 
+39, 242, 4, dream, true
+39, 243, 0, smell, 
+39, 244, 1, spoil, 
+39, 245, 2, learn, 
+39, 246, 3, spill, 
+39, 247, 4, spell, true
+39, 248, 0, drive, 
+39, 249, 1, dive, 
+39, 250, 2, heave, 
+39, 251, 3, thrive, 
+39, 252, 4, weave, false
+39, 253, 0, cost, 
+39, 254, 1, wet, 
+39, 255, 2, bust, 
+39, 256, 3, knit, 
+39, 257, 4, spit, false
+39, 258, 0, sing, 
+39, 259, 1, sink, 
+39, 260, 2, ring, 
+39, 261, 3, spring, 
+39, 262, 4, shrink, false
+39, 263, 0, kneel, 
+39, 264, 1, plead, 
+39, 265, 2, dream, 
+39, 266, 3, lean, 
+39, 267, 4, leap, false
+39, 268, 0, learn, 
+39, 269, 1, spill, 
+39, 270, 2, smell, 
+39, 271, 3, spell, 
+39, 272, 4, spoil, false
+39, 273, 0, dive, 
+39, 274, 1, thrive, 
+39, 275, 2, weave, 
+39, 276, 3, heave, 
+39, 277, 4, drive, false
+39, 278, 0, think, 
+39, 279, 1, make, 
+39, 280, 2, bring, 
+39, 281, 3, leave, 
+39, 282, 4, lose, false
+39, 283, 0, see, 
+39, 284, 1, get, 
+39, 285, 2, give, 
+39, 286, 3, hold, 
+39, 287, 4, write, false
+39, 288, 0, know, 
+39, 289, 1, come, 
+39, 290, 2, sit, 
+39, 291, 3, feel, 
+39, 292, 4, keep, false
+39, 293, 0, hear, 
+39, 294, 1, take, 
+39, 295, 2, say, 
+39, 296, 3, find, 
+39, 297, 4, stand, false
+39, 298, 0, go, 
+39, 299, 1, tell, 
+39, 300, 2, put, 
+39, 301, 3, hit, 
+39, 302, 4, read, false
+39, 303, 0, make, 
+39, 304, 1, think, 
+39, 305, 2, lose, 
+39, 306, 3, leave, 
+39, 307, 4, bring, false
+39, 308, 0, see, 
+39, 309, 1, write, 
+39, 310, 2, get, 
+39, 311, 3, give, 
+39, 312, 4, hold, false
+39, 313, 0, keep, 
+39, 314, 1, know, 
+39, 315, 2, come, 
+39, 316, 3, feel, 
+39, 317, 4, sit, false
+39, 318, 0, say, 
+39, 319, 1, find, 
+39, 320, 2, take, 
+39, 321, 3, stand, 
+39, 322, 4, hear, false
+39, 323, 0, read, 
+39, 324, 1, put, 
+39, 325, 2, go, 
+39, 326, 3, tell, 
+39, 327, 4, hit, false
+39, 328, 0, make, 
+39, 329, 1, lose, 
+39, 330, 2, think, 
+39, 331, 3, bring, 
+39, 332, 4, leave, false
+39, 333, 0, write, 
+39, 334, 1, get, 
+39, 335, 2, see, 
+39, 336, 3, hold, 
+39, 337, 4, give, false
+39, 338, 0, come, 
+39, 339, 1, sit, 
+39, 340, 2, know, 
+39, 341, 3, keep, 
+39, 342, 4, feel, false
+39, 343, 0, take, 
+39, 344, 1, say, 
+39, 345, 2, stand, 
+39, 346, 3, hear, 
+39, 347, 4, find, false
+39, 348, 0, tell, 
+39, 349, 1, go, 
+39, 350, 2, hit, 
+39, 351, 3, read, 
+39, 352, 4, put, false

@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+139, 203, 0, cost, 
+139, 204, 1, knit, 
+139, 205, 2, bust, 
+139, 206, 3, spit, 
+139, 207, 4, wet, true
+139, 208, 0, spring, 
+139, 209, 1, sink, 
+139, 210, 2, sing, 
+139, 211, 3, shrink, 
+139, 212, 4, ring, false
+139, 213, 0, kneel, 
+139, 214, 1, dream, 
+139, 215, 2, plead, 
+139, 216, 3, leap, 
+139, 217, 4, lean, true
+139, 218, 0, spoil, 
+139, 219, 1, smell, 
+139, 220, 2, spell, 
+139, 221, 3, spill, 
+139, 222, 4, learn, true
+139, 223, 0, drive, 
+139, 224, 1, weave, 
+139, 225, 2, heave, 
+139, 226, 3, dive, 
+139, 227, 4, thrive, true
+139, 228, 0, knit, 
+139, 229, 1, wet, 
+139, 230, 2, cost, 
+139, 231, 3, spit, 
+139, 232, 4, bust, true
+139, 233, 0, sing, 
+139, 234, 1, shrink, 
+139, 235, 2, sink, 
+139, 236, 3, ring, 
+139, 237, 4, spring, false
+139, 238, 0, plead, 
+139, 239, 1, leap, 
+139, 240, 2, kneel, 
+139, 241, 3, lean, 
+139, 242, 4, dream, true
+139, 243, 0, smell, 
+139, 244, 1, spoil, 
+139, 245, 2, learn, 
+139, 246, 3, spill, 
+139, 247, 4, spell, true
+139, 248, 0, drive, 
+139, 249, 1, dive, 
+139, 250, 2, heave, 
+139, 251, 3, thrive, 
+139, 252, 4, weave, true
+139, 253, 0, cost, 
+139, 254, 1, wet, 
+139, 255, 2, bust, 
+139, 256, 3, knit, 
+139, 257, 4, spit, false
+139, 258, 0, sing, 
+139, 259, 1, sink, 
+139, 260, 2, ring, 
+139, 261, 3, spring, 
+139, 262, 4, shrink, false
+139, 263, 0, kneel, 
+139, 264, 1, plead, 
+139, 265, 2, dream, 
+139, 266, 3, lean, 
+139, 267, 4, leap, true
+139, 268, 0, learn, 
+139, 269, 1, spill, 
+139, 270, 2, smell, 
+139, 271, 3, spell, 
+139, 272, 4, spoil, true
+139, 273, 0, dive, 
+139, 274, 1, thrive, 
+139, 275, 2, weave, 
+139, 276, 3, heave, 
+139, 277, 4, drive, true
+139, 278, 0, think, 
+139, 279, 1, make, 
+139, 280, 2, bring, 
+139, 281, 3, leave, 
+139, 282, 4, lose, true
+139, 283, 0, see, 
+139, 284, 1, get, 
+139, 285, 2, give, 
+139, 286, 3, hold, 
+139, 287, 4, write, false
+139, 288, 0, know, 
+139, 289, 1, come, 
+139, 290, 2, sit, 
+139, 291, 3, feel, 
+139, 292, 4, keep, false
+139, 293, 0, hear, 
+139, 294, 1, take, 
+139, 295, 2, say, 
+139, 296, 3, find, 
+139, 297, 4, stand, false
+139, 298, 0, go, 
+139, 299, 1, tell, 
+139, 300, 2, put, 
+139, 301, 3, hit, 
+139, 302, 4, read, false
+139, 303, 0, make, 
+139, 304, 1, think, 
+139, 305, 2, lose, 
+139, 306, 3, leave, 
+139, 307, 4, bring, true
+139, 308, 0, see, 
+139, 309, 1, write, 
+139, 310, 2, get, 
+139, 311, 3, give, 
+139, 312, 4, hold, false
+139, 313, 0, keep, 
+139, 314, 1, know, 
+139, 315, 2, come, 
+139, 316, 3, feel, 
+139, 317, 4, sit, false
+139, 318, 0, say, 
+139, 319, 1, find, 
+139, 320, 2, take, 
+139, 321, 3, stand, 
+139, 322, 4, hear, false
+139, 323, 0, read, 
+139, 324, 1, put, 
+139, 325, 2, go, 
+139, 326, 3, tell, 
+139, 327, 4, hit, false
+139, 328, 0, make, 
+139, 329, 1, lose, 
+139, 330, 2, think, 
+139, 331, 3, bring, 
+139, 332, 4, leave, false
+139, 333, 0, write, 
+139, 334, 1, get, 
+139, 335, 2, see, 
+139, 336, 3, hold, 
+139, 337, 4, give, false
+139, 338, 0, come, 
+139, 339, 1, sit, 
+139, 340, 2, know, 
+139, 341, 3, keep, 
+139, 342, 4, feel, false
+139, 343, 0, take, 
+139, 344, 1, say, 
+139, 345, 2, stand, 
+139, 346, 3, hear, 
+139, 347, 4, find, false
+139, 348, 0, tell, 
+139, 349, 1, go, 
+139, 350, 2, hit, 
+139, 351, 3, read, 
+139, 352, 4, put, false

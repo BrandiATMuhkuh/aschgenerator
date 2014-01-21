@@ -1,0 +1,151 @@
+Part, Rownumber, Seat, Word, Error
+134, 28, 0, spring, 
+134, 29, 1, shrink, 
+134, 30, 2, sing, 
+134, 31, 3, sink, 
+134, 32, 4, ring, true
+134, 33, 0, spell, 
+134, 34, 1, spill, 
+134, 35, 2, spoil, 
+134, 36, 3, smell, 
+134, 37, 4, learn, true
+134, 38, 0, drive, 
+134, 39, 1, dive, 
+134, 40, 2, weave, 
+134, 41, 3, heave, 
+134, 42, 4, thrive, true
+134, 43, 0, leap, 
+134, 44, 1, kneel, 
+134, 45, 2, plead, 
+134, 46, 3, dream, 
+134, 47, 4, lean, true
+134, 48, 0, bust, 
+134, 49, 1, cost, 
+134, 50, 2, knit, 
+134, 51, 3, spit, 
+134, 52, 4, wet, true
+134, 53, 0, ring, 
+134, 54, 1, shrink, 
+134, 55, 2, sing, 
+134, 56, 3, sink, 
+134, 57, 4, spring, false
+134, 58, 0, smell, 
+134, 59, 1, learn, 
+134, 60, 2, spill, 
+134, 61, 3, spoil, 
+134, 62, 4, spell, true
+134, 63, 0, drive, 
+134, 64, 1, thrive, 
+134, 65, 2, heave, 
+134, 66, 3, dive, 
+134, 67, 4, weave, true
+134, 68, 0, lean, 
+134, 69, 1, leap, 
+134, 70, 2, plead, 
+134, 71, 3, kneel, 
+134, 72, 4, dream, true
+134, 73, 0, cost, 
+134, 74, 1, knit, 
+134, 75, 2, spit, 
+134, 76, 3, wet, 
+134, 77, 4, bust, true
+134, 78, 0, spring, 
+134, 79, 1, sink, 
+134, 80, 2, sing, 
+134, 81, 3, ring, 
+134, 82, 4, shrink, false
+134, 83, 0, spill, 
+134, 84, 1, spell, 
+134, 85, 2, learn, 
+134, 86, 3, smell, 
+134, 87, 4, spoil, true
+134, 88, 0, dive, 
+134, 89, 1, thrive, 
+134, 90, 2, heave, 
+134, 91, 3, weave, 
+134, 92, 4, drive, false
+134, 93, 0, dream, 
+134, 94, 1, plead, 
+134, 95, 2, kneel, 
+134, 96, 3, lean, 
+134, 97, 4, leap, false
+134, 98, 0, bust, 
+134, 99, 1, cost, 
+134, 100, 2, knit, 
+134, 101, 3, wet, 
+134, 102, 4, spit, false
+134, 103, 0, say, 
+134, 104, 1, find, 
+134, 105, 2, take, 
+134, 106, 3, hear, 
+134, 107, 4, stand, true
+134, 108, 0, think, 
+134, 109, 1, make, 
+134, 110, 2, leave, 
+134, 111, 3, bring, 
+134, 112, 4, lose, false
+134, 113, 0, give, 
+134, 114, 1, get, 
+134, 115, 2, see, 
+134, 116, 3, hold, 
+134, 117, 4, write, false
+134, 118, 0, sit, 
+134, 119, 1, know, 
+134, 120, 2, feel, 
+134, 121, 3, come, 
+134, 122, 4, keep, false
+134, 123, 0, go, 
+134, 124, 1, put, 
+134, 125, 2, tell, 
+134, 126, 3, hit, 
+134, 127, 4, read, true
+134, 128, 0, take, 
+134, 129, 1, say, 
+134, 130, 2, stand, 
+134, 131, 3, find, 
+134, 132, 4, hear, false
+134, 133, 0, lose, 
+134, 134, 1, think, 
+134, 135, 2, make, 
+134, 136, 3, leave, 
+134, 137, 4, bring, false
+134, 138, 0, get, 
+134, 139, 1, give, 
+134, 140, 2, see, 
+134, 141, 3, write, 
+134, 142, 4, hold, false
+134, 143, 0, feel, 
+134, 144, 1, know, 
+134, 145, 2, keep, 
+134, 146, 3, come, 
+134, 147, 4, sit, false
+134, 148, 0, put, 
+134, 149, 1, read, 
+134, 150, 2, go, 
+134, 151, 3, tell, 
+134, 152, 4, hit, true
+134, 153, 0, stand, 
+134, 154, 1, say, 
+134, 155, 2, take, 
+134, 156, 3, hear, 
+134, 157, 4, find, false
+134, 158, 0, make, 
+134, 159, 1, lose, 
+134, 160, 2, think, 
+134, 161, 3, bring, 
+134, 162, 4, leave, false
+134, 163, 0, hold, 
+134, 164, 1, write, 
+134, 165, 2, see, 
+134, 166, 3, get, 
+134, 167, 4, give, false
+134, 168, 0, know, 
+134, 169, 1, keep, 
+134, 170, 2, sit, 
+134, 171, 3, come, 
+134, 172, 4, feel, false
+134, 173, 0, hit, 
+134, 174, 1, tell, 
+134, 175, 2, go, 
+134, 176, 3, read, 
+134, 177, 4, put, true
