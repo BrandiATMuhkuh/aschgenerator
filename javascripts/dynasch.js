@@ -114,12 +114,16 @@ DynAsch.wordLinesFirstContainer = function(){
 					{
 	   var dataSource = [
 	    { state: "ambig Lines", 
+	    	in: 28,
 	    	ro:	(DynAsch.conformitCount(true, true, "lineAmbig").aschValue+DynAsch.conformitCount(true, false, "lineAmbig").aschValue)/2,
-	    	hu: (DynAsch.conformitCount(false, true, "lineAmbig").aschValue+DynAsch.conformitCount(false, false, "lineAmbig").aschValue)/2
+	    	hu: (DynAsch.conformitCount(false, true, "lineAmbig").aschValue+DynAsch.conformitCount(false, false, "lineAmbig").aschValue)/2,
+	    	
 	    },
 	    { state: "non-ambig Lines", 
+	    	in: 2,
 	    	ro: (DynAsch.conformitCount(true, true, "lineNAmbig").aschValue+DynAsch.conformitCount(true, false, "lineNAmbig").aschValue)/2,
-	    	hu: (DynAsch.conformitCount(false, true, "lineNAmbig").aschValue+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue)/2
+	    	hu: (DynAsch.conformitCount(false, true, "lineNAmbig").aschValue+DynAsch.conformitCount(false, false, "lineNAmbig").aschValue)/2,
+	    	
 	    },
 
 	    { state: "ambig Words", 
@@ -136,7 +140,7 @@ DynAsch.wordLinesFirstContainer = function(){
 	    dataSource: dataSource,
 	    commonSeriesSettings: {
 	        argumentField: "state",
-	        type: "spline",
+	        type: "bar",
 	        hoverMode: "allArgumentPoints",
 	        selectionMode: "allArgumentPoints",
 	        label: {
@@ -146,6 +150,8 @@ DynAsch.wordLinesFirstContainer = function(){
 	        }
 	    },
 	    series: [
+
+	        { valueField: "in", name: "individual" },
 	        { valueField: "ro", name: "robot" },
 	        { valueField: "hu", name: "human" }
 	    ],
