@@ -10,7 +10,7 @@ Part, Robot, LinesFirst, Age, Gender, Affiliation, Interacted with social robots
 38, true, false, 18, Male, Undergraduate Student, false, Mathematics and Japanese, undefined
 39, true, true, 23, Male, Undergraduate Student, false, Computer Science, undefined
 40, true, false, 19, Male, Undergraduate Student, false, Computer science, undefined
-41, true, true, 15, Female, Other, false, undefined, undefined
+41, true, true, 18, Female, Other, false, undefined, undefined
 42, true, false, 22, Male, Undergraduate Student, false, Engineering, undefined
 43, true, true, 21, Male, Undergraduate Student, false, Electrical and Electronic Engineering, Not Feeling 100%
 44, true, false, 21, Male, Postgraduate Student, true, Computer Science, undefined
@@ -40,7 +40,7 @@ Part, Robot, LinesFirst, Age, Gender, Affiliation, Interacted with social robots
 145, false, true, 18, Male, Undergraduate Student, true, Fine Arts (film), undefined
 146, false, false, 20, Female, Undergraduate Student, false, BA, undefined
 147, false, true, 20, Female, Undergraduate Student, false, Geography and history, undefined
-148, false, false, 17, Female, Other, false, undefined, undefined
+148, false, false, 18, Female, Other, false, undefined, undefined
 149, false, true, 18, Female, Other, false, high school, undefined
 150, false, false, 19, Female, Undergraduate Student, false, English and Philosophy, undefined
 151, false, true, 20, Male, Undergraduate Student, false, Engineering, undefined

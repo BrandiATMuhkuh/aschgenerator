@@ -9,7 +9,7 @@ function main (){
 
 		loadAllTests(new Array(),0,100, function (testsData){
 			//console.log("done with tests",testsData);
-			exportAllDataStep1(experimentData,testsData,true);
+			exportAllDataStep1(experimentData,testsData,true, true);
 			//exportParticipantList(experimentData,testsData);
 		});
 
@@ -112,7 +112,7 @@ function exportParticipantList(experimentData, testsData){
 	storeFile("partQuestion.csv", csv);
 }
 
-function exportAllDataStep1(experimentData, testsData, multi){
+function exportAllDataStep1(experimentData, testsData, multi, words){
 
 	//console.log(returnTestsForPart(32,testsData).name);
 
@@ -120,6 +120,11 @@ function exportAllDataStep1(experimentData, testsData, multi){
 
 	var csvAllPeep = "Part, Rownumber, Seat, Word, Error\n";
 	var csvOnlyPart = "Part, Rownumber, Seat, Word, Error\n";
+
+	if(!multi && !words){
+		csvAllPeep = "Part, Rownumber, Seat, Error, Easy\n";
+		csvOnlyPart = "Part, Rownumber, Seat, Error, Easy\n";
+	}
 	
 	for(a in experimentData){
 		if(parseInt(experimentData[a].res.part)>29){
@@ -134,7 +139,7 @@ function exportAllDataStep1(experimentData, testsData, multi){
 			var d = experimentData[a].res;
 
 			//console.log(bla, d.part, returnTestsForPart(d.part,testsData).name);
-			var r = exportAllDataStep2(bla, d, returnTestsForPart(d.part,testsData),multi);
+			var r = exportAllDataStep2(bla, d, returnTestsForPart(d.part,testsData), multi, words);
 
 			//Save separate files
 			
@@ -148,9 +153,14 @@ function exportAllDataStep1(experimentData, testsData, multi){
 		}
 	}
 
-	if(!multi){
-		storeFile("_all.csv",csvAllPeep);
-		storeFile("_part.csv",csvOnlyPart);
+	if(!multi && words){
+		//console.log("only one",csvOnlyPart);
+		//console.log("all one",csvAllPeep);
+		storeFile("W_all.csv",csvAllPeep);
+		storeFile("W_part.csv",csvOnlyPart);
+	}else if(!multi && !words){
+		storeFile("L_part.csv",csvOnlyPart);
+		storeFile("L_all.csv",csvAllPeep);
 	}
 
 	/*
@@ -164,9 +174,14 @@ function exportAllDataStep1(experimentData, testsData, multi){
 	
 }
 
-function exportAllDataStep2(_id, d, t, multi){
+function exportAllDataStep2(_id, d, t, multi, words){
 	var wordsAmbig = d.wordsAmbig;
 	var wordsNAmbig = d.wordsNAmbig;
+
+	if(!words){
+		wordsAmbig = d.lineAmbig;
+		wordsNAmbig = d.lineNAmbig;
+	}
 
 	for(a in wordsAmbig){	
 		//console.log(wordsAmbig[a].id, wordsAmbig[a].res, t.everything[wordsAmbig[a].id].v1[4], t.everything[wordsAmbig[a].id].scheme);		
@@ -180,8 +195,11 @@ function exportAllDataStep2(_id, d, t, multi){
 
 
 	var off = 27
-	if(d.isLinesFirst){
+	console.log(_id, "lineFirst: ",d.isLinesFirst);
+	if(d.isLinesFirst && words){
 		off=202
+	}else if(d.isLinesFirst && !words){
+		off=27
 	}
 	var tev = t.everything;
 
@@ -189,17 +207,27 @@ function exportAllDataStep2(_id, d, t, multi){
 	var csvAllPeep = "";
 	var csvOnlyPart = "";
 
-	if(multi){
+	if(multi && words){
 		csvAllPeep = "Part, Rownumber, Seat, Word, Error\n";
 		csvOnlyPart = "Part, Rownumber, Seat, Word, Error\n";
+	}else if(multi && !words){
+		csvAllPeep = "Part, Rownumber, Seat, Error, Easy\n";
+		csvOnlyPart = "Part, Rownumber, Seat, Error, Easy\n";
 	}
 	var csvAllPeepNoHead ="";
 	var csvOnlyPartNoHead ="";
-
+	//console.log(tev[off]);
+	
+	var easy=0;
+	var easyWord="easy";
 	for(a in tev){
+
+		if(easy>=15){
+			easyWord = "hard";
+		}
 		
 		//all users
-		if(tev[a].type == "drawManyWord" && a>off){
+		if(tev[a].type == "drawManyWord" && a>off && words){
 
 			var _res ="";
 			if(tev[a].res != undefined){
@@ -210,12 +238,34 @@ function exportAllDataStep2(_id, d, t, multi){
 		}
 
 		//only participant
-		if(tev[a].type == "drawManyWord" && a>off && tev[a].user == 4){
+		if(tev[a].type == "drawManyWord" && a>off && tev[a].user == 4 && words){
 			var _res ="";
 			if(tev[a].res != undefined){
 				_res = tev[a].res
 			}
 			csvOnlyPartNoHead+=_id+", "+a+", "+tev[a].user+", "+tev[a].v1[tev[a].user]+", "+_res+"\n";
+		}
+
+		//all users
+		if(tev[a].type == "drawAsch" && a>off && !words && tev[a].testSlide == undefined && tev[a].loudRobot == undefined){
+			var _res ="";
+			if(tev[a].res != undefined){
+				_res = tev[a].res
+			}
+
+			csvAllPeepNoHead+=_id+", "+a+", "+tev[a].user+", "+_res+", "+easyWord+"\n";
+		}
+
+		//only participant
+		if(tev[a].type == "drawAsch" && a>off && tev[a].user == 4 && !words && tev[a].testSlide == undefined && tev[a].loudRobot == undefined){
+
+			var _res ="";
+			if(tev[a].res != undefined){
+				_res = tev[a].res
+				
+			}
+			csvOnlyPartNoHead+=_id+", "+a+", "+tev[a].user+", "+_res+", "+easyWord+"\n";
+			easy++;
 		}
 	}
 
