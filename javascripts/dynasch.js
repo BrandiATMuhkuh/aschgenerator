@@ -95,9 +95,15 @@ DynAsch.showCounterBlance = function(){
 	        label: {
 	            visible: true,
 	            format: "fixedPoint",
-	            precision: 0
-	        }
+	            precision: 0,
+	            font: {  color: 'white', weight: "bold", size: 15 }
+	        },
 	    },
+        commonAxisSettings: {
+            label: {
+                font: {  color: 'black', weight: "bold", size: 15 }
+            }
+        },
 	    series: [
 	        { valueField: "counter", name: "counter" },
 	        { valueField: "first", name: "first" },
@@ -106,8 +112,21 @@ DynAsch.showCounterBlance = function(){
 	    title: "Was counter balancing usefull?",
 	    legend: {
 	        verticalAlignment: "bottom",
-	        horizontalAlignment: "center"
-	    },
+	        horizontalAlignment: "center",
+            font: {  color: 'black', weight: "bold", size: 15 }
+            
+	    }, 
+	    valueAxis: {
+            label: { format: 'largeNumber' },
+            grid: { visible: true },
+            color: 'black',
+            font: { weight: 100, color: 'black' },
+            title: {
+                text: 'Conformity Rate in Percentage',
+                font: { weight: "bold", color: 'black' },
+                color: 'black'
+            }
+        },
 	    pointClick: function (point) {
 	        this.select();
 	    }
@@ -166,9 +185,9 @@ DynAsch.wordLinesFirstContainer = function(){
         },
 	    series: [
 
-	        { valueField: "in", name: "individual", color: '#999999' },
-	        { valueField: "ro", name: "robot", color: '#666666' },
-	        { valueField: "hu", name: "human", color: 'black' },
+	        { valueField: "in", name: "individual" },
+	        { valueField: "ro", name: "robot" },
+	        { valueField: "hu", name: "human" },
 	    ],
 	    legend: {
 	        verticalAlignment: "bottom",
@@ -176,6 +195,11 @@ DynAsch.wordLinesFirstContainer = function(){
             font: {  color: 'black', weight: "bold", size: 15 }
             
 	    }, 
+        commonAxisSettings: {
+            label: {
+                font: {  color: 'black', weight: "bold", size: 15 }
+            }
+        },
 	    valueAxis: {
             label: { format: 'largeNumber' },
             grid: { visible: true },
@@ -225,9 +249,15 @@ DynAsch.individVsRest = function(){
 	        label: {
 	            visible: true,
 	            format: "fixedPoint",
-	            precision: 0
-	        }
+	            precision: 0,
+	            font: {  color: 'white', weight: "bold", size: 15 }
+	        },
 	    },
+        commonAxisSettings: {
+            label: {
+                font: {  color: 'black', weight: "bold", size: 15 }
+            }
+        },
 	    series: [
 	    	{ valueField: "in", name: "individual" },
 	        { valueField: "ro", name: "robot" },
@@ -236,8 +266,21 @@ DynAsch.individVsRest = function(){
 	    title: "Individuals vs. Robots vs. Humans - Lines",
 	    legend: {
 	        verticalAlignment: "bottom",
-	        horizontalAlignment: "center"
-	    },
+	        horizontalAlignment: "center",
+            font: {  color: 'black', weight: "bold", size: 15 }
+            
+	    }, 
+	    valueAxis: {
+            label: { format: 'largeNumber' },
+            grid: { visible: true },
+            color: 'black',
+            font: { weight: 100, color: 'black' },
+            title: {
+                text: 'Conformity Rate in Percentage',
+                font: { weight: "bold", color: 'black' },
+                color: 'black'
+            }
+        },
 	    pointClick: function (point) {
 	        this.select();
 	    }
@@ -276,11 +319,17 @@ DynAsch.histogram = function(){
 	        hoverMode: "allArgumentPoints",
 	        selectionMode: "allArgumentPoints",
 	        label: {
-	            visible: false,
+	            visible: true,
 	            format: "fixedPoint",
-	            precision: 0
-	        }
+	            precision: 0,
+	            font: {  color: 'white', weight: "bold", size: 15 }
+	        },
 	    },
+        commonAxisSettings: {
+            label: {
+                font: {  color: 'black', weight: "bold", size: 15 }
+            }
+        },
 	    series: [
 	    	{ valueField: "alr", name: "ambig lines robot" },
 	        { valueField: "nalr", name: "non-ambig lines robot" },
@@ -347,9 +396,15 @@ DynAsch.wordCountError = function(){
 	        label: {
 	            visible: true,
 	            format: "fixedPoint",
-	            precision: 0
-	        }
+	            precision: 0,
+	            font: {  color: 'white', weight: "bold", size: 15 }
+	        },
 	    },
+        commonAxisSettings: {
+            label: {
+                font: {  color: 'black', weight: "bold", size: 15 }
+            }
+        },
 	    series: [
 	    	{ valueField: "er0", name: "no repeat" },
 	        { valueField: "er1", name: "one repeat" },
@@ -358,8 +413,21 @@ DynAsch.wordCountError = function(){
 	    title: "repetition error rate - words",
 	    legend: {
 	        verticalAlignment: "bottom",
-	        horizontalAlignment: "center"
-	    },
+	        horizontalAlignment: "center",
+            font: {  color: 'black', weight: "bold", size: 15 }
+            
+	    }, 
+	    valueAxis: {
+            label: { format: 'largeNumber' },
+            grid: { visible: true },
+            color: 'black',
+            font: { weight: 100, color: 'black' },
+            title: {
+                text: 'Conformity Rate in Percentage',
+                font: { weight: "bold", color: 'black' },
+                color: 'black'
+            }
+        },
 	    pointClick: function (point) {
 	        this.select();
 	    }
