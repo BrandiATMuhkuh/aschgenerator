@@ -390,11 +390,11 @@ Asch.fillPeopleTable = function(){
 		row.insertCell(3).innerHTML=groupExperimentResults[a].res.wAt;
 		row.insertCell(4).innerHTML=groupExperimentResults[a].res.wNAt;
 
-		row.insertCell(5).innerHTML=groupExperimentResults[a].res.survey.Q1;
+		row.insertCell(5).innerHTML="NZ";
 		
-		/*
-		row.insertCell(6).innerHTML=(groupExperimentResults[a].res.survey.Q7==1) ? "Yes" : "No";
-		row.insertCell(7).innerHTML=groupExperimentResults[a].res.survey.Q2_1;
+		
+		//row.insertCell(6).innerHTML=(groupExperimentResults[a].res.survey.Q7==1) ? "Yes" : "No";
+		row.insertCell(6).innerHTML=groupExperimentResults[a].res.survey.Q2_1;
 		var _words="Other";
 		if(groupExperimentResults[a].res.survey.Q3==1){
 			_words="Undergraduate Student";
@@ -404,9 +404,9 @@ Asch.fillPeopleTable = function(){
 			_words="Staff Member";
 		}
 
-		row.insertCell(8).innerHTML=_words;
-		row.insertCell(9).innerHTML=(groupExperimentResults[a].res.survey.Q10 != undefined) ? groupExperimentResults[a].res.survey.Q10 : "";
-		*/
+		row.insertCell(7).innerHTML=_words;
+		row.insertCell(8).innerHTML=(groupExperimentResults[a].res.survey.Q10 != undefined) ? groupExperimentResults[a].res.survey.Q10 : "";
+		
 		//cell1.innerHTML=groupExperimentResults[a].res.part;
 		//cell2.innerHTML=groupExperimentResults[a].res.survey.Q1;
 		//console.log(groupExperimentResults[a].res);

@@ -1,4 +1,12 @@
 
+var myTheme = {
+    name: 'mySuperTheme',   
+};
+
+
+DevExpress.viz.core.registerTheme(myTheme);
+DevExpress.viz.core.currentTheme('mySuperTheme');
+
 var DynAsch={
 };
 
@@ -132,7 +140,7 @@ DynAsch.wordLinesFirstContainer = function(){
 	    },
 	    { state: "non-ambig Words", 
 	    	ro: (DynAsch.conformitCount(true, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(true, false, "wordsNAmbig").aschValue)/2,
-	    	hu: (DynAsch.conformitCount(false, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(false, false, "wordsNAmbig").aschValue)/2
+	    	hu: (DynAsch.conformitCount(false, true, "wordsNAmbig").aschValue+DynAsch.conformitCount(false, false, "wordsNAmbig").aschValue)/2,
 	    }
 	];
 
@@ -146,20 +154,39 @@ DynAsch.wordLinesFirstContainer = function(){
 	        label: {
 	            visible: true,
 	            format: "fixedPoint",
-	            precision: 0
-	        }
+	            precision: 0,
+	            font: {  color: 'white', weight: "bold", size: 15 }
+	        },
+
 	    },
+	    commonAxisSettings: {
+            label: {
+                font: {  color: 'black', weight: "bold", size: 15 }
+            }
+        },
 	    series: [
 
-	        { valueField: "in", name: "individual" },
-	        { valueField: "ro", name: "robot" },
-	        { valueField: "hu", name: "human" }
+	        { valueField: "in", name: "individual", color: '#999999' },
+	        { valueField: "ro", name: "robot", color: '#666666' },
+	        { valueField: "hu", name: "human", color: 'black' },
 	    ],
-	    title: "Robots vs. Humans",
 	    legend: {
 	        verticalAlignment: "bottom",
-	        horizontalAlignment: "center"
-	    },
+	        horizontalAlignment: "center",
+            font: {  color: 'black', weight: "bold", size: 15 }
+            
+	    }, 
+	    valueAxis: {
+            label: { format: 'largeNumber' },
+            grid: { visible: true },
+            color: 'black',
+            font: { weight: 100, color: 'black' },
+            title: {
+                text: 'Conformity Rate in Percentage',
+                font: { weight: "bold", color: 'black' },
+                color: 'black'
+            }
+        },
 	    pointClick: function (point) {
 	        this.select();
 	    }
@@ -192,7 +219,7 @@ DynAsch.individVsRest = function(){
 	    dataSource: dataSource,
 	    commonSeriesSettings: {
 	        argumentField: "state",
-	        type: "spline",
+	        type: "bar",
 	        hoverMode: "allArgumentPoints",
 	        selectionMode: "allArgumentPoints",
 	        label: {
@@ -262,7 +289,7 @@ DynAsch.histogram = function(){
 	        { valueField: "awr", name: "ambig words robot" },
 	        { valueField: "nawr", name: "non-ambig words robot" },
 	        { valueField: "awh", name: "ambig words humans" },
-	        { valueField: "nawh", name: "non-ambig words humans" },
+	        { valueField: "nawh", name: "non-ambig words humans" }
 	    ],
 	    title: "Absolute number per trial",
 	    legend: {
