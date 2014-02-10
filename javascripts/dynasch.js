@@ -200,6 +200,7 @@ DynAsch.wordLinesFirstContainer = function(){
                 font: {  color: 'black', weight: "bold", size: 15 }
             }
         },
+            title: "Conformity rate for individual, robot and human conditions.",
 	    valueAxis: {
             label: { format: 'largeNumber' },
             grid: { visible: true },

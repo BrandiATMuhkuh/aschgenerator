@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///home/jbr134/Documents/Development/aschgenerator/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+
+      #innerdiv{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+      }
+
+      #myCanvas{
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+    </style>
+
+    
+  </head>
+  <body>
+
+
+  <script type="text/javascript">
+  //Define global paramenter
+  window.document.canvasWidth = 1000;
+  window.document.canvasHeight = 750;
+  window.document.soundManagerLoaded = false;
+  window.document.scriptFileLoaded = false;
+  window.document.idButtonClicked = true; //set false and it will start the asking for a comment
+  window.document.globalUserId = 1;
+  window.currentSlide = null;
+
+  function startMain(){
+    console.log("start");
+
+    function startEveryting(){
+      document.getElementById('startDiv').style.display = 'none';
+          document.getElementById('innerdiv').style.display = 'block';
+
+          slideGenerator();
+          var canvas = document.getElementById("myCanvas");
+          // attaching the sketchProc function to the canvas
+          var processingInstance = new Processing(canvas, sketchProc);
+    }
+
+    if(window.document.soundManagerLoaded && window.document.scriptFileLoaded && window.document.idButtonClicked){
+
+      if(window.configUser.logging){
+
+        dpd.newtrack.post({"infos":""+document.getElementById('inputUserInfo').value}, function(result, err) {
+            if(err) return console.log(err);
+            console.log(result, result.id);
+
+            window.document.globalUserId = result.id;
+            startEveryting();
+            
+        });
+      }else{
+        startEveryting();
+      }
+
+      
+    }
+  }
+
+  var filename = "configSlides.js";
+  if(window.location.search.split("=")[1]){
+    filename = window.location.search.split("=")[1]+".js";
+  }
+
+  var fileref=document.createElement('script');
+  fileref.setAttribute("type","text/javascript");
+  fileref.setAttribute("src", filename);
+
+  fileref.onload = function(){
+    window.document.scriptFileLoaded = true;
+    startMain();
+    console.log("loaded");
+  };
+
+  document.getElementsByTagName("head")[0].appendChild(fileref);
+
+  </script>
+
+  <script src="soundmanager2-jsmin.js"></script>
+  <script src="processing-1.4.1.min.js"></script>
+  <div id="innerdiv">
+    <canvas id="myCanvas" data-width="400" data-height="400"></canvas>
+  </div>
+  
+  <div id="startDiv">
+    <h1> Please add user id</h1>
+    <form>
+    some infos: <input type="text" id="inputUserInfo" />
+    <button type="button" onclick="window.document.idButtonClicked=true; startMain()">start!</button>
+    </form>
+  </div>
+
+
+
+  <script type="text/javascript" src="slides.js"></script>
+  <script type="text/javascript" src="lines.js"></script>
+
+  <audio src="http://www.mediacollege.com/downloads/sound-effects/explosion/explosion-02.wav" id="userImpactSound" preload />
+
+  <script>
+    document.getElementById('innerdiv').style.display = 'none';
+
+    // where to find flash SWFs, if needed...
+    soundManager.preferFlash = false;
+
+    soundManager.onready(function() {
+      soundManager.isReady = true;
+      soundManager.debugMode = false;
+      window.document.soundManagerLoaded = true;
+      startMain();
+      
+    });
+
+  </script>
+
+
+
+</body></html>

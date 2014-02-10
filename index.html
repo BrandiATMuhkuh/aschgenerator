@@ -9,6 +9,7 @@ experiment with robots.</title>
     <!--<link href="../../../styles.css" rel="stylesheet" />-->
     <script src="javascripts/jquery-2.0.3.min.js"></script>
     <script src="javascripts/knockout-3.0.0.js"></script>
+      <script src="javascripts/part30.js"></script>
     <script src="javascripts/globalize.min.js"></script>
     <script src="javascripts/dx.chartjs.js"></script>
 
@@ -109,25 +110,42 @@ The following are two the possible test slides the participants saw. The first s
 <img src="images/words.png" height="300px" /> <br />
           
 <h3>Experimenters introductions</h3>
-<code>
-1.) test <br />
-2.) asdf
-</code>
+<ol>
+
+<script type="text/javascript">
+    var i=1;
+    for(a in configSlides){
+       
+        if(configSlides[a]["type"]=="drawCommand" && configSlides[a]["v2"]!=""){
+             console.log(configSlides[a]["v2"]);
+            document.writeln("<li>"+configSlides[a]["v2"]+"</li>");
+            i=i+1;
+        }
+    }
+</script>
+</ol>
+
           
 <h3>Word List</h3>
 All words we used can be found in this <a href="files/designnotes_new.ods" >designnotes_new.ods</a> (open format unlike Microsoft *.xlsx) file.
         
+<h2>Try it on your own</h2>
+Just klick in the window (iFrame) and press the right arrow key. This will switch to the next page. 
+<iframe width="100%" height="800px" src="public/index.html?part=participents/robots/part31"></iframe>
+To use it on your own, open this link <a href="public/index.html?part=participents/robots/part30">public/index.html?part=participents/robots/part30</a> and change the participants number at the end of the URL. The robot setting can be started with <code>participents/robots/part30 .. participents/robots/part61</code> and the human setting can be started with <code>participents/human/part130 .. participents/human/part161</code>.
+
 <h3>Recreate the experiment</h3>
 
 <p>This is a list of things you need to recreate the experiment. I give an introduction how to use all of them</p>
 <ul>
 <li>Projector on a Machine</li>
 <li>4x <a href="http://www.aldebaran-robotics.com/en/">Nao Robots</a></li>
-<li>Machine running a <a href="http://deployd.com/">deployd</a> server</li>
+<li>Machine running a webserver server</li>
 <li>Machine running the controller (can be same machine)</li>
 <li>Experiment setting data</li>
 </ul>
 
+          <!--
 <h4>The experiment setting data</h4>
 <p>Find data in the github repo: <a href="https://github.com/BrandiATMuhkuh/aschgenerator/tree/master/aschgen/public/participents">The setting data</a></p>
 
@@ -152,7 +170,7 @@ The following is a list of dependencies. Please install in this order
   <li>Open your browser and add the following line to your address bar: <code><a href="http://localhost:2403/index.html?file=vparticipents/part1">http://localhost:2403/index.html?file=participents/part1</a></code></li>
   <li>Now you will see the presentation for participant 1 (<code>part1</code>). Change the number of <code>part[x]</code> at the end of the link to load the presentation for an other participant.</li>
 </ol>
-
+-->
 
 
 <h3><a name="welcome-to-github-pages" class="anchor" href="#table-parts"><span class="octicon octicon-link"></span></a>Table of all your particpants</h3>
@@ -217,9 +235,8 @@ The following is a list of dependencies. Please install in this order
 <p>Text</p>
 <canvas id="aschVsUs" width="400" height="500"></canvas>
 -->
-<h3>Everything</h3>
+<h3>Graphs</h3>
 
-<p>Text</p>
 
 <div id="chartContainer" style="width: 100%; height: 440px;"></div>
 
@@ -227,37 +244,17 @@ The following is a list of dependencies. Please install in this order
 
 <div id="individLinesContainer" style="width: 100%; height: 440px;"></div>
 
+          <!--
 <div id="histrogramContainer" style="width: 100%; height: 440px;"></div>
+-->
 
 <div id="wordCountError" style="width: 100%; height: 440px;"></div>
 
-<h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
-    </div>
+</section>
+<footer>
+<p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+</footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 		
   </body>
