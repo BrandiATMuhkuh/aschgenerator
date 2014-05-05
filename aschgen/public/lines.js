@@ -117,7 +117,19 @@ function sketchProc(processing) {
 
   function playSlideSound(){
     if(typeof window.currentSlide.sound != 'undefined')
-      soundManager.createSound({url: 'sounds/'+window.currentSlide.sound}).play();
+      soundManager.createSound(
+        {
+          url: 'sounds/'+window.currentSlide.sound,
+          onplay: function(){
+            console.log("start playing");
+            window.document.talkCount= window.document.talkCount+1;
+          },
+          onfinish: function(){
+            console.log("finished");
+            window.document.talkCount= window.document.talkCount-1;
+          }
+        }
+        ).play();
 
     /*
     switch(currentSlide.type){
@@ -186,6 +198,11 @@ function sketchProc(processing) {
       
 
     }
+
+    if(true){
+      drawIsSpeaking();
+    }
+    
 
   };
 
@@ -380,8 +397,32 @@ function sketchProc(processing) {
     processing.textFont(font,100); 
     processing.text(word, processing.width/2, processing.height/2); 
     
+  }
 
+  function drawIsSpeaking(){
 
+    var talk = true;
+     
+    processing.textFont(font,40);
+    if(window.document.talkCount==0){
+      processing.stroke(0, 0, 0);
+      processing.fill(87, 255, 53);
+      processing.rect(800, 600, 120, 120);
+
+      processing.fill(0, 0, 0);
+      processing.textAlign(processing.CENTER);
+      processing.text("Touch", 860, 680);
+    }else{
+      processing.stroke(0, 0, 0);
+      processing.fill(255, 53, 53);
+      processing.rect(800, 600, 120, 120);
+
+      processing.fill(0, 0, 0);
+      processing.textAlign(processing.CENTER);
+      processing.text("Don't", 860, 650);
+      processing.text("Touch", 860, 700);
+    }
+    
   }
 
 }
