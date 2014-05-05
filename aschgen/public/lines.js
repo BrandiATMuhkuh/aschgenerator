@@ -1,4 +1,5 @@
 
+window.document.talkCount = 0;
 function sketchProc(processing) {
   // Override draw function, by default it will be called 60 times per second
   
